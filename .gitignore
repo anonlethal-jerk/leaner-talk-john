@@ -1,2 +1,3 @@
--__-
-sass-cache
+-__-/
+.sass-cache/
+config.rb

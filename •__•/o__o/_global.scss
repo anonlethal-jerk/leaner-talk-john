@@ -1,0 +1,51 @@
+
+body {
+  background: linear-gradient(135deg, #dbd0b7 0%, #b0d4d1 100%) fixed;
+  text-align: center;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  line-height: 1.125;
+}
+figure {
+  display: inline-block;
+}
+figcaption {
+  font-size: .75rem;
+  margin-top: .25rem;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+a {
+  @keyframes blink {
+    50% {
+      opacity: 0.0;
+    }
+  }
+  @-webkit-keyframes blink {
+    50% {
+      opacity: 0.0;
+    }
+  }
+  &:hover {
+    animation: blink 1.5s linear 0s infinite;
+    -webkit-animation: blink 1.5s linear 0s infinite;
+  }
+}
+
+.jk {
+  position: fixed;
+  display: block;
+  top: 0;
+  left: 0;
+  padding: .5rem .75rem;
+  font-weight: bold;
+}
+
+.subtitle {
+  color: #fff;
+}

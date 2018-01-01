@@ -2,16 +2,10 @@
 @import 'hover';
 @import 'variables';
 @import 'reboot';
-
+@import 'html5boilerplate';
 /*!
   I have my own sense of style
 */
-body {
-  background-image: linear-gradient(135deg, #e4e0d6 0%, #e3edec 100%);
-}
-.beckett h3 {
-  margin-top: 2rem;
-  font-size: 2.25rem;
-  line-height: 2.5rem;
-  text-align: center;
-}
+@import 'global';
+@import 'home';
+@import 'daily_photo';

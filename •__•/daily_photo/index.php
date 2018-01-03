@@ -1,12 +1,9 @@
-<!doctype html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <title>•__• JK</title>
-    <meta name="viewport" content="width=device-width">
-    <link rel="stylesheet" href="/•__•/o__o/main.css" type="text/css">
-  </head>
-  <body class="daily_photo">
+<?php 
+  $page_title = '•__• JK';
+  $page_slug = 'daily_photo';
+?>
+<?php require_once('_header.php'); ?>
+
     <h1><cite>The Adaption to My Generation</cite></h1>
     <h2 class="subtitle">a daily photo project</h2>
     <p>1998 Oct 01 – I will go on.</p>
@@ -118,7 +115,4 @@
 
     </section>
 
-    <a class="jk" href="/•__•/">JK</a>
-
-  </body>
-</html>
+<?php require_once('_footer.php'); ?>

@@ -1,12 +1,8 @@
-<!doctype html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <title>•__• JK</title>
-    <meta name="viewport" content="width=device-width">
-    <link rel="stylesheet" href="/•__•/o__o/main.css" type="text/css">
-  </head>
-  <body class="home">
+<?php 
+  $page_title = '•__• JK';
+  $page_slug = 'home';
+?>
+<?php require_once('_header.php'); ?>
     <figure>
       <a href="daily_photo/"><img class="" src="daily_photo/x__x/jk_keller--average_jk_2017--jkk_201701_1.jpg" height="600" width="401" alt="Average JK, 2017" /></a>
       <figcaption><a href="daily_photo/"><cite>2017 Was a Mean Year</cite></a></figcaption>
@@ -15,10 +11,4 @@
       <span class="second">I can't go on.</span><br>
       <span class="third">I'll go on.</span></h2>
 
-    <!--   being decent   -->
-
-    <div class="jk">JK Keller</div>
-    
-    <script src="/•__•/*__*/jquery.min.js"></script>
-  </body>
-</html>
+<?php require_once('_footer.php'); ?>

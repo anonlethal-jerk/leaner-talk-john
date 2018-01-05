@@ -1,118 +1,105 @@
-<?php 
-  $page_title = '•__• JK';
-  $page_slug = 'daily_photo';
-?>
-<?php require_once('_header.php'); ?>
+<?php
+  $data = [
+    'series_slug' => 'daily_photo',
+    'series_title' => 'The Adaption to My Generation',
+    'series_subtitle' => 'a daily photo project',
+    'series_description' => '—',
+    'series_date' => '1998 Oct 01 – I will go on.',
+    'series_works' => [
+      [
+        'work_title' => 'Average JK, 1998–2006',
+        'work_slug' => 'average_jk_1998_2006',
+        'work_img' => 'jk_keller--average_jk_1998_2006--jkk200610_2.jpg',
+        'work_status' => 'fourthree',
+      ],
+      [
+        'work_title' => 'Average JK, 2006–2014',
+        'work_slug' => 'average_jk_2006_2014',
+        'work_img' => 'jk_keller--average_jk_2006_2014--jkk201410_2.jpg',
+        'work_status' => 'fourthree',
+      ],
+      [
+        'work_title' => 'Average JK, 1998–2014',
+        'work_slug' => 'average_jk_1998_2014',
+        'work_img' => 'jk_keller--average_jk_1998_2014--jkk201410_3.jpg',
+        'work_status' => 'fourthree',
+      ],
+    ],
+  ];
+  for ($i=2017; $i>=1998; $i--) {
+    $temp_work = [
+      'work_title' => 'Average JK, '.$i,
+      'work_slug' => 'average_jk_'.$i,
+      'work_img' => 'jk_keller--average_jk_'.$i.'--jkk_'.($i+1).'01_1.jpg',
+    ];
+    if ($i<=2008) {
+      $temp_work['work_status'] = 'fourthree';
+    } else {
+      $temp_work['work_status'] = NULL;
+    }
+    array_push($data['series_works'], $temp_work);
+  }
 
-    <h1><cite>The Adaption to My Generation</cite></h1>
-    <h2 class="subtitle">a daily photo project</h2>
-    <p>1998 Oct 01 – I will go on.</p>
+/*  // FOR LATER?
+      'sketches' => '—',
+      'inspiration' => '—',
+      'status' => '',
+*/
+
+  $page_slug = $data['series_slug'].' •__• JK';
+  $page_title = $data['series_title'].' •__• JK';
+?>
+<?php require_once('../_header.php'); ?>
+
+    <h1><cite><?= $data['series_title']; ?></cite></h1>
+    <h2 class="subtitle"><?= $data['series_subtitle']; ?></h2>
+    <p><?= $data['series_date']; ?></p>
 
     <section class="average_jk">
       <section class="average_year">
         <h3><cite>Average JK, <span class="placeholder">____</span></cite></h3>
-        <figure>
-          <img class="" src="x__x/jk_keller--average_jk_2017--jkk_201701_1.jpg" height="600" width="401" alt="Average JK, 2017" />
-          <figcaption><cite><span class="hidden">Average JK, </span>2017</cite></figcaption>
+<?php
+  $count = 0;
+  foreach ($data['series_works'] as $work) {
+    // SKIP FIRST THREE
+    $count++;
+    if($count <= 3) continue;
+?><figure>
+<?php
+  if ($work['work_status'] == 'fourthree') {
+?>          <img class="fourthree" src="x__x/<?= $work['work_img']; ?>" height="600" width="450" alt="<?= $work['work_title']; ?>" />
+<?php
+  } else {
+?>          <img class="" src="x__x/<?= $work['work_img']; ?>" height="600" width="401" alt="<?= $work['work_title']; ?>" />
+<?php
+  };
+?>          <figcaption><cite><span class="hidden"><?= substr($work['work_title'], 0, 12); ?></span><?= substr($work['work_title'], -4); ?></cite></figcaption>
         </figure><!--
-        --><figure>
-          <img class="" src="x__x/jk_keller--average_jk_2016--jkk_201601_1.jpg" height="600" width="401" alt="Average JK, 2016" />
-          <figcaption><cite><span class="hidden">Average JK, </span>2016</cite></figcaption>
-        </figure><!--
-        --><figure>
-          <img class="" src="x__x/jk_keller--average_jk_2015--jkk_201501_1.jpg" height="600" width="401" alt="Average JK, 2015" />
-          <figcaption><cite><span class="hidden">Average JK, </span>2015</cite></figcaption>
-        </figure><!--
-        --><figure>
-          <img class="" src="x__x/jk_keller--average_jk_2014--jkk_201401_1.jpg" height="600" width="401" alt="Average JK, 2014" />
-          <figcaption><cite><span class="hidden">Average JK, </span>2014</cite></figcaption>
-        </figure><!--
-        --><figure>
-          <img class="" src="x__x/jk_keller--average_jk_2013--jkk_201301_1.jpg" height="600" width="401" alt="Average JK, 2013" />
-          <figcaption><cite><span class="hidden">Average JK, </span>2013</cite></figcaption>
-        </figure><!--
-        --><figure>
-          <img class="" src="x__x/jk_keller--average_jk_2012--jkk_201201_1.jpg" height="600" width="401" alt="Average JK, 2012" />
-          <figcaption><cite><span class="hidden">Average JK, </span>2012</cite></figcaption>
-        </figure><!--
-        --><figure>
-          <img class="" src="x__x/jk_keller--average_jk_2011--jkk_201101_1.jpg" height="600" width="401" alt="Average JK, 2011" />
-          <figcaption><cite><span class="hidden">Average JK, </span>2011</cite></figcaption>
-        </figure><!--
-        --><figure>
-          <img class="" src="x__x/jk_keller--average_jk_2010--jkk_201001_1.jpg" height="600" width="401" alt="Average JK, 2010" />
-          <figcaption><cite><span class="hidden">Average JK, </span>2010</cite></figcaption>
-        </figure><!--
-        --><figure>
-          <img class="" src="x__x/jk_keller--average_jk_2009--jkk_200901_1.jpg" height="600" width="401" alt="Average JK, 2009" />
-          <figcaption><cite><span class="hidden">Average JK, </span>2009</cite></figcaption>
-        </figure><!--
-        --><figure>
-          <img class="fourthree" src="x__x/jk_keller--average_jk_2008--jkk_200801_1.jpg" height="600" width="450" alt="Average JK, 2008" />
-          <figcaption><cite><span class="hidden">Average JK, </span>2008</cite></figcaption>
-        </figure><!--
-        --><figure>
-          <img class="fourthree" src="x__x/jk_keller--average_jk_2007--jkk_200701_1.jpg" height="600" width="450" alt="Average JK, 2007" />
-          <figcaption><cite><span class="hidden">Average JK, </span>2007</cite></figcaption>
-        </figure><!--
-        --><figure>
-          <img class="fourthree" src="x__x/jk_keller--average_jk_2006--jkk_200601_1.jpg" height="600" width="450" alt="Average JK, 2006" />
-          <figcaption><cite><span class="hidden">Average JK, </span>2006</cite></figcaption>
-        </figure><!--
-        --><figure>
-          <img class="fourthree" src="x__x/jk_keller--average_jk_2005--jkk_200501_1.jpg" height="600" width="450" alt="Average JK, 2005" />
-          <figcaption><cite><span class="hidden">Average JK, </span>2005</cite></figcaption>
-        </figure><!--
-        --><figure>
-          <img class="fourthree" src="x__x/jk_keller--average_jk_2004--jkk_200401_1.jpg" height="600" width="450" alt="Average JK, 2004" />
-          <figcaption><cite><span class="hidden">Average JK, </span>2004</cite></figcaption>
-        </figure><!--
-        --><figure>
-          <img class="fourthree" src="x__x/jk_keller--average_jk_2003--jkk_200301_1.jpg" height="600" width="450" alt="Average JK, 2003" />
-          <figcaption><cite><span class="hidden">Average JK, </span>2003</cite></figcaption>
-        </figure><!--
-        --><figure>
-          <img class="fourthree" src="x__x/jk_keller--average_jk_2002--jkk_200201_1.jpg" height="600" width="450" alt="Average JK, 2002" />
-          <figcaption><cite><span class="hidden">Average JK, </span>2002</cite></figcaption>
-        </figure><!--
-        --><figure>
-          <img class="fourthree" src="x__x/jk_keller--average_jk_2001--jkk_200101_1.jpg" height="600" width="450" alt="Average JK, 2001" />
-          <figcaption><cite><span class="hidden">Average JK, </span>2001</cite></figcaption>
-        </figure><!--
-        --><figure>
-          <img class="fourthree" src="x__x/jk_keller--average_jk_2000--jkk_200001_1.jpg" height="600" width="450" alt="Average JK, 2000" />
-          <figcaption><cite><span class="hidden">Average JK, </span>2000</cite></figcaption>
-        </figure><!--
-        --><figure>
-          <img class="fourthree" src="x__x/jk_keller--average_jk_1999--jkk_199901_1.jpg" height="600" width="450" alt="Average JK, 1999" />
-          <figcaption><cite><span class="hidden">Average JK, </span>1999</cite></figcaption>
-        </figure><!--
-        --><figure>
-          <img class="fourthree" src="x__x/jk_keller--average_jk_1998--jkk_199801_1.jpg" height="600" width="450" alt="Average JK, 1998" />
-          <figcaption><cite><span class="hidden">Average JK, </span>1998</cite></figcaption>
-        </figure>
+        --><?php
+  };
+?>
       </section>
       
       <section class="average_8">
         <hr>
         <figure>
-          <img class="fourthree" src="x__x/jk_keller--average_jk_1998_2006--jkk200610_2.jpg" height="600" width="450" alt="Average JK, 1998–2006" />
-          <figcaption><cite><span class="hidden">Average JK, </span>1998–2006</cite></figcaption>
+          <img class="fourthree" src="x__x/<?= $data['series_works'][0]['work_img']; ?>" height="600" width="450" alt="<?= $data['series_works'][0]['work_title']; ?>" />
+          <figcaption><cite><span class="hidden"><?= substr($work['work_title'], 0, 12); ?></span><?= mb_substr($data['series_works'][0]['work_title'], -9); ?></cite></figcaption>
         </figure><!--
         --><figure>
-          <img class="fourthree" src="x__x/jk_keller--average_jk_2006_2014--jkk201410_2.jpg" height="600" width="450" alt="Average JK, 2006–2014" />
-          <figcaption><cite><span class="hidden">Average JK, </span>2006–2014</cite></figcaption>
+          <img class="fourthree" src="x__x/<?= $data['series_works'][1]['work_img']; ?>" height="600" width="450" alt="<?= $data['series_works'][1]['work_title']; ?>" />
+          <figcaption><cite><span class="hidden"><?= substr($work['work_title'], 0, 12); ?></span><?= mb_substr($data['series_works'][1]['work_title'], -9); ?></cite></figcaption>
         </figure>
       </section>
   
       <section class="average_8_all">
         <hr>
         <figure>
-          <img class="fourthree" src="x__x/jk_keller--average_jk_1998_2014--jkk201410_3.jpg" height="600" width="450" alt="Average JK, 1998–2014" />
-          <figcaption><cite><span class="hidden">Average JK, </span>1998–2014</cite></figcaption>
+          <img class="fourthree" src="x__x/<?= $data['series_works'][2]['work_img']; ?>" height="600" width="450" alt="<?= $data['series_works'][2]['work_title']; ?>" />
+          <figcaption><cite><span class="hidden"><?= substr($work['work_title'], 0, 12); ?></span><?= mb_substr($data['series_works'][2]['work_title'], -9); ?></cite></figcaption>
         </figure>
       </section>
 
     </section>
 
-<?php require_once('_footer.php'); ?>
+<?php require_once('../_footer.php'); ?>

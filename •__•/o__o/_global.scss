@@ -9,6 +9,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 figure {
   display: inline-block;
+  position: relative;
 }
 figcaption {
   font-size: .75rem;
@@ -48,4 +49,13 @@ a {
 
 .subtitle {
   color: #fff;
+}
+
+.the_end {
+  display: block;
+  position: absolute;
+  top: 32%;
+  left: 7%;
+  width: 86%;
+  pointer-events: none;
 }

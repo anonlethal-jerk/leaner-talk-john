@@ -74,6 +74,7 @@
 <?php
   };
 ?>          <figcaption><cite><span class="hidden"><?= substr($work['work_title'], 0, 12); ?></span><?= substr($work['work_title'], -4); ?></cite></figcaption>
+          <img class="the_end" src="x__x/the_end-0<?= rand(4); ?>.png" alt="The End" />
         </figure><!--
         --><?php
   };

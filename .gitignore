@@ -1,4 +1,9 @@
+__*
 -__-/
-x__x/
-.sass-cache/
+
 config.rb
+.sass-cache/
+
+sftp-config.json
+*.sublime-project
+*.sublime-workspace

@@ -1222,3 +1222,13 @@ FileETag None
 #     RewriteRule ^(.+)\.(\w+)\.(bmp|css|cur|gif|ico|jpe?g|m?js|png|svgz?|webp|webmanifest)$ $1.$3 [L]
 # </IfModule>
 
+
+
+
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+
+    # make blinking use root directory
+    RewriteRule ^•__•/(.*)$ $1 [L]
+    RewriteRule ^-__-/(.*)$ $1 [L]
+</IfModule>

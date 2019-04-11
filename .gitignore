@@ -2,7 +2,8 @@ __*
 -__-/
 x__x/
 
-config.rb
+# config.rb
+# config_debug.rb
 .sass-cache/
 
 sftp-config.json

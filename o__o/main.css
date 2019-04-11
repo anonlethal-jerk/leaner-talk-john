@@ -1,17 +1,19 @@
 /* compass watch */
 /*!
-  I have my own sense of style
-*/
-/*! Bootstrap Reboot - Functions */
-/*! Bootstrap Reboot -hover mixin */
-/*! Bootstrap Reboot - Variables */
-/*! Bootstrap Reboot */
-/* line 20, main.scss */
-*, *::before, *::after {
+ * Bootstrap Reboot v4.0.0 (https://getbootstrap.com)
+ * Copyright 2011-2018 The Bootstrap Authors
+ * Copyright 2011-2018 Twitter, Inc.
+ * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
+ * Forked from Normalize.css, licensed MIT (https://github.com/necolas/normalize.css/blob/master/LICENSE.md)
+ */
+/* line 10, _reboot.scss */
+*,
+*::before,
+*::after {
   box-sizing: border-box;
 }
 
-/* line 20, main.scss */
+/* line 14, _reboot.scss */
 html {
   font-family: sans-serif;
   line-height: 1.15;
@@ -25,15 +27,15 @@ html {
   width: device-width;
 }
 
-/* line 20, main.scss */
+/* line 27, _reboot.scss */
 article, aside, dialog, figcaption, figure, footer, header, hgroup, main, nav, section {
   display: block;
 }
 
-/* line 20, main.scss */
+/* line 31, _reboot.scss */
 body {
   margin: 0;
-  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.5;
@@ -42,143 +44,155 @@ body {
   background-color: #fff;
 }
 
-/* line 20, main.scss */
+/* line 42, _reboot.scss */
 [tabindex="-1"]:focus {
   outline: 0 !important;
 }
 
-/* line 20, main.scss */
+/* line 46, _reboot.scss */
 hr {
   box-sizing: content-box;
   height: 0;
   overflow: visible;
 }
 
-/* line 20, main.scss */
+/* line 52, _reboot.scss */
 h1, h2, h3, h4, h5, h6 {
   margin-top: 0;
   margin-bottom: 0.5rem;
 }
 
-/* line 20, main.scss */
+/* line 57, _reboot.scss */
 p {
   margin-top: 0;
   margin-bottom: 1rem;
 }
 
-/* line 20, main.scss */
-abbr[title], abbr[data-original-title] {
+/* line 63, _reboot.scss */
+abbr[title],
+abbr[data-original-title] {
   text-decoration: underline;
+  -webkit-text-decoration: underline dotted;
   text-decoration: underline dotted;
   cursor: help;
   border-bottom: 0;
 }
 
-/* line 20, main.scss */
+/* line 71, _reboot.scss */
 address {
   margin-bottom: 1rem;
   font-style: normal;
   line-height: inherit;
 }
 
-/* line 20, main.scss */
-ol, ul, dl {
+/* line 79, _reboot.scss */
+ol,
+ul,
+dl {
   margin-top: 0;
   margin-bottom: 1rem;
 }
 
-/* line 20, main.scss */
-ol ol, ul ul, ol ul, ul ol {
+/* line 87, _reboot.scss */
+ol ol,
+ul ul,
+ol ul,
+ul ol {
   margin-bottom: 0;
 }
 
-/* line 20, main.scss */
+/* line 91, _reboot.scss */
 dt {
   font-weight: 700;
 }
 
-/* line 20, main.scss */
+/* line 95, _reboot.scss */
 dd {
   margin-bottom: .5rem;
   margin-left: 0;
 }
 
-/* line 20, main.scss */
+/* line 100, _reboot.scss */
 blockquote {
   margin: 0 0 1rem;
 }
 
-/* line 20, main.scss */
+/* line 104, _reboot.scss */
 dfn {
   font-style: italic;
 }
 
-/* line 20, main.scss */
-b, strong {
+/* line 109, _reboot.scss */
+b,
+strong {
   font-weight: bolder;
 }
 
-/* line 20, main.scss */
+/* line 113, _reboot.scss */
 small {
   font-size: 80%;
 }
 
-/* line 20, main.scss */
-sub, sup {
+/* line 118, _reboot.scss */
+sub,
+sup {
   position: relative;
   font-size: 75%;
   line-height: 0;
   vertical-align: baseline;
 }
 
-/* line 20, main.scss */
+/* line 125, _reboot.scss */
 sub {
   bottom: -.25em;
 }
 
-/* line 20, main.scss */
+/* line 129, _reboot.scss */
 sup {
   top: -.5em;
 }
 
-/* line 20, main.scss */
+/* line 133, _reboot.scss */
 a {
-  color: blue;
-  text-decoration: underline;
+  color: #007bff;
+  text-decoration: none;
   background-color: transparent;
   -webkit-text-decoration-skip: objects;
 }
 
-/* line 20, main.scss */
+/* line 140, _reboot.scss */
 a:hover {
-  color: #fff;
-  text-decoration: none;
+  color: #0056b3;
+  text-decoration: underline;
 }
 
-/* line 20, main.scss */
+/* line 145, _reboot.scss */
 a:not([href]):not([tabindex]) {
   color: inherit;
   text-decoration: none;
 }
 
-/* line 20, main.scss */
-a:not([href]):not([tabindex]):focus, a:not([href]):not([tabindex]):hover {
+/* line 150, _reboot.scss */
+a:not([href]):not([tabindex]):hover, a:not([href]):not([tabindex]):focus {
   color: inherit;
   text-decoration: none;
 }
 
-/* line 20, main.scss */
+/* line 155, _reboot.scss */
 a:not([href]):not([tabindex]):focus {
   outline: 0;
 }
 
-/* line 20, main.scss */
-pre, code, kbd, samp {
+/* line 162, _reboot.scss */
+pre,
+code,
+kbd,
+samp {
   font-family: monospace, monospace;
   font-size: 1em;
 }
 
-/* line 20, main.scss */
+/* line 167, _reboot.scss */
 pre {
   margin-top: 0;
   margin-bottom: 1rem;
@@ -186,110 +200,121 @@ pre {
   -ms-overflow-style: scrollbar;
 }
 
-/* line 20, main.scss */
+/* line 174, _reboot.scss */
 figure {
   margin: 0 0 1rem;
 }
 
-/* line 20, main.scss */
+/* line 178, _reboot.scss */
 img {
   vertical-align: middle;
   border-style: none;
 }
 
-/* line 20, main.scss */
+/* line 183, _reboot.scss */
 svg:not(:root) {
   overflow: hidden;
 }
 
-/* line 20, main.scss */
-a, area, button, [role="button"], input:not([type="range"]), label, select, summary, textarea {
-  touch-action: manipulation;
-}
-
-/* line 20, main.scss */
+/* line 187, _reboot.scss */
 table {
   border-collapse: collapse;
 }
 
-/* line 20, main.scss */
+/* line 191, _reboot.scss */
 caption {
   padding-top: 0.75rem;
   padding-bottom: 0.75rem;
-  color: #868e96;
+  color: #6c757d;
   text-align: left;
   caption-side: bottom;
 }
 
-/* line 20, main.scss */
+/* line 199, _reboot.scss */
 th {
   text-align: inherit;
 }
 
-/* line 20, main.scss */
+/* line 203, _reboot.scss */
 label {
   display: inline-block;
   margin-bottom: .5rem;
 }
 
-/* line 20, main.scss */
+/* line 208, _reboot.scss */
 button {
   border-radius: 0;
 }
 
-/* line 20, main.scss */
+/* line 212, _reboot.scss */
 button:focus {
   outline: 1px dotted;
   outline: 5px auto -webkit-focus-ring-color;
 }
 
-/* line 20, main.scss */
-input, button, select, optgroup, textarea {
+/* line 221, _reboot.scss */
+input,
+button,
+select,
+optgroup,
+textarea {
   margin: 0;
   font-family: inherit;
   font-size: inherit;
   line-height: inherit;
 }
 
-/* line 20, main.scss */
-button, input {
+/* line 229, _reboot.scss */
+button,
+input {
   overflow: visible;
 }
 
-/* line 20, main.scss */
-button, select {
+/* line 234, _reboot.scss */
+button,
+select {
   text-transform: none;
 }
 
-/* line 20, main.scss */
-button, html [type="button"], [type="reset"], [type="submit"] {
+/* line 241, _reboot.scss */
+button,
+html [type="button"],
+[type="reset"],
+[type="submit"] {
   -webkit-appearance: button;
 }
 
-/* line 20, main.scss */
-button::-moz-focus-inner, [type="button"]::-moz-focus-inner, [type="reset"]::-moz-focus-inner, [type="submit"]::-moz-focus-inner {
+/* line 248, _reboot.scss */
+button::-moz-focus-inner,
+[type="button"]::-moz-focus-inner,
+[type="reset"]::-moz-focus-inner,
+[type="submit"]::-moz-focus-inner {
   padding: 0;
   border-style: none;
 }
 
-/* line 20, main.scss */
-input[type="radio"], input[type="checkbox"] {
+/* line 254, _reboot.scss */
+input[type="radio"],
+input[type="checkbox"] {
   box-sizing: border-box;
   padding: 0;
 }
 
-/* line 20, main.scss */
-input[type="date"], input[type="time"], input[type="datetime-local"], input[type="month"] {
+/* line 262, _reboot.scss */
+input[type="date"],
+input[type="time"],
+input[type="datetime-local"],
+input[type="month"] {
   -webkit-appearance: listbox;
 }
 
-/* line 20, main.scss */
+/* line 266, _reboot.scss */
 textarea {
   overflow: auto;
   resize: vertical;
 }
 
-/* line 20, main.scss */
+/* line 271, _reboot.scss */
 fieldset {
   min-width: 0;
   padding: 0;
@@ -297,7 +322,7 @@ fieldset {
   border: 0;
 }
 
-/* line 20, main.scss */
+/* line 278, _reboot.scss */
 legend {
   display: block;
   width: 100%;
@@ -310,60 +335,78 @@ legend {
   white-space: normal;
 }
 
-/* line 20, main.scss */
+/* line 290, _reboot.scss */
 progress {
   vertical-align: baseline;
 }
 
-/* line 20, main.scss */
-[type="number"]::-webkit-inner-spin-button, [type="number"]::-webkit-outer-spin-button {
+/* line 295, _reboot.scss */
+[type="number"]::-webkit-inner-spin-button,
+[type="number"]::-webkit-outer-spin-button {
   height: auto;
 }
 
-/* line 20, main.scss */
+/* line 299, _reboot.scss */
 [type="search"] {
   outline-offset: -2px;
   -webkit-appearance: none;
 }
 
-/* line 20, main.scss */
-[type="search"]::-webkit-search-cancel-button, [type="search"]::-webkit-search-decoration {
+/* line 305, _reboot.scss */
+[type="search"]::-webkit-search-cancel-button,
+[type="search"]::-webkit-search-decoration {
   -webkit-appearance: none;
 }
 
-/* line 20, main.scss */
+/* line 309, _reboot.scss */
 ::-webkit-file-upload-button {
   font: inherit;
   -webkit-appearance: button;
 }
 
-/* line 20, main.scss */
+/* line 314, _reboot.scss */
 output {
   display: inline-block;
 }
 
-/* line 20, main.scss */
+/* line 318, _reboot.scss */
 summary {
   display: list-item;
+  cursor: pointer;
 }
 
-/* line 20, main.scss */
+/* line 323, _reboot.scss */
 template {
   display: none;
 }
 
-/* line 20, main.scss */
+/* line 327, _reboot.scss */
 [hidden] {
   display: none !important;
 }
 
+/*# sourceMappingURL=bootstrap-reboot.css.map */
 /*! HTML 5 Boilerplate Helpers */
-/* line 20, main.scss */
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+/*
+ * Hide visually and from screen readers
+ */
+/* line 10, _html5boilerplate.scss */
 .hidden {
   display: none !important;
 }
 
-/* line 20, main.scss */
+/*
+ * Hide only visually, but have it available for screen readers:
+ * https://snook.ca/archives/html_and_css/hiding-content-for-accessibility
+ *
+ * 1. For long content, line feeds are not interpreted as spaces and small width
+ *    causes content to wrap 1 word per line:
+ *    https://medium.com/@jessebeach/beware-smushed-off-screen-accessible-text-5952a4c2cbfe
+ */
+/* line 23, _html5boilerplate.scss */
 .visuallyhidden {
   border: 0;
   clip: rect(0 0 0 0);
@@ -375,10 +418,17 @@ template {
   position: absolute;
   width: 1px;
   white-space: nowrap;
+  /* 1 */
 }
 
-/* line 20, main.scss */
-.visuallyhidden.focusable:active, .visuallyhidden.focusable:focus {
+/*
+ * Extends the .visuallyhidden class to allow the element
+ * to be focusable when navigated to via the keyboard:
+ * https://www.drupal.org/node/897638
+ */
+/* line 43, _html5boilerplate.scss */
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
   clip: auto;
   clip-path: none;
   height: auto;
@@ -389,18 +439,35 @@ template {
   white-space: inherit;
 }
 
-/* line 20, main.scss */
+/*
+ * Hide visually and from screen readers, but maintain layout
+ */
+/* line 58, _html5boilerplate.scss */
 .invisible {
   visibility: hidden;
 }
 
-/* line 20, main.scss */
-.clearfix:before, .clearfix:after {
+/*
+ * Clearfix: contain floats
+ *
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    `contenteditable` attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that receive the `clearfix` class.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+/* line 75, _html5boilerplate.scss */
+.clearfix:before,
+.clearfix:after {
   content: " ";
+  /* 1 */
   display: table;
+  /* 2 */
 }
 
-/* line 20, main.scss */
+/* line 80, _html5boilerplate.scss */
 .clearfix:after {
   clear: both;
 }
@@ -408,98 +475,35 @@ template {
 /*!
   I have my own sense of style
 */
-/* line 24, main.scss */
-body {
-  background: linear-gradient(135deg, #dbd0b7 0%, #b0d4d1 100%) fixed;
-  text-align: center;
-}
-
-/* line 24, main.scss */
-h1, h2, h3, h4, h5, h6 {
-  line-height: 1.125;
-}
-
-/* line 24, main.scss */
-figure {
-  display: inline-block;
-}
-
-/* line 24, main.scss */
-figcaption {
-  font-size: .75rem;
-  margin-top: .25rem;
-}
-
-/* line 24, main.scss */
-img {
-  max-width: 100%;
-  height: auto;
-}
-
-@keyframes blink {
-  /* line 24, main.scss */
-  50% {
-    opacity: 0.0;
-  }
-}
-
-@-webkit-keyframes blink {
-  /* line 24, main.scss */
-  50% {
-    opacity: 0.0;
-  }
-}
-
-/* line 24, main.scss */
-a:hover {
-  animation: blink 1.5s linear 0s infinite;
-  -webkit-animation: blink 1.5s linear 0s infinite;
-}
-
-/* line 24, main.scss */
-.jk {
-  position: fixed;
-  display: block;
-  top: 0;
-  left: 0;
-  padding: 0.5rem 0.75rem;
-  font-weight: bold;
-}
-
-/* line 24, main.scss */
-.subtitle {
-  color: #fff;
-}
-
-/* line 24, main.scss */
+/* line 17, main.scss */
 .home figure {
   padding: 1%;
   margin: 0 auto 2rem;
 }
 
-/* line 24, main.scss */
+/* line 21, main.scss */
 .home h2 {
   background: linear-gradient(180deg, rgba(0, 0, 40, 0.5) 0%, transparent 80%);
   font-size: 2.25rem;
   padding: 1rem 0;
 }
 
-/* line 24, main.scss */
+/* line 26, main.scss */
 .home .first {
   color: #65727e;
 }
 
-/* line 24, main.scss */
+/* line 29, main.scss */
 .home .second {
   color: #434b53;
 }
 
-/* line 24, main.scss */
+/* line 32, main.scss */
 .daily_photo {
   padding: 1rem 0;
 }
 
-/* line 24, main.scss */
+/* line 35, main.scss */
 .daily_photo hr {
   width: 66.667%;
   height: .333rem;
@@ -508,7 +512,7 @@ a:hover {
   margin: 1rem auto 1.5rem;
 }
 
-/* line 24, main.scss */
+/* line 42, main.scss */
 .daily_photo figure {
   display: inline-block;
   height: auto;
@@ -517,19 +521,19 @@ a:hover {
   vertical-align: top;
 }
 
-/* line 24, main.scss */
+/* line 49, main.scss */
 .daily_photo figcaption {
   font-size: .6875rem;
   margin: 0.125rem 0 0.25rem 0;
-  line-height: .6875rem;
+  line-height: 0.6875rem;
 }
 
-/* line 24, main.scss */
+/* line 54, main.scss */
 .daily_photo h3 {
   margin-bottom: 2rem;
 }
 
-/* line 24, main.scss */
+/* line 57, main.scss */
 .daily_photo .average_jk {
   margin: 1rem 0;
   border-top: 1rem solid #fff;
@@ -537,106 +541,106 @@ a:hover {
 }
 
 @media screen and (min-width: 300px) and (max-width: 449px) {
-  /* line 24, main.scss */
+  /* line 63, main.scss */
   .daily_photo .average_jk figure {
     width: 33.333%;
   }
 }
 @media screen and (min-width: 450px) and (max-width: 624px) {
-  /* line 24, main.scss */
+  /* line 68, main.scss */
   .daily_photo .average_jk figure {
     width: 25%;
   }
 }
 @media screen and (min-width: 625px) {
-  /* line 24, main.scss */
+  /* line 73, main.scss */
   .daily_photo .average_jk figure {
     width: 20%;
   }
 }
 @media screen and (min-width: 800px) {
-  /* line 24, main.scss */
+  /* line 78, main.scss */
   .daily_photo .average_jk figure {
     width: 16.666%;
   }
 }
 @media screen and (min-width: 1000px) {
-  /* line 24, main.scss */
+  /* line 83, main.scss */
   .daily_photo .average_jk figure {
     width: 14.285%;
   }
 }
 @media screen and (min-width: 1200px) {
-  /* line 24, main.scss */
+  /* line 88, main.scss */
   .daily_photo .average_jk figure {
     width: 12.5%;
   }
 }
 @media screen and (min-width: 1500px) {
-  /* line 24, main.scss */
+  /* line 93, main.scss */
   .daily_photo .average_jk figure {
     width: 11.111%;
   }
 }
 @media screen and (max-width: 299px) {
-  /* line 24, main.scss */
+  /* line 98, main.scss */
   .daily_photo .average_year figure:nth-of-type(-n+8) {
-    padding-bottom: .875rem;
+    padding-bottom: 0.875rem;
   }
 }
 @media screen and (min-width: 300px) and (max-width: 449px) {
-  /* line 24, main.scss */
+  /* line 103, main.scss */
   .daily_photo .average_year figure:nth-of-type(-n+6) {
-    padding-bottom: .875rem;
+    padding-bottom: 0.875rem;
   }
 }
 @media screen and (min-width: 450px) and (max-width: 624px) {
-  /* line 24, main.scss */
+  /* line 108, main.scss */
   .daily_photo .average_year figure:nth-of-type(-n+8) {
-    padding-bottom: .75rem;
+    padding-bottom: 0.75rem;
   }
 }
 @media screen and (min-width: 625px) {
-  /* line 24, main.scss */
+  /* line 113, main.scss */
   .daily_photo .average_year figure:nth-of-type(-n+5) {
-    padding-bottom: .75rem;
+    padding-bottom: 0.75rem;
   }
 }
 @media screen and (min-width: 800px) {
-  /* line 24, main.scss */
+  /* line 118, main.scss */
   .daily_photo .average_year figure:nth-of-type(-n+6) {
-    padding-bottom: .75rem;
+    padding-bottom: 0.75rem;
   }
 }
 @media screen and (min-width: 1000px) {
-  /* line 24, main.scss */
+  /* line 123, main.scss */
   .daily_photo .average_year figure:nth-of-type(-n+7) {
-    padding-bottom: .75rem;
+    padding-bottom: 0.75rem;
   }
 }
 @media screen and (min-width: 1200px) {
-  /* line 24, main.scss */
+  /* line 128, main.scss */
   .daily_photo .average_year figure:nth-of-type(-n+8) {
-    padding-bottom: .875rem;
+    padding-bottom: 0.875rem;
   }
 }
 @media screen and (min-width: 1500px) {
-  /* line 24, main.scss */
+  /* line 133, main.scss */
   .daily_photo .average_year figure:nth-of-type(-n+9) {
     padding-bottom: 0;
   }
 }
-/* line 24, main.scss */
+/* line 137, main.scss */
 .daily_photo .fourthree {
   padding-top: 8%;
 }
 
-/* line 24, main.scss */
+/* line 140, main.scss */
 .daily_photo .placeholder {
-  opacity: .2;
+  opacity: 0.2;
 }
 
-/* line 25, main.scss */
+/* line 143, main.scss */
 .cneterd {
   display: -webkit-box;
   display: -webkit-flex;
@@ -655,7 +659,7 @@ a:hover {
   height: 100vh;
 }
 
-/* line 43, main.scss */
+/* line 160, main.scss */
 body {
   background: #f2f2f3;
 }

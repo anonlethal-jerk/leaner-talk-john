@@ -1,0 +1,110 @@
+body {
+    background: linear-gradient(135deg, #dbd0b7 0%, #b0d4d1 100%) fixed;
+    text-align: center
+}
+h1, h2, h3, h4, h5, h6 {
+    line-height: 1.125
+}
+figure {
+    display: inline-block
+}
+figcaption {
+    font-size: .75rem;
+    margin-top: .25rem
+}
+img {
+    max-width: 100%;
+    height: auto
+}
+a {
+	@keyframes blink {
+	    50% {
+	        opacity: 0.0
+	    }
+	}
+	@-webkit-keyframes blink {
+	    50% {
+	        opacity: 0.0
+	    }
+	}
+	&:hover {
+	    animation: blink 1.5s linear 0s infinite;
+	    -webkit-animation: blink 1.5s linear 0s infinite
+	}
+}
+
+.jk {
+    position: fixed;
+    display: block;
+    top: 0;
+    left: 0;
+    padding: 0.5rem 0.75rem;
+    font-weight: bold
+}
+.subtitle {
+    color: #fff
+}
+
+//
+//
+// old global
+//
+//
+
+main {
+	margin: 1rem;
+}
+
+.the_end {
+	display: block;
+	position: absolute;
+	top: 32%;
+	left: 7%;
+	width: 86%;
+	pointer-events: none;
+}
+
+.no_break {
+	white-space: nowrap;
+}
+
+.table--series_info,
+.table--prj_info {
+	min-width: 100%;
+	margin: 1rem 0;
+	font-size: .75rem;
+
+	td {
+		background: #fff;
+		padding: .33rem .5rem;
+		border: 1px solid #999;
+		text-align: left;
+		vertical-align: top;
+	}
+
+	thead,
+	tfoot {
+		td {
+			font-weight: bold;
+		}
+	}
+
+	ul {
+		padding-left: 1rem;
+	}
+	.td--prj_id {
+		font-family: Geneva, monospace;
+	}
+	.td--empty {
+		background: transparent;
+	}
+}
+
+.list--dupe_ids {
+	font-family: geneva, monospace;
+	font-weight: bold;
+	color: #f00;
+}
+.list--check_ids {
+	font-family: geneva, monospace;
+}

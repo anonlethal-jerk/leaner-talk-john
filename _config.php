@@ -13,5 +13,5 @@
     $flag_color = $_SESSION['flagColor'];
 
     require_once(INCS_PATH."/_functions.php");
-    require_once(INCS_PATH."/0__0/_the_projects_list.php");
+    require_once(INCS_PATH."/o__o/_the_projects_list.php");
 ?>

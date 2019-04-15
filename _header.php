@@ -4,7 +4,7 @@
 		<meta charset="utf-8">
 		<title><?= $page_title; ?></title>
 		<meta name="viewport" content="width=device-width">
-		<link rel="stylesheet" href="/o__o/main.css" type="text/css">
+		<link rel="stylesheet" href="/0__0/main.css" type="text/css">
 	</head>
 
 	<body class="body--<?= $page_slug; ?>">

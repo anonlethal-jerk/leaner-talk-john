@@ -2,8 +2,8 @@
 
 # Set this to the root of your project when deployed:
 http_path = ""
-css_dir = "o__o"
-sass_dir = "o__o"
+css_dir = "0__0"
+sass_dir = "0__0"
 images_dir = "x__x"
 javascripts_dir = "*__*"
 
@@ -37,8 +37,8 @@ end
 # and then run:
 # sass-convert -R --from scss --to sass sass scss && rm -rf sass && mv scss sass
 
-# css_dir = "o__o" # by Compass.app
-# sass_dir = "o__o" # by Compass.app
+# css_dir = "0__0" # by Compass.app
+# sass_dir = "0__0" # by Compass.app
 # images_dir = "x__x" # by Compass.app
 # output_style = :expanded # by Compass.app
 # relative_assets = false # by Compass.app

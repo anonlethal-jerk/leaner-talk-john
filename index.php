@@ -22,7 +22,7 @@
 		<tr>
 <?php if (!empty($projects['series'][$i]['slug'])) { ?>
 <?php if (!empty($projects['series'][$i]['title'])) { ?>
-			<td class="td--series_title"><a href="0__0/<?= $projects['series'][$i]['slug']; ?>/"><cite><?= $projects['series'][$i]['title']; ?></cite></a></td>
+			<td class="td--series_title"><a href="o__o/<?= $projects['series'][$i]['slug']; ?>/"><cite><?= $projects['series'][$i]['title']; ?></cite></a></td>
 <?php } else { ?>
 			<td class="td--series_title td--empty"></td>
 <?php }; ?>
@@ -32,7 +32,7 @@
 			<td class="td--series_subtitle td--empty"></td>
 <?php }; ?>
 <?php if (!empty($projects['series'][$i]['slug'])) { ?>
-			<td class="td--series_slug"><a href="0__0/<?= $projects['series'][$i]['slug']; ?>/"><?= $projects['series'][$i]['slug']; ?></a></td>
+			<td class="td--series_slug"><a href="o__o/<?= $projects['series'][$i]['slug']; ?>/"><?= $projects['series'][$i]['slug']; ?></a></td>
 <?php } else { ?>
 			<td class="td--series_slug td--empty"></td>
 <?php }; ?>
@@ -62,9 +62,9 @@
 
 
 	<figure>
-	  <a href="daily_photo/"><img class="" src="0__0/daily_photo/x__x/jk_keller--average_jk_2017--jkk_201801_1.jpg" height="600" width="401" alt="Average JK, 2017" /></a>
-	  <figcaption><a href="0__0/daily_photo/"><cite>2017 Was a Mean Year</cite></a></figcaption>
-	  <img class="the_end" src="0__0/daily_photo/x__x/the_end-03.png" alt="The End" />
+	  <a href="daily_photo/"><img class="" src="o__o/daily_photo/x__x/jk_keller--average_jk_2017--jkk_201801_1.jpg" height="600" width="401" alt="Average JK, 2017" /></a>
+	  <figcaption><a href="o__o/daily_photo/"><cite>2017 Was a Mean Year</cite></a></figcaption>
+	  <img class="the_end" src="o__o/daily_photo/x__x/the_end-03.png" alt="The End" />
 	</figure>
 	<h2 class="beckett"><span class="first">You must go on.</span><br>
 	  <span class="second">I can't go on.</span><br>

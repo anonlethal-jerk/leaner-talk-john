@@ -1,6 +1,6 @@
 <?php
     require_once($_SERVER["DOCUMENT_ROOT"]."/_config.php");
-    $page_slug = substr(dirname($_SERVER["PHP_SELF"]),6); // 6 to start after /0__0/
+    $page_slug = substr(dirname($_SERVER["PHP_SELF"]),6); // 6 to start after /o__o/
     echo $page_slug;
     $prj_index = recursiveArraySearch($projects['series'], $page_slug);
     $page_title = $projects['series'][$prj_index]['title'];

@@ -1,0 +1,55 @@
+// probably can hide all slugs eventually (php?)
+.td--series_slug,
+.td--prj_slug {
+	// display: none;
+}
+
+.body--boxbots {
+	.td--series_subtitle,
+	.td--series_slug,
+	.td--prj_slug,
+	.td--prj_subtitle,
+	.td--prj_duration,
+	.td--prj_status,
+	.td--prj_description {
+		display: none;
+	}
+	@media screen and (max-width: 960px) {
+		.td--series_to_dos,
+		.td--prj_location,
+		.td--prj_notes {
+			display: none;
+		}
+	}
+	@media screen and (max-width: 720px) {
+		.td--prj_id {
+			display: none;
+		}
+	}
+	@media screen and (max-width: 540px) {
+		.td--prj_medium {
+			display: none;
+		}
+	}
+}
+.body--dirty_mousepads {
+	.td--series_subtitle,
+	.td--series_slug,
+	.td--prj_slug,
+	.td--prj_subtitle,
+	.td--prj_duration,
+	.td--prj_description {
+		display: none;
+	}
+}
+.body--dots_dots_dots {
+	.td--series_slug,
+	.td--prj_slug,
+	.td--prj_title,
+	.td--prj_duration,
+	.td--prj_description {
+		display: none;
+	}
+}
+.body--sd_to_hd {
+}

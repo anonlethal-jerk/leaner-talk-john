@@ -37,8 +37,8 @@
 			<p class="sort--date"><?=$boxbot["id"];?></p>
 			<p class="sort--height"><?=$boxbot["height"];?></p>
 			<p class="sort--width"><?=$boxbot["width"];?></p>
-			<p class="sort--area"><?= ($boxbot["height"] * $boxbot["width"]); ?></p>
-		</div>
+<!-- 			<p class="sort--area"><?= ($boxbot["height"] * $boxbot["width"]); ?></p>
+ -->		</div>
 <!--
 		<figcaption>
 			<?= $boxbot["date"]; ?><br><span class="stars">★★★☆☆</span><br>
@@ -134,9 +134,9 @@
 	document.getElementById('btn--width').addEventListener('click', function () {
 		removeSort(this, '.sort--width');
 	});
-	document.getElementById('btn--area').addEventListener('click', function () {
-		removeSort(this, '.sort--area');
-	});
+	// document.getElementById('btn--area').addEventListener('click', function () {
+	// 	removeSort(this, '.sort--area');
+	// });
 	document.getElementById('btn--date').addEventListener('click', function () {
 		removeSort(this, '.sort--date', 'text');
 	});

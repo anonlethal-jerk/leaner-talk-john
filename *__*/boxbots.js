@@ -80,7 +80,7 @@ $(document).ready(function(){
       height : $(this).attr("data-img-h") + "px"
     });
     $("#popup .shadow").css({
-      opacity : tempPct
+      opacity : Math.abs(tempPct * 2 - 1)
     });
   });
 

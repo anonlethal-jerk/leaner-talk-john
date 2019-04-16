@@ -70,10 +70,14 @@ $(document).ready(function(){
     var tempPct = (((event.pageX - offset.left) / $(this).outerWidth()) * 1);
 
     var leftTemp = Math.ceil(event.pageX - $("#popup").outerWidth()*tempPct) + "px";
-    var topTemp = Math.ceil(offset.top - $("#popup").outerHeight()-1) + "px";
+    var topTemp = Math.ceil(offset.top - $("#popup").outerHeight()+1) + "px";
     $("#popup").css({
       left : leftTemp,
-      top : topTemp
+      top : topTemp,
+    });
+    $("#popup img").css({
+      width : $(this).attr("data-img-w") + "px",
+      height : $(this).attr("data-img-h") + "px"
     });
     $("#popup .shadow").css({
       opacity : tempPct

@@ -1,5 +1,5 @@
 <section class="images images--boxbots">
-	<nav class="nav--boxbots"><button id="btn--toggle">shadow</button> sort by: <button id="btn--height">height</button> <button id="btn--width">width</button> <!-- <button id="btn--ratio">ratio</button> --> <button id="btn--area">area</button> <button id="btn--date" class="sort--desc">date</button> <button id="btn--title">title</button> <!-- <button id="btn--stars">stars</button> --></nav>
+	<nav class="nav--boxbots"><button id="btn--toggle">shadow</button> sort by: <button id="btn--height">height</button> <button id="btn--width">width</button> <!-- <button id="btn--ratio">ratio</button> --> <!-- <button id="btn--area">area</button> --> <button id="btn--date" class="sort--desc">date</button> <button id="btn--title">title</button> <!-- <button id="btn--stars">stars</button> --></nav>
 
 <div id="sort--bots">
 <!--

@@ -4317,7 +4317,7 @@ $projects["series"][] = [
 	<p>I'd love to see what other folks can create, so I invite you to take part in this lovely craft by sending your image to mailto:website@c71123.com, I'll try to add it as quickly as I can.</p>
 	<p>I got the idea for the BoxBots from the design collective eBoy back in 1998. I make my versions of them in the DIY spirit. Can't afford to buy the originals, why not make them yourself and add your own personality? While eBoy doesn't focus on the inherent shapes and forms within the pre-existing designs on the boxes, I try to only use lines and shapes that are in the design of the packag- ing. After 8 years I have a collection of almost 100 different BoxBots. They are a part of the ritual of making when I don't feel like creating something totally new on my own. They get the hands moving.</p>",
 	"to_dos"      => "<ul>
-	<li><strong>rollover table to show image of bot. move from left to right 0 < 1 opacity of shadow.</strong></li>
+	<li><del><strong>rollover table to show image of bot. move from left to right 0 < 1 opacity of shadow.</strong></del></li>
 	<li>where are they?</li>
 	<li>titles for apostrophes and better descriptions?</li>
 	<li>color correction for scans?</li>

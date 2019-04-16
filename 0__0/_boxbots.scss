@@ -1,4 +1,34 @@
 .body--boxbots {
+	#popup {
+		display: none;
+		position: absolute;
+		top: -100px; left: -200px;
+		padding: 5px 5px;
+		pointer-events: none;
+		background: transparent;
+		color: #fff;
+		max-width: 50%;
+		line-height: 0;
+		&.show {
+			display: block;
+		}
+		img {
+			max-height: 205px;
+			width: auto;
+		}
+		.color {
+			position: relative;
+			top: 0;
+			left: 0;
+			opacity: 1;
+		}
+		.shadow {
+			position: absolute;
+			top: 5px;
+			left: 5px;
+			opacity: 1;
+		}
+	}
 	main {
 		margin: 0;
 	}

@@ -9,7 +9,7 @@
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  * Forked from Normalize.css, licensed MIT (https://github.com/necolas/normalize.css/blob/master/LICENSE.md)
  */
-/* line 10, _reboot.scss */
+/* line 8, _reboot.scss */
 *,
 *::before,
 *::after {
@@ -29,7 +29,6 @@ html {
 @-ms-viewport {
   width: device-width;
 }
-
 /* line 27, _reboot.scss */
 article, aside, dialog, figcaption, figure, footer, header, hgroup, main, nav, section {
   display: block;
@@ -71,7 +70,7 @@ p {
   margin-bottom: 1rem;
 }
 
-/* line 63, _reboot.scss */
+/* line 62, _reboot.scss */
 abbr[title],
 abbr[data-original-title] {
   text-decoration: underline;
@@ -88,7 +87,7 @@ address {
   line-height: inherit;
 }
 
-/* line 79, _reboot.scss */
+/* line 77, _reboot.scss */
 ol,
 ul,
 dl {
@@ -96,7 +95,7 @@ dl {
   margin-bottom: 1rem;
 }
 
-/* line 87, _reboot.scss */
+/* line 84, _reboot.scss */
 ol ol,
 ul ul,
 ol ul,
@@ -125,7 +124,7 @@ dfn {
   font-style: italic;
 }
 
-/* line 109, _reboot.scss */
+/* line 108, _reboot.scss */
 b,
 strong {
   font-weight: bolder;
@@ -136,7 +135,7 @@ small {
   font-size: 80%;
 }
 
-/* line 118, _reboot.scss */
+/* line 117, _reboot.scss */
 sub,
 sup {
   position: relative;
@@ -186,7 +185,7 @@ a:not([href]):not([tabindex]):focus {
   outline: 0;
 }
 
-/* line 162, _reboot.scss */
+/* line 159, _reboot.scss */
 pre,
 code,
 kbd,
@@ -255,7 +254,7 @@ button:focus {
   outline: 5px auto -webkit-focus-ring-color;
 }
 
-/* line 221, _reboot.scss */
+/* line 217, _reboot.scss */
 input,
 button,
 select,
@@ -267,19 +266,19 @@ textarea {
   line-height: inherit;
 }
 
-/* line 229, _reboot.scss */
+/* line 228, _reboot.scss */
 button,
 input {
   overflow: visible;
 }
 
-/* line 234, _reboot.scss */
+/* line 233, _reboot.scss */
 button,
 select {
   text-transform: none;
 }
 
-/* line 241, _reboot.scss */
+/* line 238, _reboot.scss */
 button,
 html [type="button"],
 [type="reset"],
@@ -287,7 +286,7 @@ html [type="button"],
   -webkit-appearance: button;
 }
 
-/* line 248, _reboot.scss */
+/* line 245, _reboot.scss */
 button::-moz-focus-inner,
 [type="button"]::-moz-focus-inner,
 [type="reset"]::-moz-focus-inner,
@@ -296,14 +295,14 @@ button::-moz-focus-inner,
   border-style: none;
 }
 
-/* line 254, _reboot.scss */
+/* line 253, _reboot.scss */
 input[type="radio"],
 input[type="checkbox"] {
   box-sizing: border-box;
   padding: 0;
 }
 
-/* line 262, _reboot.scss */
+/* line 259, _reboot.scss */
 input[type="date"],
 input[type="time"],
 input[type="datetime-local"],
@@ -343,7 +342,7 @@ progress {
   vertical-align: baseline;
 }
 
-/* line 295, _reboot.scss */
+/* line 294, _reboot.scss */
 [type="number"]::-webkit-inner-spin-button,
 [type="number"]::-webkit-outer-spin-button {
   height: auto;
@@ -355,7 +354,7 @@ progress {
   -webkit-appearance: none;
 }
 
-/* line 305, _reboot.scss */
+/* line 304, _reboot.scss */
 [type="search"]::-webkit-search-cancel-button,
 [type="search"]::-webkit-search-decoration {
   -webkit-appearance: none;
@@ -428,7 +427,7 @@ template {
  * to be focusable when navigated to via the keyboard:
  * https://www.drupal.org/node/897638
  */
-/* line 43, _html5boilerplate.scss */
+/* line 42, _html5boilerplate.scss */
 .visuallyhidden.focusable:active,
 .visuallyhidden.focusable:focus {
   clip: auto;
@@ -460,7 +459,7 @@ template {
  * 2. The use of `table` rather than `block` is only necessary if using
  *    `:before` to contain the top-margins of child elements.
  */
-/* line 75, _html5boilerplate.scss */
+/* line 74, _html5boilerplate.scss */
 .clearfix:before,
 .clearfix:after {
   content: " ";
@@ -505,29 +504,16 @@ img {
   height: auto;
 }
 
-/* line 19, _global.scss */
-a {
-  @keyframes blink {
-    /* line 21, _global.scss */
-    50% {
-      opacity: 0;
-    }
+@keyframes blink {
+  50% {
+    opacity: 0;
+  }
 }
-
-  @-webkit-keyframes blink {
-    /* line 26, _global.scss */
-    50% {
-      opacity: 0;
-    }
+@-webkit-keyframes blink {
+  50% {
+    opacity: 0;
+  }
 }
-
-}
-/* line 30, _global.scss */
-a:hover {
-  animation: blink 1.5s linear 0s infinite;
-  -webkit-animation: blink 1.5s linear 0s infinite;
-}
-
 /* line 36, _global.scss */
 .jk {
   position: fixed;
@@ -540,7 +526,7 @@ a:hover {
 
 /* line 44, _global.scss */
 .subtitle {
-  color: white;
+  color: #fff;
 }
 
 /* line 54, _global.scss */
@@ -563,7 +549,7 @@ main {
   white-space: nowrap;
 }
 
-/* line 72, _global.scss */
+/* line 71, _global.scss */
 .table--series_info,
 .table--prj_info {
   min-width: 100%;
@@ -620,12 +606,17 @@ main {
 }
 /* line 5, _home.scss */
 .home h2 {
-  background: linear-gradient(180deg, rgba(0, 0, 40, 0.5) 0%, rgba(0, 0, 0, 0) 80%);
+  background: linear-gradient(180deg, rgba(0, 0, 40, 0.5) 0%, transparent 80%);
   font-size: 2.25rem;
   padding: 1rem 0;
 }
 
-/* line 14, _prj_tables.scss */
+/* line 6, _prj_tables.scss */
+tr:hover td {
+  background: #eee;
+}
+
+/* line 11, _prj_tables.scss */
 .body--boxbots .td--series_subtitle,
 .body--boxbots .td--series_slug,
 .body--boxbots .td--prj_slug,
@@ -636,7 +627,7 @@ main {
   display: none;
 }
 @media screen and (max-width: 960px) {
-  /* line 20, _prj_tables.scss */
+  /* line 21, _prj_tables.scss */
   .body--boxbots .td--series_to_dos,
   .body--boxbots .td--prj_location,
   .body--boxbots .td--prj_notes {
@@ -644,19 +635,19 @@ main {
   }
 }
 @media screen and (max-width: 720px) {
-  /* line 25, _prj_tables.scss */
+  /* line 28, _prj_tables.scss */
   .body--boxbots .td--prj_id {
     display: none;
   }
 }
 @media screen and (max-width: 540px) {
-  /* line 30, _prj_tables.scss */
+  /* line 33, _prj_tables.scss */
   .body--boxbots .td--prj_medium {
     display: none;
   }
 }
 
-/* line 41, _prj_tables.scss */
+/* line 39, _prj_tables.scss */
 .body--dirty_mousepads .td--series_subtitle,
 .body--dirty_mousepads .td--series_slug,
 .body--dirty_mousepads .td--prj_slug,
@@ -666,7 +657,7 @@ main {
   display: none;
 }
 
-/* line 50, _prj_tables.scss */
+/* line 49, _prj_tables.scss */
 .body--dots_dots_dots .td--series_slug,
 .body--dots_dots_dots .td--prj_slug,
 .body--dots_dots_dots .td--prj_title,
@@ -676,35 +667,71 @@ main {
 }
 
 /* line 2, _boxbots.scss */
+.body--boxbots #popup {
+  display: none;
+  position: absolute;
+  top: -100px;
+  left: -200px;
+  padding: 5px 5px;
+  pointer-events: none;
+  background: transparent;
+  color: #fff;
+  max-width: 50%;
+  line-height: 0;
+}
+/* line 12, _boxbots.scss */
+.body--boxbots #popup.show {
+  display: block;
+}
+/* line 15, _boxbots.scss */
+.body--boxbots #popup img {
+  max-height: 205px;
+  width: auto;
+}
+/* line 19, _boxbots.scss */
+.body--boxbots #popup .color {
+  position: relative;
+  top: 0;
+  left: 0;
+  opacity: 1;
+}
+/* line 25, _boxbots.scss */
+.body--boxbots #popup .shadow {
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  opacity: 1;
+}
+/* line 32, _boxbots.scss */
 .body--boxbots main {
   margin: 0;
 }
-/* line 6, _boxbots.scss */
+/* line 35, _boxbots.scss */
 .body--boxbots .header_info,
 .body--boxbots .prj_info {
   padding: 1rem;
 }
-/* line 9, _boxbots.scss */
+/* line 39, _boxbots.scss */
 .body--boxbots .header_info {
   background: #aeb2aa;
 }
-/* line 15, _boxbots.scss */
+/* line 45, _boxbots.scss */
 .body--boxbots .prj_info {
   background: #999682;
 }
-/* line 19, _boxbots.scss */
+/* line 49, _boxbots.scss */
 .body--boxbots .nav--boxbots {
   margin-bottom: 1rem;
 }
-/* line 22, _boxbots.scss */
+/* line 52, _boxbots.scss */
 .body--boxbots #btn--toggle {
   margin-right: 1rem;
 }
-/* line 26, _boxbots.scss */
+/* line 56, _boxbots.scss */
 .body--boxbots .sort--hide {
   display: none;
 }
-/* line 31, _boxbots.scss */
+/* line 60, _boxbots.scss */
 .body--boxbots .images--boxbot,
 .body--boxbots .images--boxbots {
   text-align: center;
@@ -716,17 +743,17 @@ main {
   background: -o-linear-gradient(top, #aeb2aa 0%, #b6b9ba 54%, #c3c3c3 85%, #999682 100%);
   background: -ms-linear-gradient(top, #aeb2aa 0%, #b6b9ba 54%, #c3c3c3 85%, #999682 100%);
   background: linear-gradient(to bottom, #aeb2aa 0%, #b6b9ba 54%, #c3c3c3 85%, #999682 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#aeb2aa', endColorstr='#999682',GradientType=0 );
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#aeb2aa', endColorstr='#999682',GradientType=0 );
 }
-/* line 44, _boxbots.scss */
+/* line 74, _boxbots.scss */
 .body--boxbots.images--shadows .header_info {
   background: #505184;
 }
-/* line 47, _boxbots.scss */
+/* line 77, _boxbots.scss */
 .body--boxbots.images--shadows .prj_info {
   background: #315b4f;
 }
-/* line 51, _boxbots.scss */
+/* line 80, _boxbots.scss */
 .body--boxbots.images--shadows .images--boxbot,
 .body--boxbots.images--shadows .images--boxbots {
   background: #505184;
@@ -736,9 +763,9 @@ main {
   background: -o-linear-gradient(top, #505184 0%, #555566 72%, #315b4f 100%);
   background: -ms-linear-gradient(top, #505184 0%, #555566 72%, #315b4f 100%);
   background: linear-gradient(to bottom, #505184 0%, #555566 72%, #315b4f 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#505184', endColorstr='#315b4f',GradientType=0 );
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#505184', endColorstr='#315b4f',GradientType=0 );
 }
-/* line 64, _boxbots.scss */
+/* line 93, _boxbots.scss */
 .body--boxbots .sort--asc::after,
 .body--boxbots .sort--desc::after {
   font-size: .625rem;
@@ -746,22 +773,22 @@ main {
   position: relative;
   color: #666;
 }
-/* line 70, _boxbots.scss */
+/* line 100, _boxbots.scss */
 .body--boxbots .sort--asc::after {
   content: ' ▲';
 }
-/* line 73, _boxbots.scss */
+/* line 103, _boxbots.scss */
 .body--boxbots .sort--desc::after {
   content: ' ▼';
 }
-/* line 79, _boxbots.scss */
+/* line 109, _boxbots.scss */
 .body--boxbots .images--boxbot figure,
 .body--boxbots .images--boxbots figure {
   display: inline-block;
   margin: .5rem 0;
   vertical-align: bottom;
 }
-/* line 85, _boxbots.scss */
+/* line 114, _boxbots.scss */
 .body--boxbots .images--boxbot figure a,
 .body--boxbots .images--boxbot figure .bot_hover,
 .body--boxbots .images--boxbots figure a,
@@ -769,42 +796,38 @@ main {
   display: block;
   position: relative;
 }
-/* line 89, _boxbots.scss */
+/* line 119, _boxbots.scss */
 .body--boxbots .images--boxbot figure a:hover .color,
 .body--boxbots .images--boxbot figure .bot_hover:hover .color,
 .body--boxbots .images--boxbots figure a:hover .color,
 .body--boxbots .images--boxbots figure .bot_hover:hover .color {
-  @keyframes blink {
-    /* line 91, _boxbots.scss */
-    50% {
-      opacity: 0.0;
-    }
-}
-
-  @-webkit-keyframes blink {
-    /* line 96, _boxbots.scss */
-    50% {
-      opacity: 0.0;
-    }
-}
-
   animation: blink 1.5s linear 0s infinite;
   -webkit-animation: blink 1.5s linear 0s infinite;
 }
-/* line 103, _boxbots.scss */
+@keyframes blink {
+  50% {
+    opacity: 0.0;
+  }
+}
+@-webkit-keyframes blink {
+  50% {
+    opacity: 0.0;
+  }
+}
+/* line 133, _boxbots.scss */
 .body--boxbots .images--boxbot figure a:hover .shadow,
 .body--boxbots .images--boxbot figure .bot_hover:hover .shadow,
 .body--boxbots .images--boxbots figure a:hover .shadow,
 .body--boxbots .images--boxbots figure .bot_hover:hover .shadow {
   opacity: 1;
 }
-/* line 108, _boxbots.scss */
+/* line 138, _boxbots.scss */
 .body--boxbots .images--boxbot figure img,
 .body--boxbots .images--boxbots figure img {
   margin: .1875rem;
   transition: opacity .8s ease-out;
 }
-/* line 112, _boxbots.scss */
+/* line 142, _boxbots.scss */
 .body--boxbots .images--boxbot figure .shadow,
 .body--boxbots .images--boxbots figure .shadow {
   position: absolute;
@@ -812,36 +835,32 @@ main {
   left: 0;
   opacity: 0;
 }
-/* line 118, _boxbots.scss */
+/* line 148, _boxbots.scss */
 .body--boxbots .images--boxbot figure .color,
 .body--boxbots .images--boxbots figure .color {
   position: relative;
   left: 0;
   opacity: 1;
 }
-/* line 132, _boxbots.scss */
+/* line 162, _boxbots.scss */
 .body--boxbots.images--shadows .images--boxbot figure a:hover .shadow,
 .body--boxbots.images--shadows .images--boxbot figure .bot_hover:hover .shadow,
 .body--boxbots.images--shadows .images--boxbots figure a:hover .shadow,
 .body--boxbots.images--shadows .images--boxbots figure .bot_hover:hover .shadow {
-  @keyframes blink2 {
-    /* line 134, _boxbots.scss */
-    50% {
-      opacity: 0.0;
-    }
-}
-
-  @-webkit-keyframes blink2 {
-    /* line 139, _boxbots.scss */
-    50% {
-      opacity: 0.0;
-    }
-}
-
   animation: blink2 1.5s linear 0s infinite;
   -webkit-animation: blink2 1.5s linear 0s infinite;
 }
-/* line 146, _boxbots.scss */
+@keyframes blink2 {
+  50% {
+    opacity: 0.0;
+  }
+}
+@-webkit-keyframes blink2 {
+  50% {
+    opacity: 0.0;
+  }
+}
+/* line 176, _boxbots.scss */
 .body--boxbots.images--shadows .images--boxbot figure a:hover .color,
 .body--boxbots.images--shadows .images--boxbot figure .bot_hover:hover .color,
 .body--boxbots.images--shadows .images--boxbots figure a:hover .color,
@@ -850,19 +869,19 @@ main {
   animation: none;
   -webkit-animation: none;
 }
-/* line 153, _boxbots.scss */
+/* line 183, _boxbots.scss */
 .body--boxbots.images--shadows .images--boxbot figure .shadow,
 .body--boxbots.images--shadows .images--boxbots figure .shadow {
   opacity: 1;
   z-index: 10;
 }
-/* line 157, _boxbots.scss */
+/* line 187, _boxbots.scss */
 .body--boxbots.images--shadows .images--boxbot figure .color,
 .body--boxbots.images--shadows .images--boxbots figure .color {
   opacity: 0;
   z-index: 9;
 }
-/* line 190, _boxbots.scss */
+/* line 220, _boxbots.scss */
 .body--boxbots .images--boxbot {
   position: absolute;
   top: 1.5rem;
@@ -870,167 +889,25 @@ main {
   right: 0;
   bottom: 0;
 }
-/* line 198, _boxbots.scss */
+/* line 227, _boxbots.scss */
 .body--boxbots .images--boxbot .shadow,
 .body--boxbots .images--boxbot .color {
   width: 98vw;
   height: 80vh;
   object-fit: scale-down;
 }
-/* line 214, _boxbots.scss */
+/* line 244, _boxbots.scss */
 .body--boxbots.images--both .images--boxbot figure .shadow {
   width: 48vw;
   opacity: 1;
   object-position: 100% 50%;
 }
-/* line 219, _boxbots.scss */
+/* line 249, _boxbots.scss */
 .body--boxbots.images--both .images--boxbot figure .color {
   width: 48vw;
   opacity: 1;
   object-position: 0% 50%;
   left: 50%;
-}
-
-/* line 1, _daily_photo.scss */
-.daily_photo {
-  padding: 1rem 0;
-}
-/* line 6, _daily_photo.scss */
-.daily_photo hr {
-  width: 66.667%;
-  height: .333rem;
-  background: white;
-  border: 0;
-  margin: 1rem auto 1.5rem;
-}
-/* line 13, _daily_photo.scss */
-.daily_photo figure {
-  height: auto;
-  width: 50%;
-  padding: 0;
-  vertical-align: top;
-}
-/* line 19, _daily_photo.scss */
-.daily_photo figcaption {
-  font-size: .6875rem;
-  margin: .125rem 0 .25rem 0;
-  line-height: .6875rem;
-}
-/* line 24, _daily_photo.scss */
-.daily_photo h3 {
-  margin-bottom: 2rem;
-}
-/* line 28, _daily_photo.scss */
-.daily_photo .average_jk {
-  margin: 1rem 0;
-  border-top: 1rem solid white;
-  padding: 2rem 0;
-}
-@media screen and (min-width: 300px) and (max-width: 449px) {
-  /* line 32, _daily_photo.scss */
-  .daily_photo .average_jk figure {
-    width: 33.333%;
-  }
-}
-@media screen and (min-width: 450px) and (max-width: 624px) {
-  /* line 32, _daily_photo.scss */
-  .daily_photo .average_jk figure {
-    width: 25%;
-  }
-}
-@media screen and (min-width: 625px) {
-  /* line 32, _daily_photo.scss */
-  .daily_photo .average_jk figure {
-    width: 20%;
-  }
-}
-@media screen and (min-width: 800px) {
-  /* line 32, _daily_photo.scss */
-  .daily_photo .average_jk figure {
-    width: 16.666%;
-  }
-}
-@media screen and (min-width: 1000px) {
-  /* line 32, _daily_photo.scss */
-  .daily_photo .average_jk figure {
-    width: 14.285%;
-  }
-}
-@media screen and (min-width: 1200px) {
-  /* line 32, _daily_photo.scss */
-  .daily_photo .average_jk figure {
-    width: 12.5%;
-  }
-}
-@media screen and (min-width: 1500px) {
-  /* line 32, _daily_photo.scss */
-  .daily_photo .average_jk figure {
-    width: 11.111%;
-  }
-}
-@media screen and (max-width: 299px) {
-  /* line 60, _daily_photo.scss */
-  .daily_photo .average_year figure:nth-of-type(-n+8) {
-    /* first 8 elements */
-    padding-bottom: .875rem;
-  }
-}
-@media screen and (min-width: 300px) and (max-width: 449px) {
-  /* line 65, _daily_photo.scss */
-  .daily_photo .average_year figure:nth-of-type(-n+6) {
-    /* first 86 elements */
-    padding-bottom: .875rem;
-  }
-}
-@media screen and (min-width: 450px) and (max-width: 624px) {
-  /* line 70, _daily_photo.scss */
-  .daily_photo .average_year figure:nth-of-type(-n+8) {
-    /* first 8 elements */
-    padding-bottom: .75rem;
-  }
-}
-@media screen and (min-width: 625px) {
-  /* line 75, _daily_photo.scss */
-  .daily_photo .average_year figure:nth-of-type(-n+5) {
-    /* first 5 elements */
-    padding-bottom: .75rem;
-  }
-}
-@media screen and (min-width: 800px) {
-  /* line 80, _daily_photo.scss */
-  .daily_photo .average_year figure:nth-of-type(-n+6) {
-    /* first 6 elements */
-    padding-bottom: .75rem;
-  }
-}
-@media screen and (min-width: 1000px) {
-  /* line 85, _daily_photo.scss */
-  .daily_photo .average_year figure:nth-of-type(-n+7) {
-    /* first 7 elements */
-    padding-bottom: .75rem;
-  }
-}
-@media screen and (min-width: 1200px) {
-  /* line 90, _daily_photo.scss */
-  .daily_photo .average_year figure:nth-of-type(-n+8) {
-    /* first 8 elements */
-    padding-bottom: .875rem;
-  }
-}
-@media screen and (min-width: 1500px) {
-  /* line 95, _daily_photo.scss */
-  .daily_photo .average_year figure:nth-of-type(-n+9) {
-    /* first 8 elements */
-    padding-bottom: 0;
-  }
-}
-/* line 101, _daily_photo.scss */
-.daily_photo .fourthree {
-  padding-top: 8%;
-}
-/* line 104, _daily_photo.scss */
-.daily_photo .placeholder {
-  opacity: .2;
 }
 
 /* line 1, _dirty_mousepads.scss */

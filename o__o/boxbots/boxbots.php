@@ -63,6 +63,11 @@
     </div>
  --></section>
 
+    <div id="popup">
+      <img class="color" src="/x__x/loading.gif" alt="" />
+      <img class="shadow" src="/x__x/loading.gif" alt="" />
+    </div>
+
 <script>
 	function btnSort(aElem, aType, aOrder) {
 		var list = document.getElementById('sort--bots');

@@ -79,7 +79,7 @@
     </thead>
     <tbody>
 <?php for ($i=0; $i<count($projects['series'][$prj_index]['works']); $i++) { ?>
-        <tr>
+        <tr class="imageload images" data-img="<?= $projects['series'][$prj_index]['works'][$i]['filename']; ?>">
 <?php if (!empty($projects['series'][$prj_index]['works'][$i]['id'])) { ?>
             <td class="td--prj_id"><?= $projects['series'][$prj_index]['works'][$i]['id']; ?></td>
 <?php } else { ?>

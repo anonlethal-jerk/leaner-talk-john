@@ -8,35 +8,36 @@ $(document).ready(function(){
   });
 */
 
-  $( "tr.images" ).mouseenter(function() {
-    $("#popup img.color").attr("src", "/o__o/boxbots/x__x/color-small/" + $(this).attr("data-img") + ".png");
-    $("#popup img.shadow").attr("src", "/o__o/boxbots/x__x/shadow-small/" + $(this).attr("data-img") + ".png");
-  });
-  $( "tr.images" ).mouseleave(function() {
-    $("#popup").removeClass("show");
-    $("#popup img").attr("src", "/x__x/loading.gif");
-  });
+//   $( "tr.images" ).mouseenter(function() {
+//     $("#popup img.color").attr("src", "/o__o/boxbots/x__x/color-small/" + $(this).attr("data-img") + ".png");
+//     $("#popup img.shadow").attr("src", "/o__o/boxbots/x__x/shadow-small/" + $(this).attr("data-img") + ".png");
+//   });
+//   $( "tr.images" ).mouseleave(function() {
+//     $("#popup").removeClass("show");
+//     $("#popup img").attr("src", "/x__x/loading.gif");
+//   });
 
-  $( "tr.images" ).mousemove(function( event ) {
-    $("#popup").addClass("show");
-//     var clientCoords = "( " + event.clientX + ", " + event.clientY + " )";
+//   $( "tr.images" ).mousemove(function( event ) {
+//     $("#popup").addClass("show");
+// //     var clientCoords = "( " + event.clientX + ", " + event.clientY + " )";
 
-    var offset = $(this).offset();
-    var tempPct = (((event.pageX - offset.left) / $(this).outerWidth()) * 1);
+//     var offset = $(this).offset();
+//     var tempPct = (((event.pageX - offset.left) / $(this).outerWidth()) * 1);
 
-    var leftTemp = Math.ceil(event.pageX - $("#popup").outerWidth()*tempPct) + "px";
-    var topTemp = Math.ceil(offset.top - $("#popup").outerHeight()) + "px";
-    $("#popup").css({
-      left : leftTemp,
-      top : topTemp
-    });
-  });
+//     var leftTemp = Math.ceil(event.pageX - $("#popup").outerWidth()*tempPct) + "px";
+//     var topTemp = Math.ceil(offset.top - $("#popup").outerHeight()) + "px";
+//     $("#popup").css({
+//       left : leftTemp,
+//       top : topTemp
+//     });
+//   });
 
   $( "tr.imageload" ).click(function() {
     if ( $("#popup img").attr('src') == $(this).attr("data-img") ) {
       $("#popup").show();
     } else {
-      $("#popup img").attr('src', $(this).attr("data-img"))
+      $("#popup img.color").attr("src", "/o__o/boxbots/x__x/color-small/" + $(this).attr("data-img") + ".png")
+      $("#popup img.shadow").attr("src", "/o__o/boxbots/x__x/shadow-small/" + $(this).attr("data-img") + ".png")
         .on('load', function() {
           if (!this.complete || typeof this.naturalWidth == "undefined" || this.naturalWidth == 0) {
             alert('broken image!');
@@ -45,6 +46,23 @@ $(document).ready(function(){
           }
         });
     }
+
+    var offset = $(this).offset();
+    var tempPct = (((event.pageX - offset.left) / $(this).outerWidth()) * 1);
+
+    var leftTemp = Math.ceil(event.pageX - $("#popup").outerWidth()*tempPct) + "px";
+    var topTemp = Math.ceil(offset.top - $("#popup").outerHeight()+1) + "px";
+    $("#popup").css({
+      left : leftTemp,
+      top : topTemp,
+    });
+    $("#popup img").css({
+      width : $(this).attr("data-img-w") + "px",
+      height : $(this).attr("data-img-h") + "px"
+    });
+    $("#popup .shadow").css({
+      opacity : Math.abs(tempPct * 2 - 1)
+    });
   });
   $( "tr.imageload" ).mouseenter(function() {
     if ( $("#popup img").attr('src') == $(this).attr("data-img") ) {
@@ -61,6 +79,23 @@ $(document).ready(function(){
           }
         });
     }
+
+    var offset = $(this).offset();
+    var tempPct = (((event.pageX - offset.left) / $(this).outerWidth()) * 1);
+
+    var leftTemp = Math.ceil(event.pageX - $("#popup").outerWidth()*tempPct) + "px";
+    var topTemp = Math.ceil(offset.top - $("#popup").outerHeight()+1) + "px";
+    $("#popup").css({
+      left : leftTemp,
+      top : topTemp,
+    });
+    $("#popup img").css({
+      width : $(this).attr("data-img-w") + "px",
+      height : $(this).attr("data-img-h") + "px"
+    });
+    $("#popup .shadow").css({
+      opacity : Math.abs(tempPct * 2 - 1)
+    });
   });
 
   $( "tr.imageload" ).mousemove(function( event ) {

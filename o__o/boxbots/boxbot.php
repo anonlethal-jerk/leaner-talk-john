@@ -27,16 +27,16 @@
 				$bot_index_next = 0;
 			};
 	?>
-		<nav class="nav--boxbots"><a href="boxbot.php?slug=<?=$boxbots[$bot_index_next]["slug"];?>"><?=$boxbots[$bot_index_next]["title"];?></a> - <a href="./">All BoxBots</a> - <a href="boxbot.php?slug=<?=$boxbots[$bot_index_prev]["slug"];?>"><?=$boxbots[$bot_index_prev]["title"];?></a></nav>
-		<nav class="nav--boxbots"><button id="btn--toggle">shadow</button></nav>
+		<nav class="nav--boxbot clearfix"><a class="nav--boxbot--next" href="<?=$boxbots[$bot_index_next]["slug"];?>"><?=$boxbots[$bot_index_next]["title"];?></a><a class="nav--boxbot--all" href="./">All BoxBots</a><a class="nav--boxbot--prev" href="<?=$boxbots[$bot_index_prev]["slug"];?>"><?=$boxbots[$bot_index_prev]["title"];?></a></nav>
+		<nav class="nav--boxbot"><button id="btn--toggle">Shadow</button></nav>
 	<?php } ?>
 	<figure class="boxbot boxbot--large">
 		<div class="bot_hover">
-			<img class="shadow lazyload" src="/x__x/loading.gif" data-src="x__x/shadow-large/<?=$boxbots[$bot_index]["filename"];?>.png" width="<?=($boxbots[$bot_index]["largehalfwidthpx"]);?>" height="<?=($boxbots[$bot_index]["largehalfheightpx"]);?>" alt="<?=$boxbots[$bot_index]["title"];?> BoxBot" title="<?=$boxbots[$bot_index]["title"];?>, <?= $boxbots[$bot_index]["date"]; ?>, <?=$boxbots[$bot_index]["height"];?> &times; <?=$boxbots[$bot_index]["width"];?> mm">
-			<img class="color lazyload" src="/x__x/loading.gif" data-src="x__x/color-large/<?=$boxbots[$bot_index]["filename"];?>.png" width="<?=($boxbots[$bot_index]["largehalfwidthpx"]);?>" height="<?=($boxbots[$bot_index]["largehalfheightpx"]);?>" alt="<?=$boxbots[$bot_index]["title"];?> BoxBot" title="<?=$boxbots[$bot_index]["title"];?>, <?= $boxbots[$bot_index]["date"]; ?>, <?=$boxbots[$bot_index]["height"];?> &times; <?=$boxbots[$bot_index]["width"];?> mm">
+			<img class="shadow lazyload" src="/x__x/loading.gif" data-src="x__x/shadow-large/<?=$boxbots[$bot_index]["filename"];?>.png" width="<?=($boxbots[$bot_index]["largehalfwidthpx"]);?>" height="<?=($boxbots[$bot_index]["largehalfheightpx"]);?>" alt="<?=$boxbots[$bot_index]["title"];?> BoxBot" title="<?=$boxbots[$bot_index]["title"];?>, <?= $boxbots[$bot_index]["nice_date"]; ?>, <?=$boxbots[$bot_index]["height"];?> &times; <?=$boxbots[$bot_index]["width"];?> mm">
+			<img class="color lazyload" src="/x__x/loading.gif" data-src="x__x/color-large/<?=$boxbots[$bot_index]["filename"];?>.png" width="<?=($boxbots[$bot_index]["largehalfwidthpx"]);?>" height="<?=($boxbots[$bot_index]["largehalfheightpx"]);?>" alt="<?=$boxbots[$bot_index]["title"];?> BoxBot" title="<?=$boxbots[$bot_index]["title"];?>, <?= $boxbots[$bot_index]["nice_date"]; ?>, <?=$boxbots[$bot_index]["height"];?> &times; <?=$boxbots[$bot_index]["width"];?> mm">
 		</div>
 		<figcaption>
-			<cite><?=$boxbots[$bot_index]["title"];?></cite>, <?= $boxbots[$bot_index]["date"]; ?>, <?=$boxbots[$bot_index]["height"];?> × <?=$boxbots[$bot_index]["width"];?> mm
+			<cite><?=$boxbots[$bot_index]["title"];?></cite>, <?= $boxbots[$bot_index]["nice_date"]; ?>, <?=$boxbots[$bot_index]["height"];?> × <?=$boxbots[$bot_index]["width"];?> mm
 			<!-- <span class="stars">★★★☆☆</span> -->
 		</figcaption>
 
@@ -51,14 +51,14 @@
 		if (tState.classList.contains('images--colors')) {
 			tState.classList.remove('images--colors');
 			tState.classList.add('images--shadows');
-			this.innerHTML = 'color';
+			this.innerHTML = 'Color';
 		} else if (tState.classList.contains('images--shadows')) {
 			tState.classList.remove('images--shadows');
 			tState.classList.add('images--color');
-			this.innerHTML = 'shadow';
+			this.innerHTML = 'Shadow';
 		} else {
 			tState.classList.add('images--shadows');
-			this.innerHTML = 'color';
+			this.innerHTML = 'Color';
 		}
 	});
 </script>

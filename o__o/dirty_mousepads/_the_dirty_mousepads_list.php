@@ -5,7 +5,7 @@ $projects["series"][] = [
 	"subtitle"    => "",
 	"slug"        => "dirty_mousepads",
 	"description" => "<p>By switching a typical mousepad with a sheet of paper, I am able to collect an echo of my computer use over the course of a few months. The resulting drawing embodies the filth one accumulates through prolonged use of technology.</p>",
-	"notes"       => " <p><cite>Echo #8</cite> & <cite>Echo #15</cite> included in <cite>Modern Drawings: Tracing 100 Years</cite>, Academy Art Museum, Easton, MD</p>",
+	"notes"       => "",
 	"to_dos"      => "<ul>
         <li>Rescan all so shadow edge all around?</li>
         <li>color correction action for scans?</li>
@@ -138,7 +138,8 @@ $projects["series"][] = [
 			"units"       => "in",
 			"location"    => "flat files",
 			"status"      => "framed - need to fix frame",
-			"notes"       => "2006",
+			"notes"       => "2006<br>
+			included in <cite>Modern Drawings: Tracing 100 Years</cite>, Academy Art Museum, Easton, MD",
 			"image"       => "jk_keller-200606_1_u-echo_08-web-temp.jpg",
 		],
 		[
@@ -236,7 +237,8 @@ $projects["series"][] = [
 			"units"       => "in",
 			"location"    => "flat files",
 			"status"      => "framed - need to fix frame",
-			"notes"       => "2009 Apr 22–2009 Dec 02",
+			"notes"       => "2009 Apr 22–2009 Dec 02<br>
+			included in <cite>Modern Drawings: Tracing 100 Years</cite>, Academy Art Museum, Easton, MD",
 			"image"       => "jk_keller-200912_1_u-echo_15-web-temp.jpg",
 		],
 		[

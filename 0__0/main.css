@@ -156,7 +156,7 @@ sup {
 
 /* line 133, _reboot.scss */
 a {
-  color: #007bff;
+  color: #0071EB;
   text-decoration: none;
   background-color: transparent;
   -webkit-text-decoration-skip: objects;
@@ -561,7 +561,7 @@ main {
 .table--prj_info td {
   background: #fff;
   padding: .33rem .5rem;
-  border: 1px solid #999;
+  border: 1px solid #ddd;
   text-align: left;
   vertical-align: top;
 }
@@ -588,14 +588,19 @@ main {
   background: transparent;
 }
 
-/* line 103, _global.scss */
+/* line 102, _global.scss */
+.table--series_info {
+  font-size: .875rem;
+}
+
+/* line 106, _global.scss */
 .list--dupe_ids {
   font-family: geneva, monospace;
   font-weight: bold;
   color: #f00;
 }
 
-/* line 108, _global.scss */
+/* line 111, _global.scss */
 .list--check_ids {
   font-family: geneva, monospace;
 }
@@ -613,10 +618,15 @@ main {
 
 /* line 6, _prj_tables.scss */
 tr:hover td {
-  background: #eee;
+  background: #efd;
 }
 
-/* line 11, _prj_tables.scss */
+/* line 9, _prj_tables.scss */
+.td--prj_date {
+  white-space: nowrap;
+}
+
+/* line 14, _prj_tables.scss */
 .body--boxbots .td--series_subtitle,
 .body--boxbots .td--series_slug,
 .body--boxbots .td--prj_slug,
@@ -627,7 +637,7 @@ tr:hover td {
   display: none;
 }
 @media screen and (max-width: 960px) {
-  /* line 21, _prj_tables.scss */
+  /* line 24, _prj_tables.scss */
   .body--boxbots .td--series_to_dos,
   .body--boxbots .td--prj_location,
   .body--boxbots .td--prj_notes {
@@ -635,19 +645,19 @@ tr:hover td {
   }
 }
 @media screen and (max-width: 720px) {
-  /* line 28, _prj_tables.scss */
+  /* line 31, _prj_tables.scss */
   .body--boxbots .td--prj_id {
     display: none;
   }
 }
 @media screen and (max-width: 540px) {
-  /* line 33, _prj_tables.scss */
+  /* line 36, _prj_tables.scss */
   .body--boxbots .td--prj_medium {
     display: none;
   }
 }
 
-/* line 39, _prj_tables.scss */
+/* line 42, _prj_tables.scss */
 .body--dirty_mousepads .td--series_subtitle,
 .body--dirty_mousepads .td--series_slug,
 .body--dirty_mousepads .td--prj_slug,
@@ -657,7 +667,7 @@ tr:hover td {
   display: none;
 }
 
-/* line 49, _prj_tables.scss */
+/* line 52, _prj_tables.scss */
 .body--dots_dots_dots .td--series_slug,
 .body--dots_dots_dots .td--prj_slug,
 .body--dots_dots_dots .td--prj_title,
@@ -667,6 +677,11 @@ tr:hover td {
 }
 
 /* line 2, _boxbots.scss */
+.body--boxbots img {
+  max-width: 100%;
+  height: auto;
+}
+/* line 6, _boxbots.scss */
 .body--boxbots #popup {
   display: none;
   position: absolute;
@@ -679,59 +694,76 @@ tr:hover td {
   max-width: 50%;
   line-height: 0;
 }
-/* line 13, _boxbots.scss */
+/* line 17, _boxbots.scss */
 .body--boxbots #popup.show {
   display: block;
 }
-/* line 16, _boxbots.scss */
+/* line 20, _boxbots.scss */
 .body--boxbots #popup img {
   max-height: 205px;
   width: auto;
 }
-/* line 20, _boxbots.scss */
+/* line 24, _boxbots.scss */
 .body--boxbots #popup .color {
   position: relative;
   top: 0;
   left: 0;
   opacity: 1;
 }
-/* line 26, _boxbots.scss */
+/* line 30, _boxbots.scss */
 .body--boxbots #popup .shadow {
   position: absolute;
   top: 0;
   left: 0;
   opacity: 1;
 }
-/* line 33, _boxbots.scss */
+/* line 37, _boxbots.scss */
 .body--boxbots main {
   margin: 0;
 }
-/* line 36, _boxbots.scss */
+/* line 40, _boxbots.scss */
 .body--boxbots .header_info,
 .body--boxbots .prj_info {
   padding: 1rem;
 }
-/* line 40, _boxbots.scss */
+/* line 44, _boxbots.scss */
 .body--boxbots .header_info {
   background: #aeb2aa;
 }
-/* line 46, _boxbots.scss */
+/* line 50, _boxbots.scss */
 .body--boxbots .prj_info {
   background: #999682;
 }
-/* line 50, _boxbots.scss */
+/* line 54, _boxbots.scss */
+.body--boxbots .nav--boxbot,
 .body--boxbots .nav--boxbots {
-  margin-bottom: 1rem;
+  margin-bottom: .25rem;
 }
-/* line 53, _boxbots.scss */
-.body--boxbots #btn--toggle {
-  margin-right: 1rem;
+/* line 58, _boxbots.scss */
+.body--boxbots .nav--boxbot a,
+.body--boxbots .nav--boxbot button,
+.body--boxbots .nav--boxbots a,
+.body--boxbots .nav--boxbots button {
+  width: 33%;
 }
-/* line 57, _boxbots.scss */
+/* line 97, _boxbots.scss */
+.body--boxbots .nav--boxbot--next {
+  float: left;
+}
+/* line 100, _boxbots.scss */
+.body--boxbots .nav--boxbot--all {
+  float: left;
+  margin-left: 0.5%;
+}
+/* line 104, _boxbots.scss */
+.body--boxbots .nav--boxbot--prev {
+  float: right;
+}
+/* line 109, _boxbots.scss */
 .body--boxbots .sort--hide {
   display: none;
 }
-/* line 61, _boxbots.scss */
+/* line 113, _boxbots.scss */
 .body--boxbots .images--boxbot,
 .body--boxbots .images--boxbots {
   text-align: center;
@@ -745,27 +777,27 @@ tr:hover td {
   background: linear-gradient(to bottom, #aeb2aa 0%, #b6b9ba 54%, #c3c3c3 85%, #999682 100%);
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#aeb2aa', endColorstr='#999682',GradientType=0 );
 }
-/* line 75, _boxbots.scss */
+/* line 127, _boxbots.scss */
 .body--boxbots.images--shadows .header_info {
-  background: #505184;
+  background: #7071A9;
 }
-/* line 78, _boxbots.scss */
+/* line 130, _boxbots.scss */
 .body--boxbots.images--shadows .prj_info {
-  background: #315b4f;
+  background: #478070;
 }
-/* line 81, _boxbots.scss */
+/* line 133, _boxbots.scss */
 .body--boxbots.images--shadows .images--boxbot,
 .body--boxbots.images--shadows .images--boxbots {
-  background: #505184;
-  background: -moz-linear-gradient(top, #505184 0%, #555566 72%, #315b4f 100%);
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #505184), color-stop(72%, #555566), color-stop(100%, #315b4f));
-  background: -webkit-linear-gradient(top, #505184 0%, #555566 72%, #315b4f 100%);
-  background: -o-linear-gradient(top, #505184 0%, #555566 72%, #315b4f 100%);
-  background: -ms-linear-gradient(top, #505184 0%, #555566 72%, #315b4f 100%);
-  background: linear-gradient(to bottom, #505184 0%, #555566 72%, #315b4f 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#505184', endColorstr='#315b4f',GradientType=0 );
+  background: #7071A9;
+  background: -moz-linear-gradient(top, #7071A9 0%, #74748B 72%, #478070 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #7071A9), color-stop(72%, #74748B), color-stop(100%, #478070));
+  background: -webkit-linear-gradient(top, #7071A9 0%, #74748B 72%, #478070 100%);
+  background: -o-linear-gradient(top, #7071A9 0%, #74748B 72%, #478070 100%);
+  background: -ms-linear-gradient(top, #7071A9 0%, #74748B 72%, #478070 100%);
+  background: linear-gradient(to bottom, #7071A9 0%, #74748B 72%, #478070 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#7071A9', endColorstr='#478070',GradientType=0 );
 }
-/* line 94, _boxbots.scss */
+/* line 146, _boxbots.scss */
 .body--boxbots .sort--asc::after,
 .body--boxbots .sort--desc::after {
   font-size: .625rem;
@@ -773,22 +805,22 @@ tr:hover td {
   position: relative;
   color: #666;
 }
-/* line 101, _boxbots.scss */
+/* line 153, _boxbots.scss */
 .body--boxbots .sort--asc::after {
   content: ' ▲';
 }
-/* line 104, _boxbots.scss */
+/* line 156, _boxbots.scss */
 .body--boxbots .sort--desc::after {
   content: ' ▼';
 }
-/* line 110, _boxbots.scss */
+/* line 162, _boxbots.scss */
 .body--boxbots .images--boxbot figure,
 .body--boxbots .images--boxbots figure {
   display: inline-block;
   margin: .5rem 0;
   vertical-align: bottom;
 }
-/* line 115, _boxbots.scss */
+/* line 167, _boxbots.scss */
 .body--boxbots .images--boxbot figure a,
 .body--boxbots .images--boxbot figure .bot_hover,
 .body--boxbots .images--boxbots figure a,
@@ -796,7 +828,7 @@ tr:hover td {
   display: block;
   position: relative;
 }
-/* line 120, _boxbots.scss */
+/* line 172, _boxbots.scss */
 .body--boxbots .images--boxbot figure a:hover .color,
 .body--boxbots .images--boxbot figure .bot_hover:hover .color,
 .body--boxbots .images--boxbots figure a:hover .color,
@@ -814,20 +846,19 @@ tr:hover td {
     opacity: 0.0;
   }
 }
-/* line 134, _boxbots.scss */
+/* line 186, _boxbots.scss */
 .body--boxbots .images--boxbot figure a:hover .shadow,
 .body--boxbots .images--boxbot figure .bot_hover:hover .shadow,
 .body--boxbots .images--boxbots figure a:hover .shadow,
 .body--boxbots .images--boxbots figure .bot_hover:hover .shadow {
   opacity: 1;
 }
-/* line 139, _boxbots.scss */
+/* line 191, _boxbots.scss */
 .body--boxbots .images--boxbot figure img,
 .body--boxbots .images--boxbots figure img {
-  margin: .1875rem;
   transition: opacity .8s ease-out;
 }
-/* line 143, _boxbots.scss */
+/* line 195, _boxbots.scss */
 .body--boxbots .images--boxbot figure .shadow,
 .body--boxbots .images--boxbots figure .shadow {
   position: absolute;
@@ -835,14 +866,14 @@ tr:hover td {
   left: 0;
   opacity: 0;
 }
-/* line 149, _boxbots.scss */
+/* line 201, _boxbots.scss */
 .body--boxbots .images--boxbot figure .color,
 .body--boxbots .images--boxbots figure .color {
   position: relative;
   left: 0;
   opacity: 1;
 }
-/* line 163, _boxbots.scss */
+/* line 215, _boxbots.scss */
 .body--boxbots.images--shadows .images--boxbot figure a:hover .shadow,
 .body--boxbots.images--shadows .images--boxbot figure .bot_hover:hover .shadow,
 .body--boxbots.images--shadows .images--boxbots figure a:hover .shadow,
@@ -860,7 +891,7 @@ tr:hover td {
     opacity: 0.0;
   }
 }
-/* line 177, _boxbots.scss */
+/* line 229, _boxbots.scss */
 .body--boxbots.images--shadows .images--boxbot figure a:hover .color,
 .body--boxbots.images--shadows .images--boxbot figure .bot_hover:hover .color,
 .body--boxbots.images--shadows .images--boxbots figure a:hover .color,
@@ -869,19 +900,19 @@ tr:hover td {
   animation: none;
   -webkit-animation: none;
 }
-/* line 184, _boxbots.scss */
+/* line 236, _boxbots.scss */
 .body--boxbots.images--shadows .images--boxbot figure .shadow,
 .body--boxbots.images--shadows .images--boxbots figure .shadow {
   opacity: 1;
   z-index: 10;
 }
-/* line 188, _boxbots.scss */
+/* line 240, _boxbots.scss */
 .body--boxbots.images--shadows .images--boxbot figure .color,
 .body--boxbots.images--shadows .images--boxbots figure .color {
   opacity: 0;
   z-index: 9;
 }
-/* line 221, _boxbots.scss */
+/* line 273, _boxbots.scss */
 .body--boxbots .images--boxbot {
   position: absolute;
   top: 1.5rem;
@@ -889,20 +920,19 @@ tr:hover td {
   right: 0;
   bottom: 0;
 }
-/* line 228, _boxbots.scss */
+/* line 280, _boxbots.scss */
 .body--boxbots .images--boxbot .shadow,
 .body--boxbots .images--boxbot .color {
-  width: 98vw;
-  height: 80vh;
+  height: calc(100vh - 120px);
   object-fit: scale-down;
 }
-/* line 245, _boxbots.scss */
+/* line 298, _boxbots.scss */
 .body--boxbots.images--both .images--boxbot figure .shadow {
   width: 48vw;
   opacity: 1;
   object-position: 100% 50%;
 }
-/* line 250, _boxbots.scss */
+/* line 303, _boxbots.scss */
 .body--boxbots.images--both .images--boxbot figure .color {
   width: 48vw;
   opacity: 1;
@@ -1121,9 +1151,4 @@ tr:hover td {
   -webkit-align-items: center;
   align-items: center;
   height: 100vh;
-}
-
-/* line 162, main.scss */
-body {
-  background: #f2f2f3;
 }

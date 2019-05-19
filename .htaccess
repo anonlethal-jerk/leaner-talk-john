@@ -1224,6 +1224,14 @@ FileETag None
 
 
 
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+  RewriteCond %{REQUEST_FILENAME} !-d
+  RewriteCond %{REQUEST_FILENAME} !-f
+
+  RewriteRule ^o__o/boxbots/(.*)$ ./o__o/boxbots/boxbot.php?slug=$1
+</IfModule>
+
 
 <IfModule mod_rewrite.c>
     RewriteEngine On

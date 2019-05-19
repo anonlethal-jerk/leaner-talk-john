@@ -1,7 +1,7 @@
 <?php
     require_once($_SERVER["DOCUMENT_ROOT"]."/_config.php");
     $page_slug = substr(dirname($_SERVER["PHP_SELF"]),6); // 6 to start after /o__o/
-    echo $page_slug;
+    // echo $page_slug;
     $prj_index = recursiveArraySearch($projects['series'], $page_slug);
     $page_title = $projects['series'][$prj_index]['title'];
     require_once(INCS_PATH."/_header.php");
@@ -20,7 +20,7 @@
     <tbody>
         <tr>
 <?php if (!empty($projects['series'][$prj_index]['title'])) { ?>
-            <td class="td--series_title"><a href="<?= $projects['series'][$prj_index]['slug']; ?>"><cite><?= $projects['series'][$prj_index]['title']; ?></cite></a></td>
+            <td class="td--series_title"><h1><cite><?= $projects['series'][$prj_index]['title']; ?></cite></h1></td>
 <?php } else { ?>
             <td class="td--series_title td--empty"></td>
 <?php }; ?>
@@ -69,7 +69,7 @@
             <td class="td--prj_slug">Slug</td>
             <td class="td--prj_medium">Medium</td>
             <td class="td--prj_date">Date</td>
-            <td class="td--prj_dimensions">Dimensions <span class="no_break">(H × W × D)</span></td>
+            <td class="td--prj_dimensions">Dimensions <span class="no_break">(H × W<?php if ( !empty($projects['series'][$prj_index]['works'][0]['depth']) ) { echo " × D"; }; ?>)</span></td>
             <td class="td--prj_duration">Duration (H:M:S)</td>
             <td class="td--prj_location">Location</td>
             <td class="td--prj_status">Status</td>
@@ -79,14 +79,22 @@
     </thead>
     <tbody>
 <?php for ($i=0; $i<count($projects['series'][$prj_index]['works']); $i++) { ?>
+<?php if (!empty($projects['series'][$prj_index]['works'][$i]['percenthalfheightpx'])) { ?>
         <tr class="imageload images" data-img="<?= $projects['series'][$prj_index]['works'][$i]['filename']; ?>" data-img-h="<?= $projects['series'][$prj_index]['works'][$i]['percenthalfheightpx']; ?>" data-img-w="<?= $projects['series'][$prj_index]['works'][$i]['percenthalfwidthpx']; ?>">
+<?php } else { ?>
+        <tr class="imageload images">
+<?php }; ?>
 <?php if (!empty($projects['series'][$prj_index]['works'][$i]['id'])) { ?>
             <td class="td--prj_id"><?= $projects['series'][$prj_index]['works'][$i]['id']; ?></td>
 <?php } else { ?>
             <td class="td--prj_id td--empty"></td>
 <?php }; ?>
 <?php if (!empty($projects['series'][$prj_index]['works'][$i]['title'])) { ?>
-            <td class="td--prj_title"><cite><?= $projects['series'][$prj_index]['works'][$i]['title']; ?></cite></td>
+    <?php if ( $projects['series'][$prj_index]['slug'] == 'boxbots') { ?>
+                <td class="td--prj_title"><a href="<?=$projects['series'][$prj_index]['works'][$i]['slug'];?>"><cite><?= $projects['series'][$prj_index]['works'][$i]['title']; ?></cite></a></td>
+    <?php } else { ?>
+                <td class="td--prj_title"><cite><?= $projects['series'][$prj_index]['works'][$i]['title']; ?></cite></td>
+    <?php }; ?>
 <?php } else { ?>
             <td class="td--prj_title td--empty"></td>
 <?php }; ?>
@@ -107,6 +115,8 @@
 <?php }; ?>
 <?php if (!empty($projects['series'][$prj_index]['works'][$i]['date'])) { ?>
             <td class="td--prj_date"><?= $projects['series'][$prj_index]['works'][$i]['date']; ?></td>
+<?php } else if (!empty($projects['series'][$prj_index]['works'][$i]['nice_date'])) { ?>
+            <td class="td--prj_date"><?= $projects['series'][$prj_index]['works'][$i]['nice_date']; ?></td>
 <?php } else { ?>
             <td class="td--prj_date td--empty"></td>
 <?php }; ?>

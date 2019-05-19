@@ -2,9 +2,9 @@
 $projects["series"][] = [
 
 	"title"       => "It Takes Me a Long Time to Say Nothing",
-	"subtitle"    => "(dot drawings)",
+	"subtitle"    => "dot drawings",
 	"slug"        => "dots_dots_dots",
-    "description" => "Lots & lots of dots",
+    "description" => "Lots & lots of dots in spots",
     "notes"       => "included in Chattanooga exhibition.",
     "to_dos"      => "<li>Readhere stickers to paper</li>
 		<li>grind paint off rods</li>

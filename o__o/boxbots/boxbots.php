@@ -1,7 +1,15 @@
 <section class="images images--boxbots">
-	<nav class="nav--boxbots"><button id="btn--toggle">shadow</button> sort by: <button id="btn--height">height</button> <button id="btn--width">width</button> <!-- <button id="btn--ratio">ratio</button> --> <!-- <button id="btn--area">area</button> --> <button id="btn--date" class="sort--desc">date</button> <button id="btn--title">title</button> <!-- <button id="btn--stars">stars</button> --></nav>
+	<nav class="nav--boxbots clearfix">
+		<button id="btn--toggle">shadow</button>
+		sort by:
+		<button id="btn--date" class="sort--desc">date</button>
+		<button id="btn--title">title</button>
+		<button id="btn--height">height</button>
+		<button id="btn--width">width</button>
+		<!-- <button id="btn--stars">stars</button> -->
+	</nav>
 
-<div id="sort--bots">
+	<div id="sort--bots">
 <!--
 <?php
 		// for ( $i = 0; $i < count($projects['series'][$prj_index]['works']); $i++ ) {
@@ -27,27 +35,26 @@
 <?php if (!empty( $boxbot["offsetbottompx"] )) { ?>
 		<a style="bottom:<?=$boxbot["offsetbottompx"];?>" href="<?=$boxbot["slug"];?>">
 <?php } else { ?>
-		<a href="boxbot.php?slug=<?=$boxbot["slug"];?>">
+		<a href="<?=$boxbot["slug"];?>">
 <?php }; ?>
-			<img class="shadow lazyload" src="/x__x/loading.gif" data-src="x__x/shadow-small/<?=$boxbot["filename"];?>.png" width="<?=($boxbot["percenthalfwidthpx"]);?>" height="<?=($boxbot["percenthalfheightpx"]);?>" alt="<?=$boxbot["title"];?> BoxBot" title="<?=$boxbot["title"];?>, <?= $boxbot["date"]; ?>, <?=$boxbot["height"];?> &times; <?=$boxbot["width"];?> mm">
-			<img class="color lazyload" src="/x__x/loading.gif" data-src="x__x/color-small/<?=$boxbot["filename"];?>.png" width="<?=($boxbot["percenthalfwidthpx"]);?>" height="<?=($boxbot["percenthalfheightpx"]);?>" alt="<?=$boxbot["title"];?> BoxBot" title="<?=$boxbot["title"];?>, <?= $boxbot["date"]; ?>, <?=$boxbot["height"];?> &times; <?=$boxbot["width"];?> mm">
+			<img class="shadow lazyload" src="/x__x/loading.gif" data-src="x__x/shadow-small/<?=$boxbot["filename"];?>.png" width="<?=($boxbot["percenthalfwidthpx"]);?>" height="<?=($boxbot["percenthalfheightpx"]);?>" alt="<?=$boxbot["title"];?> BoxBot" title="<?=$boxbot["title"];?>, <?= $boxbot["nice_date"]; ?>, <?=$boxbot["height"];?> × <?=$boxbot["width"];?> mm">
+			<img class="color lazyload" src="/x__x/loading.gif" data-src="x__x/color-small/<?=$boxbot["filename"];?>.png" width="<?=($boxbot["percenthalfwidthpx"]);?>" height="<?=($boxbot["percenthalfheightpx"]);?>" alt="<?=$boxbot["title"];?> BoxBot" title="<?=$boxbot["title"];?>, <?= $boxbot["nice_date"]; ?>, <?=$boxbot["height"];?> × <?=$boxbot["width"];?> mm">
 		</a>
 		<div class="sort--hide">
 			<p class="sort--title"><?=$boxbot["title"];?></p>
 			<p class="sort--date"><?=$boxbot["id"];?></p>
 			<p class="sort--height"><?=$boxbot["height"];?></p>
 			<p class="sort--width"><?=$boxbot["width"];?></p>
-<!-- 			<p class="sort--area"><?= ($boxbot["height"] * $boxbot["width"]); ?></p>
- -->		</div>
+		</div>
 <!--
 		<figcaption>
-			<?= $boxbot["date"]; ?><br><span class="stars">★★★☆☆</span><br>
+			<?= $boxbot["nice_date"]; ?><br><span class="stars">★★★☆☆</span><br>
 		</figcaption>
 -->
 <!--
 		<figcaption>
 			<cite><?=$boxbot["title"];?></cite><br>
-			<?= $boxbot["date"]; ?><br>
+			<?= $boxbot["nice_date"]; ?><br>
 			<?=$boxbot["fullheightmm"];?> × <?=$boxbot["fullwidthmm"];?> mm
 		</figcaption>
 -->
@@ -58,8 +65,8 @@
 -->
 </div>
 <!--     <div class="bot--large">
-        <img class="shadow" src="x__x/shadow-large/<?=$boxbot["filename"];?>.png" width="<?=($boxbot["largehalfwidthpx"]);?>" height="<?=($boxbot["largehalfheightpx"]);?>" alt="<?=$boxbot["title"];?> BoxBot Silhouette" title="<?=$boxbot["title"];?>, <?= $boxbot["date"]; ?>, <?=$boxbot["height"];?> &times; <?=$boxbot["width"];?> mm">
-        <img class="color" src="x__x/color-large/<?=$boxbot["filename"];?>.png" width="<?=($boxbot["largehalfwidthpx"]);?>" height="<?=($boxbot["largehalfheightpx"]);?>" alt="<?=$boxbot["title"];?> BoxBot" title="<?=$boxbot["title"];?>, <?= $boxbot["date"]; ?>, <?=$boxbot["height"];?> &times; <?=$boxbot["width"];?> mm">
+        <img class="shadow" src="x__x/shadow-large/<?=$boxbot["filename"];?>.png" width="<?=($boxbot["largehalfwidthpx"]);?>" height="<?=($boxbot["largehalfheightpx"]);?>" alt="<?=$boxbot["title"];?> BoxBot Silhouette" title="<?=$boxbot["title"];?>, <?= $boxbot["nice_date"]; ?>, <?=$boxbot["height"];?> &times; <?=$boxbot["width"];?> mm">
+        <img class="color" src="x__x/color-large/<?=$boxbot["filename"];?>.png" width="<?=($boxbot["largehalfwidthpx"]);?>" height="<?=($boxbot["largehalfheightpx"]);?>" alt="<?=$boxbot["title"];?> BoxBot" title="<?=$boxbot["title"];?>, <?= $boxbot["nice_date"]; ?>, <?=$boxbot["height"];?> &times; <?=$boxbot["width"];?> mm">
     </div>
  --></section>
 
@@ -134,9 +141,6 @@
 	document.getElementById('btn--width').addEventListener('click', function () {
 		removeSort(this, '.sort--width');
 	});
-	// document.getElementById('btn--area').addEventListener('click', function () {
-	// 	removeSort(this, '.sort--area');
-	// });
 	document.getElementById('btn--date').addEventListener('click', function () {
 		removeSort(this, '.sort--date', 'text');
 	});

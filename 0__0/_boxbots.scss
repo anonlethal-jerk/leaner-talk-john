@@ -57,25 +57,61 @@
 
 		a,
 		button {
-		// 	display: block;
-			width: 33%;
-		// 	height: 1.875rem;
-		// 	padding: .375rem .375rem;
-		// 	overflow: hidden;
-		// 	white-space: nowrap;
-		// 	text-overflow: ellipsis;
-		// 	background: #000;
-		// 	color: #fff;
-		// 	font-size: .875rem;
-		// 	&:hover {
-		// 		background: #fff;
-		// 		color: #000;
-		// 	}
+			min-width: 12rem;
+			display: block;
+			height: 1.875rem;
+			padding: .375rem .375rem;
+			overflow: hidden;
+			white-space: nowrap;
+			text-overflow: ellipsis;
+			background: #fff;
+			color: #000;
+			font-size: .875rem;
+			&:hover {
+				background: #000;
+				color: #fff;
+			}
 		}
 		// #btn--toggle {
 		// 	margin-left: 33.5%;
 		// 	border: 0;
 		// }
+	}
+	&.images--shadow {
+		.nav--boxbot,
+		.nav--boxbots {
+			a,
+			button {
+				background: #000;
+				color: #fff;
+				&:hover {
+					background: #fff;
+					color: #000;
+				}
+			}
+			// #btn--toggle {
+			// 	margin-left: 33.5%;
+			// 	border: 0;
+			// }
+		}
+	}
+	.nav--boxbot {
+		a {
+			width: 33%;
+			display: block;
+			height: 1.875rem;
+			padding: .375rem .375rem;
+			overflow: hidden;
+			white-space: nowrap;
+			text-overflow: ellipsis;
+			background: #000;
+			color: #fff;
+			font-size: .875rem;
+			&:hover {
+				background: #fff;
+				color: #000;
+			}
+		}
 	}
 	// .nav--boxbots {
 	// 	#btn--height,

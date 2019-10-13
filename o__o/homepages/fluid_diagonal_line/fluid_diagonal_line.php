@@ -1,10 +1,6 @@
-<!doctype html>
-<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
-<!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
-<!--[if IE 8]>    <html class="no-js lt-ie9" lang="en"> <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
-<head>
-  <meta charset="utf-8">
+<?php
+    require_once("../_header.php");
+?>
 
   <title>Hello!  × J̲̲̲K̲̲̲ K̲̲̲e̲̲̲l̲̲̲l̲̲̲e̲̲̲r̲̲̲</title>
   <meta name="description" content="It's a homepage. Leads to a collection of work done by JK Keller">
@@ -12,7 +8,6 @@
   <meta name="author" content="Jonathan Keller Keller">
   <meta name="copyright" content="Copyright 1976-2014. All the work on JK Keller's site is licensed under a Creative Commons Attribution-NonCommercial 3.0 Unported License. See http://creativecommons.org/licenses/by-nc/3.0/ for details.">
 
-  <meta name="viewport" content="width=device-width">
 
   <!--  for the facebooks  -->
   <link rel="image_src" href="http://jk-keller.com/homepages/fluid_line_grid/_img/fb-jk-keller-website.jpg">
@@ -31,7 +26,7 @@
   <meta name="twitter:image" content="http://jk-keller.com/homepages/fluid_line_grid/_img/fb-jk-keller-website.jpg">
   <meta name="twitter:image:width" content="640">
   <meta name="twitter:image:height" content="712">
-  
+
   <link rel="stylesheet" href="_css/style.css">
 
   <script src="_js/modernizr-2.5.3.min.js"></script>
@@ -202,7 +197,7 @@
     </div>
     <div class="project">
       <figure>
-        <a href="/fans-flags/">
+        <a href="#linkrot">
           <img src="_img/thumb-jk-keller-coriolis_beaufort-scale.png" alt="">
           <img src="_img/thumb-jk-keller-coriolis_beaufort-flag.png" alt="">
         </a>
@@ -323,15 +318,15 @@
     <a id="bg_email" href="mailto:jk@jk-keller.com">jk@jk-keller.com</a>
     <a id="bg_grid" class="ir" href="#">grid</a>
 <!--     <a id="bg_2014" href="http://2014.jk-keller.com/">2014</a> -->
-    <a id="bg_oil" href="http://iphone-oil-paintings.jk-keller.com/"><cite>iPhone Oil Paintings</cite></a>
+    <a id="bg_oil" href="#linkrot"><cite>iPhone Oil Paintings</cite></a>
     <a id="bg_about" href="/about-jk/">About JK</a>
     <a id="bg_shop" href="http://shop.fromktoj.com">S<br>h<br>o<br>p</a>
     <a id="bg_ktoj" href="http://fromktoj.com">P<br>r<br>o<br>c<br>e<br>s<br>s</a>
-    <a id="bg_tumblr" href="http://jk-keller.tumblr.com">P<br>r<br>o<br>c<br>e<br>s<br>s</a>
-    <a id="bg_newsletter" href="http://eepurl.com/hgb1c">Signup for news</a>
+    <a id="bg_tumblr" href="#linkrot">P<br>r<br>o<br>c<br>e<br>s<br>s</a>
+    <a id="bg_newsletter" href="#linkrot">Signup for news</a>
     <a id="bg_cc" href="http://creativecommons.org/licenses/by-nc/3.0/">©©</a>
     <figure id="bg_looooonging">
-      <a href="http://looooonging.tumblr.com">8==============D</a>
+      <a href="#linkrot">8==============D</a>
       <figcaption><cite>I've Been <span>LO0oOo</span>nging For You</cite>, 2013</figcaption>
     </figure>
     <a id="bg_keetra" href="http://fromkeetra.com">lives & works in New York<br><span>with Keetra Dean Dixon</span></a>
@@ -340,34 +335,18 @@
     <figure id="bg_fb"><div id="fb">
       <div class="fb-like" data-href="http://jk-keller.com/" data-send="true" data-layout="box_count" data-width="55" data-show-faces="false" data-font="lucida grande"></div></div>
       <figcaption>Seeing this number increase is my drug.</figcaption>
-      <div id="fb-root"></div>
-      <script>(function(d, s, id) {
-        var js, fjs = d.getElementsByTagName(s)[0];
-        if (d.getElementById(id)) return;
-        js = d.createElement(s); js.id = id;
-        js.src = "//connect.facebook.net/en_US/all.js#xfbml=1";
-        fjs.parentNode.insertBefore(js, fjs);
-      }(document, 'script', 'facebook-jssdk'));</script>
+      <div id="fb-root">Like</div>
     </figure>
     <figure id="bg_tweet"><div id="tweet">
-      <a href="https://twitter.com/share" class="twitter-share-button" data-via="jk_keller" data-size="large">Tweet</a>
-      <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script></div>
+      <a href="https://twitter.com/share" class="twitter-share-button" data-via="jk_keller" data-size="large">Tweet</a></div>
       <figcaption>Seeing this number increase is my drug.</figcaption>
     </figure>
     <figure id="bg_follow"><div id="follow">
-      <a href="https://twitter.com/jk_keller" class="twitter-follow-button" data-show-count="true" data-show-screen-name="false" data-lang="en">Follow</a>
-      <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script></div>
+      <a href="#linkrot" class="twitter-follow-button" data-show-count="true" data-show-screen-name="false" data-lang="en">Follow</a></div>
       <figcaption>Seeing this number increase is my drug.</figcaption>
     </figure>
     <figure id="bg_gplus"><div id="gplus">
-      <div class="g-plusone" data-size="medium" data-annotation="inline"></div>
-        <script type="text/javascript">
-  (function() {
-    var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
-    po.src = 'https://apis.google.com/js/plusone.js';
-    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
-  })();
-        </script>
+      <div class="g-plusone" data-size="medium" data-annotation="inline">Plus!</div>
       </div>
       <figcaption>Seeing this number increase is my drug.</figcaption>
     </figure>
@@ -379,7 +358,7 @@
 
   <script src="_js/script.js"></script>
 
-<?php require_once('../../_analytics.php'); ?>
 
-</body>
-</html>
+<?php
+    require_once("../_footer.php");
+?>

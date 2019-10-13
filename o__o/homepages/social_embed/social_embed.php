@@ -1,11 +1,10 @@
-<!DOCTYPE html>
-<html class="no-js">
-  <head>
-    <meta charset="utf-8">
+<?php
+    require_once("../_header.php");
+?>
+
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Jonathan Keller Keller</title>
     <meta name="description" content="">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!--  for the facebooks  -->
     <meta property="fb:admins" content="871065253" />
@@ -94,15 +93,15 @@
     </div><!-- wrap-it-up -->
 
     <div class="nytoak">
-      <a href="http://nytoak.com">JK has moved to Alaska</a>
+      <a href="#linkrot">JK has moved to Alaska</a>
     </div>
 
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
     <script>window.jQuery || document.write('<script src="_js/jquery-1.10.2.min.js"><\/script>')</script>
     <script src="_js/jquery.fitvids.js"></script>
-  
+
     <script src="_js/main.js"></script>
-  
+
     <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
     <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
     <script async src="//platform.vine.co/static/scripts/embed.js" charset="utf-8"></script>
@@ -113,7 +112,7 @@
     <script>(function(d, s, id) { var js, fjs = d.getElementsByTagName(s)[0]; if (d.getElementById(id)) return; js = d.createElement(s); js.id = id; js.src = "//connect.facebook.net/en_US/all.js#xfbml=1&appId=211741682193296"; fjs.parentNode.insertBefore(js, fjs); }(document, 'script', 'facebook-jssdk'));</script>
     <script async defer src="//platform.instagram.com/en_US/embeds.js"></script>
 
-<?php require_once('../../_analytics.php'); ?>
 
-  </body>
-</html>
+<?php
+    require_once("../_footer.php");
+?>

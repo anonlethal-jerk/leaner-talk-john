@@ -18,7 +18,7 @@ $('#toggleheaderfooter a').click(function() {
   return false;
 });
 
-
+// randomize the direction and speed of header/footer zigzags when resizing window
 $(document).ready(function(){
   var n10a = Math.floor(Math.random()*200)-100;
   var n20a = Math.floor(Math.random()*200)-100;
@@ -48,9 +48,10 @@ $(document).ready(function(){
   var n120b = Math.floor(Math.random()*200)-100;
   var n130b = Math.floor(Math.random()*200)-100;
   var n140b = Math.floor(Math.random()*200)-100;
-  var cssflag = 0;
-  $(window).resize(function() {
 
+  var cssflag = 0;
+
+  $(window).resize(function() {
     if (cssflag == 0) {
       $('.headerlines .z10').css("background-position",n10a+"% -17px");
       $('.headerlines .z20').css("background-position",n20a+"% 0");

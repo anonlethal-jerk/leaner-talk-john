@@ -1,25 +1,10 @@
-<!doctype html>
-<!--[if lt IE 7]> <html class="no-js ie6 oldie" lang="en"
-  xmlns:og="http://ogp.me/ns#"
-  xmlns:fb="http://www.facebook.com/2008/fbml"> <![endif]-->
-<!--[if IE 7]>    <html class="no-js ie7 oldie" lang="en"
-  xmlns:og="http://ogp.me/ns#"
-  xmlns:fb="http://www.facebook.com/2008/fbml"> <![endif]-->
-<!--[if IE 8]>    <html class="no-js ie8 oldie" lang="en"
-  xmlns:og="http://ogp.me/ns#"
-  xmlns:fb="http://www.facebook.com/2008/fbml"> <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js" lang="en"
-  xmlns:og="http://ogp.me/ns#"
-  xmlns:fb="http://www.facebook.com/2008/fbml"> <!--<![endif]-->
-<head>
-  <meta charset="utf-8">
+<?php
+    require_once("../_header.php");
+?>
 
   <title>JK, these are things to do:</title>
   <meta name="description" content="">
   <meta name="author" content="">
-
-  <!-- Mobile viewport optimized: j.mp/bplateviewport -->
-  <meta name="viewport" content="width=device-width,initial-scale=.5">
 
   <!--  for the facebooks  -->
   <link rel="image_src" href="http://jk-keller.com/homepages/to_dos/_img/jk_keller-portrait.jpg" />
@@ -30,7 +15,7 @@
   <meta property=og:image content="http://jk-keller.com/homepages/to_dos/_img/jk_keller-portrait.jpg"/>
 
   <link href="_css/bootstrap-20120122a.css" rel="stylesheet">
-  
+
   <script src="_js/modernizr-2.0.6.min.js"></script>
 </head>
 
@@ -110,7 +95,7 @@
         <div id="i00104" class="item a0113 med minutes career">Add latest tweet field</div>
         <div id="i00103" class="item a0113 cancel low minutes home">Add weights/magnets to curtains</div>
         <div id="i00102" class="item a0113 done d0113 med hours career">Go back through little sketchbook</div>
-        <div id="i00101" class="item a0113 high hours career">Newsletter <span class="label">Jan 30</span> <a href="http://eepurl.com/hgb1c" class="btn danger">Sign Up</a></div>
+        <div id="i00101" class="item a0113 high hours career">Newsletter <span class="label">Jan 30</span> <a href="#linkrot" class="btn danger">Sign Up</a></div>
         <div id="i00100" class="item a0113 done high hours career">Scripting lesson for Keetra's classes <span class="label">Mon</span></div>
         <div id="i00099" class="item a0113 med hours project">Design DVD packaging for Jasper</div>
         <div id="i00098" class="item a0113 med hours career">Inventory art projects</div>
@@ -144,14 +129,13 @@
 
         <div id="i00078" class="item a0107 high minutes career"><span class="done d0107" rel="twipsy" title="Seeing these numbers increase is my drug." data-placement="below">Add social media</span>
           <div class="social">
-            <div id="flike"><div class="fb-like" data-send="false" data-layout="button_count" data-width="100" data-show-faces="false"></div></div>
+            <div id="flike"><div class="fb-like" data-send="false" data-layout="button_count" data-width="100" data-show-faces="false">Like</div></div>
           </div>
           <div class="social">
-              <div id="fplus1"><div class="g-plusone" data-size="medium"></div></div>
+              <div id="fplus1"><div class="g-plusone" data-size="medium">Plus!</div></div>
           </div>
           <div class="social">
-              <div id="ftweet"><a href="https://twitter.com/share" class="twitter-share-button" data-via="jk_keller" data-hashtags="gtd">Tweet</a>
-<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script></div>
+              <div id="ftweet"><a href="https://twitter.com/share" class="twitter-share-button" data-via="jk_keller" data-hashtags="gtd">Tweet</a></div>
           </div>
         </div>
 
@@ -169,7 +153,7 @@
             <div class="modal-body center">
             </div>
             <div class="modal-footer">
-              <a href="http://www.flickr.com/photos/jk-keller/sets/72157622989470914/" class="btn secondary">Antarctica images on flickr</a>
+              <a href="#linkrot" class="btn secondary">Antarctica images on flickr</a>
             </div>
           </div>
           <div id="bootstrap-modal" class="modal hide fade">
@@ -379,28 +363,6 @@
     });
   </script>
 
-  <div id="fb-root"></div>
-  <script>(function(d, s, id) {
-    var js, fjs = d.getElementsByTagName(s)[0];
-    if (d.getElementById(id)) return;
-    js = d.createElement(s); js.id = id;
-    js.src = "//connect.facebook.net/en_US/all.js#xfbml=1&appId=211741682193296";
-    fjs.parentNode.insertBefore(js, fjs);
-  }(document, 'script', 'facebook-jssdk'));</script>
-  <script type="text/javascript">
-    (function() {
-      var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
-      po.src = 'https://apis.google.com/js/plusone.js';
-      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
-    })();
-  </script>
-
-  <!--[if lt IE 7 ]>
-    <script src="//ajax.googleapis.com/ajax/libs/chrome-frame/1.0.3/CFInstall.min.js"></script>
-    <script>window.attachEvent('onload',function(){CFInstall.check({mode:'overlay'})})</script>
-  <![endif]-->
-
-<?php require_once('../../_analytics.php'); ?>
-
-</body>
-</html>
+<?php
+    require_once("../_footer.php");
+?>

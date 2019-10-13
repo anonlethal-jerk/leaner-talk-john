@@ -1,11 +1,3 @@
-/*
-     FILE ARCHIVED ON 1:33:40 Oct 6, 2011 AND RETRIEVED FROM THE
-     INTERNET ARCHIVE ON 7:57:16 Apr 6, 2015.
-     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
-
-     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
-     SECTION 108(a)(3)).
-*/
 /* jk-keller.com styles based off of HTML5 ✰ Boilerplate : pulled 2011 June 23 */
 
 /* @group normailze css */
@@ -214,7 +206,7 @@ cite.publication { font-style: normal; text-decoration: underline; }
 .centered { margin-left: auto; margin-right: auto;}
 figure p { margin: 0; }
 .meta, .caption, figcaption {
-  font-size: 11px; 
+  font-size: 11px;
   color: #999;
   margin: .5em 0 1em;
   padding: 0;

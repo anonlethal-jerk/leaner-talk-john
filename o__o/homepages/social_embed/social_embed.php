@@ -13,7 +13,7 @@
     <meta property=og:description content="This dude got famous for that? Why aren’t I and like every other teen famous then?! this is so stupid haha">
     <meta property=og:image content="http://jk-keller.com/img/jk_keller-facebook_thumbnail.gif">
 
-    <link rel="stylesheet" href="_css/style.min.css">
+    <link rel="stylesheet" href="_css/style.min.css?v=2">
 
     <!--[if lt IE 9]>
       <script src="/js/vendor/html5shiv.js"></script>

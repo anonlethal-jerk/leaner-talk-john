@@ -93,7 +93,7 @@ $ary_daily_photo = [
     // non-english
     '<blockquote class="twitter-tweet" lang="en"><p><a href="https://twitter.com/bruikbaar">@bruikbaar</a> oh, haha! Heb daar discipline niet voor denk ik. Je zal toch een dag missen... Check deze: wel cool. <a href="http://t.co/WOPnbz2Qeb">http://t.co/WOPnbz2Qeb</a></p>&mdash; Friso Gosliga (@frisogosliga) <a href="https://twitter.com/frisogosliga/statuses/424279655659864064">January 17, 2014</a></blockquote>',
     '<blockquote class="twitter-tweet" lang="en"><p><a href="http://t.co/GRR4LgzQ">http://t.co/GRR4LgzQ</a> este tipo estaba mas al pedo que yo jaja</p>&mdash; Fer♔ (@mfercallejas) <a href="https://twitter.com/mfercallejas/statuses/149907649549447168">December 22, 2011</a></blockquote>',
-    '<blockquote class="twitter-tweet" lang="en"><p>強風の中で彼と見つめあってる気がしてくる RT <a href="https://twitter.com/wtbw">@wtbw</a>: 今ではすっかり有名どころだわー　 毎日毎日自分の顔写真を淡々と載せ続けています。いや、スゴイ。どんどん男前になってますよ。<a href="http://t.co/cF8JLDfo">http://t.co/cF8JLDfo</a>　 <a href="https://twitter.com/search?q=%23wtbw%E3%81%8C%E5%8F%96%E3%82%8A%E4%B8%8A%E3%81%92%E3%81%9F2002%E5%B9%B4%E3%83%90%E3%82%AB%E8%A8%98%E4%BA%8B%E3%83%8D%E3%82%BF&amp;src=hash">#wtbwが取り上げた2002年バカ記事ネタ</a></p>&mdash; どういうことだ、じゅんみぃ　　 (@junmie110) <a href="https://twitter.com/junmie110/statuses/147498658114441216">December 16, 2011</a></blockquote>',  
+    '<blockquote class="twitter-tweet" lang="en"><p>強風の中で彼と見つめあってる気がしてくる RT <a href="https://twitter.com/wtbw">@wtbw</a>: 今ではすっかり有名どころだわー　 毎日毎日自分の顔写真を淡々と載せ続けています。いや、スゴイ。どんどん男前になってますよ。<a href="http://t.co/cF8JLDfo">http://t.co/cF8JLDfo</a>　 <a href="https://twitter.com/search?q=%23wtbw%E3%81%8C%E5%8F%96%E3%82%8A%E4%B8%8A%E3%81%92%E3%81%9F2002%E5%B9%B4%E3%83%90%E3%82%AB%E8%A8%98%E4%BA%8B%E3%83%8D%E3%82%BF&amp;src=hash">#wtbwが取り上げた2002年バカ記事ネタ</a></p>&mdash; どういうことだ、じゅんみぃ　　 (@junmie110) <a href="https://twitter.com/junmie110/statuses/147498658114441216">December 16, 2011</a></blockquote>',
     // JK
     '<blockquote class="twitter-tweet" lang="en"><p>please, I&#39;ve been taking <a href="https://twitter.com/search?q=%23selfies&amp;src=hash">#selfies</a> since 1998. <a href="http://t.co/lZXgrpoFbn">http://t.co/lZXgrpoFbn</a></p>&mdash; JK KELLER (@jk_keller) <a href="https://twitter.com/jk_keller/statuses/390901682068287488">October 17, 2013</a></blockquote>',
   ],
@@ -146,7 +146,7 @@ $ary_simpsons = [
   'googleplus' => [
     // VIDEO - Is this the hellsons?﻿
     '<div class="g-post" data-href="https://plus.google.com/118324919891531187535/posts/GvTeoisZqNR"></div>',
-    // VIDEO - Artist +JK Keller used software to turn every frame of a Simpsons intro segment into vector shapes that were then processed in Illustrator. The result: a hallucinatory, hacked and stretched remix that is wholly explainable by its title: Realigning My Thoughts on Jasper Johns (intro) Brilliant stuff. 
+    // VIDEO - Artist +JK Keller used software to turn every frame of a Simpsons intro segment into vector shapes that were then processed in Illustrator. The result: a hallucinatory, hacked and stretched remix that is wholly explainable by its title: Realigning My Thoughts on Jasper Johns (intro) Brilliant stuff.
     '<div class="g-post" data-href="https://plus.google.com/109991831337346806782/posts/GigHvGy6Rf9"></div>',
     // ANI.GIF - JK
     '<div class="g-post" data-href="https://plus.google.com/109067576934337259102/posts/2kowBzECLHU"></div>',
@@ -461,7 +461,7 @@ $ary_mistake = [
 
 
 // REVERSE PORTRAITS
-$ary_mistake = [
+$ary_reverse = [
   'twitter' => [
     // IMAGE
     '<blockquote class="twitter-tweet" lang="en"><p>Incredible profile re-mapping. Wld make insanely good Dr Who monsters! <a href="http://t.co/HRQzMTQDcF">http://t.co/HRQzMTQDcF</a> <a href="http://t.co/f0iVn8x2Cd">pic.twitter.com/f0iVn8x2Cd</a></p>&mdash; Lewis Dartnell (@lewis_dartnell) <a href="https://twitter.com/lewis_dartnell/statuses/357437866822991872">July 17, 2013</a></blockquote>',

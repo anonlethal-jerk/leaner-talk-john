@@ -144,6 +144,15 @@ $ary_projects = [
     'date' =>     '2005',
     'url' =>      '/fingerspelling-matchbooks/',
   ],
+  [
+    'array' =>    $ary_reverse,
+    'slug' =>     'reverse_portraits',
+    'title' =>    '',
+    'subtitle' => 'Reverse Portraits',
+    'byline' =>   '',
+    'date' =>     '2007',
+    'url' =>      '/reverse_portraits/',
+  ],
 ];
 
 // NON-EMBEDDED PORJECTS

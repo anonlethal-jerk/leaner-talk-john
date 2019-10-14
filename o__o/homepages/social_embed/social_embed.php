@@ -30,7 +30,7 @@
     <div class="wrap-it-up">
 
       <header>
-        <h1 class="site-title">this <a href="/"><span class="label label-warning">1</span> weird website</a> uses <a href="/#wrap-embeds"><span class="label label-success"><?php echo count($ary_projects)+1; ?></span> embedded social medias</a> to pander to its amazing audience</h1>
+        <h1 class="site-title">this <a href=""><span class="label label-warning">1</span> weird website</a> uses <a href="#wrap-embeds"><span class="label label-success"><?php echo count($ary_projects); ?></span> embedded social medias</a> to pander to its amazing audience</h1>
         <h2 class="site-subtitle">by <a href="/about-jk/">JK Keller</a></h2>
       </header>
 

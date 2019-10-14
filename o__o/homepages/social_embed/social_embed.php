@@ -7,15 +7,13 @@
     <meta name="description" content="">
 
     <!--  for the facebooks  -->
-    <meta property="fb:admins" content="871065253" />
     <meta property=og:type content="website">
     <meta property=og:url content="http://jk-keller.com/">
     <meta property=og:title content="J&#818;&#818;&#818;K&#818;&#818;&#818; K&#818;&#818;&#818;e&#818;&#818;&#818;l&#818;&#818;&#818;l&#818;&#818;&#818;e&#818;&#818;&#818;r&#818;&#818;&#818;">
-    <meta property=og:description content="This dude got famous for that? Why aren't I and like every other teen famous then?! this is so stupid haha">
+    <meta property=og:description content="This dude got famous for that? Why aren’t I and like every other teen famous then?! this is so stupid haha">
     <meta property=og:image content="http://jk-keller.com/img/jk_keller-facebook_thumbnail.gif">
 
-    <link rel="stylesheet" href="_css/normalize.css">
-    <link rel="stylesheet" href="_css/main.css">
+    <link rel="stylesheet" href="_css/style.min.css">
 
     <!--[if lt IE 9]>
       <script src="/js/vendor/html5shiv.js"></script>

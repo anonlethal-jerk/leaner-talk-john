@@ -1,0 +1,1442 @@
+/* line 1, _normalize.scss */
+* {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/*! normalize.css v3.0.0 | MIT License | git.io/normalize */
+/**
+ * 1. Set default font family to sans-serif.
+ * 2. Prevent iOS text size adjust after orientation change, without disabling
+ *    user zoom.
+ */
+/* line 16, _normalize.scss */
+html {
+  font-family: sans-serif;
+  /* 1 */
+  -ms-text-size-adjust: 100%;
+  /* 2 */
+  -webkit-text-size-adjust: 100%;
+  /* 2 */
+}
+
+/**
+ * Remove default margin.
+ */
+/* line 26, _normalize.scss */
+body {
+  margin: 0;
+}
+
+/* HTML5 display definitions
+   ========================================================================== */
+/**
+ * Correct `block` display not defined in IE 8/9.
+ */
+/* line 37, _normalize.scss */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+nav,
+section,
+summary {
+  display: block;
+}
+
+/**
+ * 1. Correct `inline-block` display not defined in IE 8/9.
+ * 2. Normalize vertical alignment of `progress` in Chrome, Firefox, and Opera.
+ */
+/* line 57, _normalize.scss */
+audio,
+canvas,
+progress,
+video {
+  display: inline-block;
+  /* 1 */
+  vertical-align: baseline;
+  /* 2 */
+}
+
+/**
+ * Prevent modern browsers from displaying `audio` without controls.
+ * Remove excess height in iOS 5 devices.
+ */
+/* line 70, _normalize.scss */
+audio:not([controls]) {
+  display: none;
+  height: 0;
+}
+
+/**
+ * Address `[hidden]` styling not present in IE 8/9.
+ * Hide the `template` element in IE, Safari, and Firefox < 22.
+ */
+/* line 80, _normalize.scss */
+[hidden],
+template {
+  display: none;
+}
+
+/* Links
+   ========================================================================== */
+/**
+ * Remove the gray background color from active links in IE 10.
+ */
+/* line 92, _normalize.scss */
+a {
+  background: transparent;
+}
+
+/**
+ * Improve readability when focused and also mouse hovered in all browsers.
+ */
+/* line 100, _normalize.scss */
+a:active,
+a:hover {
+  outline: 0;
+}
+
+/* Text-level semantics
+   ========================================================================== */
+/**
+ * Address styling not present in IE 8/9, Safari 5, and Chrome.
+ */
+/* line 112, _normalize.scss */
+abbr[title] {
+  border-bottom: 1px dotted;
+}
+
+/**
+ * Address style set to `bolder` in Firefox 4+, Safari 5, and Chrome.
+ */
+/* line 120, _normalize.scss */
+b,
+strong {
+  font-weight: bold;
+}
+
+/**
+ * Address styling not present in Safari 5 and Chrome.
+ */
+/* line 129, _normalize.scss */
+dfn {
+  font-style: italic;
+}
+
+/**
+ * Address variable `h1` font-size and margin within `section` and `article`
+ * contexts in Firefox 4+, Safari 5, and Chrome.
+ */
+/* line 138, _normalize.scss */
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+/**
+ * Address styling not present in IE 8/9.
+ */
+/* line 147, _normalize.scss */
+mark {
+  background: #ff0;
+  color: #000;
+}
+
+/**
+ * Address inconsistent and variable font size in all browsers.
+ */
+/* line 156, _normalize.scss */
+small {
+  font-size: 80%;
+}
+
+/**
+ * Prevent `sub` and `sup` affecting `line-height` in all browsers.
+ */
+/* line 164, _normalize.scss */
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+/* line 172, _normalize.scss */
+sup {
+  top: -0.5em;
+}
+
+/* line 176, _normalize.scss */
+sub {
+  bottom: -0.25em;
+}
+
+/* Embedded content
+   ========================================================================== */
+/**
+ * Remove border when inside `a` element in IE 8/9.
+ */
+/* line 187, _normalize.scss */
+img {
+  border: 0;
+}
+
+/**
+ * Correct overflow displayed oddly in IE 9.
+ */
+/* line 195, _normalize.scss */
+svg:not(:root) {
+  overflow: hidden;
+}
+
+/* Grouping content
+   ========================================================================== */
+/**
+ * Address margin not present in IE 8/9 and Safari 5.
+ */
+/* line 206, _normalize.scss */
+figure {
+  margin: 1em 40px;
+}
+
+/**
+ * Address differences between Firefox and other browsers.
+ */
+/* line 214, _normalize.scss */
+hr {
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  height: 0;
+}
+
+/**
+ * Contain overflow in all browsers.
+ */
+/* line 224, _normalize.scss */
+pre {
+  overflow: auto;
+}
+
+/**
+ * Address odd `em`-unit font size rendering in all browsers.
+ */
+/* line 232, _normalize.scss */
+code,
+kbd,
+pre,
+samp {
+  font-family: monospace, monospace;
+  font-size: 1em;
+}
+
+/* Forms
+   ========================================================================== */
+/**
+ * Known limitation: by default, Chrome and Safari on OS X allow very limited
+ * styling of `select`, unless a `border` property is set.
+ */
+/**
+ * 1. Correct color not being inherited.
+ *    Known issue: affects color of disabled elements.
+ * 2. Correct font properties not being inherited.
+ * 3. Address margins set differently in Firefox 4+, Safari 5, and Chrome.
+ */
+/* line 255, _normalize.scss */
+button,
+input,
+optgroup,
+select,
+textarea {
+  color: inherit;
+  /* 1 */
+  font: inherit;
+  /* 2 */
+  margin: 0;
+  /* 3 */
+}
+
+/**
+ * Address `overflow` set to `hidden` in IE 8/9/10.
+ */
+/* line 269, _normalize.scss */
+button {
+  overflow: visible;
+}
+
+/**
+ * Address inconsistent `text-transform` inheritance for `button` and `select`.
+ * All other form control elements do not inherit `text-transform` values.
+ * Correct `button` style inheritance in Firefox, IE 8+, and Opera
+ * Correct `select` style inheritance in Firefox.
+ */
+/* line 280, _normalize.scss */
+button,
+select {
+  text-transform: none;
+}
+
+/**
+ * 1. Avoid the WebKit bug in Android 4.0.* where (2) destroys native `audio`
+ *    and `video` controls.
+ * 2. Correct inability to style clickable `input` types in iOS.
+ * 3. Improve usability and consistency of cursor style between image-type
+ *    `input` and others.
+ */
+/* line 293, _normalize.scss */
+button,
+html input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+  -webkit-appearance: button;
+  /* 2 */
+  cursor: pointer;
+  /* 3 */
+}
+
+/**
+ * Re-set default cursor for disabled elements.
+ */
+/* line 305, _normalize.scss */
+button[disabled],
+html input[disabled] {
+  cursor: default;
+}
+
+/**
+ * Remove inner padding and border in Firefox 4+.
+ */
+/* line 314, _normalize.scss */
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+
+/**
+ * Address Firefox 4+ setting `line-height` on `input` using `!important` in
+ * the UA stylesheet.
+ */
+/* line 325, _normalize.scss */
+input {
+  line-height: normal;
+}
+
+/**
+ * It's recommended that you don't attempt to style these elements.
+ * Firefox's implementation doesn't respect box-sizing, padding, or width.
+ *
+ * 1. Address box sizing set to `content-box` in IE 8/9/10.
+ * 2. Remove excess padding in IE 8/9/10.
+ */
+/* line 337, _normalize.scss */
+input[type="checkbox"],
+input[type="radio"] {
+  box-sizing: border-box;
+  /* 1 */
+  padding: 0;
+  /* 2 */
+}
+
+/**
+ * Fix the cursor style for Chrome's increment/decrement buttons. For certain
+ * `font-size` values of the `input`, it causes the cursor style of the
+ * decrement button to change from `default` to `text`.
+ */
+/* line 349, _normalize.scss */
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  height: auto;
+}
+
+/**
+ * 1. Address `appearance` set to `searchfield` in Safari 5 and Chrome.
+ * 2. Address `box-sizing` set to `border-box` in Safari 5 and Chrome
+ *    (include `-moz` to future-proof).
+ */
+/* line 360, _normalize.scss */
+input[type="search"] {
+  -webkit-appearance: textfield;
+  /* 1 */
+  -moz-box-sizing: content-box;
+  -webkit-box-sizing: content-box;
+  /* 2 */
+  box-sizing: content-box;
+}
+
+/**
+ * Remove inner padding and search cancel button in Safari and Chrome on OS X.
+ * Safari (but not Chrome) clips the cancel button when the search input has
+ * padding (and `textfield` appearance).
+ */
+/* line 373, _normalize.scss */
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/**
+ * Define consistent border, margin, and padding.
+ */
+/* line 382, _normalize.scss */
+fieldset {
+  border: 1px solid #c0c0c0;
+  margin: 0 2px;
+  padding: 0.35em 0.625em 0.75em;
+}
+
+/**
+ * 1. Correct `color` not being inherited in IE 8/9.
+ * 2. Remove padding so people aren't caught out if they zero out fieldsets.
+ */
+/* line 393, _normalize.scss */
+legend {
+  border: 0;
+  /* 1 */
+  padding: 0;
+  /* 2 */
+}
+
+/**
+ * Remove default vertical scrollbar in IE 8/9.
+ */
+/* line 402, _normalize.scss */
+textarea {
+  overflow: auto;
+}
+
+/**
+ * Don't inherit the `font-weight` (applied by a rule above).
+ * NOTE: the default cannot safely be changed in Chrome and Safari on OS X.
+ */
+/* line 411, _normalize.scss */
+optgroup {
+  font-weight: bold;
+}
+
+/* Tables
+   ========================================================================== */
+/**
+ * Remove most spacing between table cells.
+ */
+/* line 422, _normalize.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 427, _normalize.scss */
+td,
+th {
+  padding: 0;
+}
+
+/*! HTML5 Boilerplate v4.3.0 | MIT License | http://h5bp.com/ */
+/*
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ */
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+/* line 444, _normalize.scss */
+html {
+  color: #222;
+  font-size: 1em;
+  line-height: 1.4;
+}
+
+/*
+ * Remove text-shadow in selection highlight: h5bp.com/i
+ * These selection rule sets have to be separate.
+ * Customize the background color to match your design.
+ */
+/* line 456, _normalize.scss */
+::-moz-selection {
+  background: #b3d4fc;
+  text-shadow: none;
+}
+
+/* line 461, _normalize.scss */
+::selection {
+  background: #b3d4fc;
+  text-shadow: none;
+}
+
+/*
+ * A better looking default horizontal rule
+ */
+/* line 470, _normalize.scss */
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #ccc;
+  margin: 1em 0;
+  padding: 0;
+}
+
+/*
+ * Remove the gap between images, videos, audio and canvas and the bottom of
+ * their containers: h5bp.com/i/440
+ */
+/* line 484, _normalize.scss */
+audio,
+canvas,
+img,
+svg,
+video {
+  vertical-align: middle;
+}
+
+/*
+ * Remove default fieldset styles.
+ */
+/* line 496, _normalize.scss */
+fieldset {
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+
+/*
+ * Allow only vertical resizing of textareas.
+ */
+/* line 506, _normalize.scss */
+textarea {
+  resize: vertical;
+}
+
+/* ==========================================================================
+   Browse Happy prompt
+   ========================================================================== */
+/* line 514, _normalize.scss */
+.browsehappy {
+  margin: 0.2em 0;
+  background: #ccc;
+  color: #000;
+  padding: 0.2em 0;
+}
+
+/* FROM THE TWITTER BOOTSTRAP */
+/* line 2, _main.scss */
+.label {
+  display: inline;
+  padding: .2em .6em .3em;
+  font-size: 75%;
+  font-weight: bold;
+  line-height: 1;
+  color: #fff;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: baseline;
+  border-radius: .25em;
+}
+
+/* line 14, _main.scss */
+a.label:hover,
+a.label:focus {
+  color: #fff;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* line 20, _main.scss */
+.label:empty {
+  display: none;
+}
+
+/* line 23, _main.scss */
+.btn .label {
+  position: relative;
+  top: -1px;
+}
+
+/* line 27, _main.scss */
+.label-default {
+  background-color: #999;
+}
+
+/* line 30, _main.scss */
+.label-default[href]:hover,
+.label-default[href]:focus {
+  background-color: #808080;
+}
+
+/* line 34, _main.scss */
+.label-primary {
+  background-color: #428bca;
+}
+
+/* line 37, _main.scss */
+.label-primary[href]:hover,
+.label-primary[href]:focus {
+  background-color: #3071a9;
+}
+
+/* line 41, _main.scss */
+.label-success {
+  background-color: #5cb85c;
+}
+
+/* line 44, _main.scss */
+.label-success[href]:hover,
+.label-success[href]:focus {
+  background-color: #449d44;
+}
+
+/* line 48, _main.scss */
+.label-info {
+  background-color: #5bc0de;
+}
+
+/* line 51, _main.scss */
+.label-info[href]:hover,
+.label-info[href]:focus {
+  background-color: #31b0d5;
+}
+
+/* line 55, _main.scss */
+.label-warning {
+  background-color: #f0ad4e;
+}
+
+/* line 58, _main.scss */
+.label-warning[href]:hover,
+.label-warning[href]:focus {
+  background-color: #ec971f;
+}
+
+/* line 62, _main.scss */
+.label-danger {
+  background-color: #d9534f;
+}
+
+/* line 65, _main.scss */
+.label-danger[href]:hover,
+.label-danger[href]:focus {
+  background-color: #c9302c;
+}
+
+/* line 70, _main.scss */
+.tooltip {
+  /*
+    position: absolute;
+    z-index: 1030;
+  */
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+  font-size: 12px;
+  line-height: 1.4;
+  visibility: visible;
+  /*
+    filter: alpha(opacity=0);
+    opacity: 0;
+  */
+}
+
+/* line 86, _main.scss */
+.tooltip.in {
+  filter: alpha(opacity=90);
+  opacity: .9;
+}
+
+/* line 90, _main.scss */
+.tooltip.top {
+  padding: 5px 0;
+  margin-top: -3px;
+}
+
+/* line 94, _main.scss */
+.tooltip.right {
+  padding: 0 5px;
+  margin-left: 3px;
+}
+
+/* line 98, _main.scss */
+.tooltip.bottom {
+  padding: 5px 0;
+  margin-top: 3px;
+}
+
+/* line 102, _main.scss */
+.tooltip.left {
+  padding: 0 5px;
+  margin-left: -3px;
+}
+
+/* line 106, _main.scss */
+.tooltip-inner {
+  max-width: 200px;
+  padding: 3px 8px;
+  color: #fff;
+  text-align: center;
+  text-decoration: none;
+  background-color: #000;
+  border-radius: 4px;
+}
+
+/* line 115, _main.scss */
+.tooltip-arrow {
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-color: transparent;
+  border-style: solid;
+}
+
+/* line 122, _main.scss */
+.tooltip.top .tooltip-arrow {
+  bottom: 0;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px 5px 0;
+  border-top-color: #000;
+}
+
+/* line 129, _main.scss */
+.tooltip.top-left .tooltip-arrow {
+  bottom: 0;
+  left: 5px;
+  border-width: 5px 5px 0;
+  border-top-color: #000;
+}
+
+/* line 135, _main.scss */
+.tooltip.top-right .tooltip-arrow {
+  right: 5px;
+  bottom: 0;
+  border-width: 5px 5px 0;
+  border-top-color: #000;
+}
+
+/* line 141, _main.scss */
+.tooltip.right .tooltip-arrow {
+  top: 50%;
+  left: 0;
+  margin-top: -5px;
+  border-width: 5px 5px 5px 0;
+  border-right-color: #000;
+}
+
+/* line 148, _main.scss */
+.tooltip.left .tooltip-arrow {
+  top: 50%;
+  right: 0;
+  margin-top: -5px;
+  border-width: 5px 0 5px 5px;
+  border-left-color: #000;
+}
+
+/* line 155, _main.scss */
+.tooltip.bottom .tooltip-arrow {
+  top: 0;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 0 5px 5px;
+  border-bottom-color: #000;
+}
+
+/* line 162, _main.scss */
+.tooltip.bottom-left .tooltip-arrow {
+  top: 0;
+  left: 5px;
+  border-width: 0 5px 5px;
+  border-bottom-color: #000;
+}
+
+/* line 168, _main.scss */
+.tooltip.bottom-right .tooltip-arrow {
+  top: 0;
+  right: 5px;
+  border-width: 0 5px 5px;
+  border-bottom-color: #000;
+}
+
+/* END BOOTSTRAPS */
+/* line 176, _main.scss */
+body {
+  background-color: #eee;
+}
+
+/* line 179, _main.scss */
+.wrap-it-up {
+  padding: 50px 1%;
+}
+
+/* line 182, _main.scss */
+a {
+  text-decoration: underline;
+  color: #333;
+}
+
+/* line 186, _main.scss */
+a:hover {
+  text-decoration: none;
+  color: #000;
+}
+
+/* line 190, _main.scss */
+cite {
+  font-style: italic;
+}
+
+/* line 194, _main.scss */
+header {
+  margin: 0 0 2em;
+  text-align: center;
+}
+
+/* line 198, _main.scss */
+.site-title {
+  margin: 0;
+  font-size: 32px;
+  font-weight: normal;
+}
+
+/* line 203, _main.scss */
+.site-subtitle {
+  margin: .5em;
+  font-size: 26px;
+  font-weight: normal;
+}
+
+/* line 208, _main.scss */
+.site-subtitle a {
+  position: relative;
+}
+
+/* line 212, _main.scss */
+footer {
+  margin: 2em 0 0;
+  text-align: center;
+}
+
+/* line 216, _main.scss */
+footer h3 {
+  font-size: 22px;
+}
+
+/* line 219, _main.scss */
+footer ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+/* line 223, _main.scss */
+footer li {
+  margin: .5em auto;
+}
+
+/* line 228, _main.scss */
+.embed-wrap {
+  width: 300px;
+  float: left;
+  margin: 1.5%;
+}
+
+/* line 233, _main.scss */
+.embed-wrap:nth-child(3n) {
+  float: right;
+}
+
+/* line 236, _main.scss */
+.embed-twitter {
+  width: 33%;
+  min-width: 250px;
+  max-width: 400px;
+}
+
+/* line 237, _main.scss */
+.embed-facebook {
+  width: 350px;
+}
+
+/* line 238, _main.scss */
+.embed-googleplus {
+  width: 450px;
+}
+
+/* line 239, _main.scss */
+.embed-instagram {
+  width: 33%;
+  min-width: 240px;
+  max-width: 400px;
+}
+
+/* line 240, _main.scss */
+.embed-instagram .fluid-width-video-wrapper {
+  padding-bottom: 100px;
+}
+
+/* adds fixed-height chrome to fitvid */
+/* line 241, _main.scss */
+.embed-pinterest {
+  width: 237px;
+}
+
+/* line 242, _main.scss */
+.embed-vine {
+  width: 300px;
+}
+
+/* line 243, _main.scss */
+.embed-square {
+  width: 300px;
+}
+
+/* line 244, _main.scss */
+.embed-getty {
+  width: 400px;
+}
+
+/* line 245, _main.scss */
+.embed-youtube {
+  width: 33%;
+  max-width: 400px;
+}
+
+/* line 246, _main.scss */
+.embed-tweet {
+  width: 110px;
+}
+
+/* line 247, _main.scss */
+.embed-like {
+  width: 50px;
+}
+
+/* line 248, _main.scss */
+.embed-plus {
+  width: 55px;
+}
+
+/* line 250, _main.scss */
+.project-link {
+  font-size: 14px;
+  font-weight: bold;
+}
+
+/* line 254, _main.scss */
+.embed-facebook .project-link {
+  margin-top: .6em;
+}
+
+/* line 255, _main.scss */
+.embed-googleplus .project-link {
+  margin-top: .1em;
+}
+
+/* line 256, _main.scss */
+.embed-instagram .project-link {
+  margin-top: .3em;
+}
+
+/* line 257, _main.scss */
+.embed-pinterest .project-link {
+  margin-top: .6em;
+}
+
+/* line 258, _main.scss */
+.embed-getty .project-link {
+  margin-top: .3em;
+}
+
+/* line 259, _main.scss */
+.embed-youtube .project-link {
+  margin-top: .6em;
+}
+
+/* line 261, _main.scss */
+.blocker {
+  float: left;
+  width: 150px;
+}
+
+@media only screen and (max-width: 600px) {
+  /* line 269, _main.scss */
+  .wrap-it-up {
+    padding: 40px 1%;
+  }
+
+  /* line 272, _main.scss */
+  .site-title {
+    font-size: 21px;
+  }
+
+  /* line 275, _main.scss */
+  .site-subtitle {
+    font-size: 18px;
+    margin-bottom: 0;
+  }
+
+  /* line 279, _main.scss */
+  .embed-wrap,
+  .embed-wrap:nth-child(3n) {
+    float: none;
+    clear: both;
+    margin: 0 auto 2em;
+  }
+
+  /* line 285, _main.scss */
+  .embed-twitter {
+    width: 100%;
+  }
+
+  /* line 286, _main.scss */
+  .embed-instagram {
+    width: 100%;
+  }
+
+  /* line 287, _main.scss */
+  .embed-youtube {
+    width: 100%;
+  }
+
+  /* line 288, _main.scss */
+  .blocker,
+  .filler {
+    display: none;
+  }
+}
+@media only screen and (max-width: 470px) {
+  /* line 294, _main.scss */
+  .embed-googleplus {
+    width: 100%;
+    overflow: auto;
+  }
+}
+@media only screen and (max-width: 420px) {
+  /* line 300, _main.scss */
+  .embed-getty {
+    width: 100%;
+    overflow: auto;
+  }
+}
+@media only screen and (max-width: 370px) {
+  /* line 306, _main.scss */
+  .embed-facebook {
+    width: 100%;
+    overflow: auto;
+  }
+}
+/* line 312, _main.scss */
+article {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* line 316, _main.scss */
+article section {
+  background-color: #fff;
+  padding: 10px;
+}
+
+/* line 320, _main.scss */
+article .left_section {
+  float: left;
+  width: 49%;
+}
+
+/* line 324, _main.scss */
+article .right_section {
+  float: right;
+  width: 49%;
+}
+
+/* line 328, _main.scss */
+article .calendar {
+  position: relative;
+  padding-bottom: 90%;
+  height: 0;
+}
+
+/* line 333, _main.scss */
+article .calendar iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/* Sunday Routine Interview -------------------------------------------- */
+/* line 343, _main.scss */
+#sunday_routine {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: #555;
+  line-height: 1.3em;
+}
+
+/* line 348, _main.scss */
+#sunday_routine h2 {
+  text-transform: none;
+  font-weight: bold;
+  color: #000;
+  margin-bottom: 1.5em;
+  font-size: 18px;
+}
+
+/* line 355, _main.scss */
+#sunday_routine p {
+  margin-top: .2em;
+  margin-bottom: 1.5em;
+}
+
+/* line 359, _main.scss */
+#sunday_routine h3 {
+  text-transform: none;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1.3em;
+  color: #000;
+}
+
+/* line 366, _main.scss */
+#sunday_routine img + h3,
+#sunday_routine p + h3 {
+  margin-top: 2em;
+}
+
+/* line 370, _main.scss */
+#sunday_routine .journal {
+  color: #000;
+}
+
+/* line 373, _main.scss */
+#sunday_routine .journal .date {
+  color: #6a2bb7;
+}
+
+/* line 374, _main.scss */
+#sunday_routine .journal p {
+  margin-top: .2em;
+  margin-bottom: .2em;
+}
+
+/* line 378, _main.scss */
+#sunday_routine p + .journal {
+  margin-top: -.6em;
+}
+
+/* line 381, _main.scss */
+#sunday_routine .time {
+  color: #ac71f6;
+}
+
+/* line 382, _main.scss */
+#sunday_routine .caption {
+  color: #aaaaaa;
+  font-size: 13px;
+}
+
+/* line 383, _main.scss */
+#sunday_routine .caption-plus {
+  color: #555;
+  font-size: 13px;
+}
+
+/* line 384, _main.scss */
+#sunday_routine .notes1 {
+  font-family: 'Hiragino Kaku Gothic ProN';
+  font-size: 14.0px;
+  color: #942193;
+}
+
+/* line 385, _main.scss */
+#sunday_routine .notes2 {
+  font-family: 'Hiragino Kaku Gothic ProN';
+  font-size: 14.0px;
+  color: #f93ee6;
+}
+
+/* line 386, _main.scss */
+#sunday_routine .milton {
+  font-family: 'American Typewriter', Courier;
+  font-size: 17.0px;
+  color: #000;
+}
+
+/* line 387, _main.scss */
+#sunday_routine .heart {
+  color: #ff3674;
+}
+
+/* line 388, _main.scss */
+#sunday_routine .money {
+  color: #009f49;
+}
+
+/* line 389, _main.scss */
+#sunday_routine .resets {
+  color: #fa9700;
+}
+
+/* line 390, _main.scss */
+#sunday_routine .brownsville {
+  color: #a77b4a;
+}
+
+/* line 391, _main.scss */
+#sunday_routine .selfdoubt {
+  color: #aaaaaa;
+  font-style: italic;
+}
+
+/* line 392, _main.scss */
+#sunday_routine .sad {
+  color: #5f9edd;
+  font-weight: bold;
+}
+
+/* line 393, _main.scss */
+#sunday_routine .note {
+  color: #ac71f6;
+}
+
+/* line 394, _main.scss */
+#sunday_routine .footnote {
+  color: #2dd975;
+  font-size: 14px;
+}
+
+/* line 395, _main.scss */
+#sunday_routine .always {
+  color: #f3296a;
+}
+
+/* line 396, _main.scss */
+#sunday_routine .keurig1 {
+  color: #85a137;
+}
+
+/* line 397, _main.scss */
+#sunday_routine .keurig2 {
+  color: #cd9b0d;
+}
+
+/* line 398, _main.scss */
+#sunday_routine .senses {
+  color: #0096ff;
+}
+
+/* line 399, _main.scss */
+#sunday_routine .crema {
+  color: #945200;
+}
+
+/* line 400, _main.scss */
+#sunday_routine .nascar1 {
+  color: #fad75c;
+}
+
+/* line 401, _main.scss */
+#sunday_routine .nascar2 {
+  color: #e73444;
+}
+
+/* line 402, _main.scss */
+#sunday_routine .nascar3 {
+  color: #b42592;
+}
+
+/* line 403, _main.scss */
+#sunday_routine .nascar4 {
+  color: #2c76c1;
+}
+
+/* line 404, _main.scss */
+#sunday_routine .nfl {
+  color: #c71c28;
+}
+
+/* end sunday routine */
+/* line 408, _main.scss */
+.nytoak {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  margin-left: -25%;
+  width: 50%;
+  text-align: center;
+  background-color: #3cac80;
+  box-shadow: 0px 0px 40px #444;
+  padding: 5px;
+}
+
+/* line 418, _main.scss */
+.nytoak a {
+  color: #fff;
+}
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+/*
+ * Hide from both screenreaders and browsers: h5bp.com/u
+ */
+/* line 430, _main.scss */
+.hidden {
+  display: none !important;
+  visibility: hidden;
+}
+
+/*
+ * Hide only visually, but have it available for screenreaders: h5bp.com/v
+ */
+/* line 439, _main.scss */
+.visuallyhidden {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+}
+
+/*
+ * Extends the .visuallyhidden class to allow the element to be focusable
+ * when navigated to via the keyboard: h5bp.com/p
+ */
+/* line 455, _main.scss */
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+  clip: auto;
+  height: auto;
+  margin: 0;
+  overflow: visible;
+  position: static;
+  width: auto;
+}
+
+/*
+ * Hide visually and from screenreaders, but maintain layout
+ */
+/* line 469, _main.scss */
+.invisible {
+  visibility: hidden;
+}
+
+/*
+ * Clearfix: contain floats
+ *
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    `contenteditable` attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that receive the `clearfix` class.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+/* line 485, _main.scss */
+.clearfix:before,
+.clearfix:after {
+  content: " ";
+  /* 1 */
+  display: table;
+  /* 2 */
+}
+
+/* line 491, _main.scss */
+.clearfix:after {
+  clear: both;
+}
+
+/* ==========================================================================
+   EXAMPLE Media Queries for Responsive Design.
+   These examples override the primary ('mobile first') styles.
+   Modify as content requires.
+   ========================================================================== */
+@media print, (-o-min-device-pixel-ratio: 5 / 4), (-webkit-min-device-pixel-ratio: 1.25), (min-resolution: 120dpi) {
+  /* Style adjustments for high resolution devices */
+}
+/* ==========================================================================
+   Print styles.
+   Inlined to avoid required HTTP connection: h5bp.com/r
+   ========================================================================== */
+@media print {
+  /* line 514, _main.scss */
+  * {
+    background: transparent !important;
+    color: #000 !important;
+    /* Black prints faster: h5bp.com/s */
+    box-shadow: none !important;
+    text-shadow: none !important;
+  }
+
+  /* line 521, _main.scss */
+  a,
+  a:visited {
+    text-decoration: underline;
+  }
+
+  /* line 526, _main.scss */
+  a[href]:after {
+    content: " (" attr(href) ")";
+  }
+
+  /* line 530, _main.scss */
+  abbr[title]:after {
+    content: " (" attr(title) ")";
+  }
+
+  /*
+   * Don't show links for images, or javascript/internal links
+   */
+  /* line 538, _main.scss */
+  a[href^="javascript:"]:after,
+  a[href^="#"]:after {
+    content: "";
+  }
+
+  /* line 543, _main.scss */
+  pre,
+  blockquote {
+    border: 1px solid #999;
+    page-break-inside: avoid;
+  }
+
+  /* line 549, _main.scss */
+  thead {
+    display: table-header-group;
+    /* h5bp.com/t */
+  }
+
+  /* line 553, _main.scss */
+  tr,
+  img {
+    page-break-inside: avoid;
+  }
+
+  /* line 558, _main.scss */
+  img {
+    max-width: 100% !important;
+  }
+
+  /* line 562, _main.scss */
+  p,
+  h2,
+  h3 {
+    orphans: 3;
+    widows: 3;
+  }
+
+  /* line 569, _main.scss */
+  h2,
+  h3 {
+    page-break-after: avoid;
+  }
+}

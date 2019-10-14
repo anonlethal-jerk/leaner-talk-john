@@ -3,10 +3,10 @@
 ?>
 
   <title>Hello!  × J̲̲̲K̲̲̲ K̲̲̲e̲̲̲l̲̲̲l̲̲̲e̲̲̲r̲̲̲</title>
-  <meta name="description" content="It's a homepage. Leads to a collection of work done by JK Keller">
+  <meta name="description" content="It’s a homepage. Leads to a collection of work done by JK Keller">
   <meta name="designer" content="JK Keller">
   <meta name="author" content="Jonathan Keller Keller">
-  <meta name="copyright" content="Copyright 1976-2014. All the work on JK Keller's site is licensed under a Creative Commons Attribution-NonCommercial 3.0 Unported License. See http://creativecommons.org/licenses/by-nc/3.0/ for details.">
+  <meta name="copyright" content="Copyright 1976-2014. All the work on JK Keller’s site is licensed under a Creative Commons Attribution-NonCommercial 3.0 Unported License. See http://creativecommons.org/licenses/by-nc/3.0/ for details.">
 
 
   <!--  for the facebooks  -->
@@ -22,12 +22,12 @@
   <meta name="twitter:creator" content="@jk_keller">
   <meta name="twitter:url" content="http://jk-keller.com/">
   <meta name="twitter:title" content="Hello! : J̲̲̲K̲̲̲ K̲̲̲e̲̲̲l̲̲̲l̲̲̲e̲̲̲r̲̲̲">
-  <meta name="twitter:description" content="It's a homepage. Leads to a collection of work done by JK Keller">
+  <meta name="twitter:description" content="It’s a homepage. Leads to a collection of work done by JK Keller">
   <meta name="twitter:image" content="http://jk-keller.com/homepages/fluid_line_grid/_img/fb-jk-keller-website.jpg">
   <meta name="twitter:image:width" content="640">
   <meta name="twitter:image:height" content="712">
 
-  <link rel="stylesheet" href="_css/style.css">
+  <link rel="stylesheet" href="_css/style.min.css">
 
   <script src="_js/modernizr-2.5.3.min.js"></script>
 </head>
@@ -197,7 +197,7 @@
     </div>
     <div class="project">
       <figure>
-        <a href="#linkrot">
+        <a href="/fans-flags/">
           <img src="_img/thumb-jk-keller-coriolis_beaufort-scale.png" alt="">
           <img src="_img/thumb-jk-keller-coriolis_beaufort-flag.png" alt="">
         </a>

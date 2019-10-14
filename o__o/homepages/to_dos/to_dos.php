@@ -14,7 +14,7 @@
   <meta property=og:locale content="en_US" />
   <meta property=og:image content="http://jk-keller.com/homepages/to_dos/_img/jk_keller-portrait.jpg"/>
 
-  <link href="_css/bootstrap-20120122a.css" rel="stylesheet">
+  <link href="_css/style.min.css" rel="stylesheet">
 
   <script src="_js/modernizr-2.0.6.min.js"></script>
 </head>

@@ -13,7 +13,7 @@
   <meta property=og:type content="website"/>
   <meta property=og:image content="_img/jk_keller-portrait-02.jpg"/>
 
-  <link rel="stylesheet" href="_css/style.css">
+  <link rel="stylesheet" href="_css/style.min.css">
 
   <script src="_js/modernizr-2.0.min.js"></script>
   <script src="_js/respond.min.js"></script>

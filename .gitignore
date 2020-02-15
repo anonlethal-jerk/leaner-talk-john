@@ -9,3 +9,8 @@ x__x/
 sftp-config.json
 *.sublime-project
 *.sublime-workspace
+
+# the sissyfuss situation...
+_dev/
+o__o/*/_img
+o__o/homepages/*/_img

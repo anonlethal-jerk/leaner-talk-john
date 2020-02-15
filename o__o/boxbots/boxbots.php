@@ -1,7 +1,7 @@
 <section class="images images--boxbots">
-	<nav class="nav--boxbots clearfix">
+	<nav class="nav--boxbots">
 		<button id="btn--toggle">shadow</button>
-		sort by:
+		<span>sort by:</span>
 		<button id="btn--date" class="sort--desc">date</button>
 		<button id="btn--title">title</button>
 		<button id="btn--height">height</button>
@@ -14,6 +14,7 @@
 <?php
 		// for ( $i = 0; $i < count($projects['series'][$prj_index]['works']); $i++ ) {
 		foreach(array_reverse($projects['series'][$prj_index]['works']) as $boxbot) {
+			if (!empty( $boxbot["height"] )) {
 ?>
 <?php
 
@@ -35,7 +36,8 @@
 <?php if (!empty( $boxbot["offsetbottompx"] )) { ?>
 		<a style="bottom:<?=$boxbot["offsetbottompx"];?>" href="<?=$boxbot["slug"];?>">
 <?php } else { ?>
-		<a href="<?=$boxbot["slug"];?>">
+		<!-- <a href="<?=$boxbot["slug"];?>"> -->
+		<a href="x__x/color-large/<?=$boxbot["filename"];?>.png">
 <?php }; ?>
 			<img class="shadow lazyload" src="/x__x/loading.gif" data-src="x__x/shadow-small/<?=$boxbot["filename"];?>.png" width="<?=($boxbot["percenthalfwidthpx"]);?>" height="<?=($boxbot["percenthalfheightpx"]);?>" alt="<?=$boxbot["title"];?> BoxBot" title="<?=$boxbot["title"];?>, <?= $boxbot["nice_date"]; ?>, <?=$boxbot["height"];?> × <?=$boxbot["width"];?> mm">
 			<img class="color lazyload" src="/x__x/loading.gif" data-src="x__x/color-small/<?=$boxbot["filename"];?>.png" width="<?=($boxbot["percenthalfwidthpx"]);?>" height="<?=($boxbot["percenthalfheightpx"]);?>" alt="<?=$boxbot["title"];?> BoxBot" title="<?=$boxbot["title"];?>, <?= $boxbot["nice_date"]; ?>, <?=$boxbot["height"];?> × <?=$boxbot["width"];?> mm">
@@ -60,7 +62,8 @@
 -->
 	</figure><!--
 <?php
-		}
+			} // end if
+		} // end foreach
 ?>
 -->
 </div>

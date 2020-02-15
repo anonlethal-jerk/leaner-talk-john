@@ -1,7 +1,7 @@
 .body--boxbots {
 	img {
 	    max-width: 100%;
-	    height: auto
+	    // height: auto
 	}
 	#popup {
 		display: none;
@@ -14,7 +14,11 @@
 		color: #fff;
 		max-width: 50%;
 		line-height: 0;
-		&.show {
+		filter: drop-shadow(2px 2px 1px #fff)
+		        drop-shadow(-2px 2px 1px #fff)
+		        drop-shadow(2px -2px 1px #fff)
+		        drop-shadow(-2px -2px 1px #fff);
+   		&.show {
 			display: block;
 		}
 		img {
@@ -53,14 +57,20 @@
 
 	.nav--boxbot,
 	.nav--boxbots {
-		margin-bottom: .25rem;
+		margin: 0 1rem .5rem;
+		display: flex;
+		justify-content: center;
+		align-items: baseline;
 
 		a,
 		button {
-			min-width: 12rem;
-			display: block;
+			flex: 1 1 auto;
+			max-width: 8rem;
+			// display: block;
 			height: 1.875rem;
 			padding: .375rem .375rem;
+			border: 0;
+			margin: 0 .125rem;
 			overflow: hidden;
 			white-space: nowrap;
 			text-overflow: ellipsis;
@@ -71,6 +81,17 @@
 				background: #000;
 				color: #fff;
 			}
+		}
+		span {
+			flex: 1 1 auto;
+			max-width: 8rem;
+			height: 1.875rem;
+			padding: .375rem .75rem;
+			overflow: hidden;
+			white-space: nowrap;
+			text-overflow: ellipsis;
+			font-size: .875rem;
+			text-align: right;
 		}
 		// #btn--toggle {
 		// 	margin-left: 33.5%;
@@ -222,6 +243,10 @@
 					.shadow {
 						opacity: 1;
 					}
+					filter: drop-shadow(1px 1px 1px rgba(128,128,128,.5))
+					        drop-shadow(-1px 1px 1px rgba(128,128,128,.5))
+					        drop-shadow(1px -1px 1px rgba(128,128,128,.5))
+					        drop-shadow(-1px -1px 1px rgba(128,128,128,.5));
 				}
 			}
 			img {

@@ -479,27 +479,26 @@ template {
 /* line 1, _global.scss */
 body {
   background: linear-gradient(135deg, #dbd0b7 0%, #b0d4d1 100%) fixed;
-  text-align: center;
 }
 
-/* line 5, _global.scss */
+/* line 4, _global.scss */
 h1, h2, h3, h4, h5, h6 {
   line-height: 1.125;
 }
 
-/* line 8, _global.scss */
+/* line 7, _global.scss */
 figure {
   display: inline-block;
 }
 
-/* line 11, _global.scss */
+/* line 10, _global.scss */
 figcaption {
   font-size: .75rem;
   margin-top: 0.25rem;
 }
 
-/* line 15, _global.scss */
-img {
+/* line 14, _global.scss */
+body:not(.body--boxbots) img {
   max-width: 100%;
   height: auto;
 }
@@ -514,7 +513,7 @@ img {
     opacity: 0;
   }
 }
-/* line 36, _global.scss */
+/* line 35, _global.scss */
 .jk {
   position: fixed;
   display: block;
@@ -524,17 +523,154 @@ img {
   font-weight: bold;
 }
 
-/* line 44, _global.scss */
+/* line 43, _global.scss */
 .subtitle {
   color: #fff;
 }
 
-/* line 54, _global.scss */
+/* line 47, _global.scss */
+#groundhog {
+  display: block;
+  position: fixed;
+  top: 85px;
+  left: 27px;
+  z-index: 9999;
+  box-shadow: 0 0 30px 5px #c71123;
+  transition: top 10s, left 10s, box-shadow 2s;
+}
+/* line 56, _global.scss */
+.body--home #groundhog {
+  top: 16px;
+  left: 16px;
+}
+/* line 60, _global.scss */
+#groundhog a {
+  display: block;
+  background-color: transparent;
+  color: #fff;
+  padding: 1rem 1.25rem;
+  font-size: 1.25rem;
+  line-height: 1.25rem;
+  text-decoration: none;
+}
+/* line 70, _global.scss */
+#groundhog a:hover {
+  background-color: #fff;
+  color: #000;
+}
+
+/* line 84, _global.scss */
 main {
   margin: 1rem;
 }
 
-/* line 58, _global.scss */
+/* line 89, _global.scss */
+.no_break {
+  white-space: nowrap;
+}
+
+/* line 93, _global.scss */
+.table--series_info,
+.table--prj_info {
+  min-width: 100%;
+  margin: 1rem 0;
+  font-size: .75rem;
+}
+/* line 99, _global.scss */
+.table--series_info td,
+.table--prj_info td {
+  background: #fff;
+  padding: .33rem .5rem;
+  border: 1px solid #ddd;
+  text-align: left;
+  vertical-align: top;
+}
+/* line 109, _global.scss */
+.table--series_info thead td,
+.table--series_info tfoot td,
+.table--prj_info thead td,
+.table--prj_info tfoot td {
+  font-weight: bold;
+}
+/* line 114, _global.scss */
+.table--series_info ul,
+.table--prj_info ul {
+  padding-left: 1rem;
+}
+/* line 117, _global.scss */
+.table--series_info .td--prj_id,
+.table--prj_info .td--prj_id {
+  font-family: Geneva, monospace;
+  font-size: .675rem;
+}
+/* line 121, _global.scss */
+.table--series_info .td--empty,
+.table--prj_info .td--empty {
+  background: transparent;
+}
+
+/* line 125, _global.scss */
+.table--series_info {
+  margin-top: 0;
+  font-size: .875rem;
+}
+
+/* line 130, _global.scss */
+.list--dupe_ids {
+  font-family: geneva, monospace;
+  font-weight: bold;
+  color: #f00;
+}
+
+/* line 135, _global.scss */
+.list--check_ids {
+  font-family: geneva, monospace;
+}
+
+/* line 139, _global.scss */
+.cneterd {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-justify-content: center;
+  -moz-justify-content: center;
+  -ms-justify-content: center;
+  justify-content: center;
+  -moz-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+  height: 100vh;
+}
+
+/* line 2, _home.scss */
+.body--home figure {
+  margin: 1rem auto 2rem;
+}
+/* line 5, _home.scss */
+.body--home h2 {
+  font-size: 2.25rem;
+  padding: 1rem .33rem;
+}
+/* line 9, _home.scss */
+.body--home h3 {
+  padding-left: .5rem;
+}
+
+/* line 13, _home.scss */
+.beckett {
+  text-align: center;
+}
+
+/* line 17, _home.scss */
+.mean_year {
+  position: relative;
+}
+
+/* line 20, _home.scss */
 .the_end {
   display: block;
   position: absolute;
@@ -544,100 +680,38 @@ main {
   pointer-events: none;
 }
 
-/* line 67, _global.scss */
-.no_break {
-  white-space: nowrap;
-}
-
-/* line 71, _global.scss */
-.table--series_info,
-.table--prj_info {
-  min-width: 100%;
-  margin: 1rem 0;
-  font-size: .75rem;
-}
-/* line 77, _global.scss */
-.table--series_info td,
-.table--prj_info td {
-  background: #fff;
-  padding: .33rem .5rem;
-  border: 1px solid #ddd;
-  text-align: left;
-  vertical-align: top;
-}
-/* line 87, _global.scss */
-.table--series_info thead td,
-.table--series_info tfoot td,
-.table--prj_info thead td,
-.table--prj_info tfoot td {
-  font-weight: bold;
-}
-/* line 92, _global.scss */
-.table--series_info ul,
-.table--prj_info ul {
-  padding-left: 1rem;
-}
-/* line 95, _global.scss */
-.table--series_info .td--prj_id,
-.table--prj_info .td--prj_id {
-  font-family: Geneva, monospace;
-}
-/* line 98, _global.scss */
-.table--series_info .td--empty,
-.table--prj_info .td--empty {
-  background: transparent;
-}
-
-/* line 102, _global.scss */
-.table--series_info {
-  font-size: .875rem;
-}
-
-/* line 106, _global.scss */
-.list--dupe_ids {
-  font-family: geneva, monospace;
-  font-weight: bold;
-  color: #f00;
-}
-
-/* line 111, _global.scss */
-.list--check_ids {
-  font-family: geneva, monospace;
-}
-
-/* line 2, _home.scss */
-.home figure {
-  margin: 1rem auto 2rem;
-}
-/* line 5, _home.scss */
-.home h2 {
-  background: linear-gradient(180deg, rgba(0, 0, 40, 0.5) 0%, transparent 80%);
-  font-size: 2.25rem;
-  padding: 1rem 0;
-}
-
-/* line 6, _prj_tables.scss */
+/* line 7, _prj_tables.scss */
 tr:hover td {
   background: #efd;
 }
+/* line 11, _prj_tables.scss */
+.table--prj_info tbody tr:hover td {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
 
-/* line 9, _prj_tables.scss */
+/* line 17, _prj_tables.scss */
 .td--prj_date {
   white-space: nowrap;
 }
 
-/* line 14, _prj_tables.scss */
+/* line 22, _prj_tables.scss */
 .body--boxbots .td--series_subtitle,
 .body--boxbots .td--series_slug,
 .body--boxbots .td--prj_slug,
 .body--boxbots .td--prj_subtitle,
 .body--boxbots .td--prj_duration,
-.body--boxbots .td--prj_status,
 .body--boxbots .td--prj_description {
   display: none;
 }
+@media screen and (max-width: 1080px) {
+  /* line 31, _prj_tables.scss */
+  .body--boxbots .td--prj_status {
+    display: none;
+  }
+}
 @media screen and (max-width: 960px) {
-  /* line 24, _prj_tables.scss */
+  /* line 36, _prj_tables.scss */
   .body--boxbots .td--series_to_dos,
   .body--boxbots .td--prj_location,
   .body--boxbots .td--prj_notes {
@@ -645,19 +719,19 @@ tr:hover td {
   }
 }
 @media screen and (max-width: 720px) {
-  /* line 31, _prj_tables.scss */
+  /* line 43, _prj_tables.scss */
   .body--boxbots .td--prj_id {
     display: none;
   }
 }
 @media screen and (max-width: 540px) {
-  /* line 36, _prj_tables.scss */
+  /* line 48, _prj_tables.scss */
   .body--boxbots .td--prj_medium {
     display: none;
   }
 }
 
-/* line 42, _prj_tables.scss */
+/* line 54, _prj_tables.scss */
 .body--dirty_mousepads .td--series_subtitle,
 .body--dirty_mousepads .td--series_slug,
 .body--dirty_mousepads .td--prj_slug,
@@ -667,7 +741,7 @@ tr:hover td {
   display: none;
 }
 
-/* line 52, _prj_tables.scss */
+/* line 64, _prj_tables.scss */
 .body--dots_dots_dots .td--series_slug,
 .body--dots_dots_dots .td--prj_slug,
 .body--dots_dots_dots .td--prj_title,
@@ -679,7 +753,6 @@ tr:hover td {
 /* line 2, _boxbots.scss */
 .body--boxbots img {
   max-width: 100%;
-  height: auto;
 }
 /* line 6, _boxbots.scss */
 .body--boxbots #popup {
@@ -693,61 +766,67 @@ tr:hover td {
   color: #fff;
   max-width: 50%;
   line-height: 0;
+  filter: drop-shadow(2px 2px 1px #fff) drop-shadow(-2px 2px 1px #fff) drop-shadow(2px -2px 1px #fff) drop-shadow(-2px -2px 1px #fff);
 }
-/* line 17, _boxbots.scss */
+/* line 21, _boxbots.scss */
 .body--boxbots #popup.show {
   display: block;
 }
-/* line 20, _boxbots.scss */
+/* line 24, _boxbots.scss */
 .body--boxbots #popup img {
   max-height: 205px;
   width: auto;
 }
-/* line 24, _boxbots.scss */
+/* line 28, _boxbots.scss */
 .body--boxbots #popup .color {
   position: relative;
   top: 0;
   left: 0;
   opacity: 1;
 }
-/* line 30, _boxbots.scss */
+/* line 34, _boxbots.scss */
 .body--boxbots #popup .shadow {
   position: absolute;
   top: 0;
   left: 0;
   opacity: 1;
 }
-/* line 37, _boxbots.scss */
+/* line 41, _boxbots.scss */
 .body--boxbots main {
   margin: 0;
 }
-/* line 40, _boxbots.scss */
+/* line 44, _boxbots.scss */
 .body--boxbots .header_info,
 .body--boxbots .prj_info {
   padding: 1rem;
 }
-/* line 44, _boxbots.scss */
+/* line 48, _boxbots.scss */
 .body--boxbots .header_info {
   background: #aeb2aa;
 }
-/* line 50, _boxbots.scss */
+/* line 54, _boxbots.scss */
 .body--boxbots .prj_info {
   background: #999682;
 }
-/* line 54, _boxbots.scss */
+/* line 58, _boxbots.scss */
 .body--boxbots .nav--boxbot,
 .body--boxbots .nav--boxbots {
-  margin-bottom: .25rem;
+  margin: 0 1rem .5rem;
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
 }
-/* line 58, _boxbots.scss */
+/* line 65, _boxbots.scss */
 .body--boxbots .nav--boxbot a,
 .body--boxbots .nav--boxbot button,
 .body--boxbots .nav--boxbots a,
 .body--boxbots .nav--boxbots button {
-  min-width: 12rem;
-  display: block;
+  flex: 1 1 auto;
+  max-width: 8rem;
   height: 1.875rem;
   padding: .375rem .375rem;
+  border: 0;
+  margin: 0 .125rem;
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
@@ -755,7 +834,7 @@ tr:hover td {
   color: #000;
   font-size: .875rem;
 }
-/* line 70, _boxbots.scss */
+/* line 80, _boxbots.scss */
 .body--boxbots .nav--boxbot a:hover,
 .body--boxbots .nav--boxbot button:hover,
 .body--boxbots .nav--boxbots a:hover,
@@ -763,7 +842,20 @@ tr:hover td {
   background: #000;
   color: #fff;
 }
-/* line 83, _boxbots.scss */
+/* line 85, _boxbots.scss */
+.body--boxbots .nav--boxbot span,
+.body--boxbots .nav--boxbots span {
+  flex: 1 1 auto;
+  max-width: 8rem;
+  height: 1.875rem;
+  padding: .375rem .75rem;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  font-size: .875rem;
+  text-align: right;
+}
+/* line 104, _boxbots.scss */
 .body--boxbots.images--shadow .nav--boxbot a,
 .body--boxbots.images--shadow .nav--boxbot button,
 .body--boxbots.images--shadow .nav--boxbots a,
@@ -771,7 +863,7 @@ tr:hover td {
   background: #000;
   color: #fff;
 }
-/* line 87, _boxbots.scss */
+/* line 108, _boxbots.scss */
 .body--boxbots.images--shadow .nav--boxbot a:hover,
 .body--boxbots.images--shadow .nav--boxbot button:hover,
 .body--boxbots.images--shadow .nav--boxbots a:hover,
@@ -779,7 +871,7 @@ tr:hover td {
   background: #fff;
   color: #000;
 }
-/* line 99, _boxbots.scss */
+/* line 120, _boxbots.scss */
 .body--boxbots .nav--boxbot a {
   width: 33%;
   display: block;
@@ -792,29 +884,29 @@ tr:hover td {
   color: #fff;
   font-size: .875rem;
 }
-/* line 110, _boxbots.scss */
+/* line 131, _boxbots.scss */
 .body--boxbots .nav--boxbot a:hover {
   background: #fff;
   color: #000;
 }
-/* line 133, _boxbots.scss */
+/* line 154, _boxbots.scss */
 .body--boxbots .nav--boxbot--next {
   float: left;
 }
-/* line 136, _boxbots.scss */
+/* line 157, _boxbots.scss */
 .body--boxbots .nav--boxbot--all {
   float: left;
   margin-left: 0.5%;
 }
-/* line 140, _boxbots.scss */
+/* line 161, _boxbots.scss */
 .body--boxbots .nav--boxbot--prev {
   float: right;
 }
-/* line 145, _boxbots.scss */
+/* line 166, _boxbots.scss */
 .body--boxbots .sort--hide {
   display: none;
 }
-/* line 149, _boxbots.scss */
+/* line 170, _boxbots.scss */
 .body--boxbots .images--boxbot,
 .body--boxbots .images--boxbots {
   text-align: center;
@@ -828,15 +920,15 @@ tr:hover td {
   background: linear-gradient(to bottom, #aeb2aa 0%, #b6b9ba 54%, #c3c3c3 85%, #999682 100%);
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#aeb2aa', endColorstr='#999682',GradientType=0 );
 }
-/* line 163, _boxbots.scss */
+/* line 184, _boxbots.scss */
 .body--boxbots.images--shadows .header_info {
   background: #7071A9;
 }
-/* line 166, _boxbots.scss */
+/* line 187, _boxbots.scss */
 .body--boxbots.images--shadows .prj_info {
   background: #478070;
 }
-/* line 169, _boxbots.scss */
+/* line 190, _boxbots.scss */
 .body--boxbots.images--shadows .images--boxbot,
 .body--boxbots.images--shadows .images--boxbots {
   background: #7071A9;
@@ -848,7 +940,7 @@ tr:hover td {
   background: linear-gradient(to bottom, #7071A9 0%, #74748B 72%, #478070 100%);
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#7071A9', endColorstr='#478070',GradientType=0 );
 }
-/* line 182, _boxbots.scss */
+/* line 203, _boxbots.scss */
 .body--boxbots .sort--asc::after,
 .body--boxbots .sort--desc::after {
   font-size: .625rem;
@@ -856,22 +948,22 @@ tr:hover td {
   position: relative;
   color: #666;
 }
-/* line 189, _boxbots.scss */
+/* line 210, _boxbots.scss */
 .body--boxbots .sort--asc::after {
   content: ' ▲';
 }
-/* line 192, _boxbots.scss */
+/* line 213, _boxbots.scss */
 .body--boxbots .sort--desc::after {
   content: ' ▼';
 }
-/* line 198, _boxbots.scss */
+/* line 219, _boxbots.scss */
 .body--boxbots .images--boxbot figure,
 .body--boxbots .images--boxbots figure {
   display: inline-block;
   margin: .5rem 0;
   vertical-align: bottom;
 }
-/* line 203, _boxbots.scss */
+/* line 224, _boxbots.scss */
 .body--boxbots .images--boxbot figure a,
 .body--boxbots .images--boxbot figure .bot_hover,
 .body--boxbots .images--boxbots figure a,
@@ -879,7 +971,14 @@ tr:hover td {
   display: block;
   position: relative;
 }
-/* line 208, _boxbots.scss */
+/* line 228, _boxbots.scss */
+.body--boxbots .images--boxbot figure a:hover,
+.body--boxbots .images--boxbot figure .bot_hover:hover,
+.body--boxbots .images--boxbots figure a:hover,
+.body--boxbots .images--boxbots figure .bot_hover:hover {
+  filter: drop-shadow(1px 1px 1px rgba(128, 128, 128, 0.5)) drop-shadow(-1px 1px 1px rgba(128, 128, 128, 0.5)) drop-shadow(1px -1px 1px rgba(128, 128, 128, 0.5)) drop-shadow(-1px -1px 1px rgba(128, 128, 128, 0.5));
+}
+/* line 229, _boxbots.scss */
 .body--boxbots .images--boxbot figure a:hover .color,
 .body--boxbots .images--boxbot figure .bot_hover:hover .color,
 .body--boxbots .images--boxbots figure a:hover .color,
@@ -897,19 +996,19 @@ tr:hover td {
     opacity: 0.0;
   }
 }
-/* line 222, _boxbots.scss */
+/* line 243, _boxbots.scss */
 .body--boxbots .images--boxbot figure a:hover .shadow,
 .body--boxbots .images--boxbot figure .bot_hover:hover .shadow,
 .body--boxbots .images--boxbots figure a:hover .shadow,
 .body--boxbots .images--boxbots figure .bot_hover:hover .shadow {
   opacity: 1;
 }
-/* line 227, _boxbots.scss */
+/* line 252, _boxbots.scss */
 .body--boxbots .images--boxbot figure img,
 .body--boxbots .images--boxbots figure img {
   transition: opacity .8s ease-out;
 }
-/* line 231, _boxbots.scss */
+/* line 256, _boxbots.scss */
 .body--boxbots .images--boxbot figure .shadow,
 .body--boxbots .images--boxbots figure .shadow {
   position: absolute;
@@ -917,14 +1016,14 @@ tr:hover td {
   left: 0;
   opacity: 0;
 }
-/* line 237, _boxbots.scss */
+/* line 262, _boxbots.scss */
 .body--boxbots .images--boxbot figure .color,
 .body--boxbots .images--boxbots figure .color {
   position: relative;
   left: 0;
   opacity: 1;
 }
-/* line 251, _boxbots.scss */
+/* line 276, _boxbots.scss */
 .body--boxbots.images--shadows .images--boxbot figure a:hover .shadow,
 .body--boxbots.images--shadows .images--boxbot figure .bot_hover:hover .shadow,
 .body--boxbots.images--shadows .images--boxbots figure a:hover .shadow,
@@ -942,7 +1041,7 @@ tr:hover td {
     opacity: 0.0;
   }
 }
-/* line 265, _boxbots.scss */
+/* line 290, _boxbots.scss */
 .body--boxbots.images--shadows .images--boxbot figure a:hover .color,
 .body--boxbots.images--shadows .images--boxbot figure .bot_hover:hover .color,
 .body--boxbots.images--shadows .images--boxbots figure a:hover .color,
@@ -951,19 +1050,19 @@ tr:hover td {
   animation: none;
   -webkit-animation: none;
 }
-/* line 272, _boxbots.scss */
+/* line 297, _boxbots.scss */
 .body--boxbots.images--shadows .images--boxbot figure .shadow,
 .body--boxbots.images--shadows .images--boxbots figure .shadow {
   opacity: 1;
   z-index: 10;
 }
-/* line 276, _boxbots.scss */
+/* line 301, _boxbots.scss */
 .body--boxbots.images--shadows .images--boxbot figure .color,
 .body--boxbots.images--shadows .images--boxbots figure .color {
   opacity: 0;
   z-index: 9;
 }
-/* line 309, _boxbots.scss */
+/* line 334, _boxbots.scss */
 .body--boxbots .images--boxbot {
   position: absolute;
   top: 1.5rem;
@@ -971,19 +1070,19 @@ tr:hover td {
   right: 0;
   bottom: 0;
 }
-/* line 316, _boxbots.scss */
+/* line 341, _boxbots.scss */
 .body--boxbots .images--boxbot .shadow,
 .body--boxbots .images--boxbot .color {
   height: calc(100vh - 120px);
   object-fit: scale-down;
 }
-/* line 334, _boxbots.scss */
+/* line 359, _boxbots.scss */
 .body--boxbots.images--both .images--boxbot figure .shadow {
   width: 48vw;
   opacity: 1;
   object-position: 100% 50%;
 }
-/* line 339, _boxbots.scss */
+/* line 364, _boxbots.scss */
 .body--boxbots.images--both .images--boxbot figure .color {
   width: 48vw;
   opacity: 1;
@@ -1018,188 +1117,4 @@ tr:hover td {
 /* line 15, _sd_to_hd.scss */
 .body--sd_to_hd .wrap--video iframe {
   background-color: #eee;
-}
-
-/* line 19, main.scss */
-.home figure {
-  padding: 1%;
-  margin: 0 auto 2rem;
-}
-
-/* line 23, main.scss */
-.home h2 {
-  background: linear-gradient(180deg, rgba(0, 0, 40, 0.5) 0%, transparent 80%);
-  font-size: 2.25rem;
-  padding: 1rem 0;
-}
-
-/* line 28, main.scss */
-.home .first {
-  color: #65727e;
-}
-
-/* line 31, main.scss */
-.home .second {
-  color: #434b53;
-}
-
-/* line 34, main.scss */
-.daily_photo {
-  padding: 1rem 0;
-}
-
-/* line 37, main.scss */
-.daily_photo hr {
-  width: 66.667%;
-  height: .333rem;
-  background: #fff;
-  border: 0;
-  margin: 1rem auto 1.5rem;
-}
-
-/* line 44, main.scss */
-.daily_photo figure {
-  display: inline-block;
-  height: auto;
-  width: 50%;
-  padding: 0;
-  vertical-align: top;
-}
-
-/* line 51, main.scss */
-.daily_photo figcaption {
-  font-size: .6875rem;
-  margin: 0.125rem 0 0.25rem 0;
-  line-height: 0.6875rem;
-}
-
-/* line 56, main.scss */
-.daily_photo h3 {
-  margin-bottom: 2rem;
-}
-
-/* line 59, main.scss */
-.daily_photo .average_jk {
-  margin: 1rem 0;
-  border-top: 1rem solid #fff;
-  padding: 2rem 0;
-}
-
-@media screen and (min-width: 300px) and (max-width: 449px) {
-  /* line 65, main.scss */
-  .daily_photo .average_jk figure {
-    width: 33.333%;
-  }
-}
-@media screen and (min-width: 450px) and (max-width: 624px) {
-  /* line 70, main.scss */
-  .daily_photo .average_jk figure {
-    width: 25%;
-  }
-}
-@media screen and (min-width: 625px) {
-  /* line 75, main.scss */
-  .daily_photo .average_jk figure {
-    width: 20%;
-  }
-}
-@media screen and (min-width: 800px) {
-  /* line 80, main.scss */
-  .daily_photo .average_jk figure {
-    width: 16.666%;
-  }
-}
-@media screen and (min-width: 1000px) {
-  /* line 85, main.scss */
-  .daily_photo .average_jk figure {
-    width: 14.285%;
-  }
-}
-@media screen and (min-width: 1200px) {
-  /* line 90, main.scss */
-  .daily_photo .average_jk figure {
-    width: 12.5%;
-  }
-}
-@media screen and (min-width: 1500px) {
-  /* line 95, main.scss */
-  .daily_photo .average_jk figure {
-    width: 11.111%;
-  }
-}
-@media screen and (max-width: 299px) {
-  /* line 100, main.scss */
-  .daily_photo .average_year figure:nth-of-type(-n+8) {
-    padding-bottom: 0.875rem;
-  }
-}
-@media screen and (min-width: 300px) and (max-width: 449px) {
-  /* line 105, main.scss */
-  .daily_photo .average_year figure:nth-of-type(-n+6) {
-    padding-bottom: 0.875rem;
-  }
-}
-@media screen and (min-width: 450px) and (max-width: 624px) {
-  /* line 110, main.scss */
-  .daily_photo .average_year figure:nth-of-type(-n+8) {
-    padding-bottom: 0.75rem;
-  }
-}
-@media screen and (min-width: 625px) {
-  /* line 115, main.scss */
-  .daily_photo .average_year figure:nth-of-type(-n+5) {
-    padding-bottom: 0.75rem;
-  }
-}
-@media screen and (min-width: 800px) {
-  /* line 120, main.scss */
-  .daily_photo .average_year figure:nth-of-type(-n+6) {
-    padding-bottom: 0.75rem;
-  }
-}
-@media screen and (min-width: 1000px) {
-  /* line 125, main.scss */
-  .daily_photo .average_year figure:nth-of-type(-n+7) {
-    padding-bottom: 0.75rem;
-  }
-}
-@media screen and (min-width: 1200px) {
-  /* line 130, main.scss */
-  .daily_photo .average_year figure:nth-of-type(-n+8) {
-    padding-bottom: 0.875rem;
-  }
-}
-@media screen and (min-width: 1500px) {
-  /* line 135, main.scss */
-  .daily_photo .average_year figure:nth-of-type(-n+9) {
-    padding-bottom: 0;
-  }
-}
-/* line 139, main.scss */
-.daily_photo .fourthree {
-  padding-top: 8%;
-}
-
-/* line 142, main.scss */
-.daily_photo .placeholder {
-  opacity: 0.2;
-}
-
-/* line 145, main.scss */
-.cneterd {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -moz-flex;
-  display: -ms-flex;
-  display: flex;
-  -webkit-box-align: center;
-  -webkit-justify-content: center;
-  -moz-justify-content: center;
-  -ms-justify-content: center;
-  justify-content: center;
-  -moz-box-align: center;
-  -ms-flex-align: center;
-  -webkit-align-items: center;
-  align-items: center;
-  height: 100vh;
 }

@@ -3,8 +3,16 @@
 .td--prj_slug {
 	// display: none;
 }
-tr:hover td {
-	background: #efd;
+tr:hover {
+	td {
+		background: #efd;
+	}
+	.table--prj_info tbody & {
+		td {
+			padding-top: 20px;
+			padding-bottom: 20px;
+		}
+	}
 }
 .td--prj_date {
 	white-space: nowrap;
@@ -16,9 +24,13 @@ tr:hover td {
 	.td--prj_slug,
 	.td--prj_subtitle,
 	.td--prj_duration,
-	.td--prj_status,
 	.td--prj_description {
 		display: none;
+	}
+	@media screen and (max-width: 1080px) {
+		.td--prj_status {
+			display: none;
+		}
 	}
 	@media screen and (max-width: 960px) {
 		.td--series_to_dos,

@@ -1,16 +1,34 @@
-.home {
+.body--home {
   figure {
     margin: 1rem auto 2rem;
   }
   h2 {
-    background: linear-gradient(180deg, rgba(0,0,40,.5) 0%, rgba(0,0,0,0) 80%);
     font-size: 2.25rem;
-    padding: 1rem 0;
+    padding: 1rem .33rem;
   }
-  // .first {
-  //   color: lighten($body-color, 30%);
-  // }
-  // .second {
-  //   color: lighten($body-color, 15%);
-  // }
+  h3 {
+    padding-left: .5rem;
+  }
 }
+.beckett {
+  text-align: center;
+}
+
+.mean_year {
+    position: relative;
+}
+.the_end {
+    display: block;
+    position: absolute;
+    top: 32%;
+    left: 7%;
+    width: 86%;
+    pointer-events: none;
+}
+
+// .home .first {
+//     color: #65727e
+// }
+// .home .second {
+//     color: #434b53
+// }

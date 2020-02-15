@@ -8,8 +8,6 @@
 	</head>
 
 	<body class="body--<?= $page_slug; ?>">
-		<nav><a href="/index-list.php">JK</a></nav>
-
 		<main class="series--<?= $page_slug; ?>">
 		<section class="header_info">
 			<!-- <h1><cite><?= $page_title; ?></cite></h1> -->

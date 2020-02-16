@@ -1,10 +1,10 @@
 –__–
 
 ##To Do
-- [ ] homepages into collection
 - [ ] boxbots into collection 
 - [ ] 404's templating
 - [ ] 
+- [ ] homepages into collection
 - [ ] 
 - [ ] 
 - [ ] 

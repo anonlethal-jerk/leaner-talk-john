@@ -1,21 +1,20 @@
-// html5 boiler
 {
-  "short_name": "",
-  "name": "",
-  "icons": [
-    {
-      "src": "/android-chrome-192x192.png",
-      "sizes": "192x192",
-      "type": "image/png"
-    },
-    {
-      "src": "/android-chrome-512x512.png",
-      "sizes": "512x512",
-      "type": "image/png"
-    }
-  ],
-  "start_url": "/?utm_source=homescreen",
-  "background_color": "#87de00",
-  "theme_color": "#87de00",
-  "display": "standalone"
+	"short_name": "",
+	"name": "",
+	"icons": [
+		{
+			"src": "/android-chrome-192x192.png",
+			"sizes": "192x192",
+			"type": "image/png"
+		},
+		{
+			"src": "/android-chrome-512x512.png",
+			"sizes": "512x512",
+			"type": "image/png"
+		}
+	],
+	"start_url": "/?utm_source=homescreen",
+	"background_color": "#87de00",
+	"theme_color": "#87de00",
+	"display": "standalone"
 }

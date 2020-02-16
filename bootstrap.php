@@ -12,6 +12,6 @@ use TightenCo\Jigsaw\Jigsaw;
  * For example:
  *
  * $events->beforeBuild(function (Jigsaw $jigsaw) {
- *     // Your code here
+ * 	// Your code here
  * });
  */

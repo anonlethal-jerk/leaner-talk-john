@@ -15,7 +15,7 @@
 		<meta name="msapplication-TileColor" content="#87de00">
 		<meta name="theme-color" content="#87de00">
 
-		<link rel="stylesheet" href="{{ mix('0__0/styles.css', 'assets/build') }}" type="text/css">
+		<link rel="stylesheet" href="{{ mix('0__0/styles.css', '') }}" type="text/css">
 	</head>
 
 	@yield('body')

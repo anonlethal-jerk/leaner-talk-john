@@ -11,6 +11,8 @@ sftp-config.json
 *.sublime-workspace
 
 # the sissyfuss situation...
+robots.txt
 _dev/
+index.html
 o__o/*/_img/
 google*.html

@@ -1,8 +1,15 @@
 –__–
 
 ##To Do
+- [ ] homepages into collection
+- [ ] boxbots into collection 
+- [ ] 404's templating
 - [ ] 
-- [ ]  
+- [ ] 
+- [ ] 
+- [ ] 
+- [ ] 
+- [ ] 
 
 ####Done Too
 - [x] ~~pull arrays from other files (json & php)~~

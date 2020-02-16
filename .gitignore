@@ -34,3 +34,6 @@ yarn-error.log
 # /source/assets/build/fonts/
 # /source/assets/build/js/
 /source/assets/
+/source/\*__\*/
+/source/0__0/
+mix-manifest.json

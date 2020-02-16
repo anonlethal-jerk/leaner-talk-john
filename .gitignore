@@ -14,3 +14,21 @@ _dev/
 _tmp/
 o__o/homepages/*/_img/
 google*.html
+
+# jigsaw
+/build_local/
+/cache/
+/node_modules/
+/vendor/
+/.idea/
+/.vscode/
+npm-debug.log
+yarn-error.log
+
+# jigsaw
+# Optional ignores
+/build_staging/
+/build_production/
+/source/assets/build/css/
+/source/assets/build/fonts/
+/source/assets/build/js/

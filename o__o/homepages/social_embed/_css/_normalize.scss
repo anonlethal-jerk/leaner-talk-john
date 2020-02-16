@@ -1,8 +1,8 @@
 * {
-  -moz-box-sizing: border-box;
-  -webkit-box-sizing: border-box;
-  -ms-box-sizing: border-box;
-  box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	box-sizing: border-box;
 }
 
 /*! normalize.css v3.0.0 | MIT License | git.io/normalize */
@@ -14,9 +14,9 @@
  */
 
 html {
-  font-family: sans-serif; /* 1 */
-  -ms-text-size-adjust: 100%; /* 2 */
-  -webkit-text-size-adjust: 100%; /* 2 */
+	font-family: sans-serif; /* 1 */
+	-ms-text-size-adjust: 100%; /* 2 */
+	-webkit-text-size-adjust: 100%; /* 2 */
 }
 
 /**
@@ -24,11 +24,11 @@ html {
  */
 
 body {
-  margin: 0;
+	margin: 0;
 }
 
 /* HTML5 display definitions
-   ========================================================================== */
+	 ========================================================================== */
 
 /**
  * Correct `block` display not defined in IE 8/9.
@@ -46,7 +46,7 @@ main,
 nav,
 section,
 summary {
-  display: block;
+	display: block;
 }
 
 /**
@@ -83,14 +83,14 @@ summary {
 // }
 
 /* Links
-   ========================================================================== */
+	 ========================================================================== */
 
 /**
  * Remove the gray background color from active links in IE 10.
  */
 
 a {
-  background: transparent;
+	background: transparent;
 }
 
 /**
@@ -99,11 +99,11 @@ a {
 
 a:active,
 a:hover {
-  outline: 0;
+	outline: 0;
 }
 
 /* Text-level semantics
-   ========================================================================== */
+	 ========================================================================== */
 
 /**
  * Address styling not present in IE 8/9, Safari 5, and Chrome.
@@ -136,8 +136,8 @@ a:hover {
  */
 
 h1 {
-  font-size: 2em;
-  margin: 0.67em 0;
+	font-size: 2em;
+	margin: 0.67em 0;
 }
 
 /**
@@ -178,7 +178,7 @@ h1 {
 // }
 
 /* Embedded content
-   ========================================================================== */
+	 ========================================================================== */
 
 /**
  * Remove border when inside `a` element in IE 8/9.
@@ -197,7 +197,7 @@ h1 {
 // }
 
 /* Grouping content
-   ========================================================================== */
+	 ========================================================================== */
 
 /**
  * Address margin not present in IE 8/9 and Safari 5.
@@ -238,7 +238,7 @@ h1 {
 // }
 
 /* Forms
-   ========================================================================== */
+	 ========================================================================== */
 
 /**
  * Known limitation: by default, Chrome and Safari on OS X allow very limited
@@ -413,20 +413,20 @@ h1 {
 // }
 
 /* Tables
-   ========================================================================== */
+	 ========================================================================== */
 
 /**
  * Remove most spacing between table cells.
  */
 
 table {
-  border-collapse: collapse;
-  border-spacing: 0;
+	border-collapse: collapse;
+	border-spacing: 0;
 }
 
 td,
 th {
-  padding: 0;
+	padding: 0;
 }
 
 /*! HTML5 Boilerplate v4.3.0 | MIT License | http://h5bp.com/ */
@@ -438,13 +438,13 @@ th {
  */
 
 /* ==========================================================================
-   Base styles: opinionated defaults
-   ========================================================================== */
+	 Base styles: opinionated defaults
+	 ========================================================================== */
 
 html {
-    color: #222;
-    font-size: 1em;
-    line-height: 1.4;
+		color: #222;
+		font-size: 1em;
+		line-height: 1.4;
 }
 
 /*
@@ -454,13 +454,13 @@ html {
  */
 
 ::-moz-selection {
-    background: #b3d4fc;
-    text-shadow: none;
+		background: #b3d4fc;
+		text-shadow: none;
 }
 
 ::selection {
-    background: #b3d4fc;
-    text-shadow: none;
+		background: #b3d4fc;
+		text-shadow: none;
 }
 
 /*
@@ -508,8 +508,8 @@ html {
 // }
 
 /* ==========================================================================
-   Browse Happy prompt
-   ========================================================================== */
+	 Browse Happy prompt
+	 ========================================================================== */
 
 // .browsehappy {
 //     margin: 0.2em 0;

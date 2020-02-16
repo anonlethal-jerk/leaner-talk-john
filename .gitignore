@@ -1,11 +1,16 @@
-__*
+# __*
 -__-/
-x__x/
 
 # config.rb
 # config_debug.rb
 .sass-cache/
 
 sftp-config.json
-*.sublime-project
+# *.sublime-project
 *.sublime-workspace
+
+# the sissyfuss situation...
+_dev/
+_tmp/
+o__o/homepages/*/_img/
+google*.html

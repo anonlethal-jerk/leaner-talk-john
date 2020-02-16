@@ -1,9 +1,9 @@
 /* line 1, _normalize.scss */
 * {
-  -moz-box-sizing: border-box;
-  -webkit-box-sizing: border-box;
-  -ms-box-sizing: border-box;
-  box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	box-sizing: border-box;
 }
 
 /*! normalize.css v3.0.0 | MIT License | git.io/normalize */
@@ -14,12 +14,12 @@
  */
 /* line 16, _normalize.scss */
 html {
-  font-family: sans-serif;
-  /* 1 */
-  -ms-text-size-adjust: 100%;
-  /* 2 */
-  -webkit-text-size-adjust: 100%;
-  /* 2 */
+	font-family: sans-serif;
+	/* 1 */
+	-ms-text-size-adjust: 100%;
+	/* 2 */
+	-webkit-text-size-adjust: 100%;
+	/* 2 */
 }
 
 /**
@@ -27,11 +27,11 @@ html {
  */
 /* line 26, _normalize.scss */
 body {
-  margin: 0;
+	margin: 0;
 }
 
 /* HTML5 display definitions
-   ========================================================================== */
+	 ========================================================================== */
 /**
  * Correct `block` display not defined in IE 8/9.
  */
@@ -48,7 +48,7 @@ main,
 nav,
 section,
 summary {
-  display: block;
+	display: block;
 }
 
 /**
@@ -64,13 +64,13 @@ summary {
  * Hide the `template` element in IE, Safari, and Firefox < 22.
  */
 /* Links
-   ========================================================================== */
+	 ========================================================================== */
 /**
  * Remove the gray background color from active links in IE 10.
  */
 /* line 92, _normalize.scss */
 a {
-  background: transparent;
+	background: transparent;
 }
 
 /**
@@ -79,11 +79,11 @@ a {
 /* line 100, _normalize.scss */
 a:active,
 a:hover {
-  outline: 0;
+	outline: 0;
 }
 
 /* Text-level semantics
-   ========================================================================== */
+	 ========================================================================== */
 /**
  * Address styling not present in IE 8/9, Safari 5, and Chrome.
  */
@@ -99,8 +99,8 @@ a:hover {
  */
 /* line 138, _normalize.scss */
 h1 {
-  font-size: 2em;
-  margin: 0.67em 0;
+	font-size: 2em;
+	margin: 0.67em 0;
 }
 
 /**
@@ -113,7 +113,7 @@ h1 {
  * Prevent `sub` and `sup` affecting `line-height` in all browsers.
  */
 /* Embedded content
-   ========================================================================== */
+	 ========================================================================== */
 /**
  * Remove border when inside `a` element in IE 8/9.
  */
@@ -121,7 +121,7 @@ h1 {
  * Correct overflow displayed oddly in IE 9.
  */
 /* Grouping content
-   ========================================================================== */
+	 ========================================================================== */
 /**
  * Address margin not present in IE 8/9 and Safari 5.
  */
@@ -135,7 +135,7 @@ h1 {
  * Address odd `em`-unit font size rendering in all browsers.
  */
 /* Forms
-   ========================================================================== */
+	 ========================================================================== */
 /**
  * Known limitation: by default, Chrome and Safari on OS X allow very limited
  * styling of `select`, unless a `border` property is set.
@@ -209,20 +209,20 @@ h1 {
  * NOTE: the default cannot safely be changed in Chrome and Safari on OS X.
  */
 /* Tables
-   ========================================================================== */
+	 ========================================================================== */
 /**
  * Remove most spacing between table cells.
  */
 /* line 422, _normalize.scss */
 table {
-  border-collapse: collapse;
-  border-spacing: 0;
+	border-collapse: collapse;
+	border-spacing: 0;
 }
 
 /* line 427, _normalize.scss */
 td,
 th {
-  padding: 0;
+	padding: 0;
 }
 
 /*! HTML5 Boilerplate v4.3.0 | MIT License | http://h5bp.com/ */
@@ -232,13 +232,13 @@ th {
  * Kroc Camen, and the H5BP dev community and team.
  */
 /* ==========================================================================
-   Base styles: opinionated defaults
-   ========================================================================== */
+	 Base styles: opinionated defaults
+	 ========================================================================== */
 /* line 444, _normalize.scss */
 html {
-  color: #222;
-  font-size: 1em;
-  line-height: 1.4;
+	color: #222;
+	font-size: 1em;
+	line-height: 1.4;
 }
 
 /*
@@ -248,14 +248,14 @@ html {
  */
 /* line 456, _normalize.scss */
 ::-moz-selection {
-  background: #b3d4fc;
-  text-shadow: none;
+	background: #b3d4fc;
+	text-shadow: none;
 }
 
 /* line 461, _normalize.scss */
 ::selection {
-  background: #b3d4fc;
-  text-shadow: none;
+	background: #b3d4fc;
+	text-shadow: none;
 }
 
 /*
@@ -272,356 +272,356 @@ html {
  * Allow only vertical resizing of textareas.
  */
 /* ==========================================================================
-   Browse Happy prompt
-   ========================================================================== */
+	 Browse Happy prompt
+	 ========================================================================== */
 /* FROM THE TWITTER BOOTSTRAP */
 /* line 2, _main.scss */
 .label {
-  display: inline;
-  padding: .2em .6em .3em;
-  font-size: 75%;
-  font-weight: bold;
-  line-height: 1;
-  color: #fff;
-  text-align: center;
-  white-space: nowrap;
-  vertical-align: baseline;
-  border-radius: .25em;
+	display: inline;
+	padding: .2em .6em .3em;
+	font-size: 75%;
+	font-weight: bold;
+	line-height: 1;
+	color: #fff;
+	text-align: center;
+	white-space: nowrap;
+	vertical-align: baseline;
+	border-radius: .25em;
 }
 
 /* line 14, _main.scss */
 a.label:hover,
 a.label:focus {
-  color: #fff;
-  text-decoration: none;
-  cursor: pointer;
+	color: #fff;
+	text-decoration: none;
+	cursor: pointer;
 }
 
 /* line 20, _main.scss */
 .label:empty {
-  display: none;
+	display: none;
 }
 
 /* line 41, _main.scss */
 .label-success {
-  background-color: #5cb85c;
+	background-color: #5cb85c;
 }
 
 /* line 44, _main.scss */
 .label-success[href]:hover,
 .label-success[href]:focus {
-  background-color: #449d44;
+	background-color: #449d44;
 }
 
 /* line 55, _main.scss */
 .label-warning {
-  background-color: #f0ad4e;
+	background-color: #f0ad4e;
 }
 
 /* line 58, _main.scss */
 .label-warning[href]:hover,
 .label-warning[href]:focus {
-  background-color: #ec971f;
+	background-color: #ec971f;
 }
 
 /*
-  position: absolute;
-  z-index: 1030;
+	position: absolute;
+	z-index: 1030;
 */
 /*
-  filter: alpha(opacity=0);
-  opacity: 0;
+	filter: alpha(opacity=0);
+	opacity: 0;
 */
 /* END BOOTSTRAPS */
 /* line 176, _main.scss */
 body {
-  background-color: #eee;
+	background-color: #eee;
 }
 
 /* line 179, _main.scss */
 .wrap-it-up {
-  padding: 50px 1%;
+	padding: 50px 1%;
 }
 
 /* line 182, _main.scss */
 a {
-  text-decoration: underline;
-  color: #333;
+	text-decoration: underline;
+	color: #333;
 }
 
 /* line 186, _main.scss */
 a:hover {
-  text-decoration: none;
-  color: #000;
+	text-decoration: none;
+	color: #000;
 }
 
 /* line 190, _main.scss */
 cite {
-  font-style: italic;
+	font-style: italic;
 }
 
 /* line 194, _main.scss */
 header {
-  margin: 0 0 2em;
-  text-align: center;
+	margin: 0 0 2em;
+	text-align: center;
 }
 
 /* line 198, _main.scss */
 .site-title {
-  margin: 0;
-  font-size: 32px;
-  font-weight: normal;
+	margin: 0;
+	font-size: 32px;
+	font-weight: normal;
 }
 
 /* line 203, _main.scss */
 .site-subtitle {
-  margin: .5em;
-  font-size: 26px;
-  font-weight: normal;
+	margin: .5em;
+	font-size: 26px;
+	font-weight: normal;
 }
 
 /* line 208, _main.scss */
 .site-subtitle a {
-  position: relative;
+	position: relative;
 }
 
 /* line 212, _main.scss */
 footer {
-  margin: 2em 0 0;
-  text-align: center;
+	margin: 2em 0 0;
+	text-align: center;
 }
 
 /* line 216, _main.scss */
 footer h3 {
-  font-size: 22px;
+	font-size: 22px;
 }
 
 /* line 219, _main.scss */
 footer ul {
-  list-style: none;
-  padding-left: 0;
+	list-style: none;
+	padding-left: 0;
 }
 
 /* line 223, _main.scss */
 footer li {
-  margin: .5em auto;
+	margin: .5em auto;
 }
 
 /* line 228, _main.scss */
 .embed-wrap {
-  width: 300px;
-  float: left;
-  margin: 1.5%;
+	width: 300px;
+	float: left;
+	margin: 1.5%;
 }
 
 /* line 233, _main.scss */
 .embed-wrap:nth-child(3n) {
-  float: right;
+	float: right;
 }
 
 /* line 236, _main.scss */
 .embed-twitter {
-  width: 33%;
-  min-width: 250px;
-  max-width: 400px;
+	width: 33%;
+	min-width: 250px;
+	max-width: 400px;
 }
 
 /* line 237, _main.scss */
 .embed-facebook {
-  width: 350px;
+	width: 350px;
 }
 
 /* line 238, _main.scss */
 .embed-googleplus {
-  width: 450px;
+	width: 450px;
 }
 
 /* line 239, _main.scss */
 .embed-instagram {
-  width: 33%;
-  min-width: 240px;
-  max-width: 400px;
+	width: 33%;
+	min-width: 240px;
+	max-width: 400px;
 }
 
 /* line 240, _main.scss */
 .embed-instagram .fluid-width-video-wrapper {
-  padding-bottom: 100px;
+	padding-bottom: 100px;
 }
 
 /* adds fixed-height chrome to fitvid */
 /* line 241, _main.scss */
 .embed-pinterest {
-  width: 237px;
+	width: 237px;
 }
 
 /* line 242, _main.scss */
 .embed-vine {
-  width: 300px;
+	width: 300px;
 }
 
 /* line 243, _main.scss */
 .embed-square {
-  width: 300px;
+	width: 300px;
 }
 
 /* line 244, _main.scss */
 .embed-getty {
-  width: 400px;
+	width: 400px;
 }
 
 /* line 245, _main.scss */
 .embed-youtube {
-  width: 33%;
-  max-width: 400px;
+	width: 33%;
+	max-width: 400px;
 }
 
 /* line 246, _main.scss */
 .embed-tweet {
-  width: 110px;
+	width: 110px;
 }
 
 /* line 247, _main.scss */
 .embed-like {
-  width: 50px;
+	width: 50px;
 }
 
 /* line 248, _main.scss */
 .embed-plus {
-  width: 55px;
+	width: 55px;
 }
 
 /* line 250, _main.scss */
 .project-link {
-  font-size: 14px;
-  font-weight: bold;
+	font-size: 14px;
+	font-weight: bold;
 }
 
 /* line 254, _main.scss */
 .embed-facebook .project-link {
-  margin-top: .6em;
+	margin-top: .6em;
 }
 
 /* line 255, _main.scss */
 .embed-googleplus .project-link {
-  margin-top: .1em;
+	margin-top: .1em;
 }
 
 /* line 256, _main.scss */
 .embed-instagram .project-link {
-  margin-top: .3em;
+	margin-top: .3em;
 }
 
 /* line 257, _main.scss */
 .embed-pinterest .project-link {
-  margin-top: .6em;
+	margin-top: .6em;
 }
 
 /* line 258, _main.scss */
 .embed-getty .project-link {
-  margin-top: .3em;
+	margin-top: .3em;
 }
 
 /* line 259, _main.scss */
 .embed-youtube .project-link {
-  margin-top: .6em;
+	margin-top: .6em;
 }
 
 /* line 261, _main.scss */
 .blocker {
-  float: left;
-  width: 150px;
+	float: left;
+	width: 150px;
 }
 
 @media only screen and (max-width: 600px) {
-  /* line 269, _main.scss */
-  .wrap-it-up {
-    padding: 40px 1%;
-  }
+	/* line 269, _main.scss */
+	.wrap-it-up {
+		padding: 40px 1%;
+	}
 
-  /* line 272, _main.scss */
-  .site-title {
-    font-size: 21px;
-  }
+	/* line 272, _main.scss */
+	.site-title {
+		font-size: 21px;
+	}
 
-  /* line 275, _main.scss */
-  .site-subtitle {
-    font-size: 18px;
-    margin-bottom: 0;
-  }
+	/* line 275, _main.scss */
+	.site-subtitle {
+		font-size: 18px;
+		margin-bottom: 0;
+	}
 
-  /* line 279, _main.scss */
-  .embed-wrap,
-  .embed-wrap:nth-child(3n) {
-    float: none;
-    clear: both;
-    margin: 0 auto 2em;
-  }
+	/* line 279, _main.scss */
+	.embed-wrap,
+	.embed-wrap:nth-child(3n) {
+		float: none;
+		clear: both;
+		margin: 0 auto 2em;
+	}
 
-  /* line 285, _main.scss */
-  .embed-twitter {
-    width: 100%;
-  }
+	/* line 285, _main.scss */
+	.embed-twitter {
+		width: 100%;
+	}
 
-  /* line 286, _main.scss */
-  .embed-instagram {
-    width: 100%;
-  }
+	/* line 286, _main.scss */
+	.embed-instagram {
+		width: 100%;
+	}
 
-  /* line 287, _main.scss */
-  .embed-youtube {
-    width: 100%;
-  }
+	/* line 287, _main.scss */
+	.embed-youtube {
+		width: 100%;
+	}
 
-  /* line 288, _main.scss */
-  .blocker,
-  .filler {
-    display: none;
-  }
+	/* line 288, _main.scss */
+	.blocker,
+	.filler {
+		display: none;
+	}
 }
 @media only screen and (max-width: 470px) {
-  /* line 294, _main.scss */
-  .embed-googleplus {
-    width: 100%;
-    overflow: auto;
-  }
+	/* line 294, _main.scss */
+	.embed-googleplus {
+		width: 100%;
+		overflow: auto;
+	}
 }
 @media only screen and (max-width: 420px) {
-  /* line 300, _main.scss */
-  .embed-getty {
-    width: 100%;
-    overflow: auto;
-  }
+	/* line 300, _main.scss */
+	.embed-getty {
+		width: 100%;
+		overflow: auto;
+	}
 }
 @media only screen and (max-width: 370px) {
-  /* line 306, _main.scss */
-  .embed-facebook {
-    width: 100%;
-    overflow: auto;
-  }
+	/* line 306, _main.scss */
+	.embed-facebook {
+		width: 100%;
+		overflow: auto;
+	}
 }
 /* Sunday Routine Interview -------------------------------------------- */
 /* end sunday routine */
 /* line 408, _main.scss */
 .nytoak {
-  position: absolute;
-  top: 0;
-  left: 50%;
-  margin-left: -25%;
-  width: 50%;
-  text-align: center;
-  background-color: #3cac80;
-  box-shadow: 0px 0px 40px #444;
-  padding: 5px;
+	position: absolute;
+	top: 0;
+	left: 50%;
+	margin-left: -25%;
+	width: 50%;
+	text-align: center;
+	background-color: #3cac80;
+	box-shadow: 0px 0px 40px #444;
+	padding: 5px;
 }
 
 /* line 418, _main.scss */
 .nytoak a {
-  color: #fff;
+	color: #fff;
 }
 
 /* ==========================================================================
-   Helper classes
-   ========================================================================== */
+	 Helper classes
+	 ========================================================================== */
 /*
  * Hide from both screenreaders and browsers: h5bp.com/u
  */
@@ -649,99 +649,99 @@ footer li {
 /* line 485, _main.scss */
 .clearfix:before,
 .clearfix:after {
-  content: " ";
-  /* 1 */
-  display: table;
-  /* 2 */
+	content: " ";
+	/* 1 */
+	display: table;
+	/* 2 */
 }
 
 /* line 491, _main.scss */
 .clearfix:after {
-  clear: both;
+	clear: both;
 }
 
 /* ==========================================================================
-   EXAMPLE Media Queries for Responsive Design.
-   These examples override the primary ('mobile first') styles.
-   Modify as content requires.
-   ========================================================================== */
+	 EXAMPLE Media Queries for Responsive Design.
+	 These examples override the primary ('mobile first') styles.
+	 Modify as content requires.
+	 ========================================================================== */
 @media print, (-o-min-device-pixel-ratio: 5 / 4), (-webkit-min-device-pixel-ratio: 1.25), (min-resolution: 120dpi) {
-  /* Style adjustments for high resolution devices */
+	/* Style adjustments for high resolution devices */
 }
 /* ==========================================================================
-   Print styles.
-   Inlined to avoid required HTTP connection: h5bp.com/r
-   ========================================================================== */
+	 Print styles.
+	 Inlined to avoid required HTTP connection: h5bp.com/r
+	 ========================================================================== */
 @media print {
-  /* line 514, _main.scss */
-  * {
-    background: transparent !important;
-    color: #000 !important;
-    /* Black prints faster: h5bp.com/s */
-    box-shadow: none !important;
-    text-shadow: none !important;
-  }
+	/* line 514, _main.scss */
+	* {
+		background: transparent !important;
+		color: #000 !important;
+		/* Black prints faster: h5bp.com/s */
+		box-shadow: none !important;
+		text-shadow: none !important;
+	}
 
-  /* line 521, _main.scss */
-  a,
-  a:visited {
-    text-decoration: underline;
-  }
+	/* line 521, _main.scss */
+	a,
+	a:visited {
+		text-decoration: underline;
+	}
 
-  /* line 526, _main.scss */
-  a[href]:after {
-    content: " (" attr(href) ")";
-  }
+	/* line 526, _main.scss */
+	a[href]:after {
+		content: " (" attr(href) ")";
+	}
 
-  /* line 530, _main.scss */
-  abbr[title]:after {
-    content: " (" attr(title) ")";
-  }
+	/* line 530, _main.scss */
+	abbr[title]:after {
+		content: " (" attr(title) ")";
+	}
 
-  /*
-   * Don't show links for images, or javascript/internal links
-   */
-  /* line 538, _main.scss */
-  a[href^="javascript:"]:after,
-  a[href^="#"]:after {
-    content: "";
-  }
+	/*
+	 * Don't show links for images, or javascript/internal links
+	 */
+	/* line 538, _main.scss */
+	a[href^="javascript:"]:after,
+	a[href^="#"]:after {
+		content: "";
+	}
 
-  /* line 543, _main.scss */
-  pre,
-  blockquote {
-    border: 1px solid #999;
-    page-break-inside: avoid;
-  }
+	/* line 543, _main.scss */
+	pre,
+	blockquote {
+		border: 1px solid #999;
+		page-break-inside: avoid;
+	}
 
-  /* line 549, _main.scss */
-  thead {
-    display: table-header-group;
-    /* h5bp.com/t */
-  }
+	/* line 549, _main.scss */
+	thead {
+		display: table-header-group;
+		/* h5bp.com/t */
+	}
 
-  /* line 553, _main.scss */
-  tr,
-  img {
-    page-break-inside: avoid;
-  }
+	/* line 553, _main.scss */
+	tr,
+	img {
+		page-break-inside: avoid;
+	}
 
-  /* line 558, _main.scss */
-  img {
-    max-width: 100% !important;
-  }
+	/* line 558, _main.scss */
+	img {
+		max-width: 100% !important;
+	}
 
-  /* line 562, _main.scss */
-  p,
-  h2,
-  h3 {
-    orphans: 3;
-    widows: 3;
-  }
+	/* line 562, _main.scss */
+	p,
+	h2,
+	h3 {
+		orphans: 3;
+		widows: 3;
+	}
 
-  /* line 569, _main.scss */
-  h2,
-  h3 {
-    page-break-after: avoid;
-  }
+	/* line 569, _main.scss */
+	h2,
+	h3 {
+		page-break-after: avoid;
+	}
 }

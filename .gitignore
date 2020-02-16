@@ -14,6 +14,7 @@ _dev/
 _tmp/
 o__o/homepages/*/_img/
 google*.html
+google*.blade.php
 
 # jigsaw
 /build_local/
@@ -29,6 +30,7 @@ yarn-error.log
 # Optional ignores
 /build_staging/
 /build_production/
-/source/assets/build/css/
-/source/assets/build/fonts/
-/source/assets/build/js/
+# /source/assets/build/css/
+# /source/assets/build/fonts/
+# /source/assets/build/js/
+/source/assets/

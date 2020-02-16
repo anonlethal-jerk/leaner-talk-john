@@ -1,3 +1,6 @@
+---
+permalink: 401.html
+---
 <html>
 	<head>
 		<meta charset="utf-8">

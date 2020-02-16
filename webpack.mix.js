@@ -7,12 +7,21 @@ mix.webpackConfig({
 	plugins: [
 		build.jigsaw,
 		build.browserSync(),
-		build.watch(['source/**/*.md', 'source/**/*.php', 'source/**/*.scss', '!source/**/_tmp/*']),
+		build.watch([
+			'source/**/*.md',
+			'source/**/*.php',
+			'source/**/*.scss',
+			'!source/**/_tmp/*'
+		]),
 	]
 });
 
-mix.js('source/_assets/js/main.js', 'js')
-	.sass('source/_assets/sass/main.scss', 'css')
+mix.js('source/_assets/js/jquery.min.js', '*__*/jquery.min.js')
+	.js('source/_assets/js/main.js', '*__*/main.js')
+	.sass('source/_assets/sass/styles.scss', '0__0')
+	.sass('source/_assets/sass/main.scss', '0__0')
+	.sourceMaps()
 	.options({
 		processCssUrls: false,
-	}).version();
+	})
+	.version();

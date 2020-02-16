@@ -12,6 +12,5 @@ sftp-config.json
 
 # the sissyfuss situation...
 _dev/
-o__o/*/_img/
+o__o/homepages/to_dos/_img/
 google*.html
-.htaccess

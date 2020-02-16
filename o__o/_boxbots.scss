@@ -1,0 +1,87 @@
+* {
+  box-sizing: border-box;
+}
+html {
+	margin: 0;
+}
+body {
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#eace81+0,9bd2f7+44,90d68f+65,baab9c+100 */
+	background: #eace81; /* Old browsers */
+	background: -moz-linear-gradient(top, #eace81 0%, #9bd2f7 44%, #90d68f 65%, #baab9c 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(top, #eace81 0%,#9bd2f7 44%,#90d68f 65%,#baab9c 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to bottom, #eace81 0%,#9bd2f7 44%,#90d68f 65%,#baab9c 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#eace81', endColorstr='#baab9c',GradientType=0 ); /* IE6-9 */
+/* 				background: #ccc; */
+	color: #333;
+	font-family: sans-serif;
+	text-align: center;
+	padding: 0;
+	border: 0;
+	margin: 0;
+}
+.wrap-boxbots {
+	width: 100%;
+	overflow: hidden;
+	padding: 1em;
+}
+.wrap-boxbots a {
+  display: inline-block;
+	text-decoration: none;
+  padding: 0 0 .25em 0;
+	border-bottom: 2px solid rgba(255,255,255,0);
+  margin: .5em 0;
+}
+.wrap-boxbots a:hover {
+	border-bottom: 2px solid #333;
+}
+h3 {
+  position: relative;
+  text-align: center;
+  margin-top: 50px;
+  z-index: 100;
+  font-size: 2.35em;
+}
+figure {
+  position: relative;
+  vertical-align: bottom;
+  padding: 0;
+  margin: 0;
+}
+figcaption {
+  display: none;
+  position: absolute;
+  left: -500%;
+  bottom: -1.75em;
+  text-align: center;
+  width: 1100%;
+  font-size: .75rem;
+}
+a:hover figcaption {
+	display: block;
+}
+a:hover .color {
+	visibility: hidden;
+}
+figure {
+	position: relative;
+}
+.shadow {
+	position: absolute;
+	top: 0;
+	left: 0;
+	visibility: hidden;
+}
+a:hover .shadow {
+	visibility: visible;
+}
+a:hover .color {
+	visibility: hidden;
+}
+p {
+	margin: .25em;
+}
+p a {
+  display: inline;
+	border-bottom: 2px solid rgba(255,255,255,0);
+  margin: 0;
+}

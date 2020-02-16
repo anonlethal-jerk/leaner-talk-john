@@ -1,44 +1,8 @@
-# ######################################################################
-# # ERRORS                                                             #
-# ######################################################################
-
-# ----------------------------------------------------------------------
-# | Custom error messages/pages                                        |
-# ----------------------------------------------------------------------
-
-# Customize what Apache returns to the client in case of an error.
-#
-# https://httpd.apache.org/docs/current/mod/core.html#errordocument
-
-ErrorDocument 404 /404.html
-
-# ----------------------------------------------------------------------
-# | Error prevention                                                   |
-# ----------------------------------------------------------------------
-
-# Disable the pattern matching based on filenames.
-#
-# This setting prevents Apache from returning a 404 error as the result
-# of a rewrite when the directory with the same name does not exist.
-#
-# https://httpd.apache.org/docs/current/content-negotiation.html#multiviews
-
-Options -MultiViews
+RewriteEngine On
+RewriteCond %{HTTPS} !=on
+RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301,NE] 
 
 
-<IfModule mod_rewrite.c>
-  RewriteEngine On
-  RewriteCond %{REQUEST_FILENAME} !-d
-  RewriteCond %{REQUEST_FILENAME} !-f
-
-  RewriteRule ^o__o/boxbots/(.*)$ ./o__o/boxbots/boxbot.php?slug=$1
-</IfModule>
-
-
-<IfModule mod_rewrite.c>
-    RewriteEngine On
-
-    # make blinking use root directory
-    RewriteRule ^•__•/(.*)$ $1 [L]
-    RewriteRule ^-__-/(.*)$ $1 [L]
-</IfModule>
+# make blinking use root directory
+RewriteRule ^•__•/(.*)$ $1 [L]
+RewriteRule ^-__-/(.*)$ $1 [L]

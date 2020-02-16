@@ -1,8 +1,0 @@
-RewriteEngine On
-RewriteCond %{HTTPS} !=on
-RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301,NE] 
-
-
-# make blinking use root directory
-RewriteRule ^•__•/(.*)$ $1 [L]
-RewriteRule ^-__-/(.*)$ $1 [L]

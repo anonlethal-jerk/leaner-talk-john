@@ -1,0 +1,23 @@
+.body--index {
+	background: #f2f2f3;
+
+	.cneterd {
+		position: absolute;
+		display: flex;
+		justify-content: center;
+		align-items: flex-end;
+		width: 100vw;
+		height: 100vh;
+	}
+
+	#groundhog {
+		opacity: 0;
+		&.fasthog {
+			transition: top 0s, left 0s, box-shadow 2.5s;
+		}
+	}
+	.on-top {
+		z-index: 3000;
+		pointer-events: none;
+	}
+}

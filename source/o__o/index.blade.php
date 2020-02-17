@@ -6,7 +6,6 @@
 @endsection
 
 @section('extra-scripts')
-	<script src="/*__*/jquery.min.js"></script>
 	<script>
 		var boxStart = setTimeout(function(){
 			var opener = document.querySelector('#folder');

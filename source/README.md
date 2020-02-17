@@ -1,4 +1,5 @@
-A site...
+always go to the source
 
 ##To Do
-- [ ] does this work?
+- [x] ~~does this work?~~ `guess so`
+

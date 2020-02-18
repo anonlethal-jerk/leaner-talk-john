@@ -1,17 +1,24 @@
-–__–
+–\_\_–
 
-##To Do
-- [ ] boxbots into collection 
+## To Do
+- [ ] BoxBots
+	- [ ] header design
+	- [ ] bottom table design
+	- [ ] finish cutting all done
+	- [x] ~~boxbot image scaling~~ `finally`
+	- [x] ~~shadow/color navigation~~
+	- [ ] `nope` ~~boxbot grid~~ 
+	- [x] ~~boxbots into collection~~
 - [ ] 404's templating
-- [ ] 
+- [ ]
 - [ ] homepages into collection
-- [ ] 
-- [ ] 
-- [ ] 
-- [ ] 
-- [ ] 
+- [ ]
+- [ ]
+- [ ]
+- [ ]
+- [ ]
 
-####Done Too
+#### Done Too
 - [x] ~~pull arrays from other files (json & php)~~
 - [x] get back to current
 	- [x] ~~place ma files~~

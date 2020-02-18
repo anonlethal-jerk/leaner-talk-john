@@ -17,5 +17,3 @@
 
 		<link rel="stylesheet" href="{{ mix('0__0/main.css', '') }}" type="text/css">
 	</head>
-
-	<body class="body--{{ $page->getFilename() }}">

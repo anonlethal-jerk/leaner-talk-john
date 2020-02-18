@@ -3,5 +3,5 @@
 return [
 	'production' => false,
 	'baseUrl' => '',
-	'collections' => [],
+	'collections' => [ 'boxbots' ],
 ];

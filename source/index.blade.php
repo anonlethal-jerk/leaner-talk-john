@@ -1,6 +1,7 @@
 @extends('_layouts.master')
 
 @section('body')
+<body class="body--home">
 	<div class="cneterd"><img src="/x__x/folder.png" alt="folder" width="355" height="292"></div>
 	<div class="cneterd on-top"><img id="folder" src="/x__x/folder-top.png" alt="folder top" width="355" height="292"></div>
 @endsection

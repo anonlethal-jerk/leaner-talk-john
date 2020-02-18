@@ -15,3 +15,12 @@ use TightenCo\Jigsaw\Jigsaw;
  * 	// Your code here
  * });
  */
+
+$events->beforeBuild(function (Jigsaw $jigsaw) {
+	// can pull in array as variable in php file...
+	require_once($jigsaw->getSourcePath().'/_arrays/boxbots.php');
+	$jigsaw->setConfig('collections.boxbots', $ary_boxbots);
+
+	// debugging helper variable...
+	$jigsaw->setConfig('debugger', 'You can do it.');
+});

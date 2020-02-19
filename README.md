@@ -6,6 +6,7 @@
 	- [ ] bottom table design
 	- [ ] finish cutting all done
 	- [ ] mobile tweaks (top navs, etc.)
+	- [ ] ratings & ratings submission
 	- [x] ~~boxbot image scaling~~ `finally`
 	- [x] ~~shadow/color navigation~~
 	- [ ] `nope` ~~boxbot grid~~ 

@@ -12,8 +12,6 @@ $ary_boxbots = [
 		'shadow' => 'o__o/{collection}/shadow/{slug}',
 	],
 	'sort' => '-id',
-	'series_title' => 'BoxBots',
-	'series_description' => 'more info on Boxbots',
 	'items' => [
 		[
 			'id' => 'jkk_199903_1_u',

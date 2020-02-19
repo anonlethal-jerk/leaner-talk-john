@@ -1,3 +1,41 @@
+.table--series_info,
+.table--prj_info {
+	min-width: 100%;
+	margin: 1rem 0;
+	font-size: .75rem;
+
+	td {
+		background: #fff;
+		padding: .33rem .5rem;
+		border: 1px solid #ddd;
+		text-align: left;
+		vertical-align: top;
+	}
+
+	thead,
+	tfoot {
+		td {
+			font-weight: bold;
+		}
+	}
+
+	ul {
+		padding-left: 1rem;
+	}
+	.td--prj_id {
+		font-family: Geneva, monospace;
+		font-size: .675rem;
+	}
+	.td--empty {
+		background: transparent;
+	}
+}
+.table--series_info {
+	margin-top: 0;
+	font-size: .875rem;
+}
+
+
 // probably can hide all slugs eventually (php?)
 .td--series_slug,
 .td--prj_slug {
@@ -46,6 +84,11 @@ tr:hover {
 	}
 	@media screen and (max-width: 540px) {
 		.td--prj_medium {
+			display: none;
+		}
+	}
+	@media screen and (max-width: 420px) {
+		.td--prj_dimensions {
 			display: none;
 		}
 	}

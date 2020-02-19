@@ -61,47 +61,9 @@
 	</div>
 </section>
 
-<?php
-$sorted_boxbots = $boxbots->sortBy('id');;
-?>
-<section class="table--boxbots">
-	<table>
-		<thead>
-			<tr>
-				<th>ID</th>
-				<th>Title</th>
-				<th>Date</th>
-				<th>Dimensions (h × w)</th>
-				<th>Location</th>
-				<th>Status</th>
-				<th>Notes</th>
-			</tr>
-		</thead>
-		<tfoot>
-			<tr>
-				<th>ID</th>
-				<th>Title</th>
-				<th>Date</th>
-				<th>Dimensions (h × w)</th>
-				<th>Location</th>
-				<th>Status</th>
-				<th>Notes</th>
-			</tr>
-		</tfoot>
-		<tbody>
-			@foreach ($sorted_boxbots as $boxbot)
-			<tr>
-				<td>{{ $boxbot->id }}</td>
-				<td>{{ $boxbot->title }}</td>
-				<td>{{ $boxbot->nice_date }}</td>
-				<td>{{ $boxbot->height }} × {{ $boxbot->width }} {{ $boxbot->units }}</td>
-				<td>{{ $boxbot->location }}</td>
-				<td>{{ $boxbot->status }}</td>
-				<td>{{ $boxbot->notes }}</td>
-			</tr>
-			@endforeach
-		</tbody>
-	</table>
+@php $sorted_boxbots = $boxbots->sortBy('id'); @endphp
+<section class="prj_info">
+@include('_partials.table', ['tableArray' => $sorted_boxbots])
 </section>
 
 	<div id="popup">

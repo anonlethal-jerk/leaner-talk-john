@@ -10,6 +10,12 @@
 		border: 1px solid #ddd;
 		text-align: left;
 		vertical-align: top;
+		transition: padding .25s;
+	}
+	.td--series_hidden,
+	.td--prj_hidden {
+		background-color: #c71123;
+		color: #ffffff;
 	}
 
 	thead,
@@ -47,12 +53,12 @@ tr:hover {
 	}
 	.table--prj_info tbody & {
 		td {
-			padding-top: 20px;
-			padding-bottom: 20px;
+			padding: 1rem .5rem;
 		}
 	}
 }
-.td--prj_date {
+.td--prj_date,
+.td--prj_dimensions {
 	white-space: nowrap;
 }
 

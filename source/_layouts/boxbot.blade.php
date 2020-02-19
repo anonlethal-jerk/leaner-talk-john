@@ -10,7 +10,7 @@
 		</figure>
 		<figure class="viewer--image">
 			<img class="{{ $toggleCurrent }}" src="/o__o/boxbots/x__x/{{ $toggleCurrent }}-large/{{ $page->imgfile }}.png" alt="{{ $page->title }} BoxBot" width="{{ $page->largehalfwidthpx }}" height="{{ $page->largehalfheightpx }}" />
-			<figcaption><cite>{{ $page->title }}</cite>, {{ $page->nice_date }}, {{ $page->height }} × {{ $page->width }} {{ $page->units }}</figcaption>
+			<figcaption><cite>{{ $page->title }}</cite>, <span class="no_break">{{ $page->nice_date }}</span>, <span class="no_break">{{ $page->height }} × {{ $page->width }} {{ $page->units }}</span></figcaption>
 		</figure>
 		<div class="viewer--prev">
 			@if ($page->getPrevious())

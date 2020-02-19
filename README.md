@@ -5,6 +5,7 @@
 	- [ ] header design
 	- [ ] bottom table design
 	- [ ] finish cutting all done
+	- [ ] mobile tweaks (top navs, etc.)
 	- [x] ~~boxbot image scaling~~ `finally`
 	- [x] ~~shadow/color navigation~~
 	- [ ] `nope` ~~boxbot grid~~ 

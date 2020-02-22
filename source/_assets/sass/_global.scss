@@ -25,34 +25,70 @@ button {
 	cursor: pointer;
 }
 
-#groundhog {
+#groundhog,
+#boxhog,
+#feralhog {
 	display: block;
 	position: fixed;
-	top: 85px;
-	left: 27px;
-	z-index: 1999;
-	box-shadow: 0 0 30px 5px #c71123;
-	transition: top 11s, left 11s, box-shadow 2.5s;
+	z-index: 2000;
+	box-shadow: 0 0 30px 5px #d1ffed;
+	transition: top 10s, right 10s, left 10s, box-shadow 3.75s;
+	transition-timing-function: ease-in-out;
+	@media screen and (min-width: 860px) {
+		transition: top 20s, right 20s, left 20s, box-shadow 3.75s;
+		transition-timing-function: ease-in-out;
+	}
 
 	a {
 		display: block;
 		background-color: transparent;
 		color: #fff;
-		padding: 1rem 1.25rem;
-		font-size: 1.25rem;
-		line-height: 1.25rem;
+		font-size: 1rem;
+		line-height: 1rem;
+		padding: .75rem 1rem;
 		text-decoration: none;
 		// text-shadow: 0 0 10px #c71123;
 		@media screen and (max-width: 400px) {
-			font-size: 1rem;
-			line-height: 1rem;
-			padding: .75rem 1rem;
+			font-size: .75rem;
+			line-height: .75rem;
+			padding: .5rem .75rem;
 		}
 
 		&:hover {
 			background-color: #fff;
 			color: #000;
 			// text-shadow: none;
+		}
+	}
+}
+#feralhog {
+	top: 115px;
+	left: 47px;
+	@media screen and (max-width: 480px) {
+		left: 56px;
+	}
+}
+#groundhog {
+	top: 85px;
+	left: 27px;
+	z-index: 1999;
+	box-shadow: 0 0 30px 5px #c71123;
+	transition: top 11s, left 11s, box-shadow 2.5s;
+	transition-timing-function: ease-in-out;
+	@media screen and (min-width: 860px) {
+		transition: top 21s, right 21s, left 21s, box-shadow 2.5s;
+		transition-timing-function: ease-in-out;
+	}
+
+	a {
+		font-size: 1.25rem;
+		line-height: 1.25rem;
+		padding: 1rem 1.25rem;
+		// text-shadow: 0 0 10px #c71123;
+		@media screen and (max-width: 400px) {
+			font-size: 1rem;
+			line-height: 1rem;
+			padding: .75rem 1rem;
 		}
 	}
 }

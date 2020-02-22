@@ -5,7 +5,7 @@ $series_info = [
 	'status'      => 'Ongoing',
 	'description' => '<p>Robots made by altering consumer packaging.</p>
 		<p>Originally stole the idea from <a href=\"http://hello.eboy.com/eboy/\">eboy</a>, but after <strong>'.$boxbots->count().'</strong> of these, I guess you could say it’s taken on a life of its own.</p>',
-	'notes'       => '<p><a href=\"https://instagram.com/justboxbots\">Follow on the grams</a></p>',
+	'notes'       => '<p><a href="https://instagram.com/justboxbots">Follow on the grams</a></p>',
 	'to_dos'      => '<ul>
 		<li><del><strong>rollover table to show image of bot. move from left to right 0 < 1 opacity of shadow.</strong></del></li>
 		<li>where are they?</li>
@@ -35,7 +35,9 @@ $series_info = [
 
 @section('body')
 <body class="body--boxbots images--{{ $toggleCurrent }}s">
-	<section class="series_info header_info">
+	{{-- page: {{ $page->testvar }} --}}
+	{{-- boxbots: {{ $boxbots->first()->testvar }} --}}
+	<section class="series_info">
 		@include('_partials.series_table', ['seriesArray' => $series_info ])
 	</section>
 
@@ -110,6 +112,6 @@ $series_info = [
 @stop
 
 @section('extra-scripts')
-	{{-- <nav id="boxhog"><a href="/o__o/boxbots/">BoxBots</a></nav> --}}
+	<nav id="feralhog"><a href="/o__o/">Projects</a></nav>
 	<script src="{{ mix('*__*/boxbots.js', '') }}" async=""></script>
 @stop

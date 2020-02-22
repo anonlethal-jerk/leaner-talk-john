@@ -22,14 +22,23 @@ window.addEventListener('resize', () => {
 // boxbots uplink
 //
 if (document.getElementById("boxhog")) {
-	// move that boxbot button around
-	var boxMove = setInterval(function(){
+	// start to move that boxbot button around
+	var boxStart = setTimeout(function(){
 		var tTop = Math.random()*(window.innerHeight - document.getElementById("boxhog").offsetHeight);
 		var tRight = Math.random()*(window.innerWidth - document.getElementById("boxhog").offsetWidth);
-		var homer = document.querySelector('#boxhog');
-		homer.style.top = tTop+"px";
-		homer.style.right = tRight+"px";
-	}, 8000);
+		var boxer = document.querySelector('#boxhog');
+		boxer.style.top = tTop+"px";
+		boxer.style.right = tRight+"px";
+	}, 7000);
+
+	// move that boxbot button around
+	var boxStart = setInterval(function(){
+		var tTop = Math.random()*(window.innerHeight - document.getElementById("boxhog").offsetHeight);
+		var tRight = Math.random()*(window.innerWidth - document.getElementById("boxhog").offsetWidth);
+		var boxer = document.querySelector('#boxhog');
+		boxer.style.top = tTop+"px";
+		boxer.style.right = tRight+"px";
+	}, 19000);
 
 	// move that boxbot shadow around
 	var boxShadow = setInterval(function(){
@@ -38,9 +47,9 @@ if (document.getElementById("boxhog")) {
 		var tBlue = Math.random()*255;
 		var tOffsetX = Math.round(Math.random()*100 - 50);
 		var tOffsetY = Math.round(Math.random()*100 - 50);
-		var homer = document.querySelector('#boxhog');
-		homer.style.boxShadow = tOffsetX+"px "+tOffsetY+"px 30px 5px rgb("+tRed+" "+tGreen+" "+tBlue+")";
-	}, 2200);
+		var boxer = document.querySelector('#boxhog');
+		boxer.style.boxShadow = tOffsetX+"px "+tOffsetY+"px 30px 5px rgb("+tRed+" "+tGreen+" "+tBlue+")";
+	}, 2600);
 }
 //
 // end boxbots uplink

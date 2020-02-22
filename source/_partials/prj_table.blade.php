@@ -1,4 +1,4 @@
-<table class="table--prj_info">
+<table id="table--prj_info" class="table--prj_info">
 	<thead>
 		<tr>
 			<th class="td--prj_id">ID</th>

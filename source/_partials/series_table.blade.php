@@ -15,9 +15,7 @@
 			{{-- <th class="td--series_description">Description</th> --}}
 			<th class="td--series_notes">Notes</th>
 			{{-- <th class="td--series_to_dos">To Dos</th> --}}
-			@if ( $page->production == true )
-			<th class="td--series_hidden">Hidden</th>
-			@endif
+			{{-- <th class="td--series_hidden">Hidden</th> --}}
 		</tr>
 	</thead>
  	<tbody>
@@ -32,9 +30,7 @@
 			<td class="td--series_status">{{ $seriesArray['status'] }}</td>
 			<td class="td--series_notes">{!! $seriesArray['notes'] !!}</td>
 			{{-- <td class="td--series_to_dos">{!! $seriesArray['to_dos'] !!}</td> --}}
-			@if ( $page->production == true )
-			<td class="td--series_hidden">{!! $seriesArray['hidden'] !!}</td>
-			@endif
+			{{-- <td class="td--series_hidden">{!! $seriesArray['hidden'] !!}</td> --}}
 		</tr>
 	</tbody>
 </table>

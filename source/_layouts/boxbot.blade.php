@@ -59,6 +59,7 @@
 @endsection
 
 @section('extra-scripts')
+	{{-- <nav id="feralhog"><a href="/o__o/">Projects</a></nav> --}}
 	<nav id="boxhog"><a href="../">BoxBots</a></nav>
 	<script src="{{ mix('*__*/boxbots.js', '') }}" async=""></script>
 @endsection

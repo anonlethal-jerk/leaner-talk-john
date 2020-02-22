@@ -20,5 +20,8 @@
 		"sass-loader": "^7.1.0",
 		"vue-template-compiler": "^2.6.11",
 		"yargs": "^4.6.0"
+	},
+	"dependencies": {
+		"tablesort": "^5.2.0"
 	}
 }

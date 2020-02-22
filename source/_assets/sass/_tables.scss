@@ -1,3 +1,8 @@
+.series_info,
+.prj_info {
+	padding: 1rem;
+}
+
 .table--series_info,
 .table--prj_info {
 	min-width: 100%;
@@ -100,13 +105,13 @@ tr:hover {
 		display: none;
 	}
 	@media screen and (max-width: 1080px) {
-		.td--prj_status {
+		.td--prj_location {
 			display: none;
 		}
 	}
 	@media screen and (max-width: 960px) {
 		.td--series_to_dos,
-		.td--prj_location,
+		.td--prj_status,
 		.td--prj_notes {
 			display: none;
 		}

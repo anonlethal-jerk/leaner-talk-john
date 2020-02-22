@@ -10,7 +10,10 @@
 		border: 1px solid #ddd;
 		text-align: left;
 		vertical-align: top;
-		transition: padding .25s;
+		// transition: padding .25s;
+		&.td--prj_title {
+			padding: 0; // for anchor inside
+		}
 	}
 	.td--series_hidden,
 	.td--prj_hidden {
@@ -18,17 +21,17 @@
 		color: #ffffff;
 	}
 
-	thead,
-	tfoot {
-		td {
-			font-weight: bold;
-		}
+	th {
+		padding: .33rem .5rem;
+		text-align: left;
+		vertical-align: top;
+		font-weight: bold;
 	}
 
 	ul {
 		padding-left: 1rem;
 	}
-	.td--prj_id {
+	td.td--prj_id {
 		font-family: Geneva, monospace;
 		font-size: .675rem;
 	}
@@ -54,12 +57,37 @@ tr:hover {
 	.table--prj_info tbody & {
 		td {
 			padding: 1rem .5rem;
+			&.td--prj_title {
+				padding: 0;
+			}
 		}
 	}
 }
 .td--prj_date,
 .td--prj_dimensions {
 	white-space: nowrap;
+}
+.td--prj_title {
+	a {
+		display: block;
+		padding: .33rem .5rem;
+		// transition: padding .25s;
+		background: #ffffff;
+		&:hover {
+			background: #f8e0e3;
+		}
+	}
+	tr:hover & {
+		position: relative;
+		a {
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			padding: 1rem .5rem;
+		}
+	}
 }
 
 .body--boxbots {
@@ -88,12 +116,25 @@ tr:hover {
 			display: none;
 		}
 	}
-	@media screen and (max-width: 540px) {
-		.td--prj_medium {
+	@media screen and (max-width: 620px) {
+		.td--prj_rating {
 			display: none;
 		}
 	}
+	@media screen and (max-width: 540px) {
+		.td--series_date,
+		.td--series_status,
+		.td--prj_medium {
+			display: none;
+		}
+		.td--series_title {
+			h1 {
+				font-size: 1rem;
+			}
+		}
+	}
 	@media screen and (max-width: 420px) {
+		.td--series_notes,
 		.td--prj_dimensions {
 			display: none;
 		}

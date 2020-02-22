@@ -16,20 +16,13 @@ body:not(.body--boxbots) img {
 	height: auto
 }
 a {
-	@keyframes blink {
-		50% {
-			opacity: 0.0
-		}
+	color: #c71123;
+	&:hover {
+		color: #000000;
 	}
-	@-webkit-keyframes blink {
-		50% {
-			opacity: 0.0
-		}
-	}
-	// &:hover {
-	// 	animation: blink 1.5s linear 0s infinite;
-	// 	-webkit-animation: blink 1.5s linear 0s infinite
-	// }
+}
+button {
+	cursor: pointer;
 }
 
 #groundhog {

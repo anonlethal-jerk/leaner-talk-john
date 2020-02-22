@@ -16,7 +16,7 @@ $ary_boxbots = [
 		[
 			'id'                  => 'jkk_199903_1_u',
 			'title'               => 'Pop Tarts Chocolate Fudge',
-			'jk_rating'           =>  NULL,
+			'jk_rating'           =>  1.5,
 			'user_rating'         =>  NULL,
 			'slug'                => '1999_03_06-pop_tarts_chocolate_fudge',
 			'height'              =>  239,
@@ -40,7 +40,7 @@ $ary_boxbots = [
 		[
 			'id'                  => 'jkk_199903_2_u',
 			'title'               => 'Sierra Nevada Summerfest',
-			'jk_rating'           =>  NULL,
+			'jk_rating'           =>  3.5,
 			'user_rating'         =>  NULL,
 			'slug'                => '1999_03_06-sierra_nevada_summerfest',
 			'height'              =>  297,
@@ -63,7 +63,7 @@ $ary_boxbots = [
 		[
 			'id'                  => 'jkk_199903_3_u',
 			'title'               => 'Creamette Spaghetti',
-			'jk_rating'           =>  NULL,
+			'jk_rating'           =>  3,
 			'user_rating'         =>  NULL,
 			'slug'                => '1999_03_08-creamette_spaghetti',
 			'height'              =>  214,
@@ -85,7 +85,7 @@ $ary_boxbots = [
 		[
 			'id'                  => 'jkk_199905_1_u',
 			'title'               => 'Carnation Cocoa',
-			'jk_rating'           =>  NULL,
+			'jk_rating'           =>  3.5,
 			'user_rating'         =>  NULL,
 			'slug'                => '1999_05_28-carnation_cocoa',
 			'height'              =>  235,
@@ -107,7 +107,7 @@ $ary_boxbots = [
 		[
 			'id'                  => 'jkk_199905_2_u',
 			'title'               => 'Pringles Sour Cream & Onion',
-			'jk_rating'           =>  NULL,
+			'jk_rating'           =>  1,
 			'user_rating'         =>  NULL,
 			'slug'                => '1999_05_28-pringles_sour_cream_onion',
 			'height'              =>  158,
@@ -129,7 +129,7 @@ $ary_boxbots = [
 		[
 			'id'                  => 'jkk_199910_1_u',
 			'title'               => 'Philips Lightbulbs',
-			'jk_rating'           =>  NULL,
+			'jk_rating'           =>  3,
 			'user_rating'         =>  NULL,
 			'slug'                => '1999_10_20-philips_lightbulbs',
 			'height'              =>  206,
@@ -151,7 +151,7 @@ $ary_boxbots = [
 		[
 			'id'                  => 'jkk_199910_2_u',
 			'title'               => 'Kellogg’s Raisin Bran (single)',
-			'jk_rating'           =>  NULL,
+			'jk_rating'           =>  3,
 			'user_rating'         =>  NULL,
 			'slug'                => '1999_10_20-kelloggs_raisin_bran',
 			'height'              =>  129,
@@ -173,7 +173,7 @@ $ary_boxbots = [
 		[
 			'id'                  => 'jkk_199910_3_u',
 			'title'               => 'Kodak Pro Film',
-			'jk_rating'           =>  NULL,
+			'jk_rating'           =>  1,
 			'user_rating'         =>  NULL,
 			'slug'                => '1999_10_21-kodak_pro_film',
 			'height'              =>  123,
@@ -195,7 +195,7 @@ $ary_boxbots = [
 		[
 			'id'                  => 'jkk_199910_4_u',
 			'title'               => 'Marlboro Gold Cigarettes',
-			'jk_rating'           =>  NULL,
+			'jk_rating'           =>  1,
 			'user_rating'         =>  NULL,
 			'slug'                => '1999_10_21-marlboro_gold_cigarettes',
 			'height'              =>  228,
@@ -217,7 +217,7 @@ $ary_boxbots = [
 		[
 			'id'                  => 'jkk_199910_5_u',
 			'title'               => 'Sam Adams Boston Lager',
-			'jk_rating'           =>  NULL,
+			'jk_rating'           =>  .5,
 			'user_rating'         =>  NULL,
 			'slug'                => '1999_10_29-sam_adams_boston_lager',
 			'height'              =>  228,
@@ -239,7 +239,7 @@ $ary_boxbots = [
 		[
 			'id'                  => 'jkk_199911_1_u',
 			'title'               => 'Park Drive Tobacco',
-			'jk_rating'           =>  NULL,
+			'jk_rating'           =>  1,
 			'user_rating'         =>  NULL,
 			'slug'                => '1999_11_10-park_drive_tobacco',
 			'height'              =>  165,
@@ -261,7 +261,7 @@ $ary_boxbots = [
 		[
 			'id'                  => 'jkk_199911_2_u',
 			'title'               => 'Preparation H',
-			'jk_rating'           =>  NULL,
+			'jk_rating'           =>  1.5,
 			'user_rating'         =>  NULL,
 			'slug'                => '1999_11_10-preparation_h',
 			'height'              =>  129,
@@ -283,7 +283,7 @@ $ary_boxbots = [
 		[
 			'id'                  => 'jkk_199911_3_u',
 			'title'               => 'Smead Folders',
-			'jk_rating'           =>  NULL,
+			'jk_rating'           =>  2,
 			'user_rating'         =>  NULL,
 			'slug'                => '1999_11_10-smead_folders',
 			'height'              =>  505,
@@ -305,7 +305,7 @@ $ary_boxbots = [
 		[
 			'id'                  => 'jkk_199911_4_u',
 			'title'               => 'Coca-Cola (12-pack)',
-			'jk_rating'           =>  NULL,
+			'jk_rating'           =>  2.5,
 			'user_rating'         =>  NULL,
 			'slug'                => '1999_11_14-coca_cola',
 			'height'              =>  227,
@@ -327,7 +327,7 @@ $ary_boxbots = [
 		[
 			'id'                  => 'jkk_199911_5_u',
 			'title'               => 'Kodak Max 400 Film',
-			'jk_rating'           =>  NULL,
+			'jk_rating'           =>  2.5,
 			'user_rating'         =>  NULL,
 			'slug'                => '1999_11_14-kodak_max_400',
 			'height'              =>  181,
@@ -349,7 +349,7 @@ $ary_boxbots = [
 		[
 			'id'                  => 'jkk_199911_6_u',
 			'title'               => 'Oats & Honey Bar',
-			'jk_rating'           =>  NULL,
+			'jk_rating'           =>  1,
 			'user_rating'         =>  NULL,
 			'slug'                => '1999_11_15-oats_honey_bar',
 			'height'              =>  244,
@@ -371,7 +371,7 @@ $ary_boxbots = [
 		[
 			'id'                  => 'jkk_199911_7_u',
 			'title'               => 'Message Book',
-			'jk_rating'           =>  NULL,
+			'jk_rating'           =>  2,
 			'user_rating'         =>  NULL,
 			'slug'                => '1999_11_29-message_book',
 			'height'              =>  189,
@@ -394,7 +394,7 @@ $ary_boxbots = [
 		[
 			'id'                  => 'jkk_199912_10_u',
 			'title'               => 'Red Lion Beer',
-			'jk_rating'           =>  NULL,
+			'jk_rating'           =>  3.5,
 			'user_rating'         =>  NULL,
 			'slug'                => '1999_12_06-red_lion_beer',
 			'height'              =>  210,
@@ -416,7 +416,7 @@ $ary_boxbots = [
 		[
 			'id'                  => 'jkk_199912_11_u',
 			'title'               => 'Steinlager Beer',
-			'jk_rating'           =>  NULL,
+			'jk_rating'           =>  3.5,
 			'user_rating'         =>  NULL,
 			'slug'                => '1999_12_06-steinlager_beer',
 			'height'              =>  240,
@@ -438,7 +438,7 @@ $ary_boxbots = [
 		[
 			'id'                  => 'jkk_199912_12_u',
 			'title'               => 'Butterfly Ping Pong Balls',
-			'jk_rating'           =>  NULL,
+			'jk_rating'           =>  3,
 			'user_rating'         =>  NULL,
 			'slug'                => '1999_12_10-butterfly_ping_pong_balls',
 			'height'              =>  149,
@@ -460,7 +460,7 @@ $ary_boxbots = [
 		[
 			'id'                  => 'jkk_199912_13_u',
 			'title'               => 'Mai Tai Drink Mix',
-			'jk_rating'           =>  NULL,
+			'jk_rating'           =>  1.5,
 			'user_rating'         =>  NULL,
 			'slug'                => '1999_12_10-mai_tai',
 			'height'              =>  146,
@@ -482,7 +482,7 @@ $ary_boxbots = [
 		[
 			'id'                  => 'jkk_199912_14_u',
 			'title'               => 'Marlboro Red Cigarettes',
-			'jk_rating'           =>  NULL,
+			'jk_rating'           =>  3,
 			'user_rating'         =>  NULL,
 			'slug'                => '1999_12_10-marlboro_red_cigarettes',
 			'height'              =>  202,
@@ -504,7 +504,7 @@ $ary_boxbots = [
 		[
 			'id'                  => 'jkk_199912_15_u',
 			'title'               => 'Polacolor 59',
-			'jk_rating'           =>  NULL,
+			'jk_rating'           =>  3.5,
 			'user_rating'         =>  NULL,
 			'slug'                => '1999_12_12-polacolor_59',
 			'height'              =>  232,
@@ -526,7 +526,7 @@ $ary_boxbots = [
 		[
 			'id'                  => 'jkk_199912_16_u',
 			'title'               => 'Tylenol PM',
-			'jk_rating'           =>  NULL,
+			'jk_rating'           =>  2,
 			'user_rating'         =>  NULL,
 			'slug'                => '1999_12_12-tylenol_pm',
 			'height'              =>  106,
@@ -548,7 +548,7 @@ $ary_boxbots = [
 		[
 			'id'                  => 'jkk_199912_17_u',
 			'title'               => 'Bounce Dryer Sheets',
-			'jk_rating'           =>  NULL,
+			'jk_rating'           =>  3,
 			'user_rating'         =>  NULL,
 			'slug'                => '1999_12_19-bounce_dryer_sheets',
 			'height'              =>  317,
@@ -570,7 +570,7 @@ $ary_boxbots = [
 		[
 			'id'                  => 'jkk_199912_1_u',
 			'title'               => 'Nugget Baking Soda',
-			'jk_rating'           =>  NULL,
+			'jk_rating'           =>  4,
 			'user_rating'         =>  NULL,
 			'slug'                => '1999_12_01-nugget_baking_soda',
 			'height'              =>  134,
@@ -592,7 +592,7 @@ $ary_boxbots = [
 		[
 			'id'                  => 'jkk_199912_2_u',
 			'title'               => 'Irish Spring Soap',
-			'jk_rating'           =>  NULL,
+			'jk_rating'           =>  1,
 			'user_rating'         =>  NULL,
 			'slug'                => '1999_12_03-irish_spring',
 			'height'              =>  154,
@@ -615,7 +615,7 @@ $ary_boxbots = [
 		[
 			'id'                  => 'jkk_199912_3_u',
 			'title'               => 'Sony Mini Disc',
-			'jk_rating'           =>  NULL,
+			'jk_rating'           =>  3,
 			'user_rating'         =>  NULL,
 			'slug'                => '1999_12_04-sony_mini_disc',
 			'height'              =>  175,
@@ -637,7 +637,7 @@ $ary_boxbots = [
 		[
 			'id'                  => 'jkk_199912_4_u',
 			'title'               => 'Ear Plugs',
-			'jk_rating'           =>  NULL,
+			'jk_rating'           =>  2.5,
 			'user_rating'         =>  NULL,
 			'slug'                => '1999_12_05-ear_plugs',
 			'height'              =>  102,
@@ -660,7 +660,7 @@ $ary_boxbots = [
 		[
 			'id'                  => 'jkk_199912_5_u',
 			'title'               => 'Canterbury Draught Beer',
-			'jk_rating'           =>  NULL,
+			'jk_rating'           =>  3,
 			'user_rating'         =>  NULL,
 			'slug'                => '1999_12_06-canterbury_draught_beer',
 			'height'              =>  203,
@@ -682,7 +682,7 @@ $ary_boxbots = [
 		[
 			'id'                  => 'jkk_199912_6_u',
 			'title'               => 'Carbon Film Correction Ribbon',
-			'jk_rating'           =>  NULL,
+			'jk_rating'           =>  4,
 			'user_rating'         =>  NULL,
 			'slug'                => '1999_12_06-carbon_film_correction_ribbon',
 			'height'              =>  111,
@@ -704,7 +704,7 @@ $ary_boxbots = [
 		[
 			'id'                  => 'jkk_199912_7_u',
 			'title'               => 'Club Crackers',
-			'jk_rating'           =>  NULL,
+			'jk_rating'           =>  1,
 			'user_rating'         =>  NULL,
 			'slug'                => '1999_12_06-club_crackers',
 			'height'              =>  149,
@@ -726,7 +726,7 @@ $ary_boxbots = [
 		[
 			'id'                  => 'jkk_199912_8_u',
 			'title'               => 'IBM Cartridge',
-			'jk_rating'           =>  NULL,
+			'jk_rating'           =>  2.5,
 			'user_rating'         =>  NULL,
 			'slug'                => '1999_12_06-ibm_cartridge',
 			'height'              =>  153,
@@ -748,7 +748,7 @@ $ary_boxbots = [
 		[
 			'id'                  => 'jkk_199912_9_u',
 			'title'               => 'Infection Cream',
-			'jk_rating'           =>  NULL,
+			'jk_rating'           =>  1,
 			'user_rating'         =>  NULL,
 			'slug'                => '1999_12_06-infection_cream',
 			'height'              =>  87,
@@ -770,7 +770,7 @@ $ary_boxbots = [
 		[
 			'id'                  => 'jkk_199920_1_u',
 			'title'               => 'Crest Extra Whitening Toothpaste',
-			'jk_rating'           =>  NULL,
+			'jk_rating'           =>  2.5,
 			'user_rating'         =>  NULL,
 			'slug'                => '1999_2000-crest_extra_whitening_toothpaste',
 			'height'              =>  178,
@@ -793,7 +793,7 @@ $ary_boxbots = [
 		[
 			'id'                  => 'jkk_199920_2_u',
 			'title'               => 'Dinty Moore Beef Stew',
-			'jk_rating'           =>  NULL,
+			'jk_rating'           =>  1,
 			'user_rating'         =>  NULL,
 			'slug'                => '1999_2000-dinty_moore_beef_stew',
 			'height'              =>  159,
@@ -816,7 +816,7 @@ $ary_boxbots = [
 		[
 			'id'                  => 'jkk_199920_3_u',
 			'title'               => 'Dots Candy',
-			'jk_rating'           =>  NULL,
+			'jk_rating'           =>  2,
 			'user_rating'         =>  NULL,
 			'slug'                => '1999_2000-dots',
 			'height'              =>  115,
@@ -839,7 +839,7 @@ $ary_boxbots = [
 		[
 			'id'                  => 'jkk_199920_4_u',
 			'title'               => 'Kellogg’s Froot Loops (single)',
-			'jk_rating'           =>  NULL,
+			'jk_rating'           =>  2,
 			'user_rating'         =>  NULL,
 			'slug'                => '1999_2000-kelloggs_froot_loops',
 			'height'              =>  156,
@@ -862,7 +862,7 @@ $ary_boxbots = [
 		[
 			'id'                  => 'jkk_199920_5_u',
 			'title'               => 'GE Lightbulbs',
-			'jk_rating'           =>  NULL,
+			'jk_rating'           =>  1.5,
 			'user_rating'         =>  NULL,
 			'slug'                => '1999_2000-ge_lightbulbs',
 			'height'              =>  141,
@@ -885,7 +885,7 @@ $ary_boxbots = [
 		[
 			'id'                  => 'jkk_199920_6_u',
 			'title'               => 'Sanka',
-			'jk_rating'           =>  NULL,
+			'jk_rating'           =>  3.5,
 			'user_rating'         =>  NULL,
 			'slug'                => '1999_2000-sanka',
 			'height'              =>  164,
@@ -908,7 +908,7 @@ $ary_boxbots = [
 		[
 			'id'                  => 'jkk_199920_7_u',
 			'title'               => 'Winfield Cigarettes',
-			'jk_rating'           =>  NULL,
+			'jk_rating'           =>  1.5,
 			'user_rating'         =>  NULL,
 			'slug'                => '1999_2000-winfield_cigarettes',
 			'height'              =>  167,
@@ -931,7 +931,7 @@ $ary_boxbots = [
 		[
 			'id'                  => 'jkk_200009_1_u',
 			'title'               => 'Nilla Wafers',
-			'jk_rating'           =>  NULL,
+			'jk_rating'           =>  1,
 			'user_rating'         =>  NULL,
 			'slug'                => '2000_09_10-nilla_wafers',
 			'height'              =>  210,
@@ -953,7 +953,7 @@ $ary_boxbots = [
 		[
 			'id'                  => 'jkk_200009_2_u',
 			'title'               => 'Pledge Grab-it',
-			'jk_rating'           =>  NULL,
+			'jk_rating'           =>  4,
 			'user_rating'         =>  NULL,
 			'slug'                => '2000_09_10-pledge_grab_it',
 			'height'              =>  257,
@@ -975,7 +975,7 @@ $ary_boxbots = [
 		[
 			'id'                  => 'jkk_200101_1_u',
 			'title'               => 'Woodchuck Draft Cider',
-			'jk_rating'           =>  NULL,
+			'jk_rating'           =>  3,
 			'user_rating'         =>  NULL,
 			'slug'                => '2001_01_10-woodchuck_draft_cider',
 			'height'              =>  221,
@@ -997,7 +997,7 @@ $ary_boxbots = [
 		[
 			'id'                  => 'jkk_200101_2_u',
 			'title'               => 'Glad Lock Zipper Bags',
-			'jk_rating'           =>  NULL,
+			'jk_rating'           =>  2.5,
 			'user_rating'         =>  NULL,
 			'slug'                => '2001_01_17-glad_lock_zipper_bags',
 			'height'              =>  307,
@@ -1019,7 +1019,7 @@ $ary_boxbots = [
 		[
 			'id'                  => 'jkk_200101_3_u',
 			'title'               => 'Brita Water Filter',
-			'jk_rating'           =>  NULL,
+			'jk_rating'           =>  3,
 			'user_rating'         =>  NULL,
 			'slug'                => '2001_01_20-brita_water_filter',
 			'height'              =>  264,
@@ -1041,7 +1041,7 @@ $ary_boxbots = [
 		[
 			'id'                  => 'jkk_200101_4_u',
 			'title'               => 'Gepe Slide Mounts',
-			'jk_rating'           =>  NULL,
+			'jk_rating'           =>  3,
 			'user_rating'         =>  NULL,
 			'slug'                => '2001_01_20-gepe_slide_mounts',
 			'height'              =>  226,
@@ -1063,7 +1063,7 @@ $ary_boxbots = [
 		[
 			'id'                  => 'jkk_200102_1_u',
 			'title'               => 'Dove Bar',
-			'jk_rating'           =>  NULL,
+			'jk_rating'           =>  3,
 			'user_rating'         =>  NULL,
 			'slug'                => '2001_02_21-dove_bar',
 			'height'              =>  210,
@@ -1085,7 +1085,7 @@ $ary_boxbots = [
 		[
 			'id'                  => 'jkk_200102_2_u',
 			'title'               => 'Pop Tarts Strawberry',
-			'jk_rating'           =>  NULL,
+			'jk_rating'           =>  2.5,
 			'user_rating'         =>  NULL,
 			'slug'                => '2001_02_23-pop_tarts_strawberry',
 			'height'              =>  214,
@@ -1107,7 +1107,7 @@ $ary_boxbots = [
 		[
 			'id'                  => 'jkk_200107_1_u',
 			'title'               => 'Flash Ball',
-			'jk_rating'           =>  NULL,
+			'jk_rating'           =>  2,
 			'user_rating'         =>  NULL,
 			'slug'                => '2001_07_01-flash_ball',
 			'height'              =>  289,
@@ -1129,7 +1129,7 @@ $ary_boxbots = [
 		[
 			'id'                  => 'jkk_200112_1_u',
 			'title'               => 'M&M’s Ice Cream Sandwich',
-			'jk_rating'           =>  NULL,
+			'jk_rating'           =>  1.5,
 			'user_rating'         =>  NULL,
 			'slug'                => '2001_12_30-mms_ice_cream_sandwich',
 			'height'              =>  231,
@@ -1151,7 +1151,7 @@ $ary_boxbots = [
 		[
 			'id'                  => 'jkk_200112_2_u',
 			'title'               => 'Cous Cous Vegetable',
-			'jk_rating'           =>  NULL,
+			'jk_rating'           =>  2,
 			'user_rating'         =>  NULL,
 			'slug'                => '2001_12_31-cous_cous_vegetable',
 			'height'              =>  263,
@@ -1173,7 +1173,7 @@ $ary_boxbots = [
 		[
 			'id'                  => 'jkk_200201_1_u',
 			'title'               => 'Chiclets',
-			'jk_rating'           =>  NULL,
+			'jk_rating'           =>  4.5,
 			'user_rating'         =>  NULL,
 			'slug'                => '2002_01_01-chiclets',
 			'height'              =>  58,
@@ -1195,7 +1195,7 @@ $ary_boxbots = [
 		[
 			'id'                  => 'jkk_200201_2_u',
 			'title'               => 'Honey Maid Graham Crackers',
-			'jk_rating'           =>  NULL,
+			'jk_rating'           =>  1,
 			'user_rating'         =>  NULL,
 			'slug'                => '2002_01_02-honey_maid_graham_crackers',
 			'height'              =>  354,
@@ -1217,7 +1217,7 @@ $ary_boxbots = [
 		[
 			'id'                  => 'jkk_200201_3_u',
 			'title'               => 'Cous Cous Olive',
-			'jk_rating'           =>  NULL,
+			'jk_rating'           =>  2,
 			'user_rating'         =>  NULL,
 			'slug'                => '2002_01_05-cous_cous_olive',
 			'height'              =>  227,
@@ -1239,7 +1239,7 @@ $ary_boxbots = [
 		[
 			'id'                  => 'jkk_200201_4_u',
 			'title'               => 'Fantastic Sloppy Joe',
-			'jk_rating'           =>  NULL,
+			'jk_rating'           =>  2.5,
 			'user_rating'         =>  NULL,
 			'slug'                => '2002_01_05-fantastic_sloppy_joe',
 			'height'              =>  196,
@@ -1261,7 +1261,7 @@ $ary_boxbots = [
 		[
 			'id'                  => 'jkk_200301_1_u',
 			'title'               => 'Corona Extra',
-			'jk_rating'           =>  NULL,
+			'jk_rating'           =>  3,
 			'user_rating'         =>  NULL,
 			'slug'                => '2003_01_06-corona_extra',
 			'height'              =>  404,
@@ -1283,7 +1283,7 @@ $ary_boxbots = [
 		[
 			'id'                  => 'jkk_200301_2_u',
 			'title'               => 'Sun Maid Raisins',
-			'jk_rating'           =>  NULL,
+			'jk_rating'           =>  2,
 			'user_rating'         =>  NULL,
 			'slug'                => '2003_01_07-sun_maid_raisins',
 			'height'              =>  260,
@@ -1305,7 +1305,7 @@ $ary_boxbots = [
 		[
 			'id'                  => 'jkk_200303_1_u',
 			'title'               => 'gamecube.com',
-			'jk_rating'           =>  NULL,
+			'jk_rating'           =>  2,
 			'user_rating'         =>  NULL,
 			'slug'                => '2003_03_26-gamecube_com',
 			'height'              =>  371,
@@ -1328,7 +1328,7 @@ $ary_boxbots = [
 		[
 			'id'                  => 'jkk_200303_2_u',
 			'title'               => 'xbox.com',
-			'jk_rating'           =>  NULL,
+			'jk_rating'           =>  3.5,
 			'user_rating'         =>  NULL,
 			'slug'                => '2003_03_26-xbox_com',
 			'height'              =>  292,
@@ -1351,7 +1351,7 @@ $ary_boxbots = [
 		[
 			'id'                  => 'jkk_200303_3_u',
 			'title'               => 'playstation.com',
-			'jk_rating'           =>  NULL,
+			'jk_rating'           =>  1.5,
 			'user_rating'         =>  NULL,
 			'slug'                => '2003_03_26-playstation_com',
 			'height'              =>  209,
@@ -1374,7 +1374,7 @@ $ary_boxbots = [
 		[
 			'id'                  => 'jkk_200410_1_u',
 			'title'               => 'Brooklyn Lager',
-			'jk_rating'           =>  NULL,
+			'jk_rating'           =>  3.5,
 			'user_rating'         =>  NULL,
 			'slug'                => '2004_10_01-brooklyn_lager',
 			'height'              =>  508,
@@ -1396,7 +1396,7 @@ $ary_boxbots = [
 		[
 			'id'                  => 'jkk_200410_2_u',
 			'title'               => 'Yuengling',
-			'jk_rating'           =>  NULL,
+			'jk_rating'           =>  4,
 			'user_rating'         =>  NULL,
 			'slug'                => '2004_10_01-yuengling',
 			'height'              =>  563,
@@ -1418,7 +1418,7 @@ $ary_boxbots = [
 		[
 			'id'                  => 'jkk_200410_3_u',
 			'title'               => 'Dos Equis',
-			'jk_rating'           =>  NULL,
+			'jk_rating'           =>  5,
 			'user_rating'         =>  NULL,
 			'slug'                => '2004_10_18-dos_equis',
 			'height'              =>  353,
@@ -1440,7 +1440,7 @@ $ary_boxbots = [
 		[
 			'id'                  => 'jkk_200410_4_u',
 			'title'               => 'Peroni',
-			'jk_rating'           =>  NULL,
+			'jk_rating'           =>  4.5,
 			'user_rating'         =>  NULL,
 			'slug'                => '2004_10_19-peroni',
 			'height'              =>  480,
@@ -1462,7 +1462,7 @@ $ary_boxbots = [
 		[
 			'id'                  => 'jkk_200502_1_u',
 			'title'               => 'HP Cartridge',
-			'jk_rating'           =>  NULL,
+			'jk_rating'           =>  4.5,
 			'user_rating'         =>  NULL,
 			'slug'                => '2005_02_27-hp_cartridge',
 			'height'              =>  360,
@@ -1484,7 +1484,7 @@ $ary_boxbots = [
 		[
 			'id'                  => 'jkk_200502_2_u',
 			'title'               => 'Guinness',
-			'jk_rating'           =>  NULL,
+			'jk_rating'           =>  5,
 			'user_rating'         =>  NULL,
 			'slug'                => '2005_02_27-guinness',
 			'height'              =>  283,
@@ -1506,7 +1506,7 @@ $ary_boxbots = [
 		[
 			'id'                  => 'jkk_200600_1_u',
 			'title'               => 'Hoegarden',
-			'jk_rating'           =>  NULL,
+			'jk_rating'           =>  3.5,
 			'user_rating'         =>  NULL,
 			'slug'                => '2006-hoegarden',
 			'height'              =>  770,
@@ -1528,7 +1528,7 @@ $ary_boxbots = [
 		[
 			'id'                  => 'jkk_200604_1_u',
 			'title'               => 'Grounding Switch',
-			'jk_rating'           =>  NULL,
+			'jk_rating'           =>  2,
 			'user_rating'         =>  NULL,
 			'slug'                => '2006_04_09-grounding_switch',
 			'height'              =>  182,
@@ -1550,7 +1550,7 @@ $ary_boxbots = [
 		[
 			'id'                  => 'jkk_200604_2_u',
 			'title'               => 'Gelf Watch',
-			'jk_rating'           =>  NULL,
+			'jk_rating'           =>  1,
 			'user_rating'         =>  NULL,
 			'slug'                => '2006_04_10-gelf_watch',
 			'height'              =>  175,
@@ -1572,7 +1572,7 @@ $ary_boxbots = [
 		[
 			'id'                  => 'jkk_200607_1_u',
 			'title'               => 'Farrara Torrone',
-			'jk_rating'           =>  NULL,
+			'jk_rating'           =>  2.5,
 			'user_rating'         =>  NULL,
 			'slug'                => '2006_07_09-ferrara_torrone',
 			'height'              =>  118,
@@ -1594,7 +1594,7 @@ $ary_boxbots = [
 		[
 			'id'                  => 'jkk_200607_2_u',
 			'title'               => 'Red Bull Sugarfree',
-			'jk_rating'           =>  NULL,
+			'jk_rating'           =>  3,
 			'user_rating'         =>  NULL,
 			'slug'                => '2006_07_14-red_bull_sugarfree',
 			'height'              =>  338,
@@ -1616,7 +1616,7 @@ $ary_boxbots = [
 		[
 			'id'                  => 'jkk_200608_1_u',
 			'title'               => 'Endurance Ale',
-			'jk_rating'           =>  NULL,
+			'jk_rating'           =>  2,
 			'user_rating'         =>  NULL,
 			'slug'                => '2006_08_01-endurance_ale',
 			'height'              =>  484,
@@ -1638,7 +1638,7 @@ $ary_boxbots = [
 		[
 			'id'                  => 'jkk_200608_2_u',
 			'title'               => 'Dany Sahne',
-			'jk_rating'           =>  NULL,
+			'jk_rating'           =>  2,
 			'user_rating'         =>  NULL,
 			'slug'                => '2006_08_19-dany_sahne',
 			'height'              =>  307,
@@ -1660,7 +1660,7 @@ $ary_boxbots = [
 		[
 			'id'                  => 'jkk_200608_3_u',
 			'title'               => 'Kinder Schokolade',
-			'jk_rating'           =>  NULL,
+			'jk_rating'           =>  2,
 			'user_rating'         =>  NULL,
 			'slug'                => '2006_08_19-kinder_schokolade',
 			'height'              =>  190,
@@ -1682,7 +1682,7 @@ $ary_boxbots = [
 		[
 			'id'                  => 'jkk_200608_4_u',
 			'title'               => 'Rite Aid Pregnancy Test',
-			'jk_rating'           =>  NULL,
+			'jk_rating'           =>  3,
 			'user_rating'         =>  NULL,
 			'slug'                => '2006_08_29-rite_aid_pregnancy_test',
 			'height'              =>  241,
@@ -1704,7 +1704,7 @@ $ary_boxbots = [
 		[
 			'id'                  => 'jkk_200609_1_u',
 			'title'               => 'Sea Dog Porter',
-			'jk_rating'           =>  NULL,
+			'jk_rating'           =>  3.5,
 			'user_rating'         =>  NULL,
 			'slug'                => '2006_09_18-sea_dog_porter',
 			'height'              =>  526,
@@ -1726,7 +1726,7 @@ $ary_boxbots = [
 		[
 			'id'                  => 'jkk_200610_1_u',
 			'title'               => 'Orville Reddenbachers Popcorn',
-			'jk_rating'           =>  NULL,
+			'jk_rating'           =>  2.5,
 			'user_rating'         =>  NULL,
 			'slug'                => '2006_10_08-orville_reddenbachers_popcorn',
 			'height'              =>  424,
@@ -1748,7 +1748,7 @@ $ary_boxbots = [
 		[
 			'id'                  => 'jkk_200804_1_u',
 			'title'               => 'Newport Cigarettes',
-			'jk_rating'           =>  NULL,
+			'jk_rating'           =>  3,
 			'user_rating'         =>  NULL,
 			'slug'                => '2008_04_22-newport_cigarettes',
 			'height'              =>  196,
@@ -1770,7 +1770,7 @@ $ary_boxbots = [
 		[
 			'id'                  => 'jkk_200805_1_u',
 			'title'               => 'Scotch Giftwrap Tape',
-			'jk_rating'           =>  NULL,
+			'jk_rating'           =>  4,
 			'user_rating'         =>  NULL,
 			'slug'                => '2008_05_03-scotch_giftwrap_tape',
 			'height'              =>  237,
@@ -1792,7 +1792,7 @@ $ary_boxbots = [
 		[
 			'id'                  => 'jkk_200805_2_u',
 			'title'               => 'Marlboro Smooth Cigarettes',
-			'jk_rating'           =>  NULL,
+			'jk_rating'           =>  3,
 			'user_rating'         =>  NULL,
 			'slug'                => '2008_05_18-marlboro_smooth_cigarettes',
 			'height'              =>  252,
@@ -1814,7 +1814,7 @@ $ary_boxbots = [
 		[
 			'id'                  => 'jkk_200808_1_u',
 			'title'               => 'Reynolds Wrap',
-			'jk_rating'           =>  NULL,
+			'jk_rating'           =>  4,
 			'user_rating'         =>  NULL,
 			'slug'                => '2008_08_17-reynolds_wrap',
 			'height'              =>  269,
@@ -1836,7 +1836,7 @@ $ary_boxbots = [
 		[
 			'id'                  => 'jkk_200809_1_u',
 			'title'               => 'Scotch Tape',
-			'jk_rating'           =>  NULL,
+			'jk_rating'           =>  3.5,
 			'user_rating'         =>  NULL,
 			'slug'                => '2008_09_14-scotch_tape',
 			'height'              =>  159,
@@ -1858,7 +1858,7 @@ $ary_boxbots = [
 		[
 			'id'                  => 'jkk_200811_1_u',
 			'title'               => 'Negra Modelo',
-			'jk_rating'           =>  NULL,
+			'jk_rating'           =>  3.5,
 			'user_rating'         =>  NULL,
 			'slug'                => '2008_11_01-negra_modelo',
 			'height'              =>  373,
@@ -1880,7 +1880,7 @@ $ary_boxbots = [
 		[
 			'id'                  => 'jkk_200811_2_u',
 			'title'               => 'Stella Artois',
-			'jk_rating'           =>  NULL,
+			'jk_rating'           =>  3.5,
 			'user_rating'         =>  NULL,
 			'slug'                => '2008_11_02-stella_artois',
 			'height'              =>  555,
@@ -1902,7 +1902,7 @@ $ary_boxbots = [
 		[
 			'id'                  => 'jkk_200811_3_u',
 			'title'               => 'Hello Panda',
-			'jk_rating'           =>  NULL,
+			'jk_rating'           =>  3,
 			'user_rating'         =>  NULL,
 			'slug'                => '2008_11_07-hello_panda',
 			'height'              =>  297,
@@ -1924,7 +1924,7 @@ $ary_boxbots = [
 		[
 			'id'                  => 'jkk_200811_4_u',
 			'title'               => 'Grizzly Claws',
-			'jk_rating'           =>  NULL,
+			'jk_rating'           =>  2.5,
 			'user_rating'         =>  NULL,
 			'slug'                => '2008_11_08-grizzly_claws',
 			'height'              =>  192,
@@ -1946,7 +1946,7 @@ $ary_boxbots = [
 		[
 			'id'                  => 'jkk_200811_5_u',
 			'title'               => 'Memorex DVD-R DL',
-			'jk_rating'           =>  NULL,
+			'jk_rating'           =>  4,
 			'user_rating'         =>  NULL,
 			'slug'                => '2008_11_09-memorex_dvdr_dl',
 			'height'              =>  254,
@@ -1968,7 +1968,7 @@ $ary_boxbots = [
 		[
 			'id'                  => 'jkk_200811_6_u',
 			'title'               => 'Swiss Miss Cocoa',
-			'jk_rating'           =>  NULL,
+			'jk_rating'           =>  3,
 			'user_rating'         =>  NULL,
 			'slug'                => '2008_11_20-swiss_miss_cocoa',
 			'height'              =>  282,
@@ -1990,7 +1990,7 @@ $ary_boxbots = [
 		[
 			'id'                  => 'jkk_200901_1_u',
 			'title'               => 'Extra Peppermint Gum',
-			'jk_rating'           =>  NULL,
+			'jk_rating'           =>  2.5,
 			'user_rating'         =>  NULL,
 			'slug'                => '2009_01_02-extra_peppermint_gum',
 			'height'              =>  167,
@@ -2012,7 +2012,7 @@ $ary_boxbots = [
 		[
 			'id'                  => 'jkk_200901_2_u',
 			'title'               => 'Land O Lakes Butter',
-			'jk_rating'           =>  NULL,
+			'jk_rating'           =>  2,
 			'user_rating'         =>  NULL,
 			'slug'                => '2009_01_12-land_o_lakes_butter',
 			'height'              =>  201,
@@ -2034,7 +2034,7 @@ $ary_boxbots = [
 		[
 			'id'                  => 'jkk_200902_1_u',
 			'title'               => 'Crayola Crayons',
-			'jk_rating'           =>  NULL,
+			'jk_rating'           =>  2.5,
 			'user_rating'         =>  NULL,
 			'slug'                => '2009_02_02-crayola_crayons',
 			'height'              =>  347,
@@ -2056,7 +2056,7 @@ $ary_boxbots = [
 		[
 			'id'                  => 'jkk_201201_1_u',
 			'title'               => 'Leffe Brune',
-			'jk_rating'           =>  NULL,
+			'jk_rating'           =>  3,
 			'user_rating'         =>  NULL,
 			'slug'                => '2012_01_08-leffe_brune',
 			'height'              =>  578,
@@ -2078,7 +2078,7 @@ $ary_boxbots = [
 		[
 			'id'                  => 'jkk_201201_2_u',
 			'title'               => 'Fullers London Porter',
-			'jk_rating'           =>  NULL,
+			'jk_rating'           =>  3,
 			'user_rating'         =>  NULL,
 			'slug'                => '2012_01_15-fullers_london_porter',
 			'height'              =>  566,
@@ -2100,7 +2100,7 @@ $ary_boxbots = [
 		[
 			'id'                  => 'jkk_201201_3_u',
 			'title'               => 'Shiner Bock',
-			'jk_rating'           =>  NULL,
+			'jk_rating'           =>  4,
 			'user_rating'         =>  NULL,
 			'slug'                => '2012_01_22-shiner_bock',
 			'height'              =>  623,
@@ -2122,7 +2122,7 @@ $ary_boxbots = [
 		[
 			'id'                  => 'jkk_201201_4_u',
 			'title'               => 'Lagunitas Pale Ale',
-			'jk_rating'           =>  NULL,
+			'jk_rating'           =>  3,
 			'user_rating'         =>  NULL,
 			'slug'                => '2012_01_29-lagunitas_pale_ale',
 			'height'              =>  742,
@@ -2144,7 +2144,7 @@ $ary_boxbots = [
 		[
 			'id'                  => 'jkk_201202_1_u',
 			'title'               => 'Fat Tire Ale',
-			'jk_rating'           =>  NULL,
+			'jk_rating'           =>  4.5,
 			'user_rating'         =>  NULL,
 			'slug'                => '2012_02_06-fat_tire_ale',
 			'height'              =>  716,
@@ -2166,7 +2166,7 @@ $ary_boxbots = [
 		[
 			'id'                  => 'jkk_201202_2_u',
 			'title'               => 'Duvel',
-			'jk_rating'           =>  NULL,
+			'jk_rating'           =>  4,
 			'user_rating'         =>  NULL,
 			'slug'                => '2012_02_11-duvel',
 			'height'              =>  537,
@@ -2188,7 +2188,7 @@ $ary_boxbots = [
 		[
 			'id'                  => 'jkk_201202_3_u',
 			'title'               => 'Monkshine',
-			'jk_rating'           =>  NULL,
+			'jk_rating'           =>  3,
 			'user_rating'         =>  NULL,
 			'slug'                => '2012_02_19-monkshine',
 			'height'              =>  427,
@@ -2210,7 +2210,7 @@ $ary_boxbots = [
 		[
 			'id'                  => 'jkk_201206_1_u',
 			'title'               => 'Bavik Premium Pilsner',
-			'jk_rating'           =>  NULL,
+			'jk_rating'           =>  5,
 			'user_rating'         =>  NULL,
 			'slug'                => '2012_06_24-bavik_premium_pilsner',
 			'height'              =>  423,
@@ -2232,7 +2232,7 @@ $ary_boxbots = [
 		[
 			'id'                  => 'jkk_201206_2_u',
 			'title'               => 'Maredsous Tripel',
-			'jk_rating'           =>  NULL,
+			'jk_rating'           =>  3,
 			'user_rating'         =>  NULL,
 			'slug'                => '2012_06_24-maredsous_tripel',
 			'height'              =>  447,
@@ -2254,7 +2254,7 @@ $ary_boxbots = [
 		[
 			'id'                  => 'jkk_201206_3_u',
 			'title'               => 'Banana Bread Beer',
-			'jk_rating'           =>  NULL,
+			'jk_rating'           =>  3.5,
 			'user_rating'         =>  NULL,
 			'slug'                => '2012_06_25-banana_bread_beer',
 			'height'              =>  599,
@@ -2276,7 +2276,7 @@ $ary_boxbots = [
 		[
 			'id'                  => 'jkk_201206_4_u',
 			'title'               => 'Coopers Original Pale Ale',
-			'jk_rating'           =>  NULL,
+			'jk_rating'           =>  4.5,
 			'user_rating'         =>  NULL,
 			'slug'                => '2012_06_26-coopers_original_pale_ale',
 			'height'              =>  269,
@@ -2298,7 +2298,7 @@ $ary_boxbots = [
 		[
 			'id'                  => 'jkk_201208_1_u',
 			'title'               => 'Blue Point Toasted Lager',
-			'jk_rating'           =>  NULL,
+			'jk_rating'           =>  3,
 			'user_rating'         =>  NULL,
 			'slug'                => '2012_08_26-blue_point_toasted_lager',
 			'height'              =>  589,
@@ -2320,7 +2320,7 @@ $ary_boxbots = [
 		[
 			'id'                  => 'jkk_201208_2_u',
 			'title'               => 'Raging Bitch Beer',
-			'jk_rating'           =>  NULL,
+			'jk_rating'           =>  3,
 			'user_rating'         =>  NULL,
 			'slug'                => '2012_08_27-raging_bitch_beer',
 			'height'              =>  718,
@@ -2342,7 +2342,7 @@ $ary_boxbots = [
 		[
 			'id'                  => 'jkk_201208_3_u',
 			'title'               => 'Red Hook ESB',
-			'jk_rating'           =>  NULL,
+			'jk_rating'           =>  3,
 			'user_rating'         =>  NULL,
 			'slug'                => '2012_08_30-red_hook_esb',
 			'height'              =>  647,
@@ -2364,7 +2364,7 @@ $ary_boxbots = [
 		[
 			'id'                  => 'jkk_201209_1_u',
 			'title'               => 'Harpoon Rye IPA',
-			'jk_rating'           =>  NULL,
+			'jk_rating'           =>  3,
 			'user_rating'         =>  NULL,
 			'slug'                => '2012_09_08-harpoon_rye_ipa',
 			'height'              =>  516,
@@ -2386,7 +2386,7 @@ $ary_boxbots = [
 		[
 			'id'                  => 'jkk_201209_2_u',
 			'title'               => 'Crabbies Ginger Beer',
-			'jk_rating'           =>  NULL,
+			'jk_rating'           =>  5,
 			'user_rating'         =>  NULL,
 			'slug'                => '2012_09_09-crabbies_ginger_beer_twins',
 			'height'              =>  295,
@@ -2410,7 +2410,7 @@ $ary_boxbots = [
 		[
 			'id'                  => 'jkk_201209_3_u',
 			'title'               => 'Estrella Daura',
-			'jk_rating'           =>  NULL,
+			'jk_rating'           =>  4.5,
 			'user_rating'         =>  NULL,
 			'slug'                => '2012_09_09-estrella_daura',
 			'height'              =>  397,
@@ -2432,7 +2432,7 @@ $ary_boxbots = [
 		[
 			'id'                  => 'jkk_201209_4_u',
 			'title'               => 'Honey Brown Lager',
-			'jk_rating'           =>  NULL,
+			'jk_rating'           =>  2.5,
 			'user_rating'         =>  NULL,
 			'slug'                => '2012_09_09-honey_brown_lager',
 			'height'              =>  584,
@@ -2454,7 +2454,7 @@ $ary_boxbots = [
 		[
 			'id'                  => 'jkk_201209_5_u',
 			'title'               => 'Old No. 38 Stout',
-			'jk_rating'           =>  NULL,
+			'jk_rating'           =>  2,
 			'user_rating'         =>  NULL,
 			'slug'                => '2012_09_09-old_no_38_stout',
 			'height'              =>  550,
@@ -2476,7 +2476,7 @@ $ary_boxbots = [
 		[
 			'id'                  => 'jkk_201209_6_u',
 			'title'               => 'Palm',
-			'jk_rating'           =>  NULL,
+			'jk_rating'           =>  4,
 			'user_rating'         =>  NULL,
 			'slug'                => '2012_09_09-palm',
 			'height'              =>  453,
@@ -2498,7 +2498,7 @@ $ary_boxbots = [
 		[
 			'id'                  => 'jkk_201209_7_u',
 			'title'               => 'Augustijn',
-			'jk_rating'           =>  NULL,
+			'jk_rating'           =>  2,
 			'user_rating'         =>  NULL,
 			'slug'                => '2012_09_22-augustijn',
 			'height'              =>  485,
@@ -2520,7 +2520,7 @@ $ary_boxbots = [
 		[
 			'id'                  => 'jkk_201209_8_u',
 			'title'               => 'Xingu Beer',
-			'jk_rating'           =>  NULL,
+			'jk_rating'           =>  2.5,
 			'user_rating'         =>  NULL,
 			'slug'                => '2012_09_22-xingu',
 			'height'              =>  375,
@@ -2542,7 +2542,7 @@ $ary_boxbots = [
 		[
 			'id'                  => 'jkk_201210_1_u',
 			'title'               => 'Anchor Steam Beer',
-			'jk_rating'           =>  NULL,
+			'jk_rating'           =>  3,
 			'user_rating'         =>  NULL,
 			'slug'                => '2012_10_08-anchor_steam_beer',
 			'height'              =>  598,
@@ -2564,7 +2564,7 @@ $ary_boxbots = [
 		[
 			'id'                  => 'jkk_201304_1_u',
 			'title'               => 'UFO White',
-			'jk_rating'           =>  NULL,
+			'jk_rating'           =>  3.5,
 			'user_rating'         =>  NULL,
 			'slug'                => '2013_04_14-ufo_white',
 			'height'              =>  494,
@@ -2586,7 +2586,7 @@ $ary_boxbots = [
 		[
 			'id'                  => 'jkk_201304_2_u',
 			'title'               => 'Wolavers Organic Ale',
-			'jk_rating'           =>  NULL,
+			'jk_rating'           =>  2.5,
 			'user_rating'         =>  NULL,
 			'slug'                => '2013_04_14-wolavers_organic_ale',
 			'height'              =>  442,
@@ -2608,7 +2608,7 @@ $ary_boxbots = [
 		[
 			'id'                  => 'jkk_201305_1_u',
 			'title'               => 'Bitter American',
-			'jk_rating'           =>  NULL,
+			'jk_rating'           =>  2.5,
 			'user_rating'         =>  NULL,
 			'slug'                => '2013_05_05-bitter_american',
 			'height'              =>  313,
@@ -2630,7 +2630,7 @@ $ary_boxbots = [
 		[
 			'id'                  => 'jkk_201410_1_u',
 			'title'               => 'Sylvania Lightbulbs',
-			'jk_rating'           =>  NULL,
+			'jk_rating'           =>  3.5,
 			'user_rating'         =>  NULL,
 			'slug'                => '2014_10_29-sylvania_lightbulbs',
 			'height'              =>  345,
@@ -2652,7 +2652,7 @@ $ary_boxbots = [
 		[
 			'id'                  => 'jkk_201410_2_u',
 			'title'               => 'Stim•u•Dent',
-			'jk_rating'           =>  NULL,
+			'jk_rating'           =>  3,
 			'user_rating'         =>  NULL,
 			'slug'                => '2014_10_30-stim_u_dent',
 			'height'              =>  149,
@@ -2674,7 +2674,7 @@ $ary_boxbots = [
 		[
 			'id'                  => 'jkk_201410_3_u',
 			'title'               => 'Black Diamond Headlamp',
-			'jk_rating'           =>  NULL,
+			'jk_rating'           =>  4,
 			'user_rating'         =>  NULL,
 			'slug'                => '2014_10_31-black_diamond_headlamp',
 			'height'              =>  253,
@@ -2696,7 +2696,7 @@ $ary_boxbots = [
 		[
 			'id'                  => 'jkk_201411_10_u',
 			'title'               => 'Modac V-belt',
-			'jk_rating'           =>  NULL,
+			'jk_rating'           =>  1.5,
 			'user_rating'         =>  NULL,
 			'slug'                => '2014_11_14-modac_v_belt',
 			'height'              =>  237,
@@ -2718,7 +2718,7 @@ $ary_boxbots = [
 		[
 			'id'                  => 'jkk_201411_11_u',
 			'title'               => 'D-Con Multi',
-			'jk_rating'           =>  NULL,
+			'jk_rating'           =>  2,
 			'user_rating'         =>  NULL,
 			'slug'                => '2014_11_17-d_con_multi',
 			'height'              =>  518,
@@ -2740,7 +2740,7 @@ $ary_boxbots = [
 		[
 			'id'                  => 'jkk_201411_12_u',
 			'title'               => 'Miller Lite',
-			'jk_rating'           =>  NULL,
+			'jk_rating'           =>  3.5,
 			'user_rating'         =>  NULL,
 			'slug'                => '2014_11_18-miller_lite',
 			'height'              =>  522,
@@ -2762,7 +2762,7 @@ $ary_boxbots = [
 		[
 			'id'                  => 'jkk_201411_13_u',
 			'title'               => 'Coors Light',
-			'jk_rating'           =>  NULL,
+			'jk_rating'           =>  3,
 			'user_rating'         =>  NULL,
 			'slug'                => '2014_11_19-coors_light',
 			'height'              =>  738,
@@ -2784,7 +2784,7 @@ $ary_boxbots = [
 		[
 			'id'                  => 'jkk_201411_14_u',
 			'title'               => 'Duracell AA Batteries',
-			'jk_rating'           =>  NULL,
+			'jk_rating'           =>  3.5,
 			'user_rating'         =>  NULL,
 			'slug'                => '2014_11_19-duracell_aa_batteries',
 			'height'              =>  158,
@@ -2806,7 +2806,7 @@ $ary_boxbots = [
 		[
 			'id'                  => 'jkk_201411_15_u',
 			'title'               => 'Miller High Life',
-			'jk_rating'           =>  NULL,
+			'jk_rating'           =>  3.5,
 			'user_rating'         =>  NULL,
 			'slug'                => '2014_11_27-miller_high_life',
 			'height'              =>  602,
@@ -2828,7 +2828,7 @@ $ary_boxbots = [
 		[
 			'id'                  => 'jkk_201411_16_u',
 			'title'               => 'Olde Speckled Hen',
-			'jk_rating'           =>  NULL,
+			'jk_rating'           =>  2.5,
 			'user_rating'         =>  NULL,
 			'slug'                => '2014_11_27-olde_speckled_hen',
 			'height'              =>  344,
@@ -2850,7 +2850,7 @@ $ary_boxbots = [
 		[
 			'id'                  => 'jkk_201411_17_u',
 			'title'               => 'Radeberger',
-			'jk_rating'           =>  NULL,
+			'jk_rating'           =>  3,
 			'user_rating'         =>  NULL,
 			'slug'                => '2014_11_27-radeberger',
 			'height'              =>  607,
@@ -2872,7 +2872,7 @@ $ary_boxbots = [
 		[
 			'id'                  => 'jkk_201411_18_u',
 			'title'               => 'Guinness Blonde',
-			'jk_rating'           =>  NULL,
+			'jk_rating'           =>  2,
 			'user_rating'         =>  NULL,
 			'slug'                => '2014_11_28-guinness_blonde',
 			'height'              =>  482,
@@ -2894,7 +2894,7 @@ $ary_boxbots = [
 		[
 			'id'                  => 'jkk_201411_19_u',
 			'title'               => 'Nitro Milk Stout',
-			'jk_rating'           =>  NULL,
+			'jk_rating'           =>  3,
 			'user_rating'         =>  NULL,
 			'slug'                => '2014_11_28-nitro_milk_stout',
 			'height'              =>  812,
@@ -2916,7 +2916,7 @@ $ary_boxbots = [
 		[
 			'id'                  => 'jkk_201411_1_u',
 			'title'               => 'Allura Globe Lightbulb',
-			'jk_rating'           =>  NULL,
+			'jk_rating'           =>  1.5,
 			'user_rating'         =>  NULL,
 			'slug'                => '2014_11_01-allura_globe_lightbulb',
 			'height'              =>  264,
@@ -2938,7 +2938,7 @@ $ary_boxbots = [
 		[
 			'id'                  => 'jkk_201411_20_u',
 			'title'               => 'Ommegang Scythe',
-			'jk_rating'           =>  NULL,
+			'jk_rating'           =>  2.5,
 			'user_rating'         =>  NULL,
 			'slug'                => '2014_11_28-ommegang_scythe',
 			'height'              =>  595,
@@ -2960,7 +2960,7 @@ $ary_boxbots = [
 		[
 			'id'                  => 'jkk_201411_21_u',
 			'title'               => 'Bohemia',
-			'jk_rating'           =>  NULL,
+			'jk_rating'           =>  3,
 			'user_rating'         =>  NULL,
 			'slug'                => '2014_11_29-bohemia',
 			'height'              =>  522,
@@ -2982,7 +2982,7 @@ $ary_boxbots = [
 		[
 			'id'                  => 'jkk_201411_22_u',
 			'title'               => 'Hennepin',
-			'jk_rating'           =>  NULL,
+			'jk_rating'           =>  2.5,
 			'user_rating'         =>  NULL,
 			'slug'                => '2014_11_29-hennepin',
 			'height'              =>  446,
@@ -3004,7 +3004,7 @@ $ary_boxbots = [
 		[
 			'id'                  => 'jkk_201411_23_u',
 			'title'               => 'Router',
-			'jk_rating'           =>  NULL,
+			'jk_rating'           =>  3,
 			'user_rating'         =>  NULL,
 			'slug'                => '2014_11_29-router',
 			'height'              =>  368,
@@ -3026,7 +3026,7 @@ $ary_boxbots = [
 		[
 			'id'                  => 'jkk_201411_2_u',
 			'title'               => 'Highland Tape',
-			'jk_rating'           =>  NULL,
+			'jk_rating'           =>  2.5,
 			'user_rating'         =>  NULL,
 			'slug'                => '2014_11_01-highland_tape',
 			'height'              =>  245,
@@ -3048,7 +3048,7 @@ $ary_boxbots = [
 		[
 			'id'                  => 'jkk_201411_3_u',
 			'title'               => 'Emergen-C',
-			'jk_rating'           =>  NULL,
+			'jk_rating'           =>  2.5,
 			'user_rating'         =>  NULL,
 			'slug'                => '2014_11_02-emergen_c',
 			'height'              =>  316,
@@ -3070,7 +3070,7 @@ $ary_boxbots = [
 		[
 			'id'                  => 'jkk_201411_4_u',
 			'title'               => 'Stihl Oil',
-			'jk_rating'           =>  NULL,
+			'jk_rating'           =>  3,
 			'user_rating'         =>  NULL,
 			'slug'                => '2014_11_03-stihl_oil',
 			'height'              =>  352,
@@ -3092,7 +3092,7 @@ $ary_boxbots = [
 		[
 			'id'                  => 'jkk_201411_5_u',
 			'title'               => 'Waterproof Sandpaper',
-			'jk_rating'           =>  NULL,
+			'jk_rating'           =>  3,
 			'user_rating'         =>  NULL,
 			'slug'                => '2014_11_05-waterproof_sandpaper',
 			'height'              =>  389,
@@ -3114,7 +3114,7 @@ $ary_boxbots = [
 		[
 			'id'                  => 'jkk_201411_6_u',
 			'title'               => 'Bear Sanding Discs',
-			'jk_rating'           =>  NULL,
+			'jk_rating'           =>  1.5,
 			'user_rating'         =>  NULL,
 			'slug'                => '2014_11_10-bear_sanding_discs',
 			'height'              =>  324,
@@ -3136,7 +3136,7 @@ $ary_boxbots = [
 		[
 			'id'                  => 'jkk_201411_7_u',
 			'title'               => 'Patron Silver',
-			'jk_rating'           =>  NULL,
+			'jk_rating'           =>  4,
 			'user_rating'         =>  NULL,
 			'slug'                => '2014_11_10-patron_silver',
 			'height'              =>  477,
@@ -3158,7 +3158,7 @@ $ary_boxbots = [
 		[
 			'id'                  => 'jkk_201411_8_u',
 			'title'               => 'Sam Adams Boston Lager',
-			'jk_rating'           =>  NULL,
+			'jk_rating'           =>  3.5,
 			'user_rating'         =>  NULL,
 			'slug'                => '2014_11_11-sam_adams_boston_lager',
 			'height'              =>  600,
@@ -3180,7 +3180,7 @@ $ary_boxbots = [
 		[
 			'id'                  => 'jkk_201411_9_u',
 			'title'               => '3M Sand Pak',
-			'jk_rating'           =>  NULL,
+			'jk_rating'           =>  2,
 			'user_rating'         =>  NULL,
 			'slug'                => '2014_11_12-3m_sand_pak',
 			'height'              =>  171,
@@ -3202,7 +3202,7 @@ $ary_boxbots = [
 		[
 			'id'                  => 'jkk_201509_1_u',
 			'title'               => 'Toblerone',
-			'jk_rating'           =>  NULL,
+			'jk_rating'           =>  1,
 			'user_rating'         =>  NULL,
 			'slug'                => '2015_09_04-toblerone',
 			'height'              =>  230,
@@ -3224,7 +3224,7 @@ $ary_boxbots = [
 		[
 			'id'                  => 'jkk_201509_2_u',
 			'title'               => 'Food Decorator',
-			'jk_rating'           =>  NULL,
+			'jk_rating'           =>  3.5,
 			'user_rating'         =>  NULL,
 			'slug'                => '2015_09_12-food_decorator',
 			'height'              =>  192,
@@ -3246,7 +3246,7 @@ $ary_boxbots = [
 		[
 			'id'                  => 'jkk_201511_1_u',
 			'title'               => 'Scotch Tape',
-			'jk_rating'           =>  NULL,
+			'jk_rating'           =>  4,
 			'user_rating'         =>  NULL,
 			'slug'                => '2015_11_09-scotch_tape',
 			'height'              =>  208,
@@ -3268,7 +3268,7 @@ $ary_boxbots = [
 		[
 			'id'                  => 'jkk_201511_2_u',
 			'title'               => 'Single Engine Red',
-			'jk_rating'           =>  NULL,
+			'jk_rating'           =>  3,
 			'user_rating'         =>  NULL,
 			'slug'                => '2015_11_14-single_engine_red',
 			'height'              =>  417,
@@ -3290,7 +3290,7 @@ $ary_boxbots = [
 		[
 			'id'                  => 'jkk_201511_3_u',
 			'title'               => 'Precision Universal Joint',
-			'jk_rating'           =>  NULL,
+			'jk_rating'           =>  1,
 			'user_rating'         =>  NULL,
 			'slug'                => '2015_11_19-precision_universal_joint',
 			'height'              =>  276,
@@ -3312,7 +3312,7 @@ $ary_boxbots = [
 		[
 			'id'                  => 'jkk_201511_4_u',
 			'title'               => 'Sapporo Beer',
-			'jk_rating'           =>  NULL,
+			'jk_rating'           =>  3,
 			'user_rating'         =>  NULL,
 			'slug'                => '2015_11_24-sapporo',
 			'height'              =>  654,
@@ -3334,7 +3334,7 @@ $ary_boxbots = [
 		[
 			'id'                  => 'jkk_201511_5_u',
 			'title'               => 'Land O Lakes Butter',
-			'jk_rating'           =>  NULL,
+			'jk_rating'           =>  2.5,
 			'user_rating'         =>  NULL,
 			'slug'                => '2015_11_27-land_o_lakes_butter',
 			'height'              =>  234,
@@ -3356,7 +3356,7 @@ $ary_boxbots = [
 		[
 			'id'                  => 'jkk_201511_6_u',
 			'title'               => 'e•p•t Pregnancy Test',
-			'jk_rating'           =>  NULL,
+			'jk_rating'           =>  2.5,
 			'user_rating'         =>  NULL,
 			'slug'                => '2015_11_30-ept_pregnancy_test',
 			'height'              =>  390,
@@ -3378,7 +3378,7 @@ $ary_boxbots = [
 		[
 			'id'                  => 'jkk_201512_1_u',
 			'title'               => 'Trojan ENZ',
-			'jk_rating'           =>  NULL,
+			'jk_rating'           =>  3,
 			'user_rating'         =>  NULL,
 			'slug'                => '2015_12_04-trojan_enz',
 			'height'              =>  259,
@@ -3400,7 +3400,7 @@ $ary_boxbots = [
 		[
 			'id'                  => 'jkk_201512_2_u',
 			'title'               => 'Bigelow Green Tea',
-			'jk_rating'           =>  NULL,
+			'jk_rating'           =>  3,
 			'user_rating'         =>  NULL,
 			'slug'                => '2015_12_18-bigelow_green_tea',
 			'height'              =>  365,
@@ -3422,7 +3422,7 @@ $ary_boxbots = [
 		[
 			'id'                  => 'jkk_201601_1_u',
 			'title'               => 'Nabisco Grahams',
-			'jk_rating'           =>  NULL,
+			'jk_rating'           =>  2.5,
 			'user_rating'         =>  NULL,
 			'slug'                => '2016_01_03-nabisco_grahams',
 			'height'              =>  398,
@@ -3444,7 +3444,7 @@ $ary_boxbots = [
 		[
 			'id'                  => 'jkk_201601_2_u',
 			'title'               => 'Slim Jim',
-			'jk_rating'           =>  NULL,
+			'jk_rating'           =>  4,
 			'user_rating'         =>  NULL,
 			'slug'                => '2016_01_16-slim_jim',
 			'height'              =>  284,
@@ -3466,7 +3466,7 @@ $ary_boxbots = [
 		[
 			'id'                  => 'jkk_201604_1_u',
 			'title'               => 'Biofinity Contact Lens',
-			'jk_rating'           =>  NULL,
+			'jk_rating'           =>  3.5,
 			'user_rating'         =>  NULL,
 			'slug'                => '2016_04_01-biofinity_contact_lens_siblings',
 			'height'              =>  270,
@@ -3489,7 +3489,7 @@ $ary_boxbots = [
 		[
 			'id'                  => 'jkk_201608_1_u',
 			'title'               => 'New Belgium Beer',
-			'jk_rating'           =>  NULL,
+			'jk_rating'           =>  3,
 			'user_rating'         =>  NULL,
 			'slug'                => '2016_08_03-new_belgium_beer',
 			'height'              =>  750,
@@ -3511,7 +3511,7 @@ $ary_boxbots = [
 		[
 			'id'                  => 'jkk_201701_1_u',
 			'title'               => 'Sensodyne Toothpaste',
-			'jk_rating'           =>  NULL,
+			'jk_rating'           =>  3.5,
 			'user_rating'         =>  NULL,
 			'slug'                => '2017_01_04-sensodyne_toothpaste',
 			'height'              =>  266,
@@ -3533,7 +3533,7 @@ $ary_boxbots = [
 		[
 			'id'                  => 'jkk_201701_2_u',
 			'title'               => 'Boca Burgers',
-			'jk_rating'           =>  NULL,
+			'jk_rating'           =>  2,
 			'user_rating'         =>  NULL,
 			'slug'                => '2017_01_15-boca_burgers',
 			'height'              =>  347,
@@ -3555,7 +3555,7 @@ $ary_boxbots = [
 		[
 			'id'                  => 'jkk_201701_3_u',
 			'title'               => 'Domino Dark Brown Sugar',
-			'jk_rating'           =>  NULL,
+			'jk_rating'           =>  2.5,
 			'user_rating'         =>  NULL,
 			'slug'                => '2017_01_22-domino_dark_brown_sugar',
 			'height'              =>  306,
@@ -3577,7 +3577,7 @@ $ary_boxbots = [
 		[
 			'id'                  => 'jkk_201701_4_u',
 			'title'               => 'Berties Every Flavour Beans',
-			'jk_rating'           =>  NULL,
+			'jk_rating'           =>  3,
 			'user_rating'         =>  NULL,
 			'slug'                => '2017_01_29-berties_every_flavour_beans',
 			'height'              =>  353,
@@ -3599,7 +3599,7 @@ $ary_boxbots = [
 		[
 			'id'                  => 'jkk_201702_1_u',
 			'title'               => 'Cabot Butter',
-			'jk_rating'           =>  NULL,
+			'jk_rating'           =>  2,
 			'user_rating'         =>  NULL,
 			'slug'                => '2017_02_05-cabot_butter',
 			'height'              =>  321,
@@ -3621,7 +3621,7 @@ $ary_boxbots = [
 		[
 			'id'                  => 'jkk_201702_2_u',
 			'title'               => 'Staples Hole Reinforcements',
-			'jk_rating'           =>  NULL,
+			'jk_rating'           =>  3,
 			'user_rating'         =>  NULL,
 			'slug'                => '2017_02_12-staples_hole_reinforcements',
 			'height'              =>  213,
@@ -3643,7 +3643,7 @@ $ary_boxbots = [
 		[
 			'id'                  => 'jkk_201702_3_u',
 			'title'               => 'Duracell C Batteries',
-			'jk_rating'           =>  NULL,
+			'jk_rating'           =>  4,
 			'user_rating'         =>  NULL,
 			'slug'                => '2017_02_19-duracell_c_batteries',
 			'height'              =>  508,
@@ -3665,7 +3665,7 @@ $ary_boxbots = [
 		[
 			'id'                  => 'jkk_201702_4_u',
 			'title'               => 'Shiny Date Stamp',
-			'jk_rating'           =>  NULL,
+			'jk_rating'           =>  2.5,
 			'user_rating'         =>  NULL,
 			'slug'                => '2017_02_26-shiny_date_stamp',
 			'height'              =>  268,
@@ -3687,7 +3687,7 @@ $ary_boxbots = [
 		[
 			'id'                  => 'jkk_201704_1_u',
 			'title'               => 'Mueller Athletic Tape',
-			'jk_rating'           =>  NULL,
+			'jk_rating'           =>  4,
 			'user_rating'         =>  NULL,
 			'slug'                => '2017_04_17-mueller_athletic_tape',
 			'height'              =>  275,
@@ -3709,7 +3709,7 @@ $ary_boxbots = [
 		[
 			'id'                  => 'jkk_201704_2_u',
 			'title'               => 'Crayola Crayons',
-			'jk_rating'           =>  NULL,
+			'jk_rating'           =>  5,
 			'user_rating'         =>  NULL,
 			'slug'                => '2017_04_18-crayola_crayons',
 			'height'              =>  537,
@@ -3731,7 +3731,7 @@ $ary_boxbots = [
 		[
 			'id'                  => 'jkk_201704_3_u',
 			'title'               => 'Monster Zero Ultra (4-pack)',
-			'jk_rating'           =>  NULL,
+			'jk_rating'           =>  3,
 			'user_rating'         =>  NULL,
 			'slug'                => '2017_04_29-monster_zero_ultra',
 			'height'              =>  536,
@@ -3753,7 +3753,7 @@ $ary_boxbots = [
 		[
 			'id'                  => 'jkk_201704_4_u',
 			'title'               => 'Monster Zero Ultra (10-pack)',
-			'jk_rating'           =>  NULL,
+			'jk_rating'           =>  3,
 			'user_rating'         =>  NULL,
 			'slug'                => '2017_04_30-monster_zero_ultra',
 			'height'              =>  655,
@@ -3776,7 +3776,7 @@ $ary_boxbots = [
 		[
 			'id'                  => 'jkk_201705_1_u',
 			'title'               => 'Sylvania Ultra LED Lightbulb',
-			'jk_rating'           =>  NULL,
+			'jk_rating'           =>  3,
 			'user_rating'         =>  NULL,
 			'slug'                => '2017_05_07-sylvania_ultra_led_lightbulb',
 			'height'              =>  540,
@@ -3798,7 +3798,7 @@ $ary_boxbots = [
 		[
 			'id'                  => 'jkk_201705_2_u',
 			'title'               => 'Bards Gold Sorghum Beer',
-			'jk_rating'           =>  NULL,
+			'jk_rating'           =>  3,
 			'user_rating'         =>  NULL,
 			'slug'                => '2017_05_14-bards_gold_sorghum_beer',
 			'height'              =>  808,
@@ -3820,7 +3820,7 @@ $ary_boxbots = [
 		[
 			'id'                  => 'jkk_201705_3_u',
 			'title'               => 'Anna’s Swedish Thins',
-			'jk_rating'           =>  NULL,
+			'jk_rating'           =>  3.5,
 			'user_rating'         =>  NULL,
 			'slug'                => '2017_05_21-annas_swedish_thins',
 			'height'              =>  241,
@@ -3842,7 +3842,7 @@ $ary_boxbots = [
 		[
 			'id'                  => 'jkk_201705_4_u',
 			'title'               => 'Atkins Peanut Butter Fudge Crisp Bar',
-			'jk_rating'           =>  NULL,
+			'jk_rating'           =>  2.5,
 			'user_rating'         =>  NULL,
 			'slug'                => '2017_05_28-atkins_peanut_butter_fudge_crisp_bar',
 			'height'              =>  290,
@@ -3864,7 +3864,7 @@ $ary_boxbots = [
 		[
 			'id'                  => 'jkk_201706_1_u',
 			'title'               => 'Farberware Solid Double Burner',
-			'jk_rating'           =>  NULL,
+			'jk_rating'           =>  1.5,
 			'user_rating'         =>  NULL,
 			'slug'                => '2017_06_04-farberware_solid_double_burner',
 			'height'              =>  758,
@@ -3886,7 +3886,7 @@ $ary_boxbots = [
 		[
 			'id'                  => 'jkk_201706_2_u',
 			'title'               => 'Two Roads Workers Comp Saison',
-			'jk_rating'           =>  NULL,
+			'jk_rating'           =>  3,
 			'user_rating'         =>  NULL,
 			'slug'                => '2017_06_11-two_roads_workers_comp_saison',
 			'height'              =>  813,
@@ -3908,7 +3908,7 @@ $ary_boxbots = [
 		[
 			'id'                  => 'jkk_201706_3_u',
 			'title'               => 'Aeropress',
-			'jk_rating'           =>  NULL,
+			'jk_rating'           =>  2.5,
 			'user_rating'         =>  NULL,
 			'slug'                => '2017_06_18-aeropress',
 			'height'              =>  347,
@@ -3930,7 +3930,7 @@ $ary_boxbots = [
 		[
 			'id'                  => 'jkk_201707_1_u',
 			'title'               => '3M Sanding Sponge',
-			'jk_rating'           =>  NULL,
+			'jk_rating'           =>  2,
 			'user_rating'         =>  NULL,
 			'slug'                => '2017_07_09-3m_sanding_sponge',
 			'height'              =>  224,
@@ -3952,7 +3952,7 @@ $ary_boxbots = [
 		[
 			'id'                  => 'jkk_201707_2_u',
 			'title'               => 'Scotch Brite Pads',
-			'jk_rating'           =>  NULL,
+			'jk_rating'           =>  1,
 			'user_rating'         =>  NULL,
 			'slug'                => '2017_07_09-scotch_brite_pads',
 			'height'              =>  234,
@@ -3974,7 +3974,7 @@ $ary_boxbots = [
 		[
 			'id'                  => 'jkk_201707_3_u',
 			'title'               => 'Crest 3D Whitestrips',
-			'jk_rating'           =>  NULL,
+			'jk_rating'           =>  4.5,
 			'user_rating'         =>  NULL,
 			'slug'                => '2017_07_23-crest_3d_whitestrips',
 			'height'              =>  456,
@@ -3996,7 +3996,7 @@ $ary_boxbots = [
 		[
 			'id'                  => 'jkk_201708_1_u',
 			'title'               => 'Klondike Sandwiches',
-			'jk_rating'           =>  NULL,
+			'jk_rating'           =>  3,
 			'user_rating'         =>  NULL,
 			'slug'                => '2017_08_13-klondike_sandwiches',
 			'height'              =>  418,
@@ -4018,7 +4018,7 @@ $ary_boxbots = [
 		[
 			'id'                  => 'jkk_201712_1_u',
 			'title'               => 'Trader Joes Ginger Tumeric Tea',
-			'jk_rating'           =>  NULL,
+			'jk_rating'           =>  3.5,
 			'user_rating'         =>  NULL,
 			'slug'                => '2017_12_01-trader',
 			'height'              =>  384,
@@ -4040,7 +4040,7 @@ $ary_boxbots = [
 		[
 			'id'                  => 'jkk_201712_2_u',
 			'title'               => 'Dentastix',
-			'jk_rating'           =>  NULL,
+			'jk_rating'           =>  3.5,
 			'user_rating'         =>  NULL,
 			'slug'                => '2017_12_03-dentastix',
 			'height'              =>  446,
@@ -4062,7 +4062,7 @@ $ary_boxbots = [
 		[
 			'id'                  => 'jkk_201712_3_u',
 			'title'               => 'STP Oil Filter',
-			'jk_rating'           =>  NULL,
+			'jk_rating'           =>  3,
 			'user_rating'         =>  NULL,
 			'slug'                => '2017_12_16-stp_oil_filter',
 			'height'              =>  303,
@@ -4084,7 +4084,7 @@ $ary_boxbots = [
 		[
 			'id'                  => 'jkk_201712_4_u',
 			'title'               => 'Crest Complete Toothpaste',
-			'jk_rating'           =>  NULL,
+			'jk_rating'           =>  2,
 			'user_rating'         =>  NULL,
 			'slug'                => '2017_12_16-crest_complete',
 			'height'              =>  169,
@@ -4106,7 +4106,7 @@ $ary_boxbots = [
 		[
 			'id'                  => 'jkk_201712_5_u',
 			'title'               => 'Ball Dome Lids',
-			'jk_rating'           =>  NULL,
+			'jk_rating'           =>  3.5,
 			'user_rating'         =>  NULL,
 			'slug'                => '2017_12_19-ball_dome_lids',
 			'height'              =>  219,
@@ -4128,7 +4128,7 @@ $ary_boxbots = [
 		[
 			'id'                  => 'jkk_201712_6_u',
 			'title'               => 'Juniors Cheesecake',
-			'jk_rating'           =>  NULL,
+			'jk_rating'           =>  3,
 			'user_rating'         =>  NULL,
 			'slug'                => '2017_12_27-juniors_cheesecake',
 			'height'              =>  649,
@@ -4150,7 +4150,7 @@ $ary_boxbots = [
 		[
 			'id'                  => 'jkk_201712_7_u',
 			'title'               => 'Persa Gel 10',
-			'jk_rating'           =>  NULL,
+			'jk_rating'           =>  2.5,
 			'user_rating'         =>  NULL,
 			'slug'                => '2017_12_31-persa_gel_10',
 			'height'              =>  285,
@@ -4172,7 +4172,7 @@ $ary_boxbots = [
 		[
 			'id'                  => 'jkk_201801_1_u',
 			'title'               => 'Tabasco (large)',
-			'jk_rating'           =>  NULL,
+			'jk_rating'           =>  2.5,
 			'user_rating'         =>  NULL,
 			'slug'                => '2018_01_07-tabasco_large',
 			'height'              =>  385,
@@ -4194,7 +4194,7 @@ $ary_boxbots = [
 		[
 			'id'                  => 'jkk_201801_2_u',
 			'title'               => 'Cosequin DS',
-			'jk_rating'           =>  NULL,
+			'jk_rating'           =>  2.5,
 			'user_rating'         =>  NULL,
 			'slug'                => '2018_01_15-cosequin_ds',
 			'height'              =>  382,
@@ -4216,7 +4216,7 @@ $ary_boxbots = [
 		[
 			'id'                  => 'jkk_201804_1_u',
 			'title'               => 'Periomed',
-			'jk_rating'           =>  NULL,
+			'jk_rating'           =>  2,
 			'user_rating'         =>  NULL,
 			'slug'                => '2018_04_22-periomed',
 			'height'              =>  383,
@@ -4238,7 +4238,7 @@ $ary_boxbots = [
 		[
 			'id'                  => 'jkk_201804_2_u',
 			'title'               => 'Orajel',
-			'jk_rating'           =>  NULL,
+			'jk_rating'           =>  3,
 			'user_rating'         =>  NULL,
 			'slug'                => '2018_04_29-orajel',
 			'height'              =>  207,
@@ -4260,7 +4260,7 @@ $ary_boxbots = [
 		[
 			'id'                  => 'jkk_201805_1_u',
 			'title'               => 'Dunkin Munchkins',
-			'jk_rating'           =>  NULL,
+			'jk_rating'           =>  4,
 			'user_rating'         =>  NULL,
 			'slug'                => '2018_05_20-dunkin_munchkins',
 			'height'              =>  386,
@@ -4282,7 +4282,7 @@ $ary_boxbots = [
 		[
 			'id'                  => 'jkk_201805_2_u',
 			'title'               => 'Vicks Vaporub',
-			'jk_rating'           =>  NULL,
+			'jk_rating'           =>  3,
 			'user_rating'         =>  NULL,
 			'slug'                => '2018_05_27-vicks_vaporub',
 			'height'              =>  302,
@@ -4304,7 +4304,7 @@ $ary_boxbots = [
 		[
 			'id'                  => 'jkk_201806_1_u',
 			'title'               => 'Billys Bakery',
-			'jk_rating'           =>  NULL,
+			'jk_rating'           =>  4.5,
 			'user_rating'         =>  NULL,
 			'slug'                => '2018_06_10-billys_bakery',
 			'height'              =>  519,
@@ -4326,7 +4326,7 @@ $ary_boxbots = [
 		[
 			'id'                  => 'jkk_201806_2_u',
 			'title'               => 'Dunkin Munchkins',
-			'jk_rating'           =>  NULL,
+			'jk_rating'           =>  4,
 			'user_rating'         =>  NULL,
 			'slug'                => '2018_06_24-dunkin_munchkins',
 			'height'              =>  563,
@@ -4348,7 +4348,7 @@ $ary_boxbots = [
 		[
 			'id'                  => 'jkk_201807_1_u',
 			'title'               => 'Sesión Cerveza',
-			'jk_rating'           =>  NULL,
+			'jk_rating'           =>  3,
 			'user_rating'         =>  NULL,
 			'slug'                => '2018_07_01-sesion',
 			'height'              =>  689,
@@ -4370,7 +4370,7 @@ $ary_boxbots = [
 		[
 			'id'                  => 'jkk_201807_2_u',
 			'title'               => 'Tabasco (small)',
-			'jk_rating'           =>  NULL,
+			'jk_rating'           =>  2,
 			'user_rating'         =>  NULL,
 			'slug'                => '2018_07_08-tabasco_small',
 			'height'              =>  267,
@@ -4392,7 +4392,7 @@ $ary_boxbots = [
 		[
 			'id'                  => 'jkk_201807_3_u',
 			'title'               => 'Allagash White',
-			'jk_rating'           =>  NULL,
+			'jk_rating'           =>  3.5,
 			'user_rating'         =>  NULL,
 			'slug'                => '2018_07_15-allagash_white',
 			'height'              =>  612,
@@ -4414,7 +4414,7 @@ $ary_boxbots = [
 		[
 			'id'                  => 'jkk_201807_4_u',
 			'title'               => 'Ziploc XXL',
-			'jk_rating'           =>  NULL,
+			'jk_rating'           =>  2.5,
 			'user_rating'         =>  NULL,
 			'slug'                => '2018_07_22-ziploc_xxl',
 			'height'              =>  429,
@@ -4436,7 +4436,7 @@ $ary_boxbots = [
 		[
 			'id'                  => 'jkk_201807_5_u',
 			'title'               => 'Renu Multipack',
-			'jk_rating'           =>  NULL,
+			'jk_rating'           =>  2,
 			'user_rating'         =>  NULL,
 			'slug'                => '2018_07_29-renu_multipack',
 			'height'              =>  678,
@@ -4458,7 +4458,7 @@ $ary_boxbots = [
 		[
 			'id'                  => 'jkk_201808_1_u',
 			'title'               => 'Arrow Staples',
-			'jk_rating'           =>  NULL,
+			'jk_rating'           =>  3.5,
 			'user_rating'         =>  NULL,
 			'slug'                => '2018_08_05-arrow_staples',
 			'height'              =>  361,
@@ -4480,7 +4480,7 @@ $ary_boxbots = [
 		[
 			'id'                  => 'jkk_201808_2_u',
 			'title'               => 'GE Mini Lamps',
-			'jk_rating'           =>  NULL,
+			'jk_rating'           =>  4,
 			'user_rating'         =>  NULL,
 			'slug'                => '2018_08_12-ge_mini_lamps',
 			'height'              =>  285,
@@ -4502,7 +4502,7 @@ $ary_boxbots = [
 		[
 			'id'                  => 'jkk_201808_3_u',
 			'title'               => 'Wellsley Butter',
-			'jk_rating'           =>  NULL,
+			'jk_rating'           =>  3.5,
 			'user_rating'         =>  NULL,
 			'slug'                => '2018_08_19-wellsley_butter',
 			'height'              =>  271,
@@ -4524,7 +4524,7 @@ $ary_boxbots = [
 		[
 			'id'                  => 'jkk_201808_4_u',
 			'title'               => 'White Tiger Balm',
-			'jk_rating'           =>  NULL,
+			'jk_rating'           =>  1,
 			'user_rating'         =>  NULL,
 			'slug'                => '2018_08_26-white_tiger_balm',
 			'height'              =>  165,
@@ -4546,7 +4546,7 @@ $ary_boxbots = [
 		[
 			'id'                  => 'jkk_201809_1_u',
 			'title'               => 'Purolator Oil Filter',
-			'jk_rating'           =>  NULL,
+			'jk_rating'           =>  4.5,
 			'user_rating'         =>  NULL,
 			'slug'                => '2018_09_02-purolator_oil_filter',
 			'height'              =>  182,
@@ -4568,7 +4568,7 @@ $ary_boxbots = [
 		[
 			'id'                  => 'jkk_201809_2_u',
 			'title'               => 'Dogfish Sea Quench Ale',
-			'jk_rating'           =>  NULL,
+			'jk_rating'           =>  2.5,
 			'user_rating'         =>  NULL,
 			'slug'                => '2018_09_09-dogfish_sea_quench_ale',
 			'height'              =>  416,
@@ -4590,7 +4590,7 @@ $ary_boxbots = [
 		[
 			'id'                  => 'jkk_201809_3_u',
 			'title'               => 'Stoned Wheat Thins',
-			'jk_rating'           =>  NULL,
+			'jk_rating'           =>  2.5,
 			'user_rating'         =>  NULL,
 			'slug'                => '2018_09_16-stoned_wheat_thins',
 			'height'              =>  468,
@@ -4612,7 +4612,7 @@ $ary_boxbots = [
 		[
 			'id'                  => 'jkk_201809_4_u',
 			'title'               => 'Trojan Pleasure Pack',
-			'jk_rating'           =>  NULL,
+			'jk_rating'           =>  2.5,
 			'user_rating'         =>  NULL,
 			'slug'                => '2018_09_23-trojan_pleasure_pack',
 			'height'              =>  342,
@@ -4634,7 +4634,7 @@ $ary_boxbots = [
 		[
 			'id'                  => 'jkk_201810_1_u',
 			'title'               => 'Morning Star Veggie Burgers',
-			'jk_rating'           =>  NULL,
+			'jk_rating'           =>  2,
 			'user_rating'         =>  NULL,
 			'slug'                => '2018_10_08-morning_star_veggie_burgers',
 			'height'              =>  505,
@@ -4656,7 +4656,7 @@ $ary_boxbots = [
 		[
 			'id'                  => 'jkk_201811_1_u',
 			'title'               => 'Eggslands Best',
-			'jk_rating'           =>  NULL,
+			'jk_rating'           =>  3.5,
 			'user_rating'         =>  NULL,
 			'slug'                => '2018_11_11-eggslands_best',
 			'height'              =>  529,
@@ -4678,7 +4678,7 @@ $ary_boxbots = [
 		[
 			'id'                  => 'jkk_201811_2_u',
 			'title'               => 'Terro Liquid Ant Baits',
-			'jk_rating'           =>  NULL,
+			'jk_rating'           =>  3.5,
 			'user_rating'         =>  NULL,
 			'slug'                => '2018_11_18-terro_liquid_ant_baits',
 			'height'              =>  433,
@@ -4700,7 +4700,7 @@ $ary_boxbots = [
 		[
 			'id'                  => 'jkk_201811_3_u',
 			'title'               => 'Crayola Crayons (8 neon)',
-			'jk_rating'           =>  NULL,
+			'jk_rating'           =>  3.5,
 			'user_rating'         =>  NULL,
 			'slug'                => '2018_11_25-crayola_8_neon',
 			'height'              =>  214,
@@ -4722,7 +4722,7 @@ $ary_boxbots = [
 		[
 			'id'                  => 'jkk_201812_1_u',
 			'title'               => 'American Spirit Cigarettes',
-			'jk_rating'           =>  NULL,
+			'jk_rating'           =>  3,
 			'user_rating'         =>  NULL,
 			'slug'                => '2018_12_01-american_spirit_cigarettes',
 			'height'              =>  235,
@@ -4744,7 +4744,7 @@ $ary_boxbots = [
 		[
 			'id'                  => 'jkk_201812_2_u',
 			'title'               => 'Handi Wrap (red)',
-			'jk_rating'           =>  NULL,
+			'jk_rating'           =>  3.5,
 			'user_rating'         =>  NULL,
 			'slug'                => '2018_12_08-handi_wrap_red',
 			'height'              =>  563,
@@ -4766,7 +4766,7 @@ $ary_boxbots = [
 		[
 			'id'                  => 'jkk_201812_3_u',
 			'title'               => 'Trident Gum (Spearmint)',
-			'jk_rating'           =>  NULL,
+			'jk_rating'           =>  2.5,
 			'user_rating'         =>  NULL,
 			'slug'                => '2018_12_16-trident_spearmint',
 			'height'              =>  241,
@@ -4788,7 +4788,7 @@ $ary_boxbots = [
 		[
 			'id'                  => 'jkk_201812_4_u',
 			'title'               => 'Apple EarPods',
-			'jk_rating'           =>  NULL,
+			'jk_rating'           =>  3.5,
 			'user_rating'         =>  NULL,
 			'slug'                => '2018_12_21-apple_earbuds',
 			'height'              =>  261,
@@ -4810,7 +4810,7 @@ $ary_boxbots = [
 		[
 			'id'                  => 'jkk_201812_5_u',
 			'title'               => 'Q-tips (625 pack)',
-			'jk_rating'           =>  NULL,
+			'jk_rating'           =>  2.5,
 			'user_rating'         =>  NULL,
 			'slug'                => '2018_12_30-q_tips',
 			'height'              =>  491,
@@ -4833,7 +4833,7 @@ $ary_boxbots = [
 		[
 			'id'                  => 'jkk_201901_1_u',
 			'title'               => 'Biofinity Contact Lenses',
-			'jk_rating'           =>  NULL,
+			'jk_rating'           =>  4,
 			'user_rating'         =>  NULL,
 			'slug'                => '2019_01_06-biofinity_contact_lenses_siblings',
 			'height'              =>  327,
@@ -4856,7 +4856,7 @@ $ary_boxbots = [
 		[
 			'id'                  => 'jkk_201901_2_u',
 			'title'               => 'Milk Duds',
-			'jk_rating'           =>  NULL,
+			'jk_rating'           =>  3.5,
 			'user_rating'         =>  NULL,
 			'slug'                => '2019_01_13-milk_duds',
 			'height'              =>  315,
@@ -4879,7 +4879,7 @@ $ary_boxbots = [
 		[
 			'id'                  => 'jkk_201901_3_u',
 			'title'               => 'Whoppers',
-			'jk_rating'           =>  NULL,
+			'jk_rating'           =>  4.5,
 			'user_rating'         =>  NULL,
 			'slug'                => '2019_01_20-whoppers',
 			'height'              =>  410,
@@ -4903,7 +4903,7 @@ $ary_boxbots = [
 		[
 			'id'                  => 'jkk_201901_4_u',
 			'title'               => 'Crispix Cereal',
-			'jk_rating'           =>  NULL,
+			'jk_rating'           =>  3,
 			'user_rating'         =>  NULL,
 			'slug'                => '2019_01_27-crispix_family',
 			'height'              =>  380,
@@ -4927,7 +4927,7 @@ $ary_boxbots = [
 		[
 			'id'                  => 'jkk_201902_1_u',
 			'title'               => 'Gardein Chipotle Black Bean Burgers',
-			'jk_rating'           =>  NULL,
+			'jk_rating'           =>  1,
 			'user_rating'         =>  NULL,
 			'slug'                => '2019_02_03-gardein_chipotle_black_bean_burgers',
 			'height'              =>  415,
@@ -4951,7 +4951,7 @@ $ary_boxbots = [
 		[
 			'id'                  => 'jkk_201902_2_u',
 			'title'               => 'Organic Valley Butter',
-			'jk_rating'           =>  NULL,
+			'jk_rating'           =>  2,
 			'user_rating'         =>  NULL,
 			'slug'                => '2019_02_10-organic_valley_butter',
 			'height'              =>  311,
@@ -4975,7 +4975,7 @@ $ary_boxbots = [
 		[
 			'id'                  => 'jkk_201903_1_u',
 			'title'               => 'Bio True Starter Kit',
-			'jk_rating'           =>  NULL,
+			'jk_rating'           =>  3,
 			'user_rating'         =>  NULL,
 			'slug'                => '2019_03_10-bio_true_kit',
 			'height'              =>  315,
@@ -4999,7 +4999,7 @@ $ary_boxbots = [
 		[
 			'id'                  => 'jkk_201903_2_u',
 			'title'               => 'Wasabi Kit-Kats',
-			'jk_rating'           =>  NULL,
+			'jk_rating'           =>  2.5,
 			'user_rating'         =>  NULL,
 			'slug'                => '2019_03_30-wasabi_kit_kat',
 			'height'              =>  464,
@@ -5024,7 +5024,7 @@ $ary_boxbots = [
 		[
 			'id'                  => 'jkk_201904_2_u',
 			'title'               => 'Orbit Wintermint Gum',
-			'jk_rating'           =>  NULL,
+			'jk_rating'           =>  3,
 			'user_rating'         =>  NULL,
 			'slug'                => '2019_04_21-orbit_wintermint_gum',
 			'height'              =>  171,
@@ -5048,7 +5048,7 @@ $ary_boxbots = [
 		[
 			'id'                  => 'jkk_201905_1_u',
 			'title'               => 'Marijuana Chews',
-			'jk_rating'           =>  NULL,
+			'jk_rating'           =>  3.5,
 			'user_rating'         =>  NULL,
 			'slug'                => '2019_05_12-marijuana_chews',
 			'height'              =>  314,
@@ -5072,7 +5072,7 @@ $ary_boxbots = [
 		[
 			'id'                  => 'jkk_201905_2_u',
 			'title'               => 'Trident Gum (Original)',
-			'jk_rating'           =>  NULL,
+			'jk_rating'           =>  3,
 			'user_rating'         =>  NULL,
 			'slug'                => '2019_05_19-trident_original_gum',
 			'height'              =>  267,
@@ -5097,7 +5097,7 @@ $ary_boxbots = [
 		[
 			'id'                  => 'jkk_201905_3_u',
 			'title'               => 'Goodie Girl Fudge Striped Cookies',
-			'jk_rating'           =>  NULL,
+			'jk_rating'           =>  2,
 			'user_rating'         =>  NULL,
 			'slug'                => '2019_05_26-goodie_girl_fudge_striped_cookies',
 			'height'              =>  344,
@@ -5121,7 +5121,7 @@ $ary_boxbots = [
 		[
 			'id'                  => 'jkk_201906_1_u',
 			'title'               => 'Apex Medium Duty 100ft Hose',
-			'jk_rating'           =>  NULL,
+			'jk_rating'           =>  2.5,
 			'user_rating'         =>  NULL,
 			'slug'                => '2019_06_02-apex_medium_duty_100ft_hose',
 			'height'              =>  452,
@@ -5145,7 +5145,7 @@ $ary_boxbots = [
 		[
 			'id'                  => 'jkk_201906_2_u',
 			'title'               => 'Playtex Sport Tampons',
-			'jk_rating'           =>  NULL,
+			'jk_rating'           =>  3.5,
 			'user_rating'         =>  NULL,
 			'slug'                => '2019_06_09-playtex_sport_tampons',
 			'height'              =>  647,
@@ -5169,7 +5169,7 @@ $ary_boxbots = [
 		[
 			'id'                  => 'jkk_201906_3_u',
 			'title'               => 'Bobos Toaster Pastry Blueberry',
-			'jk_rating'           =>  NULL,
+			'jk_rating'           =>  1,
 			'user_rating'         =>  NULL,
 			'slug'                => '2019_06_16-bobos_toaster_pastry_blueberry',
 			'height'              =>  '172',
@@ -5194,35 +5194,41 @@ $ary_boxbots = [
 		[
 			'id'                  => 'jkk_201906_4_u',
 			'title'               => 'Moscot Glasses',
-			'jk_rating'           =>  NULL,
+			'jk_rating'           =>  4.5,
 			'user_rating'         =>  NULL,
 			'slug'                => '2019_06_23-moscot_glasses',
-			'height'              =>  0,
 			'sort_date'           => '2019_06_23',
 			'nice_date'           => '2019 Jun 23',
 			'medium'              => 'reused found packaging',
 			'location'            => 'flat files',
 			'status'              => 'need to create mask and export',
-			'imgfile'             => 'jkk_201906_4_u-2019_06_23-moscot_glasses',
+			'imgfile'             => 'jk_keller-201906_4_u-2019_06_23-moscot_glasses',
+			'percenthalfheightpx' => 122,
+			'percenthalfwidthpx'  => 92,
+			'largehalfheightpx'   => 625,
+			'largehalfwidthpx'    => 476,
 		],
 		[
 			'id'                  => 'jkk_201906_5_u',
 			'title'               => 'Ziploc (48 Pack)',
-			'jk_rating'           =>  NULL,
+			'jk_rating'           =>  3,
 			'user_rating'         =>  NULL,
 			'slug'                => '2019_06_30-ziploc_48_pack',
-			'height'              =>  0,
 			'sort_date'           => '2019_06_30',
 			'nice_date'           => '2019 Jun 30',
 			'medium'              => 'reused found packaging',
 			'location'            => 'flat files',
 			'status'              => 'need to create mask and export',
-			'imgfile'             => 'jkk_201906_5_u-2019_06_30-ziploc_48_pack',
+			'imgfile'             => 'jk_keller-201906_5_u-2019_06_30-ziploc_48_pack',
+			'percenthalfheightpx' => 204,
+			'percenthalfwidthpx'  => 201,
+			'largehalfheightpx'   => 625,
+			'largehalfwidthpx'    => 616,
 		],
 		[
 			'id'                  => 'jkk_201911_1_u',
 			'title'               => 'Dramamine',
-			'jk_rating'           =>  NULL,
+			'jk_rating'           =>  2,
 			'user_rating'         =>  NULL,
 			'slug'                => '2019_11_10-dramamine',
 			'height'              =>  250,
@@ -5246,7 +5252,7 @@ $ary_boxbots = [
 		[
 			'id'                  => 'jkk_201911_2_u',
 			'title'               => 'Colgate Optic White (sample)',
-			'jk_rating'           =>  NULL,
+			'jk_rating'           =>  1,
 			'user_rating'         =>  NULL,
 			'slug'                => '2019_11_24-colgate_optic_white_sample',
 			'height'              =>  189,
@@ -5271,7 +5277,7 @@ $ary_boxbots = [
 		[
 			'id'                  => 'jkk_201912_1_u',
 			'title'               => 'Marlboro Black Cigarettes',
-			'jk_rating'           =>  NULL,
+			'jk_rating'           =>  3.5,
 			'user_rating'         =>  NULL,
 			'slug'                => '2019_12_24-marlboro_black',
 			'height'              =>  282,
@@ -5296,21 +5302,24 @@ $ary_boxbots = [
 		[
 			'id'                  => 'jkk_201912_2_u',
 			'title'               => 'Switchback Ale',
-			'jk_rating'           =>  NULL,
+			'jk_rating'           =>  3.5,
 			'user_rating'         =>  NULL,
 			'slug'                => '2019_12_29-switchback_ale',
-			'height'              =>  0,
 			'sort_date'           => '2019_12_29',
 			'nice_date'           => '2019 Dec 29',
 			'medium'              => 'reused found packaging',
 			'location'            => 'flat files',
 			'status'              => 'need to create mask and export',
-			'imgfile'             => 'jkk_201912_2_u-2019_12_29-switchback_ale',
+			'imgfile'             => 'jk_keller-201912_2_u-2019_12_29-switchback_ale',
+			'percenthalfheightpx' => 210,
+			'percenthalfwidthpx'  => 179,
+			'largehalfheightpx'   => 625,
+			'largehalfwidthpx'    => 535,
 		],
 		[
 			'id'                  => 'jkk_202001_2_u',
 			'title'               => 'Set Game',
-			'jk_rating'           =>  NULL,
+			'jk_rating'           =>  3.5,
 			'user_rating'         =>  NULL,
 			'slug'                => '2020_01_12-set_game',
 			'height'              =>  334,
@@ -5335,7 +5344,7 @@ $ary_boxbots = [
 		[
 			'id'                  => 'jkk_202001_3_u',
 			'title'               => 'Seagate 4TB Drive',
-			'jk_rating'           =>  NULL,
+			'jk_rating'           =>  3.5,
 			'user_rating'         =>  NULL,
 			'slug'                => '2020_01_19-seagate_4tb_drive',
 			'height'              =>  233,
@@ -5360,7 +5369,7 @@ $ary_boxbots = [
 		[
 			'id'                  => 'jkk_202001_4_u',
 			'title'               => 'Handi-Wrap (Green)',
-			'jk_rating'           =>  NULL,
+			'jk_rating'           =>  4.5,
 			'user_rating'         =>  NULL,
 			'slug'                => '2020_01_26-handi_wrap_green',
 			'height'              =>  577,
@@ -5384,45 +5393,54 @@ $ary_boxbots = [
 		[
 			'id'                  => 'jkk_202002_1_u',
 			'title'               => 'King Arthur Cake Flour',
-			'jk_rating'           =>  NULL,
+			'jk_rating'           =>  4,
 			'user_rating'         =>  NULL,
 			'slug'                => '2020_02_02-king_arthur_cake_flour',
-			'height'              =>  0,
 			'sort_date'           => '2020_02_02',
 			'nice_date'           => '2020 Feb 02',
 			'medium'              => 'reused found packaging',
 			'location'            => 'flat files',
 			'status'              => 'need to create mask and export',
-			'imgfile'             => 'jkk_202002_1_u-2020_02_02-king_arthur_cake_flour',
+			'imgfile'             => 'jk_keller-202002_1_u-2020_02_02-king_arthur_cake_flour',
+			'percenthalfheightpx' => 128,
+			'percenthalfwidthpx'  => 112,
+			'largehalfheightpx'   => 625,
+			'largehalfwidthpx'    => 547,
 		],
 		[
 			'id'                  => 'jkk_202002_2_u',
 			'title'               => 'Wholly Guacamole',
-			'jk_rating'           =>  NULL,
+			'jk_rating'           =>  2,
 			'user_rating'         =>  NULL,
 			'slug'                => '2020_02_09-wholly_guacamole',
-			'height'              =>  0,
 			'sort_date'           => '2020_02_09',
 			'nice_date'           => '2020 Feb 09',
 			'medium'              => 'reused found packaging',
 			'location'            => 'flat files',
 			'status'              => 'need to create mask and export',
-			'imgfile'             => 'jkk_202002_2_u-2020_02_09-wholly_guacamole',
+			'imgfile'             => 'jk_keller-202002_2_u-2020_02_09-wholly_guacamole',
+			'percenthalfheightpx' => 151,
+			'percenthalfwidthpx'  => 125,
+			'largehalfheightpx'   => 625,
+			'largehalfwidthpx'    => 521,
 		],
 		[
 			'id'                  => 'jkk_202002_3_u',
 			'title'               => 'USB-C Adapter Hub',
-			'jk_rating'           =>  NULL,
+			'jk_rating'           =>  3.5,
 			'user_rating'         =>  NULL,
 			'slug'                => '2020_02_16-usbc_hub',
-			'height'              =>  0,
 			'sort_date'           => '2020_02_16',
 			'nice_date'           => '2020 Feb 16',
 			'medium'              => 'reused found packaging',
 			'location'            => 'flat files',
-			'imgfile'             => 'jkk_202002_3_u-2020_02_16-usbc_hub',
+			'imgfile'             => 'jk_keller-202002_3_u-2020_02_16-usbc_hub',
 			'status'              => 'need to create mask and export',
 			'notes'               => 'used full box',
+			'percenthalfheightpx' => 120,
+			'percenthalfwidthpx'  => 97,
+			'largehalfheightpx'   => 625,
+			'largehalfwidthpx'    => 507,
 		],
 	],
 ];

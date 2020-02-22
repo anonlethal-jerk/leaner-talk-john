@@ -1,6 +1,23 @@
 // get the url query strings
 // console.log(getParams(window.location.href));
 
+// mobile vh helper: https://css-tricks.com/the-trick-to-viewport-units-on-mobile/
+// First we get the viewport height and we multiple it by 1% to get a value for a vh unit
+let vh = window.innerHeight * 0.01;
+// Then we set the value in the --vh custom property to the root of the document
+document.documentElement.style.setProperty('--vh', `${vh}px`);
+// document.documentElement.style.setProperty('--vh120', `${vh-120}px`);
+// document.documentElement.style.setProperty('--vh60', `${vh-60}px`);
+// We listen to the resize event
+window.addEventListener('resize', () => {
+	// We execute the same script as before
+	let vh = window.innerHeight * 0.01;
+	document.documentElement.style.setProperty('--vh', `${vh}px`);
+	// document.documentElement.style.setProperty('--vh120', `${vh-120}px`);
+	// document.documentElement.style.setProperty('--vh60', `${vh-60}px`);
+});
+// alert ('boxbot2');
+
 //
 // boxbots uplink
 //
@@ -105,7 +122,14 @@ if (document.getElementById('sort--bots') ) {
 		}
 	}
 
-	function removeSort(aThis, aElem, aType=null) {
+	function removeSort(aThis, aElem, aType=null, aRating) {
+		var list = document.getElementById('sort--bots');
+		if (list.classList.contains('sorting--rating')) {
+			list.classList.remove('sorting--rating');
+		}
+		if (aRating == true) {
+			list.classList.add('sorting--rating');
+		}
 		if (aThis.classList.contains('sort--asc')) {
 			aThis.classList.remove('sort--asc');
 			aThis.classList.add('sort--desc');
@@ -137,12 +161,12 @@ if (document.getElementById('sort--bots') ) {
 	document.getElementById('btn--date').addEventListener('click', function () {
 		removeSort(this, '.sort--date', 'text');
 	});
-	document.getElementById('btn--title').addEventListener('click', function () {
-		removeSort(this, '.sort--title', 'text');
-	});
-	// document.getElementById('btn--rating').addEventListener('click', function () {
-	// 	removeSort(this, '.sort--rating', 'text');
+	// document.getElementById('btn--title').addEventListener('click', function () {
+	// 	removeSort(this, '.sort--title', 'text');
 	// });
+	document.getElementById('btn--rating').addEventListener('click', function () {
+		removeSort(this, '.sort--rating', null, true);
+	});
 }
 //
 // end sorting buttons
@@ -187,11 +211,11 @@ $(document).ready(function(){
     if ( $("#popup img").attr('src') == $(this).attr("data-img") ) {
       $("#popup").show();
     } else {
-      $("#popup img.color").attr("src", "/o__o/boxbots/x__x/color-small/" + $(this).attr("data-img") + ".png")
-      $("#popup img.shadow").attr("src", "/o__o/boxbots/x__x/shadow-small/" + $(this).attr("data-img") + ".png")
+      $("#popup img.img--under").attr("src", "/o__o/boxbots/x__x/color-small/" + $(this).attr("data-img") + ".png")
+      $("#popup img.img--over").attr("src", "/o__o/boxbots/x__x/shadow-small/" + $(this).attr("data-img") + ".png")
         .on('load', function() {
           if (!this.complete || typeof this.naturalWidth == "undefined" || this.naturalWidth == 0) {
-            alert('broken image!');
+            // alert('broken image!');
           } else {
             $("#popup").show();
           }
@@ -219,12 +243,16 @@ $(document).ready(function(){
     if ( $("#popup img").attr('src') == $(this).attr("data-img") ) {
       $("#popup").show();
     } else {
-      $("#popup img.color").attr("src", "/o__o/boxbots/x__x/color-small/" + $(this).attr("data-img") + ".png")
-      $("#popup img.shadow").attr("src", "/o__o/boxbots/x__x/shadow-small/" + $(this).attr("data-img") + ".png")
+
+	var imgUnder = tBod.classList.contains('images--colors') ? 'color' : 'shadow';
+	var imgOver = tBod.classList.contains('images--shadows') ? 'color' : 'shadow';
+
+      $("#popup img.img--under").attr("src", "/o__o/boxbots/x__x/"+imgUnder+"-small/" + $(this).attr("data-img") + ".png")
+      $("#popup img.img--over").attr("src", "/o__o/boxbots/x__x/"+imgOver+"-small/" + $(this).attr("data-img") + ".png")
       // $("#popup img").attr('src', $(this).attr("data-img"))
         .on('load', function() {
           if (!this.complete || typeof this.naturalWidth == "undefined" || this.naturalWidth == 0) {
-            alert('broken image!');
+            // console.log('broken image! '+this);
           } else {
             $("#popup").show();
           }
@@ -244,7 +272,7 @@ $(document).ready(function(){
       width : $(this).attr("data-img-w") + "px",
       height : $(this).attr("data-img-h") + "px"
     });
-    $("#popup .shadow").css({
+    $("#popup .img--over").css({
       opacity : Math.abs(tempPct * 2 - 1)
     });
   });
@@ -265,7 +293,7 @@ $(document).ready(function(){
       width : $(this).attr("data-img-w") + "px",
       height : $(this).attr("data-img-h") + "px"
     });
-    $("#popup .shadow").css({
+    $("#popup .img--over").css({
       opacity : Math.abs(tempPct * 2 - 1)
     });
   });

@@ -10,7 +10,19 @@
 		</figure>
 		<figure class="viewer--image">
 			<img class="{{ $toggleCurrent }}" src="/o__o/boxbots/x__x/{{ $toggleCurrent }}-large/{{ $page->imgfile }}.png" alt="{{ $page->title }} BoxBot" width="{{ $page->largehalfwidthpx }}" height="{{ $page->largehalfheightpx }}" />
-			<figcaption><cite>{{ $page->title }}</cite>, <span class="no_break">{{ $page->nice_date }}</span>, <span class="no_break">{{ $page->height }} × {{ $page->width }} {{ $page->units }}</span></figcaption>
+			<figcaption>
+				<div class="stars"><!-- get rid of space
+					@for ($i = 0; $i < 5; $i++)
+						@if ($page->jk_rating > $i)
+							@if ($page->jk_rating - $i == .5)
+					-->☆<!-- get rid of space
+							@else
+					-->★<!-- get rid of space
+							@endif
+						@endif
+					@endfor
+			--></div>
+<cite>{{ $page->title }}</cite>, <span class="no_break">{{ $page->nice_date }}</span>{{ $page->width == NULL ? '' : ',' }} <span class="no_break">{{ $page->height }} {{ $page->width == NULL ? '' : '×' }} {{ $page->width }} {{ $page->units }}</span></figcaption>
 		</figure>
 		<div class="viewer--prev">
 			@if ($page->getPrevious())
@@ -23,6 +35,8 @@
 					<figcaption><cite>{{ $page->getPrevious()->title }}</cite></figcaption>
 				</figure>
 			</a>
+			@else
+			<div class="nav--prev">This is the newest BoxBot</div>
 			@endif
 		</div>
 		<div class="viewer--next">
@@ -36,6 +50,8 @@
 					<figcaption><cite>{{ $page->getNext()->title }}</cite></figcaption>
 				</figure>
 			</a>
+			@else
+			<div class="nav--next">This is the oldest BoxBot</div>
 			@endif
 		</div>
 	</section>

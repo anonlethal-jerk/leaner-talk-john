@@ -28,7 +28,7 @@ $series_info = [
 			@foreach ($filtered_photos as $photo)
 		--><figure>
 				<a href="{{ $photo->slug }}">
-					<img class="lazyload" src="/x__x/loading-99.gif" data-src="/o__o/daily_photo/x__x/{{ $photo->imgfile }}.jpg" width="150" height="200" alt="{{ $photo->title }}" title="{{ $photo->title }}, {{ $photo->nice_date }}, {{ $photo->height }} × {{ $photo->width }} mm">
+					<img class="lazyload" src="/x__x/loading-99.gif" data-src="/o__o/daily_photo/x__x/{{ $photo->imgfile }}" width="150" height="200" alt="{{ $photo->title }}" title="{{ $photo->title }}, {{ $photo->nice_date }}, {{ $photo->height }} × {{ $photo->width }} mm">
 				</a>
 	 			<figcaption>
 					<cite>{{ $photo->title }}</cite>

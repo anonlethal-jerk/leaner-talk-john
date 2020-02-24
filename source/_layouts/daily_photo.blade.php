@@ -6,7 +6,7 @@
 
 	<section class="boxbot_viewer">
 		<figure class="viewer--image">
-			<img class="" src="../x__x/{{ $page->imgfile }}.jpg" alt="{{ $page->title }}" width="{{ $page->largehalfwidthpx }}" height="{{ $page->largehalfheightpx }}" />
+			<img class="" src="../x__x/{{ $page->imgfile }}" alt="{{ $page->title }}" width="{{ $page->largehalfwidthpx }}" height="{{ $page->largehalfheightpx }}" />
 			<figcaption>
 <cite>{{ $page->title }}</cite>, <span class="no_break">{{ $page->nice_date }}</span>{{ $page->width == NULL ? '' : ',' }} <span class="no_break">{{ $page->height }} {{ $page->width == NULL ? '' : '×' }} {{ $page->width }} {{ $page->units }}</span></figcaption>
 		</figure>
@@ -14,7 +14,7 @@
 			@if ($page->getPrevious())
 			<a class="nav--prev" href="../{{ $page->getPrevious()->slug }}">
 				<figure>
-					<img class="" src="../x__x/{{ $page->getPrevious()->imgfile }}.jpg" alt="{{ $page->getPrevious()->title }}" width="{{ $page->getPrevious()->percenthalfwidthpx }}" height="{{ $page->getPrevious()->percenthalfheightpx }}" />
+					<img class="" src="../x__x/{{ $page->getPrevious()->imgfile }}" alt="{{ $page->getPrevious()->title }}" width="{{ $page->getPrevious()->percenthalfwidthpx }}" height="{{ $page->getPrevious()->percenthalfheightpx }}" />
 					<figcaption><cite>{{ $page->getPrevious()->title }}</cite></figcaption>
 				</figure>
 			</a>
@@ -26,7 +26,7 @@
 			@if ($page->getNext())
 			<a class="nav--next" href="../{{ $page->getNext()->slug }}">
 				<figure>
-					<img class="" src="../x__x/{{ $page->getNext()->imgfile }}.jpg" alt="{{ $page->getNext()->title }}" width="{{ $page->getNext()->percenthalfwidthpx }}" height="{{ $page->getNext()->percenthalfheightpx }}" />
+					<img class="" src="../x__x/{{ $page->getNext()->imgfile }}" alt="{{ $page->getNext()->title }}" width="{{ $page->getNext()->percenthalfwidthpx }}" height="{{ $page->getNext()->percenthalfheightpx }}" />
 					<figcaption><cite>{{ $page->getNext()->title }}</cite></figcaption>
 				</figure>
 			</a>

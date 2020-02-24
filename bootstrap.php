@@ -20,8 +20,8 @@ $events->beforeBuild(function (Jigsaw $jigsaw) {
 	// can pull in array as variable in php file...
 	require_once($jigsaw->getSourcePath().'/_arrays/boxbots.php');
 	$jigsaw->setConfig('collections.boxbots', $ary_boxbots);
-	require_once($jigsaw->getSourcePath().'/_arrays/submitted_boxbots.php');
-	$jigsaw->setConfig('collections.submissions', $ary_submitted_boxbots);
+	require_once($jigsaw->getSourcePath().'/_arrays/boxbots-submissions.php');
+	$jigsaw->setConfig('collections.submissions', $ary_boxbots_submissions);
 	require_once($jigsaw->getSourcePath().'/_arrays/daily_photo.php');
 	$jigsaw->setConfig('collections.daily_photo', $ary_daily_photo);
 

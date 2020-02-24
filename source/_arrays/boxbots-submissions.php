@@ -1,6 +1,6 @@
 <?php
 
-$ary_submitted_boxbots = [
+$ary_boxbots_submissions = [
 	// 'extends' => '_layouts.boxbot',
 	'extends' => [
 		'color' => '_layouts.color-sub',

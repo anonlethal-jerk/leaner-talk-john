@@ -3,5 +3,5 @@
 return [
 	'production' => false,
 	'baseUrl' => '',
-	'collections' => [ 'boxbots' ],
+	'collections' => [ 'boxbots', 'submissions', 'daily_photo' ],
 ];

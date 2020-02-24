@@ -27,7 +27,7 @@
 			<td class="td--series_date no_break">{{ $seriesArray['nice_date'] }}</td>
 			{{-- <td class="td--series_dimensions no_break">{{ $seriesArray['height'] }} × {{ $seriesArray['width'] }} {{ $seriesArray['units'] }}</td> --}}
 			{{-- <td class="td--series_location">{{ $seriesArray['location'] }}</td> --}}
-			<td class="td--series_status">{{ $seriesArray['status'] }}</td>
+			<td class="td--series_status">{!! $seriesArray['status'] !!}</td>
 			<td class="td--series_notes">{!! $seriesArray['notes'] !!}</td>
 			{{-- <td class="td--series_to_dos">{!! $seriesArray['to_dos'] !!}</td> --}}
 			{{-- <td class="td--series_hidden">{!! $seriesArray['hidden'] !!}</td> --}}

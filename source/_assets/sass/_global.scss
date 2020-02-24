@@ -1,5 +1,7 @@
 body {
-	background: #dde3ee;
+background: rgb(178,184,214);
+background: radial-gradient(circle, rgba(178,184,214,1) 0%, rgba(228,191,199,1) 100%);
+	// color: #fff;
 }
 h1, h2, h3, h4, h5, h6 {
 	line-height: 1.125
@@ -93,6 +95,12 @@ button {
 	}
 }
 
+// the main iages area
+.series_images {
+	padding: $site-padding;
+}
+
+
 //
 //
 // old global
@@ -102,43 +110,6 @@ button {
 .no_break {
 	white-space: nowrap;
 }
-
-// .table--series_info,
-// .table--prj_info {
-// 	min-width: 100%;
-// 	margin: 1rem 0;
-// 	font-size: .75rem;
-
-// 	td {
-// 		background: #fff;
-// 		padding: .33rem .5rem;
-// 		border: 1px solid #ddd;
-// 		text-align: left;
-// 		vertical-align: top;
-// 	}
-
-// 	thead,
-// 	tfoot {
-// 		td {
-// 			font-weight: bold;
-// 		}
-// 	}
-
-// 	ul {
-// 		padding-left: 1rem;
-// 	}
-// 	.td--prj_id {
-// 		font-family: Geneva, monospace;
-// 		font-size: .675rem;
-// 	}
-// 	.td--empty {
-// 		background: transparent;
-// 	}
-// }
-// .table--series_info {
-// 	margin-top: 0;
-// 	font-size: .875rem;
-// }
 
 // .list--dupe_ids {
 // 	font-family: geneva, monospace;

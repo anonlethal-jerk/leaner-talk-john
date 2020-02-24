@@ -1,6 +1,8 @@
 –\_\_–
 
 ## To Do
+- [ ] automatic sort_date -> nice date if not exist?
+- [ ] Daily Photo
 - [ ] BoxBots
 	- [ ] header design
 	- [ ] add submitted boxbots

@@ -2,10 +2,10 @@
 $series_info = [
 	'title'       => 'BoxBots',
 	'nice_date'   => '1999–',
-	'status'      => 'Ongoing',
+	'status'      => 'Ongoing & <a href="/o__o/boxbots/submissions/">Accepting</a>',
 	'description' => '<p>Robots made by altering consumer packaging.</p>
 		<p>Originally stole the idea from <a href=\"http://hello.eboy.com/eboy/\">eboy</a>, but after <strong>'.$boxbots->count().'</strong> of these, I guess you could say it’s taken on a life of its own.</p>',
-	'notes'       => '<p><a href="https://instagram.com/justboxbots">Follow on the grams</a></p>',
+	'notes'       => '<p><a href="https://instagram.com/justboxbots">Follow on the grams</a></p><p><a href="/o__o/boxbots/submissions/">Submissions</a></p>',
 	'to_dos'      => '<ul>
 		<li><del><strong>rollover table to show image of bot. move from left to right 0 < 1 opacity of shadow.</strong></del></li>
 		<li>where are they?</li>

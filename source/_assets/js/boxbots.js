@@ -65,23 +65,41 @@ document.getElementById('btn--toggle').addEventListener('click', function () {
 		tBod.classList.remove('images--colors');
 		tBod.classList.add('images--shadows');
 		this.innerHTML = 'color';
-		var pathname = window.location.pathname.replace('o__o/boxbots','o__o/boxbots/shadow');
-		// console.log(pathname);
+		var pathname = window.location.pathname
+			console.log(pathname);
+		if (pathname.includes('/submissions/')) {
+			console.log(pathname);
+			pathname = pathname.replace('boxbots/submissions','boxbots/submissions/shadow');
+		} else {
+			pathname = pathname.replace('o__o/boxbots','o__o/boxbots/shadow');
+		}
 		window.history.replaceState("boxbot", "BoxBots Shadow", pathname);
 
 	} else if (tBod.classList.contains('images--shadows')) {
 		tBod.classList.remove('images--shadows');
 		tBod.classList.add('images--colors');
 		this.innerHTML = 'shadow';
-		var pathname = window.location.pathname.replace('o__o/boxbots/shadow','o__o/boxbots');
-		// console.log(pathname);
+		var pathname = window.location.pathname
+			console.log(pathname);
+		if (pathname.includes('/submissions/')) {
+			console.log(pathname);
+			pathname = pathname.replace('boxbots/submissions/shadow','boxbots/submissions');
+		} else {
+			pathname = pathname.replace('o__o/boxbots/shadow','o__o/boxbots');
+		}
 		window.history.replaceState("boxbot", "BoxBots", pathname);
 
 	} else {
 		tBod.classList.add('images--shadows');
 		this.innerHTML = 'color';
-		var pathname = window.location.pathname.replace('o__o/boxbots','o__o/boxbots/shadow');
-		// console.log(pathname);
+		var pathname = window.location.pathname
+			console.log(pathname);
+		if (pathname.includes('/submissions/')) {
+			console.log(pathname);
+			pathname = pathname.replace('boxbots/submissions','boxbots/submissions/shadow');
+		} else {
+			pathname = pathname.replace('o__o/boxbots','o__o/boxbots/shadow');
+		}
 		window.history.replaceState("boxbot", "BoxBots Shadow", pathname);
 	}
 });
@@ -161,21 +179,31 @@ if (document.getElementById('sort--bots') ) {
 		}
 	}
 
-	document.getElementById('btn--height').addEventListener('click', function () {
-		removeSort(this, '.sort--height');
-	});
-	document.getElementById('btn--width').addEventListener('click', function () {
-		removeSort(this, '.sort--width');
-	});
-	document.getElementById('btn--date').addEventListener('click', function () {
-		removeSort(this, '.sort--date', 'text');
-	});
-	// document.getElementById('btn--title').addEventListener('click', function () {
-	// 	removeSort(this, '.sort--title', 'text');
-	// });
-	document.getElementById('btn--rating').addEventListener('click', function () {
-		removeSort(this, '.sort--rating', null, true);
-	});
+	if (document.getElementById('btn--height') ) {
+		document.getElementById('btn--height').addEventListener('click', function () {
+			removeSort(this, '.sort--height');
+		});
+	}
+	if (document.getElementById('btn--width') ) {
+		document.getElementById('btn--width').addEventListener('click', function () {
+			removeSort(this, '.sort--width');
+		});
+	}
+	if (document.getElementById('btn--date') ) {
+		document.getElementById('btn--date').addEventListener('click', function () {
+			removeSort(this, '.sort--date', 'text');
+		});
+	}
+	if (document.getElementById('btn--title') ) {
+		// document.getElementById('btn--title').addEventListener('click', function () {
+		// 	removeSort(this, '.sort--title', 'text');
+		// });
+	}
+	if (document.getElementById('btn--rating') ) {
+		document.getElementById('btn--rating').addEventListener('click', function () {
+			removeSort(this, '.sort--rating', null, true);
+		});
+	}
 }
 //
 // end sorting buttons
@@ -255,17 +283,32 @@ $(document).ready(function(){
 
 	var imgUnder = tBod.classList.contains('images--colors') ? 'color' : 'shadow';
 	var imgOver = tBod.classList.contains('images--shadows') ? 'color' : 'shadow';
-
-      $("#popup img.img--under").attr("src", "/o__o/boxbots/x__x/"+imgUnder+"-small/" + $(this).attr("data-img") + ".png")
-      $("#popup img.img--over").attr("src", "/o__o/boxbots/x__x/"+imgOver+"-small/" + $(this).attr("data-img") + ".png")
-      // $("#popup img").attr('src', $(this).attr("data-img"))
-        .on('load', function() {
-          if (!this.complete || typeof this.naturalWidth == "undefined" || this.naturalWidth == 0) {
-            // console.log('broken image! '+this);
-          } else {
-            $("#popup").show();
-          }
-        });
+	var imgUnderExt = tBod.classList.contains('images--colors') ? 'jpg' : 'png';
+	var imgOverExt = tBod.classList.contains('images--shadows') ? 'jpg' : 'png';
+			var pathname = window.location.pathname;
+			if (pathname.includes('/submissions')) {
+				$("#popup img.img--under").attr("src", "/o__o/boxbots/submissions/x__x/"+imgUnder+"-small/" + $(this).attr("data-img") + "."+imgUnderExt)
+				$("#popup img.img--over").attr("src", "/o__o/boxbots/submissions/x__x/"+imgOver+"-small/" + $(this).attr("data-img") + "."+imgOverExt)
+	      // $("#popup img").attr('src', $(this).attr("data-img"))
+	        .on('load', function() {
+	          if (!this.complete || typeof this.naturalWidth == "undefined" || this.naturalWidth == 0) {
+	            // console.log('broken image! '+this);
+	          } else {
+	            $("#popup").show();
+	          }
+	        });
+			 } else {
+				$("#popup img.img--under").attr("src", "/o__o/boxbots/x__x/"+imgUnder+"-small/" + $(this).attr("data-img") + ".png")
+				$("#popup img.img--over").attr("src", "/o__o/boxbots/x__x/"+imgOver+"-small/" + $(this).attr("data-img") + ".png")
+	      // $("#popup img").attr('src', $(this).attr("data-img"))
+	        .on('load', function() {
+	          if (!this.complete || typeof this.naturalWidth == "undefined" || this.naturalWidth == 0) {
+	            // console.log('broken image! '+this);
+	          } else {
+	            $("#popup").show();
+	          }
+	        });
+			};
     }
 
     var offset = $(this).offset();

@@ -11,7 +11,7 @@
 		<figure class="viewer--image">
 			<img class="{{ $toggleCurrent }}" src="/o__o/boxbots/submissions/x__x/{{ $toggleCurrent }}-large/{{ $page->imgfile }}.{{ $toggleCurrent == 'color' ? 'jpg' : 'png' }}" alt="{{ $page->title }} BoxBot" width="{{ $page->largehalfwidthpx }}" height="{{ $page->largehalfheightpx }}" />
 			<figcaption>
-				<cite>{{ $page->title }}</cite>{{ $page->title != '' ? ',' : '' }} {{ $page->person != NULL ? 'by '.$page->person.',' : '' }} <span class="no_break">{{ $page->nice_date }}</span>{{ $page->width == NULL ? '' : ',' }} <span class="no_break">{{ $page->height }} {{ $page->width == NULL ? '' : '×' }} {{ $page->width }} {{ $page->units }}</span>
+				{!! $page->title != '' ? '<cite>'.$page->title.'</cite>,' : 'Untitled,' !!} {{ $page->person != NULL ? 'by '.$page->person.',' : '' }} <span class="no_break">{{ $page->nice_date }}</span>{{ $page->width == NULL ? '' : ',' }} <span class="no_break">{{ $page->height }} {{ $page->width == NULL ? '' : '×' }} {{ $page->width }} {{ $page->units }}</span>
 			</figcaption>
 		</figure>
 		<div class="viewer--prev">

@@ -1,6 +1,6 @@
 body {
-background: rgb(178,184,214);
-background: radial-gradient(circle, rgba(178,184,214,1) 0%, rgba(228,191,199,1) 100%);
+	background: rgb(178,184,214);
+	background: radial-gradient(circle, rgba(178,184,214,1) 0%, rgba(228,191,199,1) 100%);
 	// color: #fff;
 }
 h1, h2, h3, h4, h5, h6 {
@@ -98,6 +98,13 @@ button {
 // the main iages area
 .series_images {
 	padding: $site-padding;
+	display: flex;
+	flex-flow: row wrap;
+	align-items: flex-end;
+	justify-content: center;
+	figure {
+		margin: 0 .25rem 1rem;
+	}
 }
 
 

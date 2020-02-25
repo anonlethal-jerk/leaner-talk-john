@@ -43,7 +43,7 @@
 			<td class="td--prj_dimensions{{ $item->width == '' ? ' td--empty' : '' }}">{{ $item->height }} {{ $item->width == NULL ? '' : '×' }} {{ $item->width }} {{ $item->units }}</td>
 			<td class="td--prj_location{{ $item->location == '' ? ' td--empty' : '' }}">{{ $item->location }}</td>
 			<td class="td--prj_status{{ $item->status == '' ? ' td--empty' : '' }}">{{ $item->status }}</td>
-			<td class="td--prj_notes{{ $item->notes == '' ? ' td--empty' : '' }}">{{ $item->notes }}</td>
+			<td class="td--prj_notes{{ $item->notes == '' ? ' td--empty' : '' }}">{!! $item->notes !!}</td>
 			<td class="td--prj_rating{{ $item->jk_rating == '' ? ' td--empty' : '' }}">
 				<span class="stars"><!-- get rid of space
 					@for ($i = 0; $i < 5; $i++)

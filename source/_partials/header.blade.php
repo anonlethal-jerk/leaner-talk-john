@@ -2,7 +2,7 @@
 <html class="no-js" lang="">
 	<head>
 		<meta charset="utf-8">
-		<title>•__• JK</title>
+		<title>•__• JK — {{ $t_series }} — {{ $page->title }}</title>
 		<meta name="description" content="a dream">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<meta http-equiv="x-ua-compatible" content="ie=edge">

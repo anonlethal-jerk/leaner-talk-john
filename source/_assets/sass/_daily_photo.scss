@@ -1,3 +1,34 @@
+//
+// Series Page
+//
+.body--daily_photo {
+	// background: #f5f5f4;
+
+	//
+	// Tables info
+	//
+	.td--series_subtitle,
+	.td--series_slug,
+	.td--prj_slug,
+	.td--prj_subtitle,
+	.td--prj_duration,
+	.td--prj_description,
+	.td--prj_rating {
+		display: none;
+	}
+}
+
+//
+// Single Image Viewer
+//
+.body--single--daily_photo {
+	.image_viewer {
+		background: rgb(178,184,214);
+		background: radial-gradient(circle, rgba(178,184,214,1) 0%, rgba(228,191,199,1) 100%);
+	}
+}
+
+
 .daily_photo {
 	padding: 1rem 0;
 

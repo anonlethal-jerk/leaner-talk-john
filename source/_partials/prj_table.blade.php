@@ -37,13 +37,13 @@
 		@foreach ($tableArray as $item)
 		<tr class="imageload images" data-img="{{ $item->imgfile }}" data-img-w="{{ $item->percenthalfwidthpx }}" data-img-h="{{ $item->percenthalfheightpx }}">
 			<td class="td--prj_id{{ $item->id == '' ? ' td--empty' : '' }}">{{ $item->id }}</td>
-			<td class="td--prj_title{{ $item->title == '' ? ' td--empty' : '' }}"><a href="{{ $item->slug }}"><cite>{{ $item->title }}</cite></a></td>
+			<td class="td--prj_title{{ $item->title == '' ? ' td--empty' : '' }}"><a href="{{ $item->slug }}">{!! $item->title != '' ? '<cite>'.$item->title.'</cite>' : 'Untitled' !!}</a></td>
 			<td class="td--prj_medium{{ $item->medium == '' ? ' td--empty' : '' }}">{{ $item->medium }}</td>
 			<td class="td--prj_date{{ $item->nice_date == '' ? ' td--empty' : '' }}">{{ $item->nice_date }}</td>
 			<td class="td--prj_dimensions{{ $item->width == '' ? ' td--empty' : '' }}">{{ $item->height }} {{ $item->width == NULL ? '' : '×' }} {{ $item->width }} {{ $item->units }}</td>
 			<td class="td--prj_location{{ $item->location == '' ? ' td--empty' : '' }}">{{ $item->location }}</td>
 			<td class="td--prj_status{{ $item->status == '' ? ' td--empty' : '' }}">{{ $item->status }}</td>
-			<td class="td--prj_notes{{ $item->notes == '' ? ' td--empty' : '' }}">{{ $item->notes }}</td>
+			<td class="td--prj_notes{{ $item->notes == '' ? ' td--empty' : '' }}">{!! $item->notes !!}</td>
 			<td class="td--prj_rating{{ $item->jk_rating == '' ? ' td--empty' : '' }}">
 				<span class="stars"><!-- get rid of space
 					@for ($i = 0; $i < 5; $i++)

@@ -1,0 +1,29 @@
+//
+// Series Page
+//
+.body--dirty_mousepads {
+	background: #f5f5f4;
+
+	//
+	// Tables info
+	//
+	.td--prj_title {
+		white-space: nowrap;
+	}
+	.td--series_subtitle,
+	.td--series_slug,
+	.td--prj_slug,
+	.td--prj_subtitle,
+	.td--prj_duration,
+	.td--prj_description,
+	.td--prj_rating {
+		display: none;
+	}
+}
+
+//
+// Single Image Viewer
+//
+.body--single--dirty_mousepads {
+	background: #f5f5f4;
+}

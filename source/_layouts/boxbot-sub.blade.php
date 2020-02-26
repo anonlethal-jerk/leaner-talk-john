@@ -6,22 +6,22 @@
 
 	<section class="boxbot_viewer">
 		<figure class="viewer--image">
-			<img class="{{ $toggleOther }}" src="/o__o/boxbots/submissions/x__x/{{ $toggleOther }}-large/{{ $page->imgfile }}.{{ $toggleOther == 'color' ? 'jpg' : 'png' }}" alt="{{ $page->title }} BoxBot Silhouette" width="{{ $page->largehalfwidthpx }}" height="{{ $page->largehalfheightpx }}" />
+			<img class="{{ $toggleOther }}" src="/o__o/boxbots/submissions/x__x/{{ $toggleOther }}-large/{{ $page->imgfile }}.{{ $toggleOther == 'color' ? 'jpg' : 'png' }}" alt="{{ $page->title }} BoxBot Silhouette" width="{{ $page->large_width_px }}" height="{{ $page->large_height_px }}" />
 		</figure>
 		<figure class="viewer--image">
-			<img class="{{ $toggleCurrent }}" src="/o__o/boxbots/submissions/x__x/{{ $toggleCurrent }}-large/{{ $page->imgfile }}.{{ $toggleCurrent == 'color' ? 'jpg' : 'png' }}" alt="{{ $page->title }} BoxBot" width="{{ $page->largehalfwidthpx }}" height="{{ $page->largehalfheightpx }}" />
+			<img class="{{ $toggleCurrent }}" src="/o__o/boxbots/submissions/x__x/{{ $toggleCurrent }}-large/{{ $page->imgfile }}.{{ $toggleCurrent == 'color' ? 'jpg' : 'png' }}" alt="{{ $page->title }} BoxBot" width="{{ $page->large_width_px }}" height="{{ $page->large_height_px }}" />
 			<figcaption>
-				<cite>{{ $page->title }}</cite>{{ $page->title != '' ? ',' : '' }} {{ $page->person != NULL ? 'by '.$page->person.',' : '' }} <span class="no_break">{{ $page->nice_date }}</span>{{ $page->width == NULL ? '' : ',' }} <span class="no_break">{{ $page->height }} {{ $page->width == NULL ? '' : '×' }} {{ $page->width }} {{ $page->units }}</span>
+				{!! $page->title != '' ? '<cite>'.$page->title.'</cite>,' : 'Untitled,' !!} {{ $page->person != NULL ? 'by '.$page->person.',' : '' }} <span class="no_break">{{ $page->nice_date }}</span>{{ $page->width == NULL ? '' : ',' }} <span class="no_break">{{ $page->height }} {{ $page->width == NULL ? '' : '×' }} {{ $page->width }} {{ $page->units }}</span>
 			</figcaption>
 		</figure>
 		<div class="viewer--prev">
 			@if ($page->getPrevious())
 			<a class="nav--prev" href="../{{ $page->getPrevious()->slug }}">
 				<figure>
-					<img class="{{ $toggleOther }}" src="/o__o/boxbots/submissions/x__x/{{ $toggleOther }}-small/{{ $page->getPrevious()->imgfile }}.{{ $toggleOther == 'color' ? 'jpg' : 'png' }}" alt="{{ $page->getPrevious()->title }}" width="{{ $page->getPrevious()->percenthalfwidthpx }}" height="{{ $page->getPrevious()->percenthalfheightpx }}" />
+					<img class="{{ $toggleOther }}" src="/o__o/boxbots/submissions/x__x/{{ $toggleOther }}-small/{{ $page->getPrevious()->imgfile }}.{{ $toggleOther == 'color' ? 'jpg' : 'png' }}" alt="{{ $page->getPrevious()->title }}" width="{{ $page->getPrevious()->small_width_px }}" height="{{ $page->getPrevious()->small_height_px }}" />
 				</figure>
 				<figure>
-					<img class="{{ $toggleCurrent }}" src="/o__o/boxbots/submissions/x__x/{{ $toggleCurrent }}-small/{{ $page->getPrevious()->imgfile }}.{{ $toggleCurrent == 'color' ? 'jpg' : 'png' }}" alt="{{ $page->getPrevious()->title }}" width="{{ $page->getPrevious()->percenthalfwidthpx }}" height="{{ $page->getPrevious()->percenthalfheightpx }}" />
+					<img class="{{ $toggleCurrent }}" src="/o__o/boxbots/submissions/x__x/{{ $toggleCurrent }}-small/{{ $page->getPrevious()->imgfile }}.{{ $toggleCurrent == 'color' ? 'jpg' : 'png' }}" alt="{{ $page->getPrevious()->title }}" width="{{ $page->getPrevious()->small_width_px }}" height="{{ $page->getPrevious()->small_height_px }}" />
 					<figcaption>by {{ $page->getPrevious()->person }}</figcaption>
 				</figure>
 			</a>
@@ -33,10 +33,10 @@
 			@if ($page->getNext())
 			<a class="nav--next" href="../{{ $page->getNext()->slug }}">
 				<figure>
-					<img class="{{ $toggleOther }}" src="/o__o/boxbots/submissions/x__x/{{ $toggleOther }}-small/{{ $page->getNext()->imgfile }}.{{ $toggleOther == 'color' ? 'jpg' : 'png' }}" alt="{{ $page->getNext()->title }}" width="{{ $page->getNext()->percenthalfwidthpx }}" height="{{ $page->getNext()->percenthalfheightpx }}" />
+					<img class="{{ $toggleOther }}" src="/o__o/boxbots/submissions/x__x/{{ $toggleOther }}-small/{{ $page->getNext()->imgfile }}.{{ $toggleOther == 'color' ? 'jpg' : 'png' }}" alt="{{ $page->getNext()->title }}" width="{{ $page->getNext()->small_width_px }}" height="{{ $page->getNext()->small_height_px }}" />
 				</figure>
 				<figure>
-					<img class="{{ $toggleCurrent }}" src="/o__o/boxbots/submissions/x__x/{{ $toggleCurrent }}-small/{{ $page->getNext()->imgfile }}.{{ $toggleCurrent == 'color' ? 'jpg' : 'png' }}" alt="{{ $page->getNext()->title }}" width="{{ $page->getNext()->percenthalfwidthpx }}" height="{{ $page->getNext()->percenthalfheightpx }}" />
+					<img class="{{ $toggleCurrent }}" src="/o__o/boxbots/submissions/x__x/{{ $toggleCurrent }}-small/{{ $page->getNext()->imgfile }}.{{ $toggleCurrent == 'color' ? 'jpg' : 'png' }}" alt="{{ $page->getNext()->title }}" width="{{ $page->getNext()->small_width_px }}" height="{{ $page->getNext()->small_height_px }}" />
 					<figcaption>by {{ $page->getNext()->person }}</figcaption>
 				</figure>
 			</a>

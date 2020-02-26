@@ -1,6 +1,6 @@
 @include('_partials.header')
 
-<body class="body--{{ $t_slug }}">
+<body class="body--series body--{{ $t_slug }}">
 	<section class="series_info">
 		@include('_partials.series_table', ['seriesArray' => $t_series_array ])
 	</section>

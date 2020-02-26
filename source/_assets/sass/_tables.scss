@@ -2,6 +2,11 @@
 .prj_info {
 	padding: $site-padding;
 }
+.body--series {
+	.series_info {
+		padding-top: .5rem;
+	}
+}
 
 .table--series_info,
 .table--prj_info {

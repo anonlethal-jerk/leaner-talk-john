@@ -585,6 +585,25 @@ $collection_dirty_mousepads = [
 			'notes'           => '?–2015 Dec 31',
 			'imgfile'         => 'jk_keller-201512_1_u-echo_30-web.jpg',
 		],
+		[
+			'id'              => 'jkk_201912_3_u',
+			'title'           => 'Echo #31',
+			'slug'            => 'echo_31',
+			'medium'          => 'oil and dirt on paper',
+			'nice_date'       => '2019',
+			'height'          => 11,
+			'width'           => 8.5,
+			'units'           => 'in',
+			'small_height_px' => 1200/7,
+			'small_width_px'  => 938/7,
+			'large_height_px' => 1200/2,
+			'large_width_px'  => 938/2,
+			'location'        => '?flat files?',
+			'status'          => 'fully rescanned',
+			'notes'           => '2018_12_29-2019_12_31-home',
+			'imgfile'         => 'jk_keller-201912_3_u-echo-31-web-temp.jpg',
+		],
 	],
 ];
 ?>
+2018_12_29-2019_12_31-home

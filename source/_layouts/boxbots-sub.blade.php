@@ -8,7 +8,7 @@
 @extends('_layouts.master')
 
 @section('body')
-<body class="body--boxbots body--submissions images--{{ $toggleCurrent }}s">
+<body class="body--series body--boxbots body--submissions images--{{ $toggleCurrent }}s">
 	{{-- page: {{ $page->testvar }} --}}
 	{{-- boxbots: {{ $submissions->first()->testvar }} --}}
 	<section class="series_info">

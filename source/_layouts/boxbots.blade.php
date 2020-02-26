@@ -8,7 +8,7 @@
 @extends('_layouts.master')
 
 @section('body')
-<body class="body--boxbots images--{{ $toggleCurrent }}s">
+<body class="body--series body--boxbots images--{{ $toggleCurrent }}s">
 	<section class="series_info">
 		@include('_partials.series_table', ['seriesArray' => $t_series_array ])
 	</section>

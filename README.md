@@ -14,9 +14,15 @@
 	- [ ] rename classes prj to works?
 	- [ ] pop-up table image all series works
 	- [ ] pop-up table image vanilla js version
-	- [ ] About JK page?
 	- [ ] generative write "FPO TEMP for web TK" (other acronyms, etc?) on images
+		- placeholder
+		- FPO - For placement only
+		- Temp for web
+		- [placeholder] please replace with real logo when possible and legal
+		- [ ] possible to rewrite on build production? actually random that way...
 	- [ ] generative write "The End" / else on images?
+- [ ] About JK page?
+	- [ ] new night portrait with phone
 - [ ] BoxBots
 	- [ ]
 	- [ ] series, project, and homepage info
@@ -32,10 +38,11 @@
 - [ ] Mousepads
 	- [ ]
 	- [ ] series, project, and homepage info
-	- [ ] size of small?
-	- [ ] cleanup finished scans
-		- [ ] what background color?
-		- [ ] how much border?
+	- [x] resize by percentage not max 300 for small...
+	- [ ] redo temp
+	- [x] cleanup finished scans
+		- [x] ~~what background color?~~ #f3f3f3
+		- [x] ~~how much border?~~ (half-inch, quarter each side) then expand 25px, blur 12px, fix edges
 	- [ ] photos of framed?
 	- [ ] add new one
 - [ ] Dots

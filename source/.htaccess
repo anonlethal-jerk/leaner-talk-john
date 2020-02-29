@@ -3,6 +3,16 @@ RewriteEngine On
 RewriteCond %{HTTPS} !=on
 RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301,NE]
 
+# Unauthorized
+ErrorDocument 401 /401.html
+# Forbidden
+ErrorDocument 403 /403.html
+# Not Found
+ErrorDocument 404 /404.html
+# Internal Server Error
+ErrorDocument 500 /500.html
+
 # make blinking use root directory
 RewriteRule ^•__•/(.*)$ $1 [L]
 RewriteRule ^-__-/(.*)$ $1 [L]
+

@@ -14,6 +14,7 @@ sftp-config.json
 *.sublime-workspace
 
 # the sissyfuss situation...
+_ignore-*
 */o__o/*/x__x/
 */o__o/*/*/x__x/
 google*.html

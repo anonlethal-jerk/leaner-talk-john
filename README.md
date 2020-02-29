@@ -57,6 +57,7 @@
 ## To Do
 - [ ] Global
 	- [ ]
+	- [ ] i_am_not_everyones_style.css
 	- [ ] how to do multiple images per work?
 	- [ ] Related imagery//projects overlays/colage/draw
 	- [ ] automatic sort_date -> nice date if not exist?

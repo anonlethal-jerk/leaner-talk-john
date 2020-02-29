@@ -29,7 +29,8 @@ button {
 
 #groundhog,
 #boxhog,
-#feralhog {
+#feralhog,
+.hog {
 	display: block;
 	position: fixed;
 	z-index: 2000;
@@ -94,6 +95,23 @@ button {
 		}
 	}
 }
+.body--projects {
+	height: 100vh;
+	width: 100vw;
+	#groundhog {
+		display: none;
+	}
+	.hog {
+		top:calc(40vh - 10px);
+		left:calc(35vw - 10px);
+		padding: 5rem 7rem;
+		box-shadow: rgba(255,255,255,0) 0 0 30px 5px, rgba(255,255,255,0) 0 0 15px 5px inset;
+		a {
+			color: transparent;
+		}
+	}
+}
+
 
 // the main iages area
 .series_images {

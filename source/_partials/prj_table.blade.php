@@ -1,4 +1,4 @@
-<table id="table--prj_info" class="table--prj_info">
+<table id="table--prj_info" class="table--prj_info table--image_slider">
 	<thead>
 		<tr>
 			<th class="td--prj_id">ID</th>
@@ -35,7 +35,7 @@
 	</tfoot>
 	<tbody>
 		@foreach ($tableArray as $item)
-		<tr class="imageload images" data-img="{{ $item->imgfile }}" data-img-w="{{ $item->percenthalfwidthpx }}" data-img-h="{{ $item->percenthalfheightpx }}">
+		<tr class="imageload images" data-img="{{ $item->imgfile }}" data-img-w="{{ $item->small_width_px }}" data-img-h="{{ $item->small_height_px }}">
 			<td class="td--prj_id{{ $item->id == '' ? ' td--empty' : '' }}">{{ $item->id }}</td>
 			<td class="td--prj_title{{ $item->title == '' ? ' td--empty' : '' }}"><a href="{{ $item->slug }}">{!! $item->title != '' ? '<cite>'.$item->title.'</cite>' : 'Untitled' !!}</a></td>
 			<td class="td--prj_medium{{ $item->medium == '' ? ' td--empty' : '' }}">{{ $item->medium }}</td>

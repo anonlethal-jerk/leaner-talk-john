@@ -27,12 +27,12 @@
 
 	<div id="popup">
 		<img class="img--under" src="/x__x/loading-99.gif" alt="" />
-		<img class="img--over" src="/x__x/loading-99.gif" alt="" />
+		{{-- <img class="img--over" src="/x__x/loading-99.gif" alt="" /> --}}
 	</div>
 
 
 @section('extra-scripts')
-	<nav id="feralhog"><a href="/o__o/">Projects</a></nav>
+	<nav id="feralhog" class="hog"><a href="/o__o/">Projects</a></nav>
 	@if ($t_js != null)
 	<script src="{{ mix('*__*/'.$t_slug.'.js', '') }}" async=""></script>
 	@endif

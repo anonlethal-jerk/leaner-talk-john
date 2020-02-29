@@ -1,23 +1,33 @@
 .body--home {
-	background: #f2f2f3;
+	height: 100vh;
+	width: 100vw;
 
-	.cneterd {
-		position: absolute;
-		display: flex;
-		justify-content: center;
-		align-items: flex-end;
-		width: 100vw;
+	.home_color {
 		height: 100vh;
+		width: 100vw;
+		opacity: 0;
+		transition: opacity 90s;
 	}
 
 	#groundhog {
-		opacity: 0;
-		&.fasthog {
-			transition: top 0s, left 0s, box-shadow 2.5s;
+		display: none;
+	}
+	.hog {
+		top:calc(45vh - 10px);
+		left:calc(40vw - 10px);
+		padding: 0px;
+		box-shadow: rgba(255,255,255,0) 0 0 40px 2px, rgba(255,255,255,0) 0 0 20px 2px inset;
+		transition: top 1s, left 1s, box-shadow 1s, padding 1s;
+		color: transparent;
+		text-align: center;
+		line-height: 1.25rem;
+		font-weight: bold;
+		a {
+			color: transparent;
 		}
 	}
-	.on-top {
-		z-index: 3000;
-		pointer-events: none;
+	#warthog {
+		color: #fff;
+		text-shadow: 0 0 30px #00f, 0 0 50px #0f0, 0 0 70px #f00;
 	}
 }

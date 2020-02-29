@@ -18,62 +18,34 @@ var getParams = function (url) {
 	return params;
 };
 
-// move that home button around
-var homeStart = setTimeout(function(){
-	var tTop = Math.random()*(window.innerHeight - document.getElementById("groundhog").offsetHeight);
-	var tLeft = Math.random()*(window.innerWidth - document.getElementById("groundhog").offsetWidth);
-	var homer = document.querySelector('#groundhog');
-	homer.style.top = tTop+"px";
-	homer.style.left = tLeft+"px";
-}, 7500);
 
-// move that home button around
-var homeMove = setInterval(function(){
-	var tTop = Math.random()*(window.innerHeight - document.getElementById("groundhog").offsetHeight);
-	var tLeft = Math.random()*(window.innerWidth - document.getElementById("groundhog").offsetWidth);
-	var homer = document.querySelector('#groundhog');
-	homer.style.top = tTop+"px";
-	homer.style.left = tLeft+"px";
-}, 20000);
+// super boxes...
+if ( document.getElementById('warthog') == null) {
+	var hogs = document.querySelectorAll('.hog');
+	hogs.forEach(function(hog) {
+		// move that home button around
+		var t_speed = Math.round(Math.random()*10 + 8);
+		var t_shadow_speed = Math.round(Math.random()*4 + 1);
+		var move_hog = setInterval(function(){
+			var t_top = Math.random()*(window.innerHeight - hog.offsetHeight);
+			var t_left = Math.random()*(window.innerWidth - hog.offsetWidth);
+			hog.style.top = t_top+"px";
+			hog.style.left = t_left+"px";
+			hog.style.transition = "top "+t_speed+"s, left "+t_speed+"s, box-shadow "+t_shadow_speed+"s";
+		}, t_speed*1000);
 
-// move that home shadow around
-var homeShadow = setInterval(function(){
-	var tRed = Math.random()*255;
-	var tGreen = Math.random()*255;
-	var tBlue = Math.random()*255;
-	var tOffsetX = Math.round(Math.random()*100 - 50);
-	var tOffsetY = Math.round(Math.random()*100 - 50);
-	var homer = document.querySelector('#groundhog');
-	homer.style.boxShadow = tOffsetX+"px "+tOffsetY+"px 30px 5px rgb("+tRed+" "+tGreen+" "+tBlue+")";
-}, 2400);
-
-if (document.getElementById("feralhog")) {
-	// move that home button around
-	var prjStart = setTimeout(function(){
-		var tTop = Math.random()*(window.innerHeight - document.getElementById("feralhog").offsetHeight);
-		var tLeft = Math.random()*(window.innerWidth - document.getElementById("feralhog").offsetWidth);
-		var projector = document.querySelector('#feralhog');
-		projector.style.top = tTop+"px";
-		projector.style.left = tLeft+"px";
-	}, 7000);
-
-	// move that home button around
-	var prjMove = setInterval(function(){
-		var tTop = Math.random()*(window.innerHeight - document.getElementById("feralhog").offsetHeight);
-		var tLeft = Math.random()*(window.innerWidth - document.getElementById("feralhog").offsetWidth);
-		var projector = document.querySelector('#feralhog');
-		projector.style.top = tTop+"px";
-		projector.style.left = tLeft+"px";
-	}, 20500);
-
-	// move that home shadow around
-	var prjShadow = setInterval(function(){
-		var tRed = Math.random()*255;
-		var tGreen = Math.random()*255;
-		var tBlue = Math.random()*255;
-		var tOffsetX = Math.round(Math.random()*100 - 50);
-		var tOffsetY = Math.round(Math.random()*100 - 50);
-		var projector = document.querySelector('#feralhog');
-		projector.style.boxShadow = tOffsetX+"px "+tOffsetY+"px 30px 5px rgb("+tRed+" "+tGreen+" "+tBlue+")";
-	}, 2300);
+		// move that home shadow around
+		var move_shadow = setInterval(function(){
+			var t_red = Math.random()*255;
+			var t_green = Math.random()*255;
+			var t_blue = Math.random()*255;
+			// t_green = t_red;
+			// t_blue = t_red;
+			var t_offset_x = Math.round(Math.random()*100 - 50);
+			var t_offset_y = Math.round(Math.random()*100 - 50);
+			var t_offset_half_x = Math.round(t_offset_x/2);
+			var t_offset_half_y = Math.round(t_offset_y/2);
+			hog.style.boxShadow = t_offset_x+"px "+t_offset_y+"px 30px 5px rgba("+t_red+", "+t_green+", "+t_blue+", 1), inset "+t_offset_half_x+"px "+t_offset_half_y+"px 15px 5px rgba("+t_red+", "+t_green+", "+t_blue+", .5)";
+		}, t_shadow_speed*1000);
+	});
 }

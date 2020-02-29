@@ -1,18 +1,20 @@
 # __*
--__-/
+# -__-/
 
-# config.rb
-# config_debug.rb
+# no longer used... but
+config.rb
+config_debug.rb
 .sass-cache/
+_dev/
+_tmp/
 
+# sublimetext info
 sftp-config.json
 # *.sublime-project
 *.sublime-workspace
 
 # the sissyfuss situation...
-_dev/
-_tmp/
-*/o__o/*/_img/
+_ignore-*
 */o__o/*/x__x/
 */o__o/*/*/x__x/
 google*.html

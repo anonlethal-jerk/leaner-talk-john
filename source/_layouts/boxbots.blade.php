@@ -84,6 +84,6 @@
 @stop
 
 @section('extra-scripts')
-	<nav id="feralhog"><a href="/o__o/">Projects</a></nav>
+	<nav id="feralhog" class="hog"><a href="/o__o/">Projects</a></nav>
 	<script src="{{ mix('*__*/boxbots.js', '') }}" async=""></script>
 @stop

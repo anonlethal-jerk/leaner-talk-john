@@ -50,6 +50,6 @@
 
 @section('extra-scripts')
 	{{-- <nav id="feralhog"><a href="/o__o/">Projects</a></nav> --}}
-	<nav id="boxhog"><a href="../">BoxBot Submissions</a></nav>
+	<nav id="feralhog" class="hog"><a href="../">BoxBot Submissions</a></nav>
 	<script src="{{ mix('*__*/boxbots.js', '') }}" async=""></script>
 @endsection

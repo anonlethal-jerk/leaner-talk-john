@@ -29,7 +29,8 @@ button {
 
 #groundhog,
 #boxhog,
-#feralhog {
+#feralhog,
+.hog {
 	display: block;
 	position: fixed;
 	z-index: 2000;
@@ -104,6 +105,9 @@ button {
 	justify-content: center;
 	figure {
 		margin: 0 .25rem 1rem;
+	}
+	a {
+		color: $color-base-text;
 	}
 }
 

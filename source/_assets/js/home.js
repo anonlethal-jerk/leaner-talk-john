@@ -2,6 +2,9 @@
 var hogs = document.querySelectorAll('.hog');
 var warthog = document.getElementById('warthog');
 hogs.forEach(function(hog) {
+	var t_speed = Math.round(Math.random()*15 + 12);
+	t_speed = 2;
+	var t_shadow_speed = Math.random()*7 + 4;
 	var hog_half_height = warthog.offsetHeight/2;
 	var hog_half_width = warthog.offsetWidth/2;
 	var start_hog = setTimeout(function(){
@@ -12,26 +15,23 @@ hogs.forEach(function(hog) {
 		var t_left = (window.innerWidth/2 - hog_half_width - t_width);
 		hog.style.top = t_top+"px";
 		hog.style.left = t_left+"px";
-		hog.style.transition = "top 2s, left 2s, box-shadow 2s, padding 2s";
+		// hog.style.transition = "top 2s, left 2s, box-shadow 2s, padding 2s";
+		hog.style.transition = "top "+t_speed+"s, left "+t_speed+"s, box-shadow "+t_shadow_speed+"s, padding "+t_speed+"s";
 	}, 100);
 	// move that home button around
-	var t_speed = Math.round(Math.random()*15 + 12);
-	var t_shadow_speed = Math.round(Math.random()*7 + 4);
-	var move_hog = setInterval(function(){
-		// t_speed = 1000;
-		// var t_top = Math.random()*(window.innerHeight - hog.offsetHeight);
-		// var t_left = Math.random()*(window.innerWidth - hog.offsetWidth);
+	// var move_hog = setInterval(function(){
+	// 	t_speed = 1000;
+	// 	var t_top = Math.random()*(window.innerHeight - hog.offsetHeight);
+	// 	var t_left = Math.random()*(window.innerWidth - hog.offsetWidth);
 
-		// var t_width = Math.random()*80 + 50;
-		// var t_height = Math.random()*80 + 50;
-		// hog.style.padding = t_height+"px "+t_width+"px";
-		// var t_top = (window.innerHeight/2 - hog_half_height - t_height);
-		// var t_left = (window.innerWidth/2 - hog_half_width - t_width);
-		// hog.style.top = t_top+"px";
-		// hog.style.left = t_left+"px";
-		hog.style.transition = "top "+t_speed+"s, left "+t_speed+"s, box-shadow "+t_shadow_speed+"s, padding "+t_speed+"s";
-
-	}, t_speed*1000);
+	// 	var t_width = Math.random()*80 + 50;
+	// 	var t_height = Math.random()*80 + 50;
+	// 	hog.style.padding = t_height+"px "+t_width+"px";
+	// 	var t_top = (window.innerHeight/2 - hog_half_height - t_height);
+	// 	var t_left = (window.innerWidth/2 - hog_half_width - t_width);
+	// 	hog.style.top = t_top+"px";
+	// 	hog.style.left = t_left+"px";
+	// }, t_speed*1000);
 
 	// move that home shadow around
 	var move_shadow = setInterval(function(){

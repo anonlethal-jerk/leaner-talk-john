@@ -5,6 +5,7 @@
   I have my own sense of style
 */
 @import 'variables';
+@import 'mixins';
 @import 'global';
 @import 'image_viewer';
 @import 'tables';
@@ -14,4 +15,4 @@
 @import 'daily_photo';
 @import 'dirty_mousepads';
 @import 'dots_dots_dots';
-// @import 'sd_to_hd';
+@import 'sd_to_hd';

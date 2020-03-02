@@ -131,3 +131,77 @@ button {
 // 	font-family: geneva, monospace;
 // }
 
+
+::selection {
+	@include random-select-color();
+	color: #fff;
+	text-shadow: none;
+}
+/* totally rainbow! Worth every kb... */
+div::selection{ @include random-select-color(); }
+object::selection{ @include random-select-color(); }
+iframe::selection{ @include random-select-color(); }
+h1::selection{ @include random-select-color(); }
+h2::selection{ @include random-select-color(); }
+h3::selection{ @include random-select-color(); }
+h4::selection{ @include random-select-color(); }
+h5::selection{ @include random-select-color(); }
+h6::selection{ @include random-select-color(); }
+p::selection{ @include random-select-color(); }
+blockquote::selection{ @include random-select-color(); }
+pre::selection{ @include random-select-color(); }
+abbr::selection{ @include random-select-color(); }
+address::selection{ @include random-select-color(); }
+cite::selection{ @include random-select-color(); }
+code::selection{ @include random-select-color(); }
+del::selection{ @include random-select-color(); }
+dfn::selection{ @include random-select-color(); }
+em::selection{ @include random-select-color(); }
+img::selection{ @include random-select-color(); }
+ins::selection{ @include random-select-color(); }
+kbd::selection{ @include random-select-color(); }
+q::selection{ @include random-select-color(); }
+samp::selection{ @include random-select-color(); }
+small::selection{ @include random-select-color(); }
+strong::selection{ @include random-select-color(); }
+sub::selection{ @include random-select-color(); }
+sup::selection{ @include random-select-color(); }
+var::selection{ @include random-select-color(); }
+b::selection{ @include random-select-color(); }
+i::selection{ @include random-select-color(); }
+dl::selection{ @include random-select-color(); }
+dt::selection{ @include random-select-color(); }
+dd::selection{ @include random-select-color(); }
+ol::selection{ @include random-select-color(); }
+ul::selection{ @include random-select-color(); }
+li::selection{ @include random-select-color(); }
+fieldset::selection{ @include random-select-color(); }
+form::selection{ @include random-select-color(); }
+label::selection{ @include random-select-color(); }
+legend::selection{ @include random-select-color(); }
+table::selection{ @include random-select-color(); }
+caption::selection{ @include random-select-color(); }
+tbody::selection{ @include random-select-color(); }
+tfoot::selection{ @include random-select-color(); }
+thead::selection{ @include random-select-color(); }
+tr::selection{ @include random-select-color(); }
+th::selection{ @include random-select-color(); }
+td::selection{ @include random-select-color(); }
+article::selection{ @include random-select-color(); }
+aside::selection{ @include random-select-color(); }
+canvas::selection{ @include random-select-color(); }
+details::selection{ @include random-select-color(); }
+figcaption::selection{ @include random-select-color(); }
+figure::selection{ @include random-select-color(); }
+footer::selection{ @include random-select-color(); }
+header::selection{ @include random-select-color(); }
+hgroup::selection{ @include random-select-color(); }
+menu::selection{ @include random-select-color(); }
+nav::selection{ @include random-select-color(); }
+section::selection{ @include random-select-color(); }
+summary::selection{ @include random-select-color(); }
+time::selection{ @include random-select-color(); }
+mark::selection{ @include random-select-color(); }
+audio::selection{ @include random-select-color(); }
+video::selection{ @include random-select-color(); }
+span::selection{ @include random-select-color(); }

@@ -1722,16 +1722,16 @@
         },
         {
             "name": "tightenco/jigsaw",
-            "version": "v1.3.19",
+            "version": "v1.3.20",
             "source": {
                 "type": "git",
                 "url": "https://github.com/tightenco/jigsaw.git",
-                "reference": "6603208ea0141bb278f75d404556b1711c67ef4a"
+                "reference": "ccfe81354e8e1e4d2402bd500a96ec9f902c9b02"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/tightenco/jigsaw/zipball/6603208ea0141bb278f75d404556b1711c67ef4a",
-                "reference": "6603208ea0141bb278f75d404556b1711c67ef4a",
+                "url": "https://api.github.com/repos/tightenco/jigsaw/zipball/ccfe81354e8e1e4d2402bd500a96ec9f902c9b02",
+                "reference": "ccfe81354e8e1e4d2402bd500a96ec9f902c9b02",
                 "shasum": ""
             },
             "require": {
@@ -1787,7 +1787,7 @@
                 "site",
                 "static"
             ],
-            "time": "2020-03-06T02:16:51+00:00"
+            "time": "2020-03-06T04:29:00+00:00"
         },
         {
             "name": "vlucas/phpdotenv",

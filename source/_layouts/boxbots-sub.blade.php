@@ -60,7 +60,9 @@
 	</div>
 @stop
 
-@section('extra-scripts')
+@section('extra-nav')
 	<nav id="feralhog" class="hog"><a href="/o__o/boxbots/">BoxBots</a></nav>
+@endsection
+@section('extra-scripts')
 	<script src="{{ mix('*__*/boxbots.js', '') }}" async=""></script>
 @stop

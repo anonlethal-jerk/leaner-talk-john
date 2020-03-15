@@ -5,6 +5,12 @@
 	img {
 		max-width: 100%;
 	}
+	.lazyload {
+		image-rendering: pixelated;
+	}
+	.lazyloaded {
+		image-rendering: auto;
+	}
 	.series_info {
 		background: #aeb2aa;
 	}

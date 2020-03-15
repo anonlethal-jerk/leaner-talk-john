@@ -58,8 +58,9 @@
 	<nav class="nav--boxbot"><button id="btn--toggle" class="btn--boxbot">{{ $toggleOther }}</button></nav>
 @endsection
 
-@section('extra-scripts')
-	{{-- <nav id="feralhog"><a href="/o__o/">Projects</a></nav> --}}
+@section('extra-nav')
 	<nav id="feralhog" class="hog"><a href="../">BoxBots</a></nav>
+@endsection
+@section('extra-scripts')
 	<script src="{{ mix('*__*/boxbots.js', '') }}" async=""></script>
 @endsection

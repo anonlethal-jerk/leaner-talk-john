@@ -36,8 +36,10 @@
 		</div>
 	</section>
 
-@section('extra-scripts')
+@section('extra-nav')
 	<nav id="feralhog" class="hog"><a href="../"><cite>{{ $t_series }}</cite></a></nav>
+@endsection
+@section('extra-scripts')
 	@if ($t_js != null)
 	<script src="{{ mix('*__*/'.$t_slug.'.js', '') }}" async=""></script>
 	@endif

@@ -31,8 +31,10 @@
 	</div>
 
 
-@section('extra-scripts')
+@section('extra-nav')
 	<nav id="feralhog" class="hog"><a href="/o__o/">Projects</a></nav>
+@endsection
+@section('extra-scripts')
 	@if ($t_js != null)
 	<script src="{{ mix('*__*/'.$t_slug.'.js', '') }}" async=""></script>
 	@endif

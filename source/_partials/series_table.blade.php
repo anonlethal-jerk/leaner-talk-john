@@ -21,14 +21,14 @@
  	<tbody>
 		<tr>
 			{{-- <td class="td--series_id">{{ $seriesArray['id'] }}</td> --}}
-			<td class="td--series_title"><h1><a href="{{ $seriesArray['slug'] }}"><cite>{{ $seriesArray['title'] }}</cite></a></h1></td>
-			<td class="td--series_description">{!! $seriesArray['description'] !!}</td>
+			<td class="td--series_title{{ $seriesArray['title'] == '' ? ' td--empty' : '' }}"><h1><a href="{{ $seriesArray['slug'] }}"><cite>{{ $seriesArray['title'] }}</cite></a></h1></td>
+			<td class="td--series_description{{ $seriesArray['description'] == '' ? ' td--empty' : '' }}">{!! $seriesArray['description'] !!}</td>
 			{{-- <td class="td--series_medium">{{ $seriesArray['medium'] }}</td> --}}
-			<td class="td--series_date no_break">{{ $seriesArray['nice_date'] }}</td>
+			<td class="td--series_date no_break{{ $seriesArray['nice_date'] == '' ? ' td--empty' : '' }}">{{ $seriesArray['nice_date'] }}</td>
 			{{-- <td class="td--series_dimensions no_break">{{ $seriesArray['height'] }} × {{ $seriesArray['width'] }} {{ $seriesArray['units'] }}</td> --}}
 			{{-- <td class="td--series_location">{{ $seriesArray['location'] }}</td> --}}
-			<td class="td--series_status">{!! $seriesArray['status'] !!}</td>
-			<td class="td--series_notes">{!! $seriesArray['notes'] !!}</td>
+			<td class="td--series_status{{ $seriesArray['status'] == '' ? ' td--empty' : '' }}">{!! $seriesArray['status'] !!}</td>
+			<td class="td--series_notes{{ $seriesArray['notes'] == '' ? ' td--empty' : '' }}">{!! $seriesArray['notes'] !!}</td>
 			{{-- <td class="td--series_to_dos">{!! $seriesArray['to_dos'] !!}</td> --}}
 			{{-- <td class="td--series_hidden">{!! $seriesArray['hidden'] !!}</td> --}}
 		</tr>

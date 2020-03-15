@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "ec9be4546f0b241f9d0ce566e154524e",
+    "content-hash": "475133338a4f0ad973394aade4d7c892",
     "packages": [
         {
             "name": "doctrine/inflector",
@@ -1722,16 +1722,16 @@
         },
         {
             "name": "tightenco/jigsaw",
-            "version": "v1.3.20",
+            "version": "dev-master",
             "source": {
                 "type": "git",
-                "url": "https://github.com/tightenco/jigsaw.git",
-                "reference": "ccfe81354e8e1e4d2402bd500a96ec9f902c9b02"
+                "url": "https://github.com/anonlethal-jerk/jigsaw.git",
+                "reference": "a2113cc2576e64dba3314b9be0c3128f7fb50c4e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/tightenco/jigsaw/zipball/ccfe81354e8e1e4d2402bd500a96ec9f902c9b02",
-                "reference": "ccfe81354e8e1e4d2402bd500a96ec9f902c9b02",
+                "url": "https://api.github.com/repos/anonlethal-jerk/jigsaw/zipball/a2113cc2576e64dba3314b9be0c3128f7fb50c4e",
+                "reference": "a2113cc2576e64dba3314b9be0c3128f7fb50c4e",
                 "shasum": ""
             },
             "require": {
@@ -1765,7 +1765,16 @@
                     "src/Support/helpers.php"
                 ]
             },
-            "notification-url": "https://packagist.org/downloads/",
+            "autoload-dev": {
+                "psr-4": {
+                    "Tests\\": "tests/"
+                }
+            },
+            "scripts": {
+                "fix": [
+                    "php vendor/bin/php-cs-fixer fix --using-cache=no"
+                ]
+            },
             "license": [
                 "MIT"
             ],
@@ -1787,7 +1796,10 @@
                 "site",
                 "static"
             ],
-            "time": "2020-03-06T04:29:00+00:00"
+            "support": {
+                "source": "https://github.com/anonlethal-jerk/jigsaw/tree/master"
+            },
+            "time": "2020-03-08T13:07:38+00:00"
         },
         {
             "name": "vlucas/phpdotenv",
@@ -1850,7 +1862,9 @@
     "packages-dev": [],
     "aliases": [],
     "minimum-stability": "stable",
-    "stability-flags": [],
+    "stability-flags": {
+        "tightenco/jigsaw": 20
+    },
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": [],

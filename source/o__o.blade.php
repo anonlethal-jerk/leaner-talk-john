@@ -12,6 +12,18 @@
 		@include('_partials.series_table', ['seriesArray' => $page->series_dirty_mousepads ])
 		@include('_partials.series_table', ['seriesArray' => $page->series_dots_dots_dots ])
 
+		@include('_partials.series_table', ['seriesArray' => $page->series_arrow_iterations ])
+		@include('_partials.series_table', ['seriesArray' => $page->series_flat_mountains ])
+		@include('_partials.series_table', ['seriesArray' => $page->series_fucking_windows ])
+		@include('_partials.series_table', ['seriesArray' => $page->series_homepages ])
+		@include('_partials.series_table', ['seriesArray' => $page->series_iphone_oil_paintings ])
+		@include('_partials.series_table', ['seriesArray' => $page->series_layered_wax ])
+		@include('_partials.series_table', ['seriesArray' => $page->series_profiles_exchanged ])
+		@include('_partials.series_table', ['seriesArray' => $page->series_profiles_reversed ])
+		@include('_partials.series_table', ['seriesArray' => $page->series_sd_to_hd ])
+		@include('_partials.series_table', ['seriesArray' => $page->series_siri_sound_poems ])
+		@include('_partials.series_table', ['seriesArray' => $page->series_touching_film ])
+
 	</section>
 @endsection
 

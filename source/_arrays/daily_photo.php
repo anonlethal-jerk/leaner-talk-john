@@ -357,6 +357,7 @@ $collection_daily_photo = [
 			'large_height_px'     => 1280/2,
 			'large_width_px'      => 960/2,
 			'units'               => 'mm',
+			'embed'               => '<iframe src="https://player.vimeo.com/video/397812585" width="640" height="480" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>',
 			'description' => 'JK Keller takes a daily self-portrait every day for 8 years and makes a timelapse video.',
 		],
 		[

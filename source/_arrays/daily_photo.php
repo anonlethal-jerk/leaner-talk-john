@@ -20,10 +20,9 @@ $series_daily_photo = [
 
 $collection_daily_photo = [
 	'extends' => '_layouts.single-daily_photo',
-	'path' => 'o__o/{collection}/{slug}',
-	'sort' => '-id',
-	'series_title' => 'The Adaption to My Generation',
-	'items' => [
+	'path'    => 'o__o/{collection}/{slug}',
+	'sort'    => '-id',
+	'items'   => [
 		[
 			'id'          => 'page-1',
 			'title'       => 'Frequently Asked Questions',

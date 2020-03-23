@@ -2,7 +2,7 @@
 
 <body class="body--series body--{{ $t_slug }}">
 	<section class="series_info">
-		@include('_partials.series_table', ['seriesArray' => $t_series_array ])
+		@include('_partials.series_table', ['seriesArray' => $t_series_array, 'seriesHead' => true ])
 	</section>
 
 	<section class="series_images">
@@ -35,6 +35,7 @@
 	<nav id="feralhog" class="hog"><a href="/o__o/">Projects</a></nav>
 @endsection
 @section('extra-scripts')
+	<script src="{{ mix('*__*/tables.js', '') }}"></script>
 	@if ($t_js != null)
 	<script src="{{ mix('*__*/'.$t_slug.'.js', '') }}" async=""></script>
 	@endif

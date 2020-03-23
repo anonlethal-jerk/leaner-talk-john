@@ -12,9 +12,9 @@ document.getElementById('btn--toggle').addEventListener('click', function () {
 		tBod.classList.add('images--shadows');
 		this.innerHTML = 'color';
 		var pathname = window.location.pathname
-			console.log(pathname);
+			// console.log(pathname);
 		if (pathname.includes('/submissions/')) {
-			console.log(pathname);
+			// console.log(pathname);
 			pathname = pathname.replace('boxbots/submissions','boxbots/submissions/shadow');
 		} else {
 			pathname = pathname.replace('o__o/boxbots','o__o/boxbots/shadow');
@@ -26,9 +26,9 @@ document.getElementById('btn--toggle').addEventListener('click', function () {
 		tBod.classList.add('images--colors');
 		this.innerHTML = 'shadow';
 		var pathname = window.location.pathname
-			console.log(pathname);
+			// console.log(pathname);
 		if (pathname.includes('/submissions/')) {
-			console.log(pathname);
+			// console.log(pathname);
 			pathname = pathname.replace('boxbots/submissions/shadow','boxbots/submissions');
 		} else {
 			pathname = pathname.replace('o__o/boxbots/shadow','o__o/boxbots');
@@ -39,9 +39,9 @@ document.getElementById('btn--toggle').addEventListener('click', function () {
 		tBod.classList.add('images--shadows');
 		this.innerHTML = 'color';
 		var pathname = window.location.pathname
-			console.log(pathname);
+			// console.log(pathname);
 		if (pathname.includes('/submissions/')) {
-			console.log(pathname);
+			// console.log(pathname);
 			pathname = pathname.replace('boxbots/submissions','boxbots/submissions/shadow');
 		} else {
 			pathname = pathname.replace('o__o/boxbots','o__o/boxbots/shadow');
@@ -160,3 +160,74 @@ if (document.getElementById('sort--bots') ) {
 // end sorting buttons
 //
 
+// table image slider
+if (document.querySelector('.table--image_slider')) {
+	// console.log('yep, table');
+
+	var popup = document.getElementById('popup');
+
+	var rows = document.querySelectorAll('.imageload');
+	rows.forEach(function(row) {
+		row.addEventListener('mouseenter', (e) => {
+			if ( popup.getAttribute('src') == row.getAttribute('data-img') ) {
+				popup.style.opacity = 1;
+			} else {
+				var imgUnder = tBod.classList.contains('images--colors') ? 'color' : 'shadow';
+				var imgOver = tBod.classList.contains('images--shadows') ? 'color' : 'shadow';
+				var imgUnderExt = tBod.classList.contains('images--colors') ? 'jpg' : 'png';
+				var imgOverExt = tBod.classList.contains('images--shadows') ? 'jpg' : 'png';
+				var pathname = window.location.pathname;
+				if (pathname.includes('/submissions')) {
+					popup.querySelector('.img--under').setAttribute('src', '/o__o/boxbots/submissions/x__x/'+imgUnder+'-small/'+row.getAttribute("data-img")+'.'+imgUnderExt);
+					popup.querySelector('.img--over').setAttribute('src', '/o__o/boxbots/submissions/x__x/'+imgOver+'-small/'+row.getAttribute("data-img")+'.'+imgOverExt);
+
+				 } else {
+					popup.querySelector('.img--under').setAttribute('src', '/o__o/boxbots/x__x/'+imgUnder+'-small/'+row.getAttribute("data-img")+'.png');
+					popup.querySelector('.img--over').setAttribute('src', '/o__o/boxbots/x__x/'+imgOver+'-small/'+row.getAttribute("data-img")+'.png');
+				};
+				popup.style.opacity = 1;
+			}
+
+			var offset = window.innerHeight - row.getBoundingClientRect().top;
+			// console.log(event.clientX);
+			popup.style.height = row.getAttribute('data-img-h')+'px';
+			popup.style.width = row.getAttribute('data-img-w')+'px';
+			popup.style.bottom = Math.round(offset)+'px';
+			var t_percent = ( (row.getBoundingClientRect().width - row.getAttribute('data-img-w')) / row.getBoundingClientRect().width );
+			popup.style.left = ( row.getBoundingClientRect().left + ( row.getBoundingClientRect().width - ((event.clientX - row.getBoundingClientRect().left) * t_percent) - row.getAttribute('data-img-w') ) )+'px';
+		});
+
+		row.addEventListener('mousemove', (e) => {
+			var offset = window.innerHeight - row.getBoundingClientRect().top;
+			// console.log(event.clientX);
+			popup.style.height = row.getAttribute('data-img-h')+'px';
+			popup.style.width = row.getAttribute('data-img-w')+'px';
+			popup.style.bottom = Math.round(offset)+'px';
+			var t_percent = ( (row.getBoundingClientRect().width - row.getAttribute('data-img-w')) / row.getBoundingClientRect().width );
+			var mouse_loc_percent = (event.clientX - row.getBoundingClientRect().left) / row.getBoundingClientRect().width;
+			popup.style.left = ( row.getBoundingClientRect().left + ( row.getBoundingClientRect().width - ((event.clientX - row.getBoundingClientRect().left) * t_percent) - row.getAttribute('data-img-w') ) )+'px';
+			popup.querySelector('.img--over').style.opacity = Math.abs(mouse_loc_percent * 2 - 1)
+		});
+
+		row.addEventListener("mouseleave", (e) => {
+			popup.style.opacity = 0;
+		});
+
+		row.addEventListener("click", (e) => {
+			popup.style.opacity = 1;
+			popup.querySelector('.img--under').setAttribute('src', 'x__x/small/'+row.getAttribute("data-img"));
+			var offset = window.innerHeight - row.getBoundingClientRect().top;
+			// console.log(event.clientX);
+			popup.style.height = row.getAttribute('data-img-h')+'px';
+			popup.style.width = row.getAttribute('data-img-w')+'px';
+			popup.style.bottom = Math.round(offset)+'px';
+			var t_percent = ( (row.getBoundingClientRect().width - row.getAttribute('data-img-w')) / row.getBoundingClientRect().width );
+			popup.style.left = ( row.getBoundingClientRect().left + ( row.getBoundingClientRect().width - ((event.clientX - row.getBoundingClientRect().left) * t_percent) - row.getAttribute('data-img-w') ) )+'px';
+		});
+	});
+
+	document.addEventListener("keyup", (e) => {
+		// console.log("yep, table");
+	});
+}
+// end if table image slider

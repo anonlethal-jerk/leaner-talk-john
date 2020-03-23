@@ -4,9 +4,6 @@
 	@yield('extra-nav')
 
 	<script src="{{ mix('*__*/global.js', '') }}"></script>
-	<script src="{{ mix('*__*/tables.js', '') }}"></script>
-	<script src="{{ mix('*__*/image_viewer.js', '') }}"></script>
-
 	<!-- https://github.com/aFarkas/lazysizes -->
 	<script src="{{ mix('*__*/lazysizes.min.js', '') }}"></script>
 

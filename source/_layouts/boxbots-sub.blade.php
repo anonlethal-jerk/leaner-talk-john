@@ -12,7 +12,7 @@
 	{{-- page: {{ $page->testvar }} --}}
 	{{-- boxbots: {{ $submissions->first()->testvar }} --}}
 	<section class="series_info">
-		@include('_partials.series_table', ['seriesArray' => $t_series_array ])
+		@include('_partials.series_table', ['seriesArray' => $t_series_array, 'seriesHead' => true ])
 	</section>
 
 	<section class="images images--boxbots images--{{ $toggleCurrent }}">

@@ -8,7 +8,7 @@
 
 // table image slider
 if (document.querySelector('.table--image_slider')) {
-	console.log('yep, table');
+	// console.log('yep, table');
 
 	var popup = document.getElementById('popup');
 
@@ -22,7 +22,7 @@ if (document.querySelector('.table--image_slider')) {
 				popup.querySelector('.img--under').setAttribute('src', 'x__x/small/'+row.getAttribute("data-img"));
 			}
 			var offset = window.innerHeight - row.getBoundingClientRect().top;
-			console.log(event.clientX);
+			// console.log(event.clientX);
 			popup.style.height = row.getAttribute('data-img-h')+'px';
 			popup.style.width = row.getAttribute('data-img-w')+'px';
 			popup.style.bottom = Math.round(offset)+'px';
@@ -32,7 +32,7 @@ if (document.querySelector('.table--image_slider')) {
 
 		row.addEventListener('mousemove', (e) => {
 			var offset = window.innerHeight - row.getBoundingClientRect().top;
-			console.log(event.clientX);
+			// console.log(event.clientX);
 			popup.style.height = row.getAttribute('data-img-h')+'px';
 			popup.style.width = row.getAttribute('data-img-w')+'px';
 			popup.style.bottom = Math.round(offset)+'px';
@@ -48,7 +48,7 @@ if (document.querySelector('.table--image_slider')) {
 			popup.style.opacity = 1;
 			popup.querySelector('.img--under').setAttribute('src', 'x__x/small/'+row.getAttribute("data-img"));
 			var offset = window.innerHeight - row.getBoundingClientRect().top;
-			console.log(event.clientX);
+			// console.log(event.clientX);
 			popup.style.height = row.getAttribute('data-img-h')+'px';
 			popup.style.width = row.getAttribute('data-img-w')+'px';
 			popup.style.bottom = Math.round(offset)+'px';
@@ -58,7 +58,7 @@ if (document.querySelector('.table--image_slider')) {
 	});
 
 	document.addEventListener("keyup", (e) => {
-		console.log("yep, table");
+		// console.log("yep, table");
 	});
 }
 // end if table image slider

@@ -52,5 +52,6 @@
 	<nav id="feralhog" class="hog"><a href="../">BoxBot Submissions</a></nav>
 @endsection
 @section('extra-scripts')
+	<script src="{{ mix('*__*/image_viewer.js', '') }}"></script>
 	<script src="{{ mix('*__*/boxbots.js', '') }}" async=""></script>
 @endsection

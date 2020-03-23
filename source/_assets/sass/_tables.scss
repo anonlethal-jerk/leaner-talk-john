@@ -52,6 +52,14 @@
 .table--series_info {
 	margin-top: 0;
 	font-size: .875rem;
+	.body--projects & {
+		margin-bottom: 0;
+		&:not(:first-of-type) {
+			td {
+				border-top: 0;
+			}
+		}
+	}
 }
 
 
@@ -155,7 +163,7 @@ tr:hover {
 
 
 
-body:not(.body--boxbots) #popup {
+#popup {
 	opacity: .1;
 	position: fixed;
 	bottom: -100px; left: -200px;

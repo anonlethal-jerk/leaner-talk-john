@@ -890,11 +890,11 @@ $collection_boxbot_submissions = [
 ];
 
 $series_boxbot_submissions = [
-	'slug'        => 'boxbot_submissions',
+	'slug'        => 'boxbots/submissions',
 	'js'          => NULL,
 	'title'       => 'BoxBot Submissions',
 	'nice_date'   => '',
 	'status'      => 'Accepting Submissions',
-	'description' => 'People have submitted '.count($collection_boxbot_submissions['items']).' of their own creations. Send me an email with yours!',
+	'description' => 'People have submitted '.count($collection_boxbot_submissions['items']).' of their own <a href="/o__o/boxbots/">BoxBot</a> creations. Send me an email with yours!',
 	'notes'       => '',
 ];

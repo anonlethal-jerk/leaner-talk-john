@@ -226,6 +226,13 @@
 			}
 		}
 	}
+	&.body--submissions {
+		.images--boxbots {
+			figure {
+				margin: .5rem .1rem;
+			}
+		}
+	}
 }
 
 .stars {

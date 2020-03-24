@@ -98,6 +98,15 @@
 			}
 		}
 	}
+	&.body--submissions {
+		.nav--boxbots {
+			div {
+				flex: 1 1 auto;
+				max-width: 8rem;
+				min-width: 4rem;
+			}
+		}
+	}
 
 	.sort--hide {
 		display: none;
@@ -455,6 +464,95 @@
 			.images--shadows & {
 				background: #fff;
 				color: #000;
+			}
+		}
+	}
+}
+
+//
+// TABLES hide
+//
+.body--boxbots {
+	.td--series_subtitle,
+	.td--series_slug,
+	.td--prj_by,
+	.td--prj_slug,
+	.td--prj_subtitle,
+	.td--prj_duration,
+	.td--prj_description {
+		display: none;
+	}
+	@media screen and (max-width: 1080px) {
+		.td--prj_location {
+			display: none;
+		}
+	}
+	@media screen and (max-width: 960px) {
+		.td--series_to_dos,
+		.td--prj_status,
+		.td--prj_notes {
+			display: none;
+		}
+	}
+	@media screen and (max-width: 720px) {
+		.td--prj_id {
+			display: none;
+		}
+	}
+	@media screen and (max-width: 620px) {
+		.td--prj_rating {
+			display: none;
+		}
+	}
+	@media screen and (max-width: 540px) {
+		.td--series_date,
+		.td--series_status,
+		.td--prj_medium {
+			display: none;
+		}
+		.td--series_title {
+			h1 {
+				font-size: 1rem;
+			}
+		}
+	}
+	@media screen and (max-width: 420px) {
+		.td--series_notes,
+		.td--prj_dimensions {
+			display: none;
+		}
+	}
+
+	&.body--submissions {
+		.td--series_date,
+		.td--prj_id,
+		.td--prj_dimensions,
+		.td--prj_status,
+		.td--prj_notes,
+		.td--prj_rating {
+			display: none;
+		}
+		.td--prj_by {
+			display: table-cell;
+		}
+		@media screen and (max-width: 1080px) {
+			.td--prj_location {
+				display: table-cell;
+			}
+		}
+		@media screen and (max-width: 650px) {
+			.td--prj_location {
+				display: none;
+			}
+		}
+		@media screen and (max-width: 540px) {
+			.td--prj_medium {
+				display: table-cell;
+			}
+		}
+		@media screen and (max-width: 500px) {
+			.td--prj_medium {
+				display: none;
 			}
 		}
 	}

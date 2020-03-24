@@ -4,6 +4,7 @@
 			<th class="td--prj_id">ID</th>
 			<th class="td--prj_title">Title</th>
 			{{-- <th class="td--prj_subtitle">Subtitle</th> --}}
+			<th class="td--prj_by">By</th>
 			{{-- <th class="td--prj_slug">Slug</th> --}}
 			<th class="td--prj_medium">Medium</th>
 			<th class="td--prj_date">Date</th>
@@ -21,6 +22,7 @@
 			<th class="td--prj_id">ID</th>
 			<th class="td--prj_title">Title</th>
 			{{-- <th class="td--prj_subtitle">Subtitle</th> --}}
+			<th class="td--prj_by">By</th>
 			{{-- <th class="td--prj_slug">Slug</th> --}}
 			<th class="td--prj_medium">Medium</th>
 			<th class="td--prj_date">Date</th>
@@ -38,6 +40,7 @@
 		<tr class="imageload images" data-img="{{ $item->imgfile }}" data-img-w="{{ $item->small_width_px }}" data-img-h="{{ $item->small_height_px }}">
 			<td class="td--prj_id{{ $item->id == '' ? ' td--empty' : '' }}">{{ $item->id }}</td>
 			<td class="td--prj_title{{ $item->title == '' ? ' td--empty' : '' }}"><a href="{{ $item->slug }}">{!! $item->title != '' ? '<cite>'.$item->title.'</cite>' : 'Untitled' !!}</a></td>
+			<td class="td--prj_by{{ $item->person == '' ? ' td--empty' : '' }}">{{ $item->person }}</td>
 			<td class="td--prj_medium{{ $item->medium == '' ? ' td--empty' : '' }}">{{ $item->medium }}</td>
 			<td class="td--prj_date{{ $item->nice_date == '' ? ' td--empty' : '' }}">{{ $item->nice_date }}</td>
 			<td class="td--prj_dimensions{{ $item->width == '' ? ' td--empty' : '' }}">{{ $item->height }} {{ $item->width == NULL ? '' : '×' }} {{ $item->width }} {{ $item->units }}</td>

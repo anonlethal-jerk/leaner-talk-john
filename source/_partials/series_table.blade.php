@@ -23,7 +23,13 @@
 	@endif
  	<tbody>
 		<tr>
+	@if ($seriesArray['title'] == 'BoxBot Submissions')
+			<td class="td--series_title"><a href="/o__o/boxbots/">↖︎</a></td>
+	@elseif ($seriesArray['title'] == 'BoxBots')
+			<td class="td--series_title"><a href="/o__o/">↖︎</a></td>
+	@else
 			<td class="td--series_title"><a href="../">↖︎</a></td>
+	@endif
 			{{-- <td class="td--series_id">{{ $seriesArray['id'] }}</td> --}}
 			<td class="td--series_title{{ $seriesArray['title'] == '' ? ' td--empty' : '' }}"><h1><a href="/o__o/{{ $seriesArray['slug'] }}"><cite>{{ $seriesArray['title'] }}</cite></a></h1></td>
 			<td class="td--series_description{{ $seriesArray['description'] == '' ? ' td--empty' : '' }}">{!! $seriesArray['description'] !!}</td>

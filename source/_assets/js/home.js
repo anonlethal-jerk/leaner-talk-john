@@ -4,7 +4,7 @@ var warthog = document.getElementById('warthog');
 hogs.forEach(function(hog) {
 	var t_speed = Math.round(Math.random()*15 + 12);
 	t_speed = 2;
-	var t_shadow_speed = Math.random()*7 + 4;
+	var t_shadow_speed = Math.random()*7 + 1;
 	var hog_half_height = warthog.offsetHeight/2;
 	var hog_half_width = warthog.offsetWidth/2;
 	var start_hog = setTimeout(function(){
@@ -47,6 +47,7 @@ hogs.forEach(function(hog) {
 		var t_offset_inset_y = Math.round(t_offset_y/3);
 		hog.style.boxShadow = t_offset_x+"px "+t_offset_y+"px 60px 3px rgba("+t_red+", "+t_green+", "+t_blue+", "+t_alpha+"), inset "+t_offset_inset_x+"px "+t_offset_inset_y+"px 60px 3px rgba("+t_red+", "+t_green+", "+t_blue+", "+(t_alpha*.7)+")";
 	}, t_shadow_speed*1000);
+		t_shadow_speed = Math.random()*7 + 4;
 });
 
 // change the background color

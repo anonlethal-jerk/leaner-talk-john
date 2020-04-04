@@ -895,6 +895,6 @@ $series_boxbot_submissions = [
 	'title'       => 'BoxBot Submissions',
 	'nice_date'   => '',
 	'status'      => 'Accepting Submissions',
-	'description' => 'People have submitted '.count($collection_boxbot_submissions['items']).' of their own <a href="/o__o/boxbots/">BoxBot</a> creations. Send me an email with yours!',
+	'description' => 'People have submitted '.count($collection_boxbot_submissions['items']).' of their own <a href="/o__o/boxbots/">BoxBot</a> creations. Send me an email with yours! jk at jk-keller dot com',
 	'notes'       => '',
 ];

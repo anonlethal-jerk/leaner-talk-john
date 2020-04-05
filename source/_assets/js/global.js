@@ -20,12 +20,13 @@ var getParams = function (url) {
 
 
 // super boxes...
+// if not the homepage...
 if ( document.getElementById('warthog') == null) {
 	var hogs = document.querySelectorAll('.hog');
 	hogs.forEach(function(hog) {
 		// move that home button around
 		var t_speed = Math.round(Math.random()*10 + 8);
-		var t_shadow_speed = Math.round(Math.random()*4 + 1);
+		var t_shadow_speed = Math.round(Math.random()*4 + 2);
 		var move_hog = setInterval(function(){
 			var t_top = Math.random()*(window.innerHeight - hog.offsetHeight);
 			var t_left = Math.random()*(window.innerWidth - hog.offsetWidth);

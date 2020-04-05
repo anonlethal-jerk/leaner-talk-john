@@ -21,9 +21,9 @@ $series_dots_dots_dots = [
 
 $collection_dots_dots_dots = [
 	'extends' => '_layouts.single-dots_dots_dots',
-	'path' => 'o__o/{collection}/{slug}',
-	'sort' => '-id',
-	'items' => [
+	'path'    => 'o__o/{collection}/{slug}',
+	'sort'    => '-id',
+	'items'   => [
 		[
 			'id'              => 'jkk_200900_1_u',
 			'title'           => '',

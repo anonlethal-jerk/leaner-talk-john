@@ -8,6 +8,7 @@
 	}
 }
 
+.table--projects,
 .table--series_info,
 .table--prj_info {
 	min-width: 100%;
@@ -25,6 +26,7 @@
 			padding: 0; // for anchor inside
 		}
 	}
+	.td--project_hidden,
 	.td--series_hidden,
 	.td--prj_hidden {
 		background-color: #c71123;
@@ -49,9 +51,18 @@
 		background: transparent;
 	}
 }
+.table--projects,
 .table--series_info {
 	margin-top: 0;
 	font-size: .875rem;
+	.body--projects & {
+		margin-bottom: 0;
+		&:not(:first-of-type) {
+			td {
+				border-top: 0;
+			}
+		}
+	}
 }
 
 
@@ -100,62 +111,56 @@ tr:hover {
 	}
 }
 
-.body--boxbots {
-	.td--series_subtitle,
-	.td--series_slug,
-	.td--prj_slug,
-	.td--prj_subtitle,
-	.td--prj_duration,
-	.td--prj_description {
-		display: none;
-	}
-	@media screen and (max-width: 1080px) {
-		.td--prj_location {
-			display: none;
-		}
-	}
-	@media screen and (max-width: 960px) {
-		.td--series_to_dos,
-		.td--prj_status,
-		.td--prj_notes {
-			display: none;
-		}
-	}
-	@media screen and (max-width: 720px) {
-		.td--prj_id {
-			display: none;
-		}
-	}
-	@media screen and (max-width: 620px) {
-		.td--prj_rating {
-			display: none;
-		}
-	}
-	@media screen and (max-width: 540px) {
-		.td--series_date,
-		.td--series_status,
-		.td--prj_medium {
-			display: none;
-		}
-		.td--series_title {
-			h1 {
-				font-size: 1rem;
-			}
-		}
-	}
-	@media screen and (max-width: 420px) {
-		.td--series_notes,
-		.td--prj_dimensions {
-			display: none;
-		}
-	}
-}
 // .body--sd_to_hd {
 // }
 
+@media only screen and (max-width: 600px) {
+	.table--projects {
+		margin-top: 2rem;
 
+		thead, tbody, th, td, tr {
+			display: block;
+		}
+		thead {
+			// html5 boilerplate visually hidden
+			border: 0;
+			clip: rect(0 0 0 0);
+			clip-path: inset(50%);
+			height: 1px;
+			margin: -1px;
+			overflow: hidden;
+			padding: 0;
+			position: absolute;
+			width: 1px;
+			white-space: nowrap; /* 1 */
+		}
+		tr {
+			border: 1px solid #ddd;
+		}
+		td {
+			border: none;
+			border-bottom: 1px solid #ddd;
+			position: relative;
+			padding-left: 40%;
+			&:before {
+				/* Now like a table header */
+				position: absolute;
+				/* Top/left values mimic padding */
+				top: .33rem;
+				left: .5rem;
+				width: 37%;
+				font-weight: bold;
+			}
+			&:nth-of-type(1):before { content: "Title"; }
+			&:nth-of-type(2):before { content: "Description"; }
+			&:nth-of-type(3):before { content: "Date"; }
+			&:nth-of-type(4):before { content: "Status"; }
+			&:nth-of-type(5):before { content: "Notes"; }
+		}
+	}
+}
 
-body:not(.body--boxbots) #popup {
+#popup {
 	opacity: .1;
 	position: fixed;
 	bottom: -100px; left: -200px;

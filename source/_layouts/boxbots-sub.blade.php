@@ -12,7 +12,7 @@
 	{{-- page: {{ $page->testvar }} --}}
 	{{-- boxbots: {{ $submissions->first()->testvar }} --}}
 	<section class="series_info">
-		@include('_partials.series_table', ['seriesArray' => $t_series_array ])
+		@include('_partials.series_table', ['seriesArray' => $t_series_array, 'seriesHead' => true ])
 	</section>
 
 	<section class="images images--boxbots images--{{ $toggleCurrent }}">
@@ -31,11 +31,11 @@
 			@foreach ($submissions as $boxbot)
 			--><figure>
 					<a href="{{ $boxbot->slug }}">
-					<img class="{{ $toggleOther }} lazyload" src="/x__x/loading-99.gif" data-src="/o__o/boxbots/submissions/x__x/{{ $toggleOther }}-small/{{ $boxbot->imgfile }}.{{ $toggleOther == 'color' ? 'jpg' : 'png' }}" width="{{ $boxbot->small_width_px }}" height="{{ $boxbot->small_height_px }}" alt="{{ $boxbot->title }} BoxBot" title="{{ $boxbot->title }}, {{ $boxbot->nice_date }}, {{ $boxbot->height }} × {{ $boxbot->width }} mm">
-					<img class="{{ $toggleCurrent }} lazyload" src="/x__x/loading-99.gif" data-src="/o__o/boxbots/submissions/x__x/{{ $toggleCurrent }}-small/{{ $boxbot->imgfile }}.{{ $toggleCurrent == 'color' ? 'jpg' : 'png' }}" width="{{ $boxbot->small_width_px }}" height="{{ $boxbot->small_height_px }}" alt="{{ $boxbot->title }} BoxBot" title="{{ $boxbot->title }}, {{ $boxbot->nice_date }}, {{ $boxbot->height }} × {{ $boxbot->width }} mm">
+					<img class="{{ $toggleOther }} lazyload" src="/x__x/loading-99.gif" data-src="/o__o/boxbots/submissions/x__x/{{ $toggleOther }}-small/{{ $boxbot->imgfile }}.{{ $toggleOther == 'color' ? 'jpg' : 'png' }}" width="{{ $boxbot->small_width_px }}" height="{{ $boxbot->small_height_px }}" alt="{{ $boxbot->title != '' ? $boxbot->title : 'Untitled' }} BoxBot" title="{{ $boxbot->title != '' ? $boxbot->title : 'Untitled' }}, by {{ $boxbot->person }}, {{ $boxbot->nice_date }}">
+					<img class="{{ $toggleCurrent }} lazyload" src="/x__x/loading-99.gif" data-src="/o__o/boxbots/submissions/x__x/{{ $toggleCurrent }}-small/{{ $boxbot->imgfile }}.{{ $toggleCurrent == 'color' ? 'jpg' : 'png' }}" width="{{ $boxbot->small_width_px }}" height="{{ $boxbot->small_height_px }}" alt="{{ $boxbot->title != '' ? $boxbot->title : 'Untitled' }} BoxBot" title="{{ $boxbot->title != '' ? $boxbot->title : 'Untitled' }}, by {{ $boxbot->person }}, {{ $boxbot->nice_date }}">
 				</a>
 				<div class="sort--hide">
-					<p class="sort--title">{{ $boxbot->title }}</p>
+					<p class="sort--title">{{ $boxbot->title != '' ? $boxbot->title : 'Untitled' }}</p>
 					<p class="sort--date">{{ $boxbot->id }}</p>
 					<p class="sort--rating">{{ $boxbot->jk_rating }}</p>
 				</div>
@@ -60,7 +60,9 @@
 	</div>
 @stop
 
-@section('extra-scripts')
+@section('extra-nav')
 	<nav id="feralhog" class="hog"><a href="/o__o/boxbots/">BoxBots</a></nav>
+@endsection
+@section('extra-scripts')
 	<script src="{{ mix('*__*/boxbots.js', '') }}" async=""></script>
 @stop

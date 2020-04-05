@@ -6,10 +6,16 @@
 
 	<section class="boxbot_viewer">
 		<figure class="viewer--image">
-			<img class="{{ $toggleOther }}" src="/o__o/boxbots/x__x/{{ $toggleOther }}-large/{{ $page->imgfile }}.png" alt="{{ $page->title }} BoxBot Silhouette" width="{{ $page->large_width_px }}" height="{{ $page->large_height_px }}" />
+			<picture>
+				<source class="{{ $toggleOther }}" srcset="/o__o/boxbots/x__x/{{ $toggleOther }}-large/{{ $page->imgfile }}.webp" alt="{{ $page->title }} BoxBot Silhouette" width="{{ $page->large_width_px }}" height="{{ $page->large_height_px }}" type="image/webp" />
+				<img class="{{ $toggleOther }}" src="/o__o/boxbots/x__x/{{ $toggleOther }}-large/{{ $page->imgfile }}.png" alt="{{ $page->title }} BoxBot Silhouette" width="{{ $page->large_width_px }}" height="{{ $page->large_height_px }}" />
+			</picture>
 		</figure>
 		<figure class="viewer--image">
-			<img class="{{ $toggleCurrent }}" src="/o__o/boxbots/x__x/{{ $toggleCurrent }}-large/{{ $page->imgfile }}.png" alt="{{ $page->title }} BoxBot" width="{{ $page->large_width_px }}" height="{{ $page->large_height_px }}" />
+			<picture>
+				<source class="{{ $toggleCurrent }}" srcset="/o__o/boxbots/x__x/{{ $toggleCurrent }}-large/{{ $page->imgfile }}.webp" alt="{{ $page->title }} BoxBot" width="{{ $page->large_width_px }}" height="{{ $page->large_height_px }}" type="image/webp" />
+				<img class="{{ $toggleCurrent }}" src="/o__o/boxbots/x__x/{{ $toggleCurrent }}-large/{{ $page->imgfile }}.png" alt="{{ $page->title }} BoxBot" width="{{ $page->large_width_px }}" height="{{ $page->large_height_px }}" />
+			</picture>
 			<figcaption>
 				<div class="stars"><!-- get rid of space
 					@for ($i = 0; $i < 5; $i++)
@@ -58,8 +64,10 @@
 	<nav class="nav--boxbot"><button id="btn--toggle" class="btn--boxbot">{{ $toggleOther }}</button></nav>
 @endsection
 
-@section('extra-scripts')
-	{{-- <nav id="feralhog"><a href="/o__o/">Projects</a></nav> --}}
+@section('extra-nav')
 	<nav id="feralhog" class="hog"><a href="../">BoxBots</a></nav>
+@endsection
+@section('extra-scripts')
+	<script src="{{ mix('*__*/image_viewer.js', '') }}"></script>
 	<script src="{{ mix('*__*/boxbots.js', '') }}" async=""></script>
 @endsection

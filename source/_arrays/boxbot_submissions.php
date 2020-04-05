@@ -24,7 +24,7 @@ $collection_boxbot_submissions = [
 			'sort_date'           => '1999_12_28',
 			'nice_date'           => '1999 Dec 28',
 			'medium'              => 'reused found packaging',
-			'location'            => 'MO?',
+			'location'            => 'Antarctica',
 			'imgfile'             => '1999_12_28-michelle-001',
 			'small_height_px'     => 150,
 			'small_width_px'      => 106,
@@ -890,11 +890,11 @@ $collection_boxbot_submissions = [
 ];
 
 $series_boxbot_submissions = [
-	'slug'        => 'boxbot_submissions',
+	'slug'        => 'boxbots/submissions',
 	'js'          => NULL,
 	'title'       => 'BoxBot Submissions',
 	'nice_date'   => '',
 	'status'      => 'Accepting Submissions',
-	'description' => 'People have submitted '.count($collection_boxbot_submissions['items']).' of their own creations. Send me an email with yours!',
+	'description' => 'People have submitted '.count($collection_boxbot_submissions['items']).' of their own <a href="/o__o/boxbots/">BoxBot</a> creations. Send me an email with yours! jk at jk-keller dot com',
 	'notes'       => '',
 ];

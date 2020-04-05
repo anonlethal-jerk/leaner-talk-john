@@ -1,6 +1,12 @@
 {
+	"repositories": [
+		{
+			"type": "vcs",
+			"url": "https://github.com/anonlethal-jerk/jigsaw"
+		}
+	],
 	"require": {
-		"tightenco/jigsaw": "^1.3",
+		"tightenco/jigsaw": "dev-master",
 		"laravel/helpers": "^1.1"
 	}
 }

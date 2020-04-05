@@ -20,14 +20,27 @@
 		transition: top 1s, left 1s, box-shadow 1s, padding 1s;
 		color: transparent;
 		text-align: center;
-		line-height: 1.25rem;
+		font-size: 1rem;
+		line-height: 1.35rem;
 		font-weight: bold;
-		a {
-			color: transparent;
+		pointer-events: none;
+		@media screen and (min-width: 840px) {
+			font-size:  1.5rem;
+			line-height: 1.95rem;
 		}
 	}
-	#warthog {
+	a#warthog {
 		color: #fff;
 		text-shadow: 0 0 30px #00f, 0 0 50px #0f0, 0 0 70px #f00;
+		display: block;
+		background-color: transparent;
+		text-decoration: none;
+		pointer-events: all;
+
+		&:hover {
+			background-color: #fff;
+			color: #000;
+			text-shadow: none;
+		}
 	}
 }

@@ -15,7 +15,6 @@ $collection_boxbots = [
 		'shadow' => 'o__o/{collection}/shadow/{slug}',
 	],
 	'sort' => '-id',
-	'testvar' => "yessir, boxbots array",
 	'items' => [
 		[
 			'id'                  => 'jkk_199903_1_u',

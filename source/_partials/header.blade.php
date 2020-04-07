@@ -2,8 +2,8 @@
 <html class="no-js" lang="en">
 	<head>
 		<meta charset="utf-8">
-		<title>•__• JK — {{ $t_series }} — {{ $page->title }}</title>
-		<meta name="description" content="a dream">
+		<title>{{ $page->title }}{{-- {{ $page->title != '' ? ' — ' : '' }} --}}{{ $t_series }}{{-- {{ $t_series != '' ? ' — ' : '' }} --}} •__• JK</title>
+		<meta name="description" content="{{ $t_meta_description != '' ? $t_meta_description : 'work from JK Keller' }}">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<meta http-equiv="x-ua-compatible" content="ie=edge">
 

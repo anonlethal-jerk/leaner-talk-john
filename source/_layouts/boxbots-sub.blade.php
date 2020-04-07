@@ -3,6 +3,7 @@
 	$t_slug         = $page->series_boxbot_submissions->slug;
 	$t_series       = $page->series_boxbot_submissions->title;
 	$t_js           = $page->series_boxbot_submissions->js;
+	$t_meta_description = 'submissions from around the world';
 @endphp
 
 @extends('_layouts.master')

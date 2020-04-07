@@ -4,12 +4,21 @@
 	<h1 class="visuallyhidden"><cite>{{ $page->title }}</cite></h1>
 
 	<section class="image_viewer">
+	@if ($page->embed == '' || $page->embed == NULL)
 		<figure class="viewer--image">
 			<img class="" src="../x__x/large/{{ $page->imgfile }}" alt="{{ $page->title }}" width="{{ $page->large_width_px }}" height="{{ $page->large_height_px }}" />
 			<figcaption>
 				{!! $page->title == '' ? 'Untitled' : '<cite>'.$page->title.'</cite>' !!}, <span class="no_break">{{ $page->nice_date }}</span>{{ $page->width == NULL ? '' : ',' }} <span class="no_break">{{ $page->height }} {{ $page->width == NULL ? '' : '×' }} {{ $page->width }} {{ $page->depth == NULL ? '' : '×' }} {{ $page->depth }} {{ $page->units }}</span>
 			</figcaption>
 		</figure>
+	@else
+		<figure class="viewer--image">
+			{!! $page->embed !!}
+			<figcaption>
+				{!! $page->title == '' ? 'Untitled' : '<cite>'.$page->title.'</cite>' !!}, <span class="no_break">{{ $page->nice_date }}</span>{{ $page->width == NULL ? '' : ',' }} <span class="no_break">{{ $page->height }} {{ $page->width == NULL ? '' : '×' }} {{ $page->width }} {{ $page->depth == NULL ? '' : '×' }} {{ $page->depth }} {{ $page->units }}</span>
+			</figcaption>
+		</figure>
+	@endif
 		<div class="viewer--prev">
 			@if ($page->getPrevious())
 			<a class="nav--prev" href="../{{ $page->getPrevious()->slug }}">

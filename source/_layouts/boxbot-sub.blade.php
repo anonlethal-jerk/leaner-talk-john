@@ -1,3 +1,7 @@
+@php
+	$t_meta_description = 'submissions from around the world';
+@endphp
+
 @extends('_layouts.master')
 
 @section('body')

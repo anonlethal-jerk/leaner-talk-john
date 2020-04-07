@@ -8,7 +8,13 @@
 	<section class="series_images">
 	<!-- start no space hack
 		@foreach ($$t_slug->where('imgfile', '!=', '') as $img)
-	--><figure>
+@if ( $img->offset_top_px < 0 )
+	--><figure style="width:{{ $img->small_width_px }}px;margin-top:{{ $img->offset_top_px }}px;">
+@else
+	--><figure style="width:{{ $img->small_width_px }}px;">
+@endif
+
+
 			<a href="{{ $img->slug }}">
 				<img class="lazyload" src="/x__x/loading-99.gif" data-src="x__x/small/{{ $img->imgfile }}" width="{{ $img->small_width_px }}" height="{{ $img->small_height_px }}" alt="{{ $img->title == '' ? 'Untitled' : $img->title }}" title="{{ $img->title == '' ? 'Untitled' : $img->title }}, {{ $img->nice_date }}, {{ $img->height }} × {{ $img->width }} {{ $img->units }}">
 				<figcaption>

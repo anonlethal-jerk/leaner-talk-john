@@ -16,3 +16,6 @@ ErrorDocument 500 /500.html
 RewriteRule ^•__•/(.*)$ $1 [L]
 RewriteRule ^-__-/(.*)$ $1 [L]
 
+# old urls...
+RewriteRule ^boxbots(.*)$  https://jk-keller.com/o__o/boxbots/? [NC,R=301]
+# RewriteRule ^daily-photo(.*)$  https://jk-keller.com/o__o/daily-photo/? [NC,R=301]

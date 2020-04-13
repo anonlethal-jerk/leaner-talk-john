@@ -4,16 +4,16 @@
 - [ ] Global
 	- [ ]
 	- [x] ~~padding/margin of series top~~
-	- [ ] speeds of navigation animation
+	- [x] ~~speeds of navigation animation~~
 	- [ ] colors of table, link, other hovers
 	- [ ] tablesorter working
 	- [ ] the ends of image viewer
 	- [ ] keyboard and swipe navigation of image viewer
-	- [ ] series images figcaptions limit width to image? inline style on figure?
+	- [x] series images figcaptions limit width to image? inline style on figure?
 	- [ ] image viewer margins for mobile vertical rectangles (prevent so much overlap
 	- [ ] rename classes prj to works?
-	- [x] pop-up table image all series works
-	- [ ] pop-up table image vanilla js version
+	- [x] ~~pop-up table image all series works~~
+	- [x] ~~pop-up table image vanilla js version~~
 	- [ ] generative write "FPO TEMP for web TK" (other acronyms, etc?) on images
 		- placeholder
 		- FPO - For placement only
@@ -27,14 +27,14 @@
 - [ ] BoxBots
 	- [ ]
 	- [ ] series, project, and homepage info
-	- [ ] finish cutting all done - ~~temp exports~~
+	- [x] ~~finish cutting all done - temp exports~~
 - [ ] Daily Photo
 	- [ ]
 	- [ ] series, project, and homepage info
-	- [ ] Get videos working in viewer area (gifs for series images?)
+	- [ ] ~~Get videos working in viewer area~~ (gifs for series images?)
 	- [ ] add "temp for web" or make final averages up to 2019
 	- [ ] The Ends overlays
-	- [ ] how to do other pages? FAQ, Related...
+	- [x] how to do other pages? FAQ, Related...
 	- [ ] mosaics? monthlies? yearlies? ALL?
 - [ ] Mousepads
 	- [ ] series, project, and homepage info

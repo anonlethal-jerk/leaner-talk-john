@@ -1,3 +1,8 @@
+@php
+$t_series = 'Jonathan Keller Keller';
+$t_meta_description = 'Remember in the Future When we were Happy?';
+@endphp
+
 @extends('_layouts.master')
 
 @section('body')

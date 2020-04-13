@@ -1,4 +1,6 @@
 .body--home {
+	background: rgb(random(100)+155, random(100)+155, random(100)+155);
+	background: radial-gradient(circle, rgba(random(100)+155, random(100)+155, random(100)+155, 1) 0%, rgba(random(100)+155, random(100)+155, random(100)+155, 1) 100%);
 	height: 100vh;
 	width: 100vw;
 

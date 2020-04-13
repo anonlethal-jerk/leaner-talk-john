@@ -3,6 +3,7 @@
 	$t_slug         = $page->series_boxbot_submissions->slug;
 	$t_series       = $page->series_boxbot_submissions->title;
 	$t_js           = $page->series_boxbot_submissions->js;
+	$t_meta_description = 'submissions from around the world';
 @endphp
 
 @extends('_layouts.master')
@@ -30,7 +31,7 @@
 <!-- get rid of spacing
 			@foreach ($submissions as $boxbot)
 			--><figure>
-					<a href="{{ $boxbot->slug }}">
+					<a href="{{ $boxbot->slug }}/">
 					<img class="{{ $toggleOther }} lazyload" src="/x__x/loading-99.gif" data-src="/o__o/boxbots/submissions/x__x/{{ $toggleOther }}-small/{{ $boxbot->imgfile }}.{{ $toggleOther == 'color' ? 'jpg' : 'png' }}" width="{{ $boxbot->small_width_px }}" height="{{ $boxbot->small_height_px }}" alt="{{ $boxbot->title != '' ? $boxbot->title : 'Untitled' }} BoxBot" title="{{ $boxbot->title != '' ? $boxbot->title : 'Untitled' }}, by {{ $boxbot->person }}, {{ $boxbot->nice_date }}">
 					<img class="{{ $toggleCurrent }} lazyload" src="/x__x/loading-99.gif" data-src="/o__o/boxbots/submissions/x__x/{{ $toggleCurrent }}-small/{{ $boxbot->imgfile }}.{{ $toggleCurrent == 'color' ? 'jpg' : 'png' }}" width="{{ $boxbot->small_width_px }}" height="{{ $boxbot->small_height_px }}" alt="{{ $boxbot->title != '' ? $boxbot->title : 'Untitled' }} BoxBot" title="{{ $boxbot->title != '' ? $boxbot->title : 'Untitled' }}, by {{ $boxbot->person }}, {{ $boxbot->nice_date }}">
 				</a>

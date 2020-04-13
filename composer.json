@@ -1,12 +1,12 @@
 {
-	"repositories": [
-		{
-			"type": "vcs",
-			"url": "https://github.com/anonlethal-jerk/jigsaw"
-		}
-	],
 	"require": {
 		"tightenco/jigsaw": "dev-master",
-		"laravel/helpers": "^1.1"
+		"laravel/helpers": "^1.1",
+		"samdark/sitemap": "^2.2"
+	},
+	"autoload": {
+		"psr-4": {
+			"App\\Listeners\\": "listeners/"
+		}
 	}
 }

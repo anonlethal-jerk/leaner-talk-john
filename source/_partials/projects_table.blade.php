@@ -4,6 +4,7 @@
 		<tr>
 			{{-- <th class="td--project_id">ID</th> --}}
 			<th class="td--project_title">Title</th>
+			<th class="td--project_subpages">Subpages</th>
 			<th class="td--project_description">Description</th>
 			{{-- <th class="td--project_subtitle">Subtitle</th> --}}
 			{{-- <th class="td--project_slug">Slug</th> --}}
@@ -22,17 +23,27 @@
 	@endif
  	<tbody>
 		<tr>
-			{{-- <td class="td--project_id">{{ $seriesArray['id'] }}</td> --}}
-			<td class="td--project_title{{ $seriesArray['title'] == '' ? ' td--empty' : '' }}"><h1><a href="/o__o/{{ $seriesArray['slug'] }}"><cite>{{ $seriesArray['title'] }}</cite></a></h1></td>
-			<td class="td--project_description{{ $seriesArray['description'] == '' ? ' td--empty' : '' }}">{!! $seriesArray['description'] !!}</td>
-			{{-- <td class="td--project_medium">{{ $seriesArray['medium'] }}</td> --}}
-			<td class="td--project_date no_break{{ $seriesArray['nice_date'] == '' ? ' td--empty' : '' }}">{{ $seriesArray['nice_date'] }}</td>
-			{{-- <td class="td--project_dimensions no_break">{{ $seriesArray['height'] }} × {{ $seriesArray['width'] }} {{ $seriesArray['units'] }}</td> --}}
-			{{-- <td class="td--project_location">{{ $seriesArray['location'] }}</td> --}}
-			<td class="td--project_status{{ $seriesArray['status'] == '' ? ' td--empty' : '' }}">{!! $seriesArray['status'] !!}</td>
-			<td class="td--project_notes{{ $seriesArray['notes'] == '' ? ' td--empty' : '' }}">{!! $seriesArray['notes'] !!}</td>
-			{{-- <td class="td--project_to_dos">{!! $seriesArray['to_dos'] !!}</td> --}}
-			{{-- <td class="td--project_hidden">{!! $seriesArray['hidden'] !!}</td> --}}
+			{{-- <td data-label="ID" class="td--project_id">{{ $seriesArray['id'] }}</td> --}}
+			<td data-label="Title" class="td--project_title{{ $seriesArray['title'] == '' ? ' td--empty' : '' }}"><h1><a href="/o__o/{{ $seriesArray['slug'] }}/"><cite>{{ $seriesArray['title'] }}</cite></a></h1></td>
+		@if (isset ($seriesArray['pages']))
+			<td data-label="Subpages" class="td--series_subpages">
+			@foreach ($seriesArray['pages'] as $page)
+					<p><strong><a href="/o__o/{{ $seriesArray['slug'] }}/{{ $page['slug'] }}/">{{ $page['title'] }}</a></strong></p>
+			@endforeach
+			</td>
+		@else
+			<td data-label="Subpages" class="td--series_subpages td--empty"></td>
+		@endif
+			<td data-label="Description" class="td--project_description{{ $seriesArray['description'] == '' ? ' td--empty' : '' }}">{!! $seriesArray['description'] !!}</td>
+			{{-- <td data-label="Medium" class="td--project_medium">{{ $seriesArray['medium'] }}</td> --}}
+			<td data-label="Date" class="td--project_date no_break{{ $seriesArray['nice_date'] == '' ? ' td--empty' : '' }}">{{ $seriesArray['nice_date'] }}</td>
+			{{-- <td data-label="Size" class="td--project_dimensions no_break">{{ $seriesArray['height'] }} × {{ $seriesArray['width'] }} {{ $seriesArray['units'] }}</td> --}}
+			{{-- <td data-label="Location" class="td--project_location">{{ $seriesArray['location'] }}</td> --}}
+			<td data-label="Status" class="td--project_status{{ $seriesArray['status'] == '' ? ' td--empty' : '' }}">{!! $seriesArray['status'] !!}</td>
+			<td data-label="Notes" class="td--series_notes{{ $seriesArray['notes'] == '' ? ' td--empty' : '' }}">{!! $seriesArray['notes'] !!}
+			</td>
+			{{-- <td data-label="To Dos" class="td--project_to_dos">{!! $seriesArray['to_dos'] !!}</td> --}}
+			{{-- <td data-label="Hidden" class="td--project_hidden">{!! $seriesArray['hidden'] !!}</td> --}}
 		</tr>
 	</tbody>
 </table>

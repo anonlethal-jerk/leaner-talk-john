@@ -1,0 +1,14 @@
+.series_images {
+	line-height: 1.1875;
+	padding: $site-padding;
+	display: flex;
+	flex-flow: row wrap;
+	align-items: flex-end;
+	justify-content: center;
+	figure {
+		margin: 0 .25rem 1rem;
+	}
+	a {
+		color: $color-text-base;
+	}
+}

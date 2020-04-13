@@ -35,17 +35,17 @@
 			@foreach ($filtered_boxbots as $boxbot)
 			--><figure>
 				@if ( $boxbot->offset_bottom_px < 0 )
-					<a style="bottom:{{ $boxbot->offset_bottom_px }}px" href="{{ $boxbot->slug }}">
+					<a style="bottom:{{ $boxbot->offset_bottom_px }}px" href="{{ $boxbot->slug }}/">
 				@else
-					<a href="{{ $boxbot->slug }}">
+					<a href="{{ $boxbot->slug }}/">
 				@endif
 					<picture>
 						<source class="{{ $toggleOther }}" data-srcset="/o__o/boxbots/x__x/{{ $toggleOther }}-small/{{ $boxbot->imgfile }}.webp" width="{{ $boxbot->small_width_px }}" height="{{ $boxbot->small_height_px }}" alt="{{ $boxbot->title }} BoxBot" title="{{ $boxbot->title }}, {{ $boxbot->nice_date }}, {{ $boxbot->height }} × {{ $boxbot->width }} mm" type="image/webp">
-						<img class="{{ $toggleOther }} lazyload" src="/x__x/loading-99.gif" data-src="/o__o/boxbots/x__x/{{ $toggleOther }}-small/{{ $boxbot->imgfile }}.png" width="{{ $boxbot->small_width_px }}" height="{{ $boxbot->small_height_px }}" alt="{{ $boxbot->title }} BoxBot" title="{{ $boxbot->title }}, {{ $boxbot->nice_date }}, {{ $boxbot->height }} × {{ $boxbot->width }} mm">
+						<img class="{{ $toggleOther }} lazyload" src="/x__x/loading-rgb.gif" data-src="/o__o/boxbots/x__x/{{ $toggleOther }}-small/{{ $boxbot->imgfile }}.png" width="{{ $boxbot->small_width_px }}" height="{{ $boxbot->small_height_px }}" alt="{{ $boxbot->title }} BoxBot" title="{{ $boxbot->title }}, {{ $boxbot->nice_date }}, {{ $boxbot->height }} × {{ $boxbot->width }} mm">
 					</picture>
 					<picture>
 						<source class="{{ $toggleCurrent }}" data-srcset="/o__o/boxbots/x__x/{{ $toggleCurrent }}-small/{{ $boxbot->imgfile }}.webp" width="{{ $boxbot->small_width_px }}" height="{{ $boxbot->small_height_px }}" alt="{{ $boxbot->title }} BoxBot" title="{{ $boxbot->title }}, {{ $boxbot->nice_date }}, {{ $boxbot->height }} × {{ $boxbot->width }} mm" type="image/webp">
-						<img class="{{ $toggleCurrent }} lazyload" src="/x__x/loading-99.gif" data-src="/o__o/boxbots/x__x/{{ $toggleCurrent }}-small/{{ $boxbot->imgfile }}.png" width="{{ $boxbot->small_width_px }}" height="{{ $boxbot->small_height_px }}" alt="{{ $boxbot->title }} BoxBot" title="{{ $boxbot->title }}, {{ $boxbot->nice_date }}, {{ $boxbot->height }} × {{ $boxbot->width }} mm">
+						<img class="{{ $toggleCurrent }} lazyload" src="/x__x/loading-rgb.gif" data-src="/o__o/boxbots/x__x/{{ $toggleCurrent }}-small/{{ $boxbot->imgfile }}.png" width="{{ $boxbot->small_width_px }}" height="{{ $boxbot->small_height_px }}" alt="{{ $boxbot->title }} BoxBot" title="{{ $boxbot->title }}, {{ $boxbot->nice_date }}, {{ $boxbot->height }} × {{ $boxbot->width }} mm">
 					</picture>
 				</a>
 				<div class="sort--hide">
@@ -84,8 +84,8 @@
 	</section>
 
 	<div id="popup">
-		<img class="img--under" src="/x__x/loading-99.gif" alt="" />
-		<img class="img--over" src="/x__x/loading-99.gif" alt="" />
+		<img class="img--under" src="/x__x/loading-rgb.gif" alt="" />
+		<img class="img--over" src="/x__x/loading-rgb.gif" alt="" />
 	</div>
 @stop
 

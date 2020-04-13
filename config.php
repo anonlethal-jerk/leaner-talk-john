@@ -12,9 +12,9 @@ return [
 		'boxbots',
 		'submissions',
 		'daily_photo',
+
 		'dirty_mousepads',
 		'dots_dots_dots',
-
 		'arrow_iterations',
 		'flat_mountains',
 		'fucking_windows',

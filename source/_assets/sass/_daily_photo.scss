@@ -2,19 +2,38 @@
 // Series Page
 //
 .body--daily_photo {
-	// background: #f5f5f4;
+	background: #bababa;
+
+	.series_images {
+		align-items: flex-start;
+	}
 
 	//
-	// Tables info
+	// Tables hide
 	//
 	.td--series_subtitle,
 	.td--series_slug,
 	.td--prj_slug,
+	.td--prj_by,
 	.td--prj_subtitle,
 	.td--prj_duration,
 	.td--prj_description,
 	.td--prj_rating {
 		display: none;
+	}
+	.table--series_info,
+	.table--prj_info {
+		@media only screen and (max-width: 750px) {
+			@include table--mobile;
+			.td--prj_slug,
+			.td--prj_by,
+			.td--prj_subtitle,
+			.td--prj_duration,
+			.td--prj_description,
+			.td--prj_rating {
+				display: none;
+			}
+		}
 	}
 }
 
@@ -22,9 +41,24 @@
 // Single Image Viewer
 //
 .body--single--daily_photo {
+	background: #bababa;
+
 	.image_viewer {
-		background: rgb(178,184,214);
-		background: radial-gradient(circle, rgba(178,184,214,1) 0%, rgba(228,191,199,1) 100%);
+		// background: #bababa;
+	}
+	#groundhog {
+		top: 0;
+		left: 80px;
+		@media screen and (max-width: 480px) {
+			left: 56px;
+		}
+	}
+	#feralhog {
+		top: 36px;
+		left: 92px;
+		@media screen and (max-width: 480px) {
+			left: 68px;
+		}
 	}
 }
 
@@ -134,6 +168,61 @@
 	}
 	.placeholder {
 		opacity: .2;
+	}
+}
+
+.faqs_tables {
+	display: flex;
+	align-items: flex-start;
+	flex-wrap: wrap;
+
+	.table--faqs {
+		@media screen and (min-width: 1200px) {
+			min-width: calc(50% - .25rem);
+			width: calc(50% - .25rem);
+			+ .table--faqs {
+				margin-left: .5rem;
+			}
+		}
+		td {
+			padding: .5rem .625rem;
+		}
+		ul {
+			list-style-type: circle;
+		}
+		li {
+			word-break: break-word;
+		}
+	}
+	.td--questions {
+		font-size: .875rem;
+		width: 45%;
+		@media screen and (min-width: 600px) {
+			width: 30%;
+		}
+	}
+	td.td--questions {
+		color: $color-text-label;
+	}
+	.td--answers {
+		font-size: 1rem;
+		width: 55%;
+		@media screen and (min-width: 600px) {
+			width: 70%;
+		}
+	}
+}
+
+
+.daily_photo--page {
+	.page_content {
+		margin-top: 3rem;
+	}
+	.page_column {
+		ul{
+			background: #fff;
+			padding: .675rem .675rem .675rem 1.75rem;
+		}
 	}
 }
 

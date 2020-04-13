@@ -38,16 +38,16 @@
 	<tbody>
 		@foreach ($tableArray as $item)
 		<tr class="imageload images" data-img="{{ $item->imgfile }}" data-img-w="{{ $item->small_width_px }}" data-img-h="{{ $item->small_height_px }}">
-			<td class="td--prj_id{{ $item->id == '' ? ' td--empty' : '' }}">{{ $item->id }}</td>
-			<td class="td--prj_title{{ $item->title == '' ? ' td--empty' : '' }}"><a href="{{ $item->slug }}">{!! $item->title != '' ? '<cite>'.$item->title.'</cite>' : 'Untitled' !!}</a></td>
-			<td class="td--prj_by{{ $item->person == '' ? ' td--empty' : '' }}">{{ $item->person }}</td>
-			<td class="td--prj_medium{{ $item->medium == '' ? ' td--empty' : '' }}">{{ $item->medium }}</td>
-			<td class="td--prj_date{{ $item->nice_date == '' ? ' td--empty' : '' }}">{{ $item->nice_date }}</td>
-			<td class="td--prj_dimensions{{ $item->width == '' ? ' td--empty' : '' }}">{{ $item->height }} {{ $item->width == NULL ? '' : '×' }} {{ $item->width }} {{ $item->units }}</td>
-			<td class="td--prj_location{{ $item->location == '' ? ' td--empty' : '' }}">{{ $item->location }}</td>
-			<td class="td--prj_status{{ $item->status == '' ? ' td--empty' : '' }}">{{ $item->status }}</td>
-			<td class="td--prj_notes{{ $item->notes == '' ? ' td--empty' : '' }}">{!! $item->notes !!}</td>
-			<td class="td--prj_rating{{ $item->jk_rating == '' ? ' td--empty' : '' }}">
+			<td data-label="ID" class="td--prj_id{{ $item->id == '' ? ' td--empty' : '' }}">{{ $item->id }}</td>
+			<td data-label="Title" class="td--prj_title"><a href="{{ $item->slug }}/">{!! $item->title != '' ? '<cite>'.$item->title.'</cite>' : 'Untitled' !!}{!! $item->subtitle != '' ? ' ('.$item->subtitle.')' : '' !!}</a></td>
+			<td data-label="By" class="td--prj_by{{ $item->person == '' ? ' td--empty' : '' }}">{{ $item->person }}</td>
+			<td data-label="Medium" class="td--prj_medium{{ $item->medium == '' ? ' td--empty' : '' }}">{{ $item->medium }}</td>
+			<td data-label="Date" class="td--prj_date{{ $item->nice_date == '' ? ' td--empty' : '' }}">{{ $item->nice_date }}</td>
+			<td data-label="Size" class="td--prj_dimensions{{ $item->width == '' && $item->height == '' && $item->units == '' ? ' td--empty' : '' }}">{{ $item->height }} {{ $item->width == NULL ? '' : '×' }} {{ $item->width }} {{ $item->units }}</td>
+			<td data-label="Location" class="td--prj_location{{ $item->location == '' ? ' td--empty' : '' }}">{{ $item->location }}</td>
+			<td data-label="Status" class="td--prj_status{{ $item->status == '' ? ' td--empty' : '' }}">{{ $item->status }}</td>
+			<td data-label="Notes" class="td--prj_notes{{ $item->notes == '' ? ' td--empty' : '' }}">{!! $item->notes !!}</td>
+			<td data-label="Rating" class="td--prj_rating{{ $item->jk_rating == '' ? ' td--empty' : '' }}">
 				<span class="stars"><!-- get rid of space
 					@for ($i = 0; $i < 5; $i++)
 						@if ($item->jk_rating > $i)

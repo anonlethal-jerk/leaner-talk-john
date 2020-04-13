@@ -1,5 +1,6 @@
 <?php
 
+use App\Listeners\GenerateSitemap;
 use TightenCo\Jigsaw\Jigsaw;
 
 /** @var $container \Illuminate\Container\Container */
@@ -93,11 +94,18 @@ $events->beforeBuild(function (Jigsaw $jigsaw) {
 	// PushCollections::class;
 });
 
-$events->afterBuild(function (Jigsaw $jigsaw) {
+// $events->afterBuild(function (Jigsaw $jigsaw) {
 	// from: https://github.com/tightenco/jigsaw/issues/365
 	// MUST BE LAST EVENT
 	// PullCollections::class;
-});
+
+	// GenerateSitemap::class;
+	// $events->afterBuild(GenerateSitemap::class);
+	// or
+	// $events->afterBuild([GenerateSitemap::class, SendNotification::class]);
+// });
+
+$events->afterBuild(GenerateSitemap::class);
 
 // getEnvironment()
 // Returns the current environment, e.g. local or production

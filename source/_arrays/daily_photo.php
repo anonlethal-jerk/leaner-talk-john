@@ -74,7 +74,6 @@ $collection_daily_photo = [
 			'large_height_px'     => 1200/2,
 			'large_width_px'      => 900/2,
 			'description'         => 'The year 2019 in daily self portraits.',
-			'status'              => 'to realign/crop like others',
 		],
 		[
 			'id'                  => 'jkk_201901_1',
@@ -93,7 +92,6 @@ $collection_daily_photo = [
 			'large_height_px'     => 1200/2,
 			'large_width_px'      => 900/2,
 			'description'         => 'The year 2018 in daily self portraits.',
-			'status'              => 'to realign/crop like others',
 		],
 		[
 			'id'                  => 'jkk_201801_1',

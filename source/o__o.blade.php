@@ -15,8 +15,8 @@ $t_meta_description = 'work done by JK Keller';
  --}}
 		@include('_partials.projects_table', ['seriesArray' => $page->series_boxbots, 'seriesHead' => true])
 		@include('_partials.projects_table', ['seriesArray' => $page->series_daily_photo ])
-		@include('_partials.projects_table', ['seriesArray' => $page->series_dirty_mousepads ])
 {{--
+		@include('_partials.projects_table', ['seriesArray' => $page->series_dirty_mousepads ])
 		@include('_partials.projects_table', ['seriesArray' => $page->series_dots_dots_dots ])
 		@include('_partials.projects_table', ['seriesArray' => $page->series_arrow_iterations ])
 		@include('_partials.projects_table', ['seriesArray' => $page->series_flat_mountains ])

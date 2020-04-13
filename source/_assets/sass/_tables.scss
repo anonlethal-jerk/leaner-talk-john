@@ -5,27 +5,26 @@
 .body--series {
 	.series_info {
 		padding-top: .5rem;
+
 	}
 }
 
 .table--projects,
 .table--series_info,
 .table--series_pages,
-.table--prj_info {
+.table--prj_info,
+.table--faqs {
 	min-width: 100%;
 	margin: 1rem 0;
 	font-size: .75rem;
 
 	td {
 		background: #fff;
-		padding: .33rem .5rem;
-		border: 1px solid #ddd;
+		padding: .3125rem .5rem .375rem;
+		border: $border-default;
 		text-align: left;
 		vertical-align: top;
 		// transition: padding .25s;
-		&.td--prj_title {
-			padding: 0; // for anchor inside
-		}
 	}
 	.td--project_hidden,
 	.td--series_hidden,
@@ -35,10 +34,14 @@
 	}
 
 	th {
-		padding: .33rem .5rem;
+		padding: .3125rem .5rem .375rem;
+		border: 1px solid transparent;
 		text-align: left;
 		vertical-align: top;
 		font-weight: bold;
+	}
+	thead th {
+		border-bottom: $border-default;
 	}
 
 	ul {
@@ -54,9 +57,29 @@
 
 	h1 {
 		font-size: 1.375rem;
+		margin-bottom: 0;
 	}
 	h2 {
 		font-size: 1.125rem;
+		margin-bottom: 0;
+	}
+	ul {
+		margin-bottom: 0;
+		+ul {
+			margin-top: 1rem;
+		}
+	}
+	li {
+		margin-bottom: 0;
+		+li {
+			margin-top: .5rem;
+		}
+	}
+	p {
+		margin-bottom: 0;
+		+p {
+			margin-top: 1rem;
+		}
 	}
 }
 .table--projects,
@@ -73,8 +96,8 @@
 		}
 	}
 }
-.table--series_info + .table--series_pages {
-	margin-top: calc(-1rem - 1px);
+.td--series_home {
+	font-weight: bold;
 }
 
 // probably can hide all slugs eventually (php?)
@@ -89,9 +112,6 @@ tr:hover {
 	.table--prj_info tbody & {
 		td {
 			padding: 1rem .5rem;
-			&.td--prj_title {
-				padding: 0;
-			}
 		}
 	}
 }
@@ -99,75 +119,77 @@ tr:hover {
 .td--prj_dimensions {
 	white-space: nowrap;
 }
-.td--prj_title {
-	a {
-		display: block;
-		padding: .33rem .5rem;
-		// transition: padding .25s;
-		background: #ffffff;
-		&:hover {
-			background: #f8e0e3;
-		}
+
+.table--this_page {
+	font-size: 1rem;
+}
+.table--series_info + .table--series_pages {
+	margin-top: -1rem;
+}
+
+.table--series_info {
+	td {
+		border: $border-dark;
 	}
-	tr:hover & {
-		position: relative;
-		a {
-			position: absolute;
-			top: 0;
-			left: 0;
-			width: 100%;
-			height: 100%;
-			padding: 1rem .5rem;
-		}
+	thead th {
+		border-bottom: $border-dark;
 	}
 }
 
-// .body--sd_to_hd {
-// }
 
-@media only screen and (max-width: 600px) {
-	.table--projects {
-		margin-top: 2rem;
+@mixin table--mobile {
+	// margin-top: 0;
 
-		thead, tbody, th, td, tr {
-			display: block;
+	thead, tbody, th, tr, td {
+		display: block;
+	}
+	thead,
+	tfoot {
+		// html5 boilerplate visually hidden
+		border: 0;
+		clip: rect(0 0 0 0);
+		clip-path: inset(50%);
+		height: 1px;
+		margin: -1px;
+		overflow: hidden;
+		padding: 0;
+		position: absolute;
+		width: 1px;
+		white-space: nowrap; /* 1 */
+	}
+	tr {
+		border: $border-default;
+		border-bottom: 0;
+		+tr {
+			margin-top: .5rem;
 		}
-		thead {
-			// html5 boilerplate visually hidden
-			border: 0;
-			clip: rect(0 0 0 0);
-			clip-path: inset(50%);
-			height: 1px;
-			margin: -1px;
-			overflow: hidden;
-			padding: 0;
+	}
+	td {
+		border: none;
+		border-bottom: $border-default;
+		position: relative;
+		padding-left: 7rem;
+		min-height: 1.675em;
+		&:before {
+			/* Now like a table header */
 			position: absolute;
-			width: 1px;
-			white-space: nowrap; /* 1 */
+			/* Top/left values mimic padding */
+			top: .3125rem;
+			left: .5rem;
+			width: 6.5rem;
+			// font-weight: bold;
+			color: $color-text-label;
+			content: attr(data-label);
 		}
-		tr {
-			border: 1px solid #ddd;
+		&.td--empty {
+			display: none;
 		}
-		td {
-			border: none;
-			border-bottom: 1px solid #ddd;
-			position: relative;
-			padding-left: 40%;
-			min-height: 2rem;
-			&:before {
-				/* Now like a table header */
-				position: absolute;
-				/* Top/left values mimic padding */
-				top: .33rem;
-				left: .5rem;
-				width: 37%;
-				font-weight: bold;
+	}
+	&.table--prj_info tbody {
+		tr:hover {
+			td {
+				padding: .3125rem .5rem .375rem 7rem;
 			}
-			&:nth-of-type(1):before { content: "Title"; }
-			&:nth-of-type(2):before { content: "Description"; }
-			&:nth-of-type(3):before { content: "Date"; }
-			&:nth-of-type(4):before { content: "Status"; }
-			&:nth-of-type(5):before { content: "Notes"; }
 		}
 	}
 }

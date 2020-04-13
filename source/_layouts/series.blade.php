@@ -15,10 +15,16 @@
 @endif
 
 
-			<a href="{{ $img->slug }}">
-				<img class="lazyload" src="/x__x/loading-99.gif" data-src="x__x/small/{{ $img->imgfile }}" width="{{ $img->small_width_px }}" height="{{ $img->small_height_px }}" alt="{{ $img->title == '' ? 'Untitled' : $img->title }}" title="{{ $img->title == '' ? 'Untitled' : $img->title }}, {{ $img->nice_date }}, {{ $img->height }} × {{ $img->width }} {{ $img->units }}">
+			<a href="{{ $img->slug }}/">
+				<img class="lazyload" src="/x__x/loading-99.gif" data-src="x__x/small/{{ $img->imgfile }}" width="{{ $img->small_width_px }}" height="{{ $img->small_height_px }}" alt="{{ $img->title == '' ? 'Untitled' : $img->title }}" title="{{ $img->title == '' ? 'Untitled' : $img->title }}, {{ $img->nice_date }},{{ $img->height == '' ? '' : ' '.$img->height }}{{ $img->width == '' ? '' : ' × ' }}{{ $img->width }} {{ $img->units }}">
 				<figcaption>
-					{!! $img->title == '' ? 'Untitled' : '<cite>'.$img->title.'</cite>' !!}
+@if ( $img->title == '' && $img->subtitle == '')
+	Untitled
+@elseif ( $img->title == '' )
+	{{ $img->subtitle }}
+@else
+	<cite>{{ $img->title }}</cite>
+@endif
 				</figcaption>
 			</a>
 		</figure><!-- no space hack
@@ -28,7 +34,7 @@
 
 
 	<section class="prj_info">
-		@include('_partials.prj_table', ['tableArray' => $$t_slug->sortBy('id')])
+		@include('_partials.prj_table', ['tableArray' => $$t_slug->sortBy('sort_date')])
 	</section>
 
 	<div id="popup">

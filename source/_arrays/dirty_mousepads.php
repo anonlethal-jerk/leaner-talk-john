@@ -5,7 +5,7 @@ $series_dirty_mousepads = [
 	'js'          => null,
 	'title'       => 'Echoes',
 	'subtitle'    => '',
-	'nice_date'   => '2005+',
+	'nice_date'   => '2005–',
 	'status'      => '',
 	'hidden'      => '',
 	'description' => '<p>By switching a typical mousepad with a sheet of paper, I am able to collect an echo of my computer use over the course of a few months. The resulting drawing embodies the filth one accumulates through prolonged use of technology.</p>',
@@ -261,7 +261,7 @@ $collection_dirty_mousepads = [
 			'imgfile'         => 'jk_keller-200812_1_u-echo_12.jpg',
 		],
 		[
-			'id'              => 'jkk_200901_2_u',
+			'id'              => 'jkk_200901_4_u',
 			'title'           => 'Echo #13',
 			'slug'            => 'echo_13',
 			'medium'          => 'oil and dirt on paper',
@@ -276,7 +276,7 @@ $collection_dirty_mousepads = [
 			'location'        => 'flat files',
 			'status'          => '',
 			'notes'           => '2008 Oct 08–2009 Jan 08 (home)',
-			'imgfile'         => 'jk_keller-200901_2_u-echo_13.jpg',
+			'imgfile'         => 'jk_keller-200901_4_u-echo_13.jpg',
 		],
 		[
 			'id'              => 'jkk_200907_1_u',
@@ -388,7 +388,7 @@ $collection_dirty_mousepads = [
 			'imgfile'         => 'jk_keller-201012_1_u-echo_19.jpg',
 		],
 		[
-			'id'              => 'jkk_201101_1_u',
+			'id'              => 'jkk_201101_2_u',
 			'title'           => 'Echo #20',
 			'slug'            => 'echo_20',
 			'medium'          => 'oil and dirt on paper',
@@ -403,7 +403,7 @@ $collection_dirty_mousepads = [
 			'location'        => 'flat files',
 			'status'          => '',
 			'notes'           => '2010 Jul 29–2011',
-			'imgfile'         => 'jk_keller-201101_1_u-echo_20.jpg',
+			'imgfile'         => 'jk_keller-201101_2_u-echo_20.jpg',
 		],
 		[
 			'id'              => 'jkk_201107_1_u',
@@ -532,7 +532,7 @@ $collection_dirty_mousepads = [
 			'imgfile'         => 'jk_keller-201404_3_u-echo_27.jpg',
 		],
 		[
-			'id'              => 'jkk_201410_2_u',
+			'id'              => 'jkk_201410_7_u',
 			'title'           => 'Echo #28',
 			'slug'            => 'echo_28',
 			'medium'          => 'oil and dirt on paper',
@@ -547,7 +547,7 @@ $collection_dirty_mousepads = [
 			'location'        => 'flat files',
 			'status'          => 'fully rescanned',
 			'notes'           => 'unknown dates?',
-			'imgfile'         => 'jk_keller-201410_2_u-echo_28.jpg',
+			'imgfile'         => 'jk_keller-201410_7_u-echo_28.jpg',
 		],
 		[
 			'id'              => 'jkk_201503_1_u',
@@ -568,7 +568,7 @@ $collection_dirty_mousepads = [
 			'imgfile'         => 'jk_keller-201503_1_u-echo_29.jpg',
 		],
 		[
-			'id'              => 'jkk_201512_1_u',
+			'id'              => 'jkk_201512_3_u',
 			'title'           => 'Echo #30',
 			'slug'            => 'echo_30',
 			'medium'          => 'oil and dirt on paper',
@@ -583,7 +583,7 @@ $collection_dirty_mousepads = [
 			'location'        => 'flat files',
 			'status'          => 'fully rescanned',
 			'notes'           => '?–2015 Dec 31',
-			'imgfile'         => 'jk_keller-201512_1_u-echo_30.jpg',
+			'imgfile'         => 'jk_keller-201512_3_u-echo_30.jpg',
 		],
 		[
 			'id'              => 'jkk_201912_3_u',

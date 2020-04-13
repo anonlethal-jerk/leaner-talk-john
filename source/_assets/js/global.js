@@ -27,6 +27,11 @@ if ( document.getElementById('warthog') == null) {
 		// move that home button around
 		var t_speed = Math.round(Math.random()*10 + 8);
 		var t_shadow_speed = Math.round(Math.random()*4 + 2);
+		var t_top = Math.random()*(window.innerHeight - hog.offsetHeight);
+		var t_left = Math.random()*(window.innerWidth - hog.offsetWidth);
+		hog.style.top = t_top+"px";
+		hog.style.left = t_left+"px";
+		hog.style.transition = "top "+t_speed+"s, left "+t_speed+"s, box-shadow "+t_shadow_speed+"s";
 		var move_hog = setInterval(function(){
 			var t_top = Math.random()*(window.innerHeight - hog.offsetHeight);
 			var t_left = Math.random()*(window.innerWidth - hog.offsetWidth);

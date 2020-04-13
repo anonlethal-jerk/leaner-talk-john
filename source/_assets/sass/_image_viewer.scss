@@ -58,7 +58,7 @@
 	.nav--prev,
 	.nav--next {
 		display: inline-block;
-		color: $color-base-text;
+		color: $color-text-base;
 		overflow: hidden;
 		text-overflow: ellipsis;
 		font-size: 0.75rem;
@@ -66,7 +66,7 @@
 	}
 	a {
 		display: inline-block;
-		color: $color-base-text;
+		color: $color-text-base;
 		figure {
 			position: absolute;
 			top: 0;
@@ -106,4 +106,20 @@
 }
 .viewer--next {
 	right: 3px;
+}
+
+.viewer--image-embed {
+	iframe {
+		background: #000;
+	}
+}
+
+.image_viewer-large {
+	text-align: center;
+}
+.viewer--image-large {
+	margin: 90px auto 10px;
+	figcaption {
+		font-size: 1rem;
+	}
 }

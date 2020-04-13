@@ -1,10 +1,10 @@
 body {
-	background: rgb(178,184,214);
-	background: radial-gradient(circle, rgba(178,184,214,1) 0%, rgba(228,191,199,1) 100%);
-	// color: #fff;
+	background-color: #eee;
+	line-height: 1.375;
+	color: $color-text-base;
 }
 h1, h2, h3, h4, h5, h6 {
-	line-height: 1.125
+	line-height: 1.125;
 }
 h1 {
 	font-size: 1.5rem;
@@ -24,16 +24,25 @@ h5 {
 h6 {
 	font-size: 1rem;
 }
+ul {
+	list-style-type: circle;
+	padding-left: 1.25rem;
+}
+li {
+	+ li {
+		margin-top: .675rem;
+	}
+}
 figure {
-	display: inline-block
+	display: inline-block;
 }
 figcaption {
 	font-size: .75rem;
-	margin-top: .25rem
+	margin-top: .25rem;
 }
 body:not(.body--boxbots) img {
 	max-width: 100%;
-	height: auto
+	height: auto;
 }
 a {
 	color: #c71123;
@@ -44,6 +53,25 @@ a {
 button {
 	cursor: pointer;
 }
+
+
+.page_content {
+	display: flex;
+	align-items: flex-start;
+	flex-wrap: wrap;
+}
+
+.page_column {
+	// background: #fff;
+	// padding: .675rem;
+	@media screen and (min-width: 1200px) {
+		width: calc(50% - .25rem);
+		+ .page_column {
+			margin-left: .5rem;
+		}
+	}
+}
+
 
 .hog {
 	display: block;
@@ -79,16 +107,9 @@ button {
 		}
 	}
 }
-#feralhog {
-	top: 115px;
-	left: 47px;
-	@media screen and (max-width: 480px) {
-		left: 56px;
-	}
-}
 #groundhog {
-	top: 85px;
-	left: 27px;
+	top: 18px;
+	left: 18px;
 	z-index: 1999;
 	box-shadow: 0 0 30px 5px #c71123;
 	transition: top 11s, left 11s, box-shadow 2.5s;
@@ -108,6 +129,13 @@ button {
 			line-height: 1rem;
 			padding: .75rem 1rem;
 		}
+	}
+}
+#feralhog {
+	top: 55px;
+	left: 1px;
+	@media screen and (max-width: 480px) {
+		left: 26px;
 	}
 }
 

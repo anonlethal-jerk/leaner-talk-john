@@ -1,13 +1,26 @@
 .body--projects {
-	#groundhog {
-		top: 18px;
-		left: 18px;
-	}
+	background: rgb(random(100)+155, random(100)+155, random(100)+155);
+	background: radial-gradient(circle, rgb(random(100)+155, random(100)+155, random(100)+155) 0%, rgb(random(100)+155, random(100)+155, random(100)+155) 100%);
+	min-height: 100vh;
+
 	h2 {
 		text-align: center;
 		margin-top: 1rem;
 	}
 	table + h2 {
 		margin-top: 2rem;
+	}
+
+	.table--projects {
+		td {
+			border: $border-dark;
+		}
+		thead th {
+			border-bottom: $border-dark;
+		}
+		@media only screen and (max-width: 720px) {
+			margin-top: 1rem;
+			@include table--mobile;
+		}
 	}
 }

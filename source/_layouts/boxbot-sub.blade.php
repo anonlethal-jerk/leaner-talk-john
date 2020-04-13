@@ -1,4 +1,5 @@
 @php
+	$t_series       = $page->series_boxbots->title;
 	$t_meta_description = 'submissions from around the world';
 @endphp
 
@@ -20,7 +21,7 @@
 		</figure>
 		<div class="viewer--prev">
 			@if ($page->getPrevious())
-			<a class="nav--prev" href="../{{ $page->getPrevious()->slug }}">
+			<a class="nav--prev" href="../{{ $page->getPrevious()->slug }}/">
 				<figure>
 					<img class="{{ $toggleOther }}" src="/o__o/boxbots/submissions/x__x/{{ $toggleOther }}-small/{{ $page->getPrevious()->imgfile }}.{{ $toggleOther == 'color' ? 'jpg' : 'png' }}" alt="{{ $page->getPrevious()->title }}" width="{{ $page->getPrevious()->small_width_px }}" height="{{ $page->getPrevious()->small_height_px }}" />
 				</figure>
@@ -35,7 +36,7 @@
 		</div>
 		<div class="viewer--next">
 			@if ($page->getNext())
-			<a class="nav--next" href="../{{ $page->getNext()->slug }}">
+			<a class="nav--next" href="../{{ $page->getNext()->slug }}/">
 				<figure>
 					<img class="{{ $toggleOther }}" src="/o__o/boxbots/submissions/x__x/{{ $toggleOther }}-small/{{ $page->getNext()->imgfile }}.{{ $toggleOther == 'color' ? 'jpg' : 'png' }}" alt="{{ $page->getNext()->title }}" width="{{ $page->getNext()->small_width_px }}" height="{{ $page->getNext()->small_height_px }}" />
 				</figure>

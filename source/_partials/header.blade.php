@@ -1,8 +1,15 @@
 <!DOCTYPE html>
 <html class="no-js" lang="en">
+@php
+if ($page->title != '' && $t_series != '') {
+	$separator = ' — ';
+} else {
+	$separator = '';
+}
+@endphp
 	<head>
 		<meta charset="utf-8">
-		<title>{{ $page->title }}{{-- {{ $page->title != '' ? ' — ' : '' }} --}}{{ $t_series }}{{-- {{ $t_series != '' ? ' — ' : '' }} --}} •__• JK</title>
+		<title>{{ $page->title }}{{ $separator }}{{ $t_series }} •__• JK</title>
 		<meta name="description" content="{{ $t_meta_description != '' ? $t_meta_description : 'work from JK Keller' }}">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<meta http-equiv="x-ua-compatible" content="ie=edge">

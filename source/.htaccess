@@ -17,5 +17,8 @@ RewriteRule ^•__•/(.*)$ $1 [L]
 RewriteRule ^-__-/(.*)$ $1 [L]
 
 # old urls...
-RewriteRule ^boxbots(.*)$  https://jk-keller.com/o__o/boxbots/? [NC,R=301]
-# RewriteRule ^daily-photo(.*)$  https://jk-keller.com/o__o/daily-photo/? [NC,R=301]
+RewriteRule ^boxbots(.*)$  https://jk-keller.com/o__o/boxbots/ [NC,R=301]
+
+RewriteRule ^daily[_-]photo/?$  https://jk-keller.com/o__o/daily_photo/ [NC,R=301]
+RewriteRule ^daily[_-]photo/related[_-]photo[_-]projects/?$  https://jk-keller.com/o__o/daily_photo/related_photo_projects/ [NC,R=301]
+RewriteRule ^daily[_-]photo/info[_-]faqs/?$  https://jk-keller.com/o__o/daily_photo/info_faqs/ [NC,R=301]

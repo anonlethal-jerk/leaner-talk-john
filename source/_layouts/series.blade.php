@@ -34,7 +34,7 @@
 
 
 	<section class="prj_info">
-		@include('_partials.prj_table', ['tableArray' => $$t_slug->sortBy('sort_date')])
+		@include('_partials.prj_table', ['tableArray' => $$t_slug->sortBy('id')])
 	</section>
 
 	<div id="popup">

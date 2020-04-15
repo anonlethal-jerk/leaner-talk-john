@@ -214,15 +214,31 @@ if (document.querySelector('.table--image_slider')) {
 		});
 
 		row.addEventListener("click", (e) => {
-			popup.style.opacity = 1;
-			popup.querySelector('.img--under').setAttribute('src', 'x__x/small/'+row.getAttribute("data-img"));
+			if ( popup.getAttribute('src') == row.getAttribute('data-img') ) {
+				popup.style.opacity = 1;
+			} else {
+				var imgUnder = tBod.classList.contains('images--colors') ? 'color' : 'shadow';
+				var imgOver = tBod.classList.contains('images--shadows') ? 'color' : 'shadow';
+				var imgUnderExt = tBod.classList.contains('images--colors') ? 'jpg' : 'png';
+				var imgOverExt = tBod.classList.contains('images--shadows') ? 'jpg' : 'png';
+				var pathname = window.location.pathname;
+				if (pathname.includes('/submissions')) {
+					popup.querySelector('.img--under').setAttribute('src', '/o__o/boxbots/submissions/x__x/'+imgUnder+'-small/'+row.getAttribute("data-img")+'.'+imgUnderExt);
+					popup.querySelector('.img--over').setAttribute('src', '/o__o/boxbots/submissions/x__x/'+imgOver+'-small/'+row.getAttribute("data-img")+'.'+imgOverExt);
+
+				 } else {
+					popup.querySelector('.img--under').setAttribute('src', '/o__o/boxbots/x__x/'+imgUnder+'-small/'+row.getAttribute("data-img")+'.png');
+					popup.querySelector('.img--over').setAttribute('src', '/o__o/boxbots/x__x/'+imgOver+'-small/'+row.getAttribute("data-img")+'.png');
+				};
+				popup.style.opacity = 1;
+			}
 			var offset = window.innerHeight - row.getBoundingClientRect().top;
-			// console.log(event.clientX);
 			popup.style.height = row.getAttribute('data-img-h')+'px';
 			popup.style.width = row.getAttribute('data-img-w')+'px';
 			popup.style.bottom = Math.round(offset)+'px';
 			var t_percent = ( (row.getBoundingClientRect().width - row.getAttribute('data-img-w')) / row.getBoundingClientRect().width );
 			popup.style.left = ( row.getBoundingClientRect().left + ( row.getBoundingClientRect().width - ((event.clientX - row.getBoundingClientRect().left) * t_percent) - row.getAttribute('data-img-w') ) )+'px';
+
 		});
 	});
 

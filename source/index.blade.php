@@ -1,6 +1,8 @@
 @php
 $t_series = 'Jonathan Keller Keller';
 $t_meta_description = 'Remember in the Future When we were Happy?';
+$page->twitter_image = 'https://jk-keller.com/x__x/jk_keller-home-twitter-1024x512.png';
+$page->open_graph_image = 'https://jk-keller.com/x__x/jk_keller-home-open_graph-1200x630.png';
 @endphp
 
 @extends('_layouts.master')

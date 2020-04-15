@@ -15,6 +15,8 @@ $collection_boxbots = [
 		'shadow' => 'o__o/{collection}/shadow/{slug}',
 	],
 	'sort' => '-id',
+	'twitter_image'       => 'https://jk-keller.com/o__o/boxbots/x__x/jk_keller-boxbots-shadow-1024x512.png',
+	'open_graph_image'    => 'https://jk-keller.com/o__o/boxbots/x__x/jk_keller-boxbots-color-1200x630.png',
 	'items' => [
 		[
 			'id'                  => 'jkk_199903_1_u',
@@ -39,6 +41,8 @@ $collection_boxbots = [
 			'small_width_px'      =>  36,
 			'large_height_px'     =>  625,
 			'large_width_px'      =>  355,
+			// 'open_graph_image'    => 'https://jk-keller.com/o__o/boxbots/x__x/jk_keller-pop_tarts-open_graph-1200x630.png',
+			// 'twitter_image'       => 'https://jk-keller.com/o__o/boxbots/x__x/jk_keller-pop_tarts-twitter-1024x512.png',
 		],
 		[
 			'id'                  => 'jkk_199903_2_u',

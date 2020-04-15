@@ -1,6 +1,8 @@
 @php
 	$t_series       = $page->series_boxbots->title;
-	$t_meta_description = 'submissions from around the world';
+	$t_meta_description = 'Bot character made from altered product packaging';
+	$page->twitter_image = 'https://jk-keller.com/o__o/boxbots/submissions/x__x/'.$toggleCurrent.'-large/'.$page->imgfile.'.png'; // hmmm... 1024x512
+	$page->open_graph_image = 'https://jk-keller.com/o__o/boxbots/submissions/x__x/'.$toggleCurrent.'-large/'.$page->imgfile.'.png'; // hmmm... 1200x630
 @endphp
 
 @extends('_layouts.master')

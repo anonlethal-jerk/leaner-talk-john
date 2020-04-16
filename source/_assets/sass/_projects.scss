@@ -23,4 +23,14 @@
 			@include table--mobile;
 		}
 	}
+
+	.series_info {
+		min-height: 100vh;
+	}
+
+	.punchlist {
+		text-align: center;
+		opacity: .1;
+		margin-top: 5rem;
+	}
 }

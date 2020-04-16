@@ -6,7 +6,7 @@
 	$t_series       = $page->series_daily_photo->title;
 	$t_js           = $page->series_daily_photo->js;
 
-	$t_meta_description = 'Links to various photography projects related to JK Keller’s daily photo project.';
+	$page->meta_description = 'Links to various photography projects related to JK Keller’s daily photo project.';
 @endphp
 
 @extends('_layouts.master')

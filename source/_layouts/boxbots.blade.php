@@ -3,7 +3,7 @@
 	$t_slug         = $page->series_boxbots->slug;
 	$t_series       = $page->series_boxbots->title;
 	$t_js           = $page->series_boxbots->js;
-	$t_meta_description = 'Bot characters made from altered product packaging';
+	$page->meta_description = 'Bot characters made from altered product packaging';
 	$page->twitter_image = 'https://jk-keller.com/o__o/boxbots/x__x/jk_keller-boxbots-'.$toggleCurrent.'-1024x512.png'; // hmmm... 1024x512
 	$page->open_graph_image = 'https://jk-keller.com/o__o/boxbots/x__x/jk_keller-boxbots-'.$toggleCurrent.'-1200x630.png'; // hmmm... 1200x630
 @endphp

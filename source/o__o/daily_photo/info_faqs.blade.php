@@ -6,7 +6,7 @@
 	$t_series       = $page->series_daily_photo->title;
 	$t_js           = $page->series_daily_photo->js;
 
-	$t_meta_description = 'Questions and comments JK’s received regarding his daily photo project.';
+	$page->meta_description = 'Questions and comments JK’s received regarding his daily photo project.';
 
 $d1 = new DateTime();
 $d2 = new DateTime('1976-01-11');

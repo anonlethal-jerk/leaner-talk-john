@@ -3,7 +3,7 @@
 	$t_slug         = $page->series_boxbot_submissions->slug;
 	$t_series       = $page->series_boxbot_submissions->title;
 	$t_js           = $page->series_boxbot_submissions->js;
-	$t_meta_description = 'Bot characters made from altered product packaging, submitted from around the world';
+	$page->meta_description = 'Bot characters made from altered product packaging, submitted from around the world';
 	$page->twitter_image = 'https://jk-keller.com/o__o/boxbots/submissions/x__x/jk_keller-boxbots-submissions-'.$toggleCurrent.'-1024x512.png'; // hmmm... 1024x512
 	$page->open_graph_image = 'https://jk-keller.com/o__o/boxbots/submissions/x__x/jk_keller-boxbots-submissions-'.$toggleCurrent.'-1200x630.png'; // hmmm... 1200x630
 @endphp

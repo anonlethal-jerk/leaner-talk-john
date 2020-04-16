@@ -1,6 +1,6 @@
 @include('_partials.header')
 
-<body class="body--single--{{ $t_slug }}">
+<body class="body--single--{{ $page->series_slug }}">
 	<h1 class="visuallyhidden"><cite>{{ $page->title }}</cite></h1>
 
 	<section class="image_viewer-large">
@@ -46,12 +46,12 @@
 	</section>
 
 @section('extra-nav')
-	<nav id="feralhog" class="hog"><a href="../"><cite>{{ $t_series }}</cite></a></nav>
+	<nav id="feralhog" class="hog"><a href="../"><cite>{{ $page->series_title }}</cite></a></nav>
 @endsection
 @section('extra-scripts')
 	<script src="{{ mix('*__*/image_viewer.js', '') }}"></script>
-	@if ($t_js != null)
-	<script src="{{ mix('*__*/'.$t_slug.'.js', '') }}" async=""></script>
+	@if ($page->js != null)
+	<script src="{{ mix('*__*/'.$page->series_slug.'.js', '') }}" async=""></script>
 	@endif
 @endsection
 @include('_partials.footer')

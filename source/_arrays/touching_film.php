@@ -12,11 +12,15 @@ $series_touching_film = [
 ];
 
 $collection_touching_film = [
-	'extends' => '_layouts.single-touching_film',
 	'path'    => 'o__o/{collection}/{slug}',
 	'sort'    => '-id',
+	'extends'          => '{extends}',
+	'series_slug'      => $series_touching_film['slug'],
+	'series_title'     => $series_touching_film['title'],
+	'js'               => $series_touching_film['js'],
 	'items'   => [
 		[
+			'extends'     => '_layouts.single-image_viewer',
 			'id'          => 'jkk_',
 			'title'       => 'Minority Report',
 			'subtitle'    => '',

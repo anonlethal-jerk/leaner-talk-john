@@ -12,6 +12,7 @@ $series_daily_photo = [
 	'nice_date'   => '1998 Oct 01–until I’m not',
 	'status'      => '<p>Yes, I am still taking a photo every day.</p><p>Next video: 2022 ~Oct</p>',
 	'description' => '<p>JK Keller takes a self-portrait every day for '.$t_years.'+ years</p>',
+	'meta_description' => 'JK Keller takes a self-portrait every day for '.$t_years.'+ years',
 	'notes'       => '',
 	'to_dos'      => '',
 	'hidden'      => '',
@@ -32,12 +33,17 @@ $series_daily_photo = [
 ];
 
 $collection_daily_photo = [
-	'extends' => '_layouts.single-daily_photo',
-	'path'    => 'o__o/{collection}/{slug}',
-	'sort'    => '-sort_date',
+	'path'             => 'o__o/{collection}/{slug}',
+	'sort'             => '-sort_date',
+	'extends'          => '{extends}',
+	'series_slug'      => $series_daily_photo['slug'],
+	'series_title'     => $series_daily_photo['title'],
+	'js'               => $series_daily_photo['js'],
+	'meta_description' => 'JK Keller takes a self-portrait every day for '.$t_years.'+ years',
 	'items'   => [
 
 		[
+			'extends'             => '_layouts.single-image_viewer-large',
 			'id'                  => '',
 			'title'               => '',
 			'subtitle'            => 'All through 2019 Dec 31',
@@ -58,6 +64,7 @@ $collection_daily_photo = [
 			'status'              => 'updating yearly',
 		],
 		[
+			'extends'             => '_layouts.single-image_viewer',
 			'id'                  => 'jkk_202001_1',
 			'title'               => '2019 Was a Mean Year',
 			'slug'                => 'average_jk_2019',
@@ -76,6 +83,7 @@ $collection_daily_photo = [
 			'description'         => 'The year 2019 in daily self portraits.',
 		],
 		[
+			'extends'             => '_layouts.single-image_viewer',
 			'id'                  => 'jkk_201901_1',
 			'title'               => '2018 Was a Mean Year',
 			'slug'                => 'average_jk_2018',
@@ -94,6 +102,7 @@ $collection_daily_photo = [
 			'description'         => 'The year 2018 in daily self portraits.',
 		],
 		[
+			'extends'             => '_layouts.single-image_viewer',
 			'id'                  => 'jkk_201801_1',
 			'title'               => '2017 Was a Mean Year',
 			'slug'                => 'average_jk_2017',
@@ -112,6 +121,7 @@ $collection_daily_photo = [
 			'description'         => 'The year 2017 in daily self portraits.',
 		],
 		[
+			'extends'             => '_layouts.single-image_viewer',
 			'id'                  => 'jkk_201701_1',
 			'title'               => '2016 Was a Mean Year',
 			'slug'                => 'average_jk_2016',
@@ -130,6 +140,7 @@ $collection_daily_photo = [
 			'description'         => 'The year 2016 in daily self portraits.',
 		],
 		[
+			'extends'             => '_layouts.single-image_viewer',
 			'id'                  => 'jkk_201601_1',
 			'title'               => '2015 Was a Mean Year',
 			'slug'                => 'average_jk_2015',
@@ -148,6 +159,7 @@ $collection_daily_photo = [
 			'description'         => 'The year 2015 in daily self portraits.',
 		],
 		[
+			'extends'             => '_layouts.single-image_viewer',
 			'id'                  => 'jkk_201501_1',
 			'title'               => '2014 Was a Mean Year',
 			'slug'                => 'average_jk_2014',
@@ -166,6 +178,7 @@ $collection_daily_photo = [
 			'description'         => 'The year 2014 in daily self portraits.',
 		],
 		[
+			'extends'             => '_layouts.single-image_viewer',
 			'id'                  => 'jkk_201410_3',
 			'title'               => 'Living My Life Faster, 2014',
 			'slug'                => 'living_my_life_faster_2014',
@@ -188,6 +201,7 @@ $collection_daily_photo = [
 			'description' => 'JK Keller takes a daily self-portrait every day for 16 years and makes a timelapse video.',
 		],
 		[
+			'extends'             => '_layouts.single-image_viewer',
 			'id'                  => 'jkk_201410_2',
 			'title'               => 'Just an Average Guy, 1998–2014',
 			'slug'                => 'average_jk_1998_2014',
@@ -206,6 +220,7 @@ $collection_daily_photo = [
 			'description'         => 'The years 1998–2014 in daily self portraits.',
 		],
 		[
+			'extends'             => '_layouts.single-image_viewer',
 			'id'                  => 'jkk_201410_1',
 			'title'               => 'Just an Average Guy, 2006–2014',
 			'slug'                => 'average_jk_2006_2014',
@@ -224,6 +239,7 @@ $collection_daily_photo = [
 			'description'         => 'The years 2006–2014 in daily self portraits.',
 		],
 		[
+			'extends'             => '_layouts.single-image_viewer',
 			'id'                  => 'jkk_201401_1',
 			'title'               => '2013 Was a Mean Year',
 			'slug'                => 'average_jk_2013',
@@ -242,6 +258,7 @@ $collection_daily_photo = [
 			'description'         => 'The year 2013 in daily self portraits.',
 		],
 		[
+			'extends'             => '_layouts.single-image_viewer',
 			'id'                  => 'jkk_201301_1',
 			'title'               => '2012 Was a Mean Year',
 			'slug'                => 'average_jk_2012',
@@ -260,6 +277,7 @@ $collection_daily_photo = [
 			'description'         => 'The year 2012 in daily self portraits.',
 		],
 		[
+			'extends'             => '_layouts.single-image_viewer',
 			'id'                  => 'jkk_201201_1',
 			'title'               => '2011 Was a Mean Year',
 			'slug'                => 'average_jk_2011',
@@ -278,6 +296,7 @@ $collection_daily_photo = [
 			'description'         => 'The year 2011 in daily self portraits.',
 		],
 		[
+			'extends'             => '_layouts.single-image_viewer',
 			'id'                  => 'jkk_201101_1',
 			'title'               => '2010 Was a Mean Year',
 			'slug'                => 'average_jk_2010',
@@ -296,6 +315,7 @@ $collection_daily_photo = [
 			'description'         => 'The year 2010 in daily self portraits.',
 		],
 		[
+			'extends'             => '_layouts.single-image_viewer',
 			'id'                  => 'jkk_201001_1',
 			'title'               => '2009 Was a Mean Year',
 			'slug'                => 'average_jk_2009',
@@ -314,6 +334,7 @@ $collection_daily_photo = [
 			'description'         => 'The year 2009 in daily self portraits.',
 		],
 		[
+			'extends'             => '_layouts.single-image_viewer',
 			'id'                  => 'jkk_200901_1',
 			'title'               => '2008 Was a Mean Year',
 			'slug'                => 'average_jk_2008',
@@ -332,6 +353,7 @@ $collection_daily_photo = [
 			'description'         => 'The year 2008 in daily self portraits.',
 		],
 		[
+			'extends'             => '_layouts.single-image_viewer',
 			'id'                  => 'jkk_200801_1',
 			'title'               => '2007 Was a Mean Year',
 			'slug'                => 'average_jk_2007',
@@ -350,6 +372,7 @@ $collection_daily_photo = [
 			'description'         => 'The year 2007 in daily self portraits.',
 		],
 		[
+			'extends'             => '_layouts.single-image_viewer',
 			'id'                  => 'jkk_200701_1',
 			'title'               => '2006 Was a Mean Year',
 			'slug'                => 'average_jk_2006',
@@ -368,6 +391,7 @@ $collection_daily_photo = [
 			'description'         => 'The year 2006 in daily self portraits.',
 		],
 		[
+			'extends'             => '_layouts.single-image_viewer',
 			'id'                  => 'jkk_200610_2',
 			'title'               => 'Living My Life Faster, 2006',
 			'slug'                => 'living_my_life_faster_2006',
@@ -390,6 +414,7 @@ $collection_daily_photo = [
 			'description' => 'JK Keller takes a daily self-portrait every day for 8 years and makes a timelapse video.',
 		],
 		[
+			'extends'             => '_layouts.single-image_viewer',
 			'id'                  => 'jkk_200610_1',
 			'title'               => 'Just an Average Guy, 1998–2006',
 			'slug'                => 'average_jk_1998_2006',
@@ -408,6 +433,7 @@ $collection_daily_photo = [
 			'description'         => 'The years 1998–2006 in daily self portraits.',
 		],
 		[
+			'extends'             => '_layouts.single-image_viewer',
 			'id'                  => 'jkk_200601_1',
 			'title'               => '2005 Was a Mean Year',
 			'slug'                => 'average_jk_2005',
@@ -426,6 +452,7 @@ $collection_daily_photo = [
 			'description'         => 'The year 2005 in daily self portraits.',
 		],
 		[
+			'extends'             => '_layouts.single-image_viewer',
 			'id'                  => 'jkk_200501_1',
 			'title'               => '2004 Was a Mean Year',
 			'slug'                => 'average_jk_2004',
@@ -444,6 +471,7 @@ $collection_daily_photo = [
 			'description'         => 'The year 2004 in daily self portraits.',
 		],
 		[
+			'extends'             => '_layouts.single-image_viewer',
 			'id'                  => 'jkk_200401_1',
 			'title'               => '2003 Was a Mean Year',
 			'slug'                => 'average_jk_2003',
@@ -462,6 +490,7 @@ $collection_daily_photo = [
 			'description'         => 'The year 2003 in daily self portraits.',
 		],
 		[
+			'extends'             => '_layouts.single-image_viewer',
 			'id'                  => 'jkk_200301_1',
 			'title'               => '2002 Was a Mean Year',
 			'slug'                => 'average_jk_2002',
@@ -480,6 +509,7 @@ $collection_daily_photo = [
 			'description'         => 'The year 2002 in daily self portraits.',
 		],
 		[
+			'extends'             => '_layouts.single-image_viewer',
 			'id'                  => 'jkk_200201_1',
 			'title'               => '2001 Was a Mean Year',
 			'slug'                => 'average_jk_2001',
@@ -498,6 +528,7 @@ $collection_daily_photo = [
 			'description'         => 'The year 2001 in daily self portraits.',
 		],
 		[
+			'extends'             => '_layouts.single-image_viewer',
 			'id'                  => 'jkk_200101_1',
 			'title'               => '2000 Was a Mean Year',
 			'slug'                => 'average_jk_2000',
@@ -516,6 +547,7 @@ $collection_daily_photo = [
 			'description'         => 'The year 2000 in daily self portraits.',
 		],
 		[
+			'extends'             => '_layouts.single-image_viewer',
 			'id'                  => 'jkk_200001_1',
 			'title'               => '1999 Was a Mean Year',
 			'slug'                => 'average_jk_1999',
@@ -534,6 +566,7 @@ $collection_daily_photo = [
 			'description'         => 'The year 1999 in daily self portraits.',
 		],
 		[
+			'extends'             => '_layouts.single-image_viewer',
 			'id'                  => 'jkk_199901_1',
 			'title'               => '1998 Was a Mean Year',
 			'slug'                => 'average_jk_1998',

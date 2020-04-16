@@ -20,11 +20,15 @@ $series_dots_dots_dots = [
 ];
 
 $collection_dots_dots_dots = [
-	'extends' => '_layouts.single-dots_dots_dots',
 	'path'    => 'o__o/{collection}/{slug}',
 	'sort'    => '-id',
+	'extends'          => '{extends}',
+	'series_slug'      => $series_dots_dots_dots['slug'],
+	'series_title'     => $series_dots_dots_dots['title'],
+	'js'               => $series_dots_dots_dots['js'],
 	'items'   => [
 		[
+			'extends'         => '_layouts.single-image_viewer',
 			'id'              => 'jkk_200900_1_u',
 			'title'           => '',
 			'subtitle'        => '',
@@ -44,6 +48,7 @@ $collection_dots_dots_dots = [
 			'imgfile'         => '',
 		],
 		[
+			'extends'         => '_layouts.single-image_viewer',
 			'id'              => 'jkk_201408_7_u',
 			'title'           => '',
 			'slug'            => 'dots_est',
@@ -62,6 +67,7 @@ $collection_dots_dots_dots = [
 			'imgfile'         => 'jk_keller-201408_7_u-dots_est-web-temp.jpg',
 		],
 		[
+			'extends'         => '_layouts.single-image_viewer',
 			'id'              => 'jkk_201408_3_u',
 			'title'           => '',
 			'subtitle'        => '...US...',
@@ -81,6 +87,7 @@ $collection_dots_dots_dots = [
 			'imgfile'         => 'jk_keller-201408_3_u-dots_us-web-temp.jpg',
 		],
 		[
+			'extends'         => '_layouts.single-image_viewer',
 			'id'              => 'jkk_201408_6_u',
 			'title'           => '',
 			'subtitle'        => 'AND',
@@ -100,6 +107,7 @@ $collection_dots_dots_dots = [
 			'imgfile'         => 'jk_keller-201408_6_u-dots_and-web-temp.jpg',
 		],
 		[
+			'extends'         => '_layouts.single-image_viewer',
 			'id'              => 'jkk_201509_3_u',
 			'title'           => '',
 			'subtitle'        => 'H',
@@ -119,6 +127,7 @@ $collection_dots_dots_dots = [
 			'imgfile'         => 'jk_keller-201509_3_u-dots_h-web.jpg',
 		],
 		[
+			'extends'         => '_layouts.single-image_viewer',
 			'id'              => 'jkk_201408_4_u',
 			'title'           => '',
 			'subtitle'        => 'BUT',
@@ -138,6 +147,7 @@ $collection_dots_dots_dots = [
 			'imgfile'         => 'jk_keller-201408_4_u-dots_but-web-temp.jpg',
 		],
 		[
+			'extends'         => '_layouts.single-image_viewer',
 			'id'              => 'jkk_201408_5_u',
 			'title'           => '',
 			'subtitle'        => 'MIS...',
@@ -157,6 +167,7 @@ $collection_dots_dots_dots = [
 			'imgfile'         => 'jk_keller-201408_5_u-dots_mis-web-temp.jpg',
 		],
 		[
+			'extends'         => '_layouts.single-image_viewer',
 			'id'              => 'jkk_201408_2_u',
 			'title'           => '',
 			'subtitle'        => '...FUL',
@@ -176,6 +187,7 @@ $collection_dots_dots_dots = [
 			'imgfile'         => '',
 		],
 		[
+			'extends'         => '_layouts.single-image_viewer',
 			'id'              => 'jkk_201408_1_u',
 			'title'           => '',
 			'subtitle'        => 'RE...',
@@ -195,6 +207,7 @@ $collection_dots_dots_dots = [
 			'imgfile'         => 'jk_keller-201408_1_u-dots_re-web-temp.jpg',
 		],
 		[
+			'extends'         => '_layouts.single-image_viewer',
 			'id'              => 'jkk_201404_1_u',
 			'title'           => '',
 			'subtitle'        => 'Infinity',

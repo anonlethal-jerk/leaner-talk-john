@@ -20,11 +20,15 @@ $series_arrow_iterations = [
 ];
 
 $collection_arrow_iterations = [
-	'extends' => '_layouts.single-arrow_iterations',
 	'path' => 'o__o/{collection}/{slug}',
 	'sort' => '-id',
+	'extends'          => '{extends}',
+	'series_slug'      => $series_arrow_iterations['slug'],
+	'series_title'     => $series_arrow_iterations['title'],
+	'js'               => $series_arrow_iterations['js'],
 	'items' => [
 		[
+			'extends'     => '_layouts.single-image_viewer',
 			'id'          => 'jkk_',
 			'title'       => 'Movement #1, Variation #1',
 			'subtitle'    => '',
@@ -38,6 +42,7 @@ $collection_arrow_iterations = [
 			'seconds'     => '00',
 		],
 		[
+			'extends'     => '_layouts.single-image_viewer',
 			'id'          => 'jkk_',
 			'title'       => 'Binary’s End State',
 			'subtitle'    => '67’108’864 arrows',

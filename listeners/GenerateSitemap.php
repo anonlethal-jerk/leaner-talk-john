@@ -53,12 +53,14 @@ class GenerateSitemap
 
 		if (starts_with($path, '(*)__(*)')) { $t_flag = true; };
 		if (starts_with($path, '/(*)__(*)')) { $t_flag = true; };
+		if (starts_with($path, '(@)__(@)')) { $t_flag = true; };
+		if (starts_with($path, '/(@)__(@)')) { $t_flag = true; };
 
 		if (starts_with($path, '0__0')) { $t_flag = true; };
-		if (starts_with($path, 'x__x')) { $t_flag = true; };
-		if (starts_with($path, '*__*')) { $t_flag = true; };
 		if (starts_with($path, '/0__0')) { $t_flag = true; };
+		if (starts_with($path, 'x__x')) { $t_flag = true; };
 		if (starts_with($path, '/x__x')) { $t_flag = true; };
+		if (starts_with($path, '*__*')) { $t_flag = true; };
 		if (starts_with($path, '/*__*')) { $t_flag = true; };
 
 		return $t_flag;

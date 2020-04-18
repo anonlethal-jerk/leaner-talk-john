@@ -60,7 +60,7 @@
 		@endif
 			<td data-label="Description" class="td--series_description{{ $seriesArray['description'] == '' ? ' td--empty' : '' }}">{!! $seriesArray['description'] !!}</td>
 			{{-- <td data-label="Medium" class="td--series_medium">{{ $seriesArray['medium'] }}</td> --}}
-			<td data-label="Date" class="td--series_date no_break{{ $seriesArray['nice_date'] == '' ? ' td--empty' : '' }}">{{ $seriesArray['nice_date'] }}</td>
+			<td data-label="Date" class="td--series_date no_break{{ $seriesArray['nice_date'] == '' ? ' td--empty' : '' }}">{!! $seriesArray['nice_date'] !!}</td>
 			{{-- <td data-label="Size" class="td--series_dimensions no_break">{{ $seriesArray['height'] }} × {{ $seriesArray['width'] }} {{ $seriesArray['units'] }}</td> --}}
 			{{-- <td data-label="Location" class="td--series_location">{{ $seriesArray['location'] }}</td> --}}
 			<td data-label="Status" class="td--series_status{{ $seriesArray['status'] == '' ? ' td--empty' : '' }}">{!! $seriesArray['status'] !!}</td>

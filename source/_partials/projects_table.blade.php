@@ -36,7 +36,7 @@
 		@endif
 			<td data-label="Description" class="td--project_description{{ $seriesArray['description'] == '' ? ' td--empty' : '' }}">{!! $seriesArray['description'] !!}</td>
 			{{-- <td data-label="Medium" class="td--project_medium">{{ $seriesArray['medium'] }}</td> --}}
-			<td data-label="Date" class="td--project_date no_break{{ $seriesArray['nice_date'] == '' ? ' td--empty' : '' }}">{{ $seriesArray['nice_date'] }}</td>
+			<td data-label="Date" class="td--project_date no_break{{ $seriesArray['nice_date'] == '' ? ' td--empty' : '' }}">{!! $seriesArray['nice_date'] !!}</td>
 			{{-- <td data-label="Size" class="td--project_dimensions no_break">{{ $seriesArray['height'] }} × {{ $seriesArray['width'] }} {{ $seriesArray['units'] }}</td> --}}
 			{{-- <td data-label="Location" class="td--project_location">{{ $seriesArray['location'] }}</td> --}}
 			<td data-label="Status" class="td--project_status{{ $seriesArray['status'] == '' ? ' td--empty' : '' }}">{!! $seriesArray['status'] !!}</td>

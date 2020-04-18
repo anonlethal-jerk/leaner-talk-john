@@ -26,6 +26,7 @@ permalink: 500.html
 				margin-top: -19px;
 			}
 			.man {
+				top: 44%;
 				width: 40px;
 				height: 75px;
 				margin-left: -20px;
@@ -40,7 +41,7 @@ permalink: 500.html
 		</style>
 	</head>
 	<body>
-		<img class="hole" src="/x__x/hole.png" width="74" height="63">
-		<img class="man" src="/x__x/man.png" width="40" height="75">
+		<a href="/"><img class="hole" src="/x__x/hole.png" width="74" height="63">
+		<img class="man" src="/x__x/man.png" width="40" height="75"></a>
 	</body>
 </html>

@@ -1,6 +1,7 @@
 @include('_partials.header')
 
 <body class="body--series body--{{ $t_slug }}">
+{{-- <pre>{{ var_dump($page->daily_photos) }}</pre> --}}
 	<section class="series_info">
 		@include('_partials.series_table', ['seriesArray' => $t_series_array, 'seriesHead' => true ])
 	</section>
@@ -17,15 +18,18 @@
 
 			<a href="{{ $img->slug }}/">
 				<img class="lazyload" src="/x__x/loading-99.gif" data-src="x__x/small/{{ $img->imgfile }}" width="{{ $img->small_width_px }}" height="{{ $img->small_height_px }}" alt="{{ $img->title == '' ? 'Untitled' : $img->title }}" title="{{ $img->title == '' ? 'Untitled' : $img->title }}, {{ $img->nice_date }},{{ $img->height == '' ? '' : ' '.$img->height }}{{ $img->width == '' ? '' : ' × ' }}{{ $img->width }} {{ $img->units }}">
-				<figcaption>
-@if ( $img->title == '' && $img->subtitle == '')
-	Untitled
-@elseif ( $img->title == '' )
-	{{ $img->subtitle }}
-@else
-	<cite>{{ $img->title }}</cite>
-@endif
-				</figcaption>
+@php
+if ( $img->nontitle != null ) {
+	$titling = $img->nontitle;
+} else if ( $img->title == '' &&  $img->subtitle != null) {
+	$titling = 'Untitled ('.$img->subtitle.')';
+} else if ( $img->title == '' ) {
+	$titling = 'Untitled';
+} else {
+	$titling = '<cite>'.$img->title.'</cite>';
+}
+@endphp
+				<figcaption>{!! $titling !!}</figcaption>
 			</a>
 		</figure><!-- no space hack
 		@endforeach

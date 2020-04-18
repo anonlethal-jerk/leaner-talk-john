@@ -39,7 +39,7 @@
 					'based_on_id' => '',
 					'title'       => 'svg connection bewteen table rows on projects page',
 					'description' => '',
-					'date_done'   => '',
+					'date_done'   => '2020_04_18',
 				],
 				[
 					'id'          => '2020_04_15-11',

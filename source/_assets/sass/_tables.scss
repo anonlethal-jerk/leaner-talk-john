@@ -87,14 +87,6 @@
 .table--series_pages {
 	margin-top: 0;
 	font-size: .875rem;
-	.body--projects & {
-		margin-bottom: 0;
-		&:not(:first-of-type) {
-			td {
-				border-top: 0;
-			}
-		}
-	}
 }
 .td--series_home {
 	font-weight: bold;
@@ -106,7 +98,7 @@
 	// display: none;
 }
 tr:hover {
-	td {
+	td:not(.td--empty) {
 		background: #efd;
 	}
 	.table--prj_info tbody & {
@@ -158,15 +150,15 @@ tr:hover {
 		white-space: nowrap; /* 1 */
 	}
 	tr {
-		border: $border-default;
-		border-bottom: 0;
+		border: $border-dark;
+		// border-bottom: 0;
 		+tr {
 			margin-top: .5rem;
 		}
 	}
 	td {
 		border: none;
-		border-bottom: $border-default;
+		border-top: $border-default;
 		position: relative;
 		padding-left: 7rem;
 		min-height: 1.675em;
@@ -180,6 +172,9 @@ tr:hover {
 			// font-weight: bold;
 			color: $color-text-label;
 			content: attr(data-label);
+		}
+		&:first-of-type {
+			border-top: 0;
 		}
 		&.td--empty {
 			display: none;

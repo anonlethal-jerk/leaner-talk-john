@@ -19,6 +19,7 @@ mix.webpackConfig({
 mix.js('source/_assets/js/lazysizes.min.js', '*__*/lazysizes.min.js')
 	.js('source/_assets/js/home.js', '*__*/home.js')
 	.js('source/_assets/js/global.js', '*__*/global.js')
+	.js('source/_assets/js/projects.js', '*__*/projects.js')
 	.js('source/_assets/js/tables.js', '*__*/tables.js')
 	.js('source/_assets/js/boxbots.js', '*__*/boxbots.js')
 	.js('source/_assets/js/image_viewer.js', '*__*/image_viewer.js')

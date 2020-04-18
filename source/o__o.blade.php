@@ -1,5 +1,5 @@
 @php
-$t_series = 'Projects';
+$page->series_title = 'Projects';
 $page->meta_description = 'work done by JK Keller';
 $page->twitter_image = 'https://jk-keller.com/x__x/jk_keller-home-twitter-1024x512.png';
 $page->open_graph_image = 'https://jk-keller.com/x__x/jk_keller-home-open_graph-1200x630.png';
@@ -8,7 +8,7 @@ $page->open_graph_image = 'https://jk-keller.com/x__x/jk_keller-home-open_graph-
 @extends('_layouts.master')
 
 @section('body')
-<body class="body--projects">
+<body class="body--projects body--projects--lines">
 	<section class="series_info">
 		<h2>You must go on.<br>
 		I can’t go on.</h2>
@@ -17,6 +17,7 @@ $page->open_graph_image = 'https://jk-keller.com/x__x/jk_keller-home-open_graph-
  --}}
 		@include('_partials.projects_table', ['seriesArray' => $page->series_boxbots, 'seriesHead' => true])
 		@include('_partials.projects_table', ['seriesArray' => $page->series_daily_photo ])
+{{--
 		@include('_partials.projects_table', ['seriesArray' => $page->series_dirty_mousepads ])
 		@include('_partials.projects_table', ['seriesArray' => $page->series_dots_dots_dots ])
 		@include('_partials.projects_table', ['seriesArray' => $page->series_arrow_iterations ])
@@ -30,8 +31,7 @@ $page->open_graph_image = 'https://jk-keller.com/x__x/jk_keller-home-open_graph-
 		@include('_partials.projects_table', ['seriesArray' => $page->series_siri_sound_poems ])
 		@include('_partials.projects_table', ['seriesArray' => $page->series_touching_film ])
 
-		@include('_partials.projects_table', ['seriesArray' => $page->series_homepages, 'seriesHead' => true])
-{{--
+		@include('_partials.projects_table', ['seriesArray' => $page->series_homepages ])
  --}}
 		<h2>I’ll go on.</h2>
 		<p class="punchlist"><a href="/(@)__(@)/">punchlist</a></p>
@@ -39,4 +39,5 @@ $page->open_graph_image = 'https://jk-keller.com/x__x/jk_keller-home-open_graph-
 @endsection
 
 @section('extra-scripts')
+	<script src="{{ mix('*__*/projects.js', '') }}"></script>
 @endsection

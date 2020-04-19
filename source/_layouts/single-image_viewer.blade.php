@@ -1,9 +1,22 @@
+@php
+if ($page->open_graph_image == '') {
+	$page->open_graph_image = 'https://jk-keller.com/o__o/'.$page->series_info->slug.'/x__x/social/1200x630/'.$page->imgfile;
+};
+if ($page->twitter_image == '') {
+	if ($page->twitter_card_type == "summary") {
+		$page->twitter_image = 'https://jk-keller.com/o__o/'.$page->series_info->slug.'/x__x/social/512x512/'.$page->imgfile;
+	} else {
+		$page->twitter_image = 'https://jk-keller.com/o__o/'.$page->series_info->slug.'/x__x/social/1024x512/'.$page->imgfile;
+	};
+};
+@endphp
+
 @include('_partials.header')
 
-<body class="body--single--{{ $page->series_slug }}">
+<body class="body--single--{{ $page->series_info->slug }}">
 	<h1 class="visuallyhidden"><cite>{{ $page->title }}</cite></h1>
 
-	<section class="image_viewer">
+	<section class="image_viewer{{ $page->extends_size }}">
 @php
 if ( $page->nontitle != null ) {
 	$titling = $page->nontitle;
@@ -16,14 +29,14 @@ if ( $page->nontitle != null ) {
 }
 @endphp
 	@if ($page->embed == '' || $page->embed == NULL)
-		<figure class="viewer--image">
+		<figure class="viewer--image{{ $page->extends_size }}">
 			<img class="" src="../x__x/large/{{ $page->imgfile }}" alt="{{ $page->title }}" width="{{ $page->large_width_px }}" height="{{ $page->large_height_px }}" />
 			<figcaption>
 				{!! $titling !!}, <span class="no_break">{{ $page->nice_date }}</span>{{ $page->width == NULL ? '' : ',' }} <span class="no_break">{{ $page->height }} {{ $page->width == NULL ? '' : '×' }} {{ $page->width }} {{ $page->depth == NULL ? '' : '×' }} {{ $page->depth }} {{ $page->units }}</span>
 			</figcaption>
 		</figure>
 	@else
-		<figure class="viewer--image viewer--image-embed">
+		<figure class="viewer--image{{ $page->extends_size }} viewer--image-embed">
 			{!! $page->embed !!}
 			<figcaption>
 				{!! $titling !!}, <span class="no_break">{{ $page->nice_date }}</span>{{ $page->width == NULL ? '' : ',' }} <span class="no_break">{{ $page->height }} {{ $page->width == NULL ? '' : '×' }} {{ $page->width }} {{ $page->depth == NULL ? '' : '×' }} {{ $page->depth }} {{ $page->units }}</span>
@@ -57,13 +70,13 @@ if ( $page->getPrevious()->nontitle != null ) {
 			@if ($page->getNext())
 @php
 if ( $page->getNext()->nontitle != null ) {
-	$prev_titling = $page->getNext()->nontitle;
+	$next_titling = $page->getNext()->nontitle;
 } else if ( $page->getNext()->title == '' &&  $page->getNext()->subtitle != null) {
-	$prev_titling = 'Untitled ('.$page->getNext()->subtitle.')';
+	$next_titling = 'Untitled ('.$page->getNext()->subtitle.')';
 } else if ( $page->getNext()->title == '' ) {
-	$prev_titling = 'Untitled';
+	$next_titling = 'Untitled';
 } else {
-	$prev_titling = '<cite>'.$page->getNext()->title.'</cite>';
+	$next_titling = '<cite>'.$page->getNext()->title.'</cite>';
 }
 @endphp
 			<a class="nav--next" href="../{{ $page->getNext()->slug }}/">
@@ -79,12 +92,12 @@ if ( $page->getNext()->nontitle != null ) {
 	</section>
 
 @section('extra-nav')
-	<nav id="feralhog" class="hog"><a href="../"><cite>{{ $page->series_title }}</cite></a></nav>
+	<nav id="feralhog" class="hog"><a href="../"><cite>{{ $page->series_info->title }}</cite></a></nav>
 @endsection
 @section('extra-scripts')
 	<script src="{{ mix('*__*/image_viewer.js', '') }}"></script>
 	@if ($page->js != null)
-	<script src="{{ mix('*__*/'.$page->series_slug.'.js', '') }}" async=""></script>
+	<script src="{{ mix('*__*/'.$page->series_info->slug.'.js', '') }}" async=""></script>
 	@endif
 @endsection
 @include('_partials.footer')

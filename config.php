@@ -2,7 +2,7 @@
 
 return [
 	'production' => false,
-	'baseUrl' => '',
+	'baseUrl' => 'https://jk-keller.com',
 	'collections' => [
 		'posts' => [
 			'author' => 'JK',

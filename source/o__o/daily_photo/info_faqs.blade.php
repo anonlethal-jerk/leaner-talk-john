@@ -1,12 +1,10 @@
 @php
+	$page->series_info = $page->series_daily_photo;
+
 	$page->title = 'Frequently Asked Questions';
-
-	$t_series_array = $page->series_daily_photo;
-	$t_slug         = $page->series_daily_photo->slug;
-	$t_series       = $page->series_daily_photo->title;
-	$t_js           = $page->series_daily_photo->js;
-
 	$page->meta_description = 'Questions and comments JK’s received regarding his daily photo project.';
+	$page->twitter_card_type = 'summary';
+	$page->twitter_image = 'https://jk-keller.com/o__o/daily_photo/x__x/social/512x512/jk_keller-the_adaption_to_my_generation-1998_10_01-2019_12_31.jpg';
 
 $d1 = new DateTime();
 $d2 = new DateTime('1976-01-11');

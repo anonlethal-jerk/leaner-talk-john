@@ -23,13 +23,12 @@ $series_dirty_mousepads = [
 $collection_dirty_mousepads = [
 	'path'    => 'o__o/{collection}/{slug}',
 	'sort'    => '-id',
-	'extends'          => '{extends}',
-	'series_slug'      => $series_dirty_mousepads['slug'],
-	'series_title'     => $series_dirty_mousepads['title'],
-	'js'               => $series_dirty_mousepads['js'],
+	'extends'          => '_layouts.single-image_viewer',
+
+	'series_info'         => $series_dirty_mousepads,
+
 	'items'   => [
 		[
-			'extends'         => '_layouts.single-image_viewer',
 			'id'              => 'jkk_000000_1_u',
 			'title'           => 'Echo #00',
 			'slug'            => 'echo_00',
@@ -48,7 +47,6 @@ $collection_dirty_mousepads = [
 			'imgfile'         => 'jk_keller-000000_1_u-echo_00.jpg',
 		],
 		[
-			'extends'         => '_layouts.single-image_viewer',
 			'id'              => 'jkk_200504_1_u',
 			'title'           => 'Echo #01',
 			'slug'            => 'echo_01',
@@ -67,7 +65,6 @@ $collection_dirty_mousepads = [
 			'imgfile'         => 'jk_keller-200504_1_u-echo_01.jpg',
 		],
 		[
-			'extends'         => '_layouts.single-image_viewer',
 			'id'              => 'jkk_200504_2_u',
 			'title'           => 'Echo #02',
 			'slug'            => 'echo_02',
@@ -86,7 +83,6 @@ $collection_dirty_mousepads = [
 			'imgfile'         => 'jk_keller-200504_2_u-echo_02.jpg',
 		],
 		[
-			'extends'         => '_layouts.single-image_viewer',
 			'id'              => 'jkk_200505_1_u',
 			'title'           => 'Echo #03',
 			'slug'            => 'echo_03',
@@ -105,7 +101,6 @@ $collection_dirty_mousepads = [
 			'imgfile'         => 'jk_keller-200505_1_u-echo_03.jpg',
 		],
 		[
-			'extends'         => '_layouts.single-image_viewer',
 			'id'              => 'jkk_200507_1_u',
 			'title'           => 'Echo #04',
 			'slug'            => 'echo_04',
@@ -124,7 +119,6 @@ $collection_dirty_mousepads = [
 			'imgfile'         => 'jk_keller-200507_1_u-echo_04.jpg',
 		],
 		[
-			'extends'         => '_layouts.single-image_viewer',
 			'id'              => 'jkk_200509_1_u',
 			'title'           => 'Echo #05',
 			'slug'            => 'echo_05',
@@ -143,7 +137,6 @@ $collection_dirty_mousepads = [
 			'imgfile'         => 'jk_keller-200509_1_u-echo_05.jpg',
 		],
 		[
-			'extends'         => '_layouts.single-image_viewer',
 			'id'              => 'jkk_200510_1_u',
 			'title'           => 'Echo #06',
 			'slug'            => 'echo_06',
@@ -162,7 +155,6 @@ $collection_dirty_mousepads = [
 			'imgfile'         => 'jk_keller-200510_1_u-echo_06.jpg',
 		],
 		[
-			'extends'         => '_layouts.single-image_viewer',
 			'id'              => 'jkk_200600_2_u',
 			'title'           => 'Echo #07',
 			'slug'            => 'echo_07',
@@ -181,7 +173,6 @@ $collection_dirty_mousepads = [
 			'imgfile'         => 'jk_keller-200600_2_u-echo_07.jpg',
 		],
 		[
-			'extends'         => '_layouts.single-image_viewer',
 			'id'              => 'jkk_200606_1_u',
 			'title'           => 'Echo #08',
 			'slug'            => 'echo_08',
@@ -201,7 +192,6 @@ $collection_dirty_mousepads = [
 			'imgfile'         => 'jk_keller-200606_1_u-echo_08.jpg',
 		],
 		[
-			'extends'         => '_layouts.single-image_viewer',
 			'id'              => 'jkk_200700_1_u',
 			'title'           => 'Echo #09',
 			'slug'            => 'echo_09',
@@ -220,7 +210,6 @@ $collection_dirty_mousepads = [
 			'imgfile'         => 'jk_keller-200700_1_u-echo_09.jpg',
 		],
 		[
-			'extends'         => '_layouts.single-image_viewer',
 			'id'              => 'jkk_200706_1_u',
 			'title'           => 'Echo #10',
 			'slug'            => 'echo_10',
@@ -239,7 +228,6 @@ $collection_dirty_mousepads = [
 			'imgfile'         => 'jk_keller-200706_1_u-echo_10.jpg',
 		],
 		[
-			'extends'         => '_layouts.single-image_viewer',
 			'id'              => 'jkk_200810_1_u',
 			'title'           => 'Echo #11',
 			'slug'            => 'echo_11',
@@ -258,7 +246,6 @@ $collection_dirty_mousepads = [
 			'imgfile'         => 'jk_keller-200810_1_u-echo_11.jpg',
 		],
 		[
-			'extends'         => '_layouts.single-image_viewer',
 			'id'              => 'jkk_200812_1_u',
 			'title'           => 'Echo #12',
 			'slug'            => 'echo_12',
@@ -277,7 +264,6 @@ $collection_dirty_mousepads = [
 			'imgfile'         => 'jk_keller-200812_1_u-echo_12.jpg',
 		],
 		[
-			'extends'         => '_layouts.single-image_viewer',
 			'id'              => 'jkk_200901_4_u',
 			'title'           => 'Echo #13',
 			'slug'            => 'echo_13',
@@ -296,7 +282,6 @@ $collection_dirty_mousepads = [
 			'imgfile'         => 'jk_keller-200901_4_u-echo_13.jpg',
 		],
 		[
-			'extends'         => '_layouts.single-image_viewer',
 			'id'              => 'jkk_200907_1_u',
 			'title'           => 'Echo #14',
 			'slug'            => 'echo_14',
@@ -315,7 +300,6 @@ $collection_dirty_mousepads = [
 			'imgfile'         => 'jk_keller-200907_1_u-echo_14.jpg',
 		],
 		[
-			'extends'         => '_layouts.single-image_viewer',
 			'id'              => 'jkk_200912_1_u',
 			'title'           => 'Echo #15',
 			'slug'            => 'echo_15',
@@ -335,7 +319,6 @@ $collection_dirty_mousepads = [
 			'imgfile'         => 'jk_keller-200912_1_u-echo_15.jpg',
 		],
 		[
-			'extends'         => '_layouts.single-image_viewer',
 			'id'              => 'jkk_200912_2_u',
 			'title'           => 'Echo #16',
 			'slug'            => 'echo_16',
@@ -354,7 +337,6 @@ $collection_dirty_mousepads = [
 			'imgfile'         => 'jk_keller-200912_2_u-echo_16.jpg',
 		],
 		[
-			'extends'         => '_layouts.single-image_viewer',
 			'id'              => 'jkk_201007_1_u',
 			'title'           => 'Echo #17',
 			'slug'            => 'echo_17',
@@ -373,7 +355,6 @@ $collection_dirty_mousepads = [
 			'imgfile'         => 'jk_keller-201007_1_u-echo_17.jpg',
 		],
 		[
-			'extends'         => '_layouts.single-image_viewer',
 			'id'              => 'jkk_201007_2_u',
 			'title'           => 'Echo #18',
 			'slug'            => 'echo_18',
@@ -392,7 +373,6 @@ $collection_dirty_mousepads = [
 			'imgfile'         => 'jk_keller-201007_2_u-echo_18.jpg',
 		],
 		[
-			'extends'         => '_layouts.single-image_viewer',
 			'id'              => 'jkk_201012_1_u',
 			'title'           => 'Echo #19',
 			'slug'            => 'echo_19',
@@ -411,7 +391,6 @@ $collection_dirty_mousepads = [
 			'imgfile'         => 'jk_keller-201012_1_u-echo_19.jpg',
 		],
 		[
-			'extends'         => '_layouts.single-image_viewer',
 			'id'              => 'jkk_201101_2_u',
 			'title'           => 'Echo #20',
 			'slug'            => 'echo_20',
@@ -430,7 +409,6 @@ $collection_dirty_mousepads = [
 			'imgfile'         => 'jk_keller-201101_2_u-echo_20.jpg',
 		],
 		[
-			'extends'         => '_layouts.single-image_viewer',
 			'id'              => 'jkk_201107_1_u',
 			'title'           => 'Echo #21',
 			'slug'            => 'echo_21',
@@ -449,7 +427,6 @@ $collection_dirty_mousepads = [
 			'imgfile'         => 'jk_keller-201107_1_u-echo_21.jpg',
 		],
 		[
-			'extends'         => '_layouts.single-image_viewer',
 			'id'              => 'jkk_201207_1_u',
 			'title'           => 'Echo #22',
 			'slug'            => 'echo_22',
@@ -468,7 +445,6 @@ $collection_dirty_mousepads = [
 			'imgfile'         => 'jk_keller-201207_1_u-echo_22.jpg',
 		],
 		[
-			'extends'         => '_layouts.single-image_viewer',
 			'id'              => 'jkk_201212_1_u',
 			'title'           => 'Echo #23',
 			'slug'            => 'echo_23',
@@ -487,7 +463,6 @@ $collection_dirty_mousepads = [
 			'imgfile'         => 'jk_keller-201212_1_u-echo_23.jpg',
 		],
 		[
-			'extends'         => '_layouts.single-image_viewer',
 			'id'              => 'jkk_201303_1_u',
 			'title'           => 'Echo #24',
 			'slug'            => 'echo_24',
@@ -506,7 +481,6 @@ $collection_dirty_mousepads = [
 			'imgfile'         => 'jk_keller-201303_1_u-echo_24.jpg',
 		],
 		[
-			'extends'         => '_layouts.single-image_viewer',
 			'id'              => 'jkk_201308_1_u',
 			'title'           => 'Echo #25',
 			'slug'            => 'echo_25',
@@ -525,7 +499,6 @@ $collection_dirty_mousepads = [
 			'imgfile'         => 'jk_keller-201308_1_u-echo_25.jpg',
 		],
 		[
-			'extends'         => '_layouts.single-image_viewer',
 			'id'              => 'jkk_201404_2_u',
 			'title'           => 'Echo #26',
 			'slug'            => 'echo_26',
@@ -544,7 +517,6 @@ $collection_dirty_mousepads = [
 			'imgfile'         => 'jk_keller-201404_2_u-echo_26.jpg',
 		],
 		[
-			'extends'         => '_layouts.single-image_viewer',
 			'id'              => 'jkk_201404_3_u',
 			'title'           => 'Echo #27',
 			'slug'            => 'echo_27',
@@ -563,7 +535,6 @@ $collection_dirty_mousepads = [
 			'imgfile'         => 'jk_keller-201404_3_u-echo_27.jpg',
 		],
 		[
-			'extends'         => '_layouts.single-image_viewer',
 			'id'              => 'jkk_201410_7_u',
 			'title'           => 'Echo #28',
 			'slug'            => 'echo_28',
@@ -582,7 +553,6 @@ $collection_dirty_mousepads = [
 			'imgfile'         => 'jk_keller-201410_7_u-echo_28.jpg',
 		],
 		[
-			'extends'         => '_layouts.single-image_viewer',
 			'id'              => 'jkk_201503_1_u',
 			'title'           => 'Echo #29',
 			'slug'            => 'echo_29',
@@ -601,7 +571,6 @@ $collection_dirty_mousepads = [
 			'imgfile'         => 'jk_keller-201503_1_u-echo_29.jpg',
 		],
 		[
-			'extends'         => '_layouts.single-image_viewer',
 			'id'              => 'jkk_201512_3_u',
 			'title'           => 'Echo #30',
 			'slug'            => 'echo_30',
@@ -620,7 +589,6 @@ $collection_dirty_mousepads = [
 			'imgfile'         => 'jk_keller-201512_3_u-echo_30.jpg',
 		],
 		[
-			'extends'         => '_layouts.single-image_viewer',
 			'id'              => 'jkk_201912_3_u',
 			'title'           => 'Echo #31',
 			'slug'            => 'echo_31',

@@ -16,20 +16,31 @@
 				[
 					'id'          => '2020_04_01-',
 					'based_on_id' => '',
+					'section'     => '',
 					'title'       => '',
 					'description' => '',
 					'date_done'   => '',
 				],
 				[
+					'id'          => '2020_04_18-1',
+					'based_on_id' => '',
+					'section'     => 'Global',
+					'title'       => 'make global default image of me interacting with website',
+					'description' => 'like cheesy meme?',
+					'date_done'   => '',
+				],
+				[
 					'id'          => '2020_04_16-3',
 					'based_on_id' => '2020_04_16-2',
+					'section'     => 'Global',
 					'title'       => 'can I get rid of the individual project series files as well?',
-					'description' => '',
+					'description' => 'Got one step closer at least',
 					'date_done'   => '',
 				],
 				[
 					'id'          => '2020_04_16-2',
 					'based_on_id' => '',
+					'section'     => 'Global',
 					'title'       => 'Get rid of the "single-project" layout files',
 					'description' => '',
 					'date_done'   => '2020_04_16',
@@ -37,6 +48,7 @@
 				[
 					'id'          => '2020_04_16-1',
 					'based_on_id' => '',
+					'section'     => 'o__o',
 					'title'       => 'svg connection bewteen table rows on projects page',
 					'description' => '',
 					'date_done'   => '2020_04_18',
@@ -44,6 +56,7 @@
 				[
 					'id'          => '2020_04_15-11',
 					'based_on_id' => '2020_04_15-09',
+					'section'     => '(@)__(@)',
 					'title'       => 'How to relate one to do item to another (based on previous item)?',
 					'description' => '',
 					'date_done'   => '',
@@ -51,6 +64,7 @@
 				[
 					'id'          => '2020_04_15-10',
 					'based_on_id' => '2020_04_15-09',
+					'section'     => '(@)__(@)',
 					'title'       => 'Add nice crossing out via canvas to dones',
 					'description' => '',
 					'date_done'   => '',
@@ -58,6 +72,7 @@
 				[
 					'id'          => '2020_04_15-09',
 					'based_on_id' => '',
+					'section'     => '(@)__(@)',
 					'title'       => 'Create this punchlist page!',
 					'description' => '',
 					'date_done'   => '2020_04_15',
@@ -65,6 +80,7 @@
 				[
 					'id'          => '2020_04_15-08',
 					'based_on_id' => '',
+					'section'     => 'Hogs',
 					'title'       => 'disable animation of navigation if not interacting with screen (mousemove timer)',
 					'description' => '',
 					'date_done'   => '',
@@ -72,6 +88,7 @@
 				[
 					'id'          => '2020_04_15-07',
 					'based_on_id' => '',
+					'section'     => 'Hogs',
 					'title'       => 'disable animation of navigation if motion sensitive (accessibility)',
 					'description' => 'will need a navburger?',
 					'date_done'   => '',
@@ -79,13 +96,15 @@
 				[
 					'id'          => '2020_04_15-06',
 					'based_on_id' => '2020_04_15-01',
+					'section'     => 'Global',
 					'title'       => 'do I need a way to choose twitter summary image size?',
 					'description' => 'summary vs. summary_large_image',
-					'date_done'   => '',
+					'date_done'   => '2020_04_18',
 				],
 				[
 					'id'          => '2020_04_15-05',
 					'based_on_id' => '2020_04_15-01',
+					'section'     => 'Global',
 					'title'       => 'Create new image sizes output actions for social',
 					'description' => 'BoxBots, etc. to be 1024x512, 1200x630, or 1024x1024? and under 1mb',
 					'date_done'   => '',
@@ -93,6 +112,7 @@
 				[
 					'id'          => '2020_04_15-04',
 					'based_on_id' => '2020_04_15-03',
+					'section'     => 'Global',
 					'title'       => 'change project table rollover image pop-up to lazyload somehow?',
 					'description' => 'is that duping content? webp vs. png so not too much bandwidth',
 					'date_done'   => '',
@@ -100,6 +120,7 @@
 				[
 					'id'          => '2020_04_15-03',
 					'based_on_id' => '',
+					'section'     => 'boxbots',
 					'title'       => 'Fix BoxBots js click on mobile (wasn’t showing the color image)',
 					'description' => '',
 					'date_done'   => '2020_04_14',
@@ -107,13 +128,15 @@
 				[
 					'id'          => '2020_04_15-02',
 					'based_on_id' => '',
+					'section'     => 'daily_photo',
 					'title'       => 'Add social images for Daily Photo pages (singles and main)',
 					'description' => '',
-					'date_done'   => '',
+					'date_done'   => '2020_04_18',
 				],
 				[
 					'id'          => '2020_04_15-01',
 					'based_on_id' => '',
+					'section'     => 'boxbots',
 					'title'       => 'Add social image for main BoxBots Submissions page',
 					'description' => '',
 					'date_done'   => '2020_04_15',
@@ -145,7 +168,7 @@ array_multisort(array_column($punchlists['website']['items'], 'date_done'), SORT
 		<h1>To Dos:</h1>
 		<ul>
 @foreach ($t_to_dos as $item)
-			<li><strong>{!! $item['title'] !!}</strong>{!! $item['description'] == '' ? '' : '<br>'.$item['description'] !!}</li>
+			<li>{{ $item['section'] }} - <strong>{!! $item['title'] !!}</strong>{!! $item['description'] == '' ? '' : '<br>'.$item['description'] !!}</li>
 @endforeach
 		</ul>
 		<h2>Dones:</h2>
@@ -156,7 +179,7 @@ array_multisort(array_column($punchlists['website']['items'], 'date_done'), SORT
 		{{ $item['date_done'] }}:
 		<ul>
 @endif
-			<li><del datetime="{{ $item['date_done'] }}"><strong>{!! $item['title'] !!}</strong>{!! $item['description'] == '' ? '' : '<br>'.$item['description'] !!}</del></li>
+			<li><del datetime="{{ $item['date_done'] }}">{{ $item['section'] }} - <strong>{!! $item['title'] !!}</strong>{!! $item['description'] == '' ? '' : '<br>'.$item['description'] !!}</del></li>
 @php
 	$t_last_date = $item['date_done']
 @endphp

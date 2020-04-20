@@ -4,7 +4,6 @@ $series_iphone_oil_paintings = [
 	'slug'        => 'iphone_oil_paintings',
 	'js'          => null,
 	'title'       => 'iPhone Oil Paintings',
-	'subtitle'    => '',
 	'nice_date'   => '',
 	'status'      => '',
 	'description' => '',

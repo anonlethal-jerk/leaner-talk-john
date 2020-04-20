@@ -4,7 +4,6 @@ $series_layered_wax = [
 	'slug'        => 'layered_wax',
 	'js'          => null,
 	'title'       => 'I’ve Been Thinking of You for a While',
-	'subtitle'    => '',
 	'nice_date'   => '',
 	'status'      => '',
 	'description' => '',

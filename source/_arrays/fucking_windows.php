@@ -4,7 +4,6 @@ $series_fucking_windows = [
 	'slug'        => 'fucking_windows',
 	'js'          => null,
 	'title'       => 'Fucking-Windows.com',
-	'subtitle'    => '',
 	'nice_date'   => '',
 	'status'      => '',
 	'description' => 'Repetitive juvenile behavior via HTML & CSS.',

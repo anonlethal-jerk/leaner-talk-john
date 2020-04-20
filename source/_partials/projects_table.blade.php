@@ -24,7 +24,7 @@
  	<tbody>
 		<tr>
 			{{-- <td data-label="ID" class="td--project_id">{{ $seriesArray['id'] }}</td> --}}
-			<td data-label="Title" class="td--project_title{{ $seriesArray['title'] == '' ? ' td--empty' : '' }}"><h1><a href="/o__o/{{ $seriesArray['slug'] }}/"><cite>{{ $seriesArray['title'] }}</cite></a></h1></td>
+			<td data-label="Title" class="td--project_title{{ $seriesArray['title'] == '' ? ' td--empty' : '' }}"><a href="/o__o/{{ $seriesArray['slug'] }}/"><h1><cite>{{ $seriesArray['title'] }}</cite></h1>{!! isset($seriesArray['subtitle']) ? '<h2 class="h2--subtitle">('.$seriesArray['subtitle'].')</h2>' : '' !!}</a></td>
 		@if (isset ($seriesArray['pages']))
 			<td data-label="Subpages" class="td--series_subpages">
 			@foreach ($seriesArray['pages'] as $page)

@@ -4,7 +4,6 @@ $series_profiles_reversed = [
 	'slug'        => 'profiles_reversed',
 	'js'          => null,
 	'title'       => 'Reversals',
-	'subtitle'    => '',
 	'nice_date'   => '',
 	'status'      => '',
 	'description' => 'People’s profile silhouettes are computationally reversed.',

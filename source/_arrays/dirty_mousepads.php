@@ -4,7 +4,6 @@ $series_dirty_mousepads = [
 	'slug'        => 'dirty_mousepads',
 	'js'          => null,
 	'title'       => 'Echoes',
-	'subtitle'    => '',
 	'nice_date'   => '2005–',
 	'status'      => '',
 	'hidden'      => '',

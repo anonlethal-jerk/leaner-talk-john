@@ -4,7 +4,6 @@ $series_flat_mountains = [
 	'slug'        => 'flat_mountains',
 	'js'          => null,
 	'title'       => 'Tantamounts',
-	'subtitle'    => '',
 	'nice_date'   => '',
 	'status'      => '',
 	'description' => 'Mountains computationally reconfigured to a flat horizon.',

@@ -4,7 +4,6 @@ $series_siri_sound_poems = [
 	'slug'        => 'siri_sound_poems',
 	'js'          => null,
 	'title'       => 'Sound Poems to Siri',
-	'subtitle'    => '',
 	'nice_date'   => '',
 	'status'      => '',
 	'description' => '',

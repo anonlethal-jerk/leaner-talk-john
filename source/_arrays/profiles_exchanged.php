@@ -4,7 +4,6 @@ $series_profiles_exchanged = [
 	'slug'        => 'profiles_exchanged',
 	'js'          => null,
 	'title'       => 'You trying to be Me trying to be You',
-	'subtitle'    => '',
 	'nice_date'   => '',
 	'status'      => '',
 	'description' => 'Two people’s profile silhouettes are computationally exchanged.',

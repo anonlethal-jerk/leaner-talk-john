@@ -4,10 +4,9 @@ $series_touching_film = [
 	'slug'        => 'touching_film',
 	'js'          => null,
 	'title'       => 'Gleaning the Fifth Screen',
-	'subtitle'    => 'touching film interfaces',
 	'nice_date'   => '',
 	'status'      => '',
-	'description' => '',
+	'description' => 'touching film interfaces',
 	'notes'       => '',
 ];
 

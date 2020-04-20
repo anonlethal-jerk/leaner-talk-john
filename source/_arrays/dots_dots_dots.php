@@ -4,7 +4,6 @@ $series_dots_dots_dots = [
 	'slug'        => 'dots_dots_dots',
 	'js'          => null,
 	'title'       => 'It Takes Me a Long Time to Say Nothing',
-	'subtitle'    => 'dot drawings',
 	'nice_date'   => '2009–2015',
 	'status'      => '',
 	'hidden'      => '',

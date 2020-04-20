@@ -20,7 +20,18 @@
 	.td--prj_rating {
 		display: none;
 	}
-	.table--series_info,
+	.table--series_info {
+		@media only screen and (max-width: 850px) {
+			@include table--mobile;
+			.td--prj_slug,
+			.td--prj_by,
+			.td--prj_subtitle,
+			.td--prj_description,
+			.td--prj_rating {
+				display: none;
+			}
+		}
+	}
 	.table--prj_info {
 		@media only screen and (max-width: 750px) {
 			@include table--mobile;

@@ -1,5 +1,6 @@
 @php
 	$t_slug = $page->series_info->slug;
+	$page->nontitle = 'none';
 @endphp
 
 @include('_partials.header')

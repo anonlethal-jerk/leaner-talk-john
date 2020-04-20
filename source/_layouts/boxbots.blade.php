@@ -1,11 +1,8 @@
 @php
-	$t_series_array = $page->series_boxbots;
-	$t_slug         = $page->series_boxbots->slug;
-	$t_series       = $page->series_boxbots->title;
-	$t_js           = $page->series_boxbots->js;
-	$page->meta_description = 'Bot characters made from altered product packaging';
-	$page->twitter_image = 'https://jk-keller.com/o__o/boxbots/x__x/jk_keller-boxbots-'.$toggleCurrent.'-1024x512.png'; // hmmm... 1024x512
-	$page->open_graph_image = 'https://jk-keller.com/o__o/boxbots/x__x/jk_keller-boxbots-'.$toggleCurrent.'-1200x630.png'; // hmmm... 1200x630
+	$page->nontitle = 'none';
+	$page->series_info = $page->series_boxbots;
+	$page->twitter_image = 'https://jk-keller.com/o__o/boxbots/x__x/'.$toggleCurrent.'-social/1024x512/jk_keller-boxbots-'.$toggleCurrent.'.png';
+	$page->open_graph_image = 'https://jk-keller.com/o__o/boxbots/x__x/'.$toggleCurrent.'-social/1200x630/jk_keller-boxbots-'.$toggleCurrent.'.png';
 @endphp
 
 @extends('_layouts.master')
@@ -13,7 +10,7 @@
 @section('body')
 <body class="body--series body--boxbots images--{{ $toggleCurrent }}s">
 	<section class="series_info">
-		@include('_partials.series_table', ['seriesArray' => $t_series_array, 'seriesHead' => true ])
+		@include('_partials.series_table', ['seriesArray' => $page->series_info, 'seriesHead' => true ])
 	</section>
 
 	<section class="images images--boxbots images--{{ $toggleCurrent }}">
@@ -96,5 +93,7 @@
 	<nav id="feralhog" class="hog"><a href="/o__o/">Projects</a></nav>
 @endsection
 @section('extra-scripts')
+	<!-- https://github.com/aFarkas/lazysizes -->
+	<script src="{{ mix('*__*/lazysizes.min.js', '') }}"></script>
 	<script src="{{ mix('*__*/boxbots.js', '') }}" async=""></script>
 @stop

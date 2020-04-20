@@ -1,7 +1,24 @@
 <!DOCTYPE html>
 <html class="no-js" lang="en">
 @php
-	if ($page->title != '' && $page->series_info->title != '') {
+	if ( $page->nontitle != null ) {
+		if ( $page->nontitle == 'none' ) {
+			$t_title = '';
+		} else {
+			$t_title = $page->nontitle;
+		}
+	} else if ( $page->title == '' &&  $page->subtitle != null) {
+		$t_title = 'Untitled ('.$page->subtitle.')';
+	} else if ( $page->title == '' ) {
+		$t_title = 'Untitled';
+	} else {
+		$t_title = $page->title;
+	}
+	if ( $page->person != null ) {
+		$t_title .= ' by '.$page->person;
+	}
+
+	if ($t_title != '' && $page->series_info->title != '') {
 		$t_separator = ' — ';
 	} else {
 		$t_separator = '';
@@ -41,7 +58,7 @@
 @endphp
 	<head>
 		<meta charset="utf-8">
-		<title>{{ $page->title }}{{ $t_separator }}{{ $page->series_info->title }} •__• JK</title>
+		<title>{{ $t_title }}{{ $t_separator }}{{ $page->series_info->title }} •__• JK</title>
 		<meta name="description" content="{{ $t_meta_description }}">
 		<meta name="image" content="{{ $t_open_graph_image }}">
 {{-- Schema.org for Google --}}

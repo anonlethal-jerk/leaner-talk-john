@@ -1,5 +1,5 @@
 @php
-	$page->series_title = 'Projects';
+	$page->nontitle = 'Projects';
 	$page->meta_description = 'work done by JK Keller';
 	$page->twitter_image = 'https://jk-keller.com/x__x/jk_keller-home-twitter-1024x512.png';
 	$page->open_graph_image = 'https://jk-keller.com/x__x/jk_keller-home-open_graph-1200x630.png';
@@ -10,7 +10,7 @@
 @section('body')
 <body class="body--projects body--projects--lines">
 	<section class="series_info">
-		<h2>You must go on.<br>
+		<h2 class="babeckett">You must go on.<br>
 		I can’t go on.</h2>
 {{-- 		<h2>How do I get this list automatically from Jigsaw?</h2>
 		<p>"Temp image from migration..." lorem pictum, greek images, pictem ipsum, lorem pixum, pixel holder, filler text/image, TBD, TK, to come, placeholder, dummy image, hold for, temporary, demonstration only, example, draft, space filler, substitute, stand-in, for the time being, while I build out the website, interim, stopgap, acting, preliminary image, waiting for final image, draft-v1-edit2-almost-final.jpg, boilerplate, not available, replace when available, unfinished documentation, to be documented properly, please stand by</p>
@@ -33,7 +33,7 @@
 
 		@include('_partials.projects_table', ['seriesArray' => $page->series_homepages ])
  --}}
-		<h2>I’ll go on.</h2>
+		<h2 class="babeckett">I’ll go on.</h2>
 		<p class="punchlist"><a href="/(@)__(@)/">punchlist</a></p>
 	</section>
 @endsection

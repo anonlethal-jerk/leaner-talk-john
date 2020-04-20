@@ -22,6 +22,62 @@
 					'date_done'   => '',
 				],
 				[
+					'id'          => '2020_04_19-7',
+					'based_on_id' => '',
+					'section'     => '(@)__(@)',
+					'title'       => 'gimme some style, boy',
+					'description' => '',
+					'date_done'   => '2020_04_19',
+				],
+				[
+					'id'          => '2020_04_19-6',
+					'based_on_id' => '',
+					'section'     => 'GLOBAL',
+					'title'       => 'Right, y’know, like, add some f’ing new work',
+					'description' => 'maybe that’s my alter ego?',
+					'date_done'   => '',
+				],
+				[
+					'id'          => '2020_04_19-5',
+					'based_on_id' => '2020_04_19-4',
+					'section'     => 'Global',
+					'title'       => 'add type over migrated images',
+					'description' => 'scripted dude',
+					'date_done'   => '',
+				],
+				[
+					'id'          => '2020_04_19-4',
+					'based_on_id' => '',
+					'section'     => 'GLOBAL',
+					'title'       => 'Guess I should get all old projects migrated over...',
+					'description' => '',
+					'date_done'   => '',
+				],
+				[
+					'id'          => '2020_04_19-3',
+					'based_on_id' => '2020_04_15-05',
+					'section'     => 'Global',
+					'title'       => 'Fix header meta data for social sharing',
+					'description' => 'titles, images, descriptions pulling from right places and falling back',
+					'date_done'   => '2020_04_19',
+				],
+				[
+					'id'          => '2020_04_19-2',
+					'based_on_id' => '',
+					'section'     => 'Home',
+					'title'       => 'figure out failed encodings',
+					'description' => '/9.881313e-3242 %a2__2.652495e-3152 %a2/ + /%C3%A2%C2%80%C2%A2__%C3%A2%C2%80%C2%A2/ <del>(maybe - /%E2%80%A2__%E2%80%A2)</del>',
+					'date_done'   => '',
+				],
+				[
+					'id'          => '2020_04_19-1',
+					'based_on_id' => '',
+					'section'     => 'boxbots/Submissions',
+					'title'       => 'may have .png versions of large being linked somehow?',
+					'description' => 'social?',
+					'date_done'   => '2020_04_19',
+				],
+				[
 					'id'          => '2020_04_18-1',
 					'based_on_id' => '',
 					'section'     => 'Global',
@@ -107,7 +163,7 @@
 					'section'     => 'Global',
 					'title'       => 'Create new image sizes output actions for social',
 					'description' => 'BoxBots, etc. to be 1024x512, 1200x630, or 1024x1024? and under 1mb',
-					'date_done'   => '',
+					'date_done'   => '2020_04_19',
 				],
 				[
 					'id'          => '2020_04_15-04',
@@ -168,7 +224,7 @@ array_multisort(array_column($punchlists['website']['items'], 'date_done'), SORT
 		<h1>To Dos:</h1>
 		<ul>
 @foreach ($t_to_dos as $item)
-			<li>{{ $item['section'] }} - <strong>{!! $item['title'] !!}</strong>{!! $item['description'] == '' ? '' : '<br>'.$item['description'] !!}</li>
+			<li><span class="punchlist--section">{{ $item['section'] }} -</span> <strong>{!! $item['title'] !!}</strong>{!! $item['description'] == '' ? '' : '<br>'.$item['description'] !!}</li>
 @endforeach
 		</ul>
 		<h2>Dones:</h2>
@@ -176,7 +232,7 @@ array_multisort(array_column($punchlists['website']['items'], 'date_done'), SORT
 @foreach ($t_dones as $item)
 @if ($t_last_date != $item['date_done'])
 		</ul>
-		{{ $item['date_done'] }}:
+		<h3>{{ $item['date_done'] }}:</h3>
 		<ul>
 @endif
 			<li><del datetime="{{ $item['date_done'] }}">{{ $item['section'] }} - <strong>{!! $item['title'] !!}</strong>{!! $item['description'] == '' ? '' : '<br>'.$item['description'] !!}</del></li>

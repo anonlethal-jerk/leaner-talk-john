@@ -4,19 +4,22 @@ $series_touching_film = [
 	'slug'        => 'touching_film',
 	'js'          => null,
 	'title'       => 'Gleaning the Fifth Screen',
-	'subtitle'    => 'touching film interfaces',
 	'nice_date'   => '',
 	'status'      => '',
-	'description' => '',
+	'description' => 'touching film interfaces',
 	'notes'       => '',
 ];
 
 $collection_touching_film = [
-	'extends' => '_layouts.single-touching_film',
 	'path'    => 'o__o/{collection}/{slug}',
 	'sort'    => '-id',
+	'extends'          => '{extends}',
+	'series_slug'      => $series_touching_film['slug'],
+	'series_title'     => $series_touching_film['title'],
+	'js'               => $series_touching_film['js'],
 	'items'   => [
 		[
+			'extends'     => '_layouts.single-image_viewer',
 			'id'          => 'jkk_',
 			'title'       => 'Minority Report',
 			'subtitle'    => '',

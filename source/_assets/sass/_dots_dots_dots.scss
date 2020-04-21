@@ -2,18 +2,33 @@
 // Series Page
 //
 .body--dots_dots_dots {
-	background: #fff;
-
+	background: #eeeeee;
+	background: radial-gradient(circle, #d6dae1 0%, #eeeeee 100%);
 	//
 	// Tables info
 	//
 	.td--series_slug,
 	.td--prj_slug,
-	.td--prj_title,
+	.td--prj_by,
 	.td--prj_duration,
 	.td--prj_description,
 	.td--prj_rating {
 		display: none;
+	}
+
+	.table--series_info,
+	.table--prj_info {
+		@media only screen and (max-width: 720px) {
+			@include table--mobile;
+			.td--prj_slug,
+			.td--prj_by,
+			.td--prj_subtitle,
+			.td--prj_duration,
+			.td--prj_description,
+			.td--prj_rating {
+				display: none;
+			}
+		}
 	}
 }
 
@@ -21,5 +36,25 @@
 // Single Image Viewer
 //
 .body--single--dots_dots_dots {
-	background: #fff;
+	background: #eeeeee;
+	background: radial-gradient(circle, #d6dae1 0%, #eeeeee 100%);
+	.image_viewer {
+		background: #eeeeee;
+		background: radial-gradient(circle, #d6dae1 0%, #eeeeee 100%);
+	}
+
+	#groundhog {
+		top: 0;
+		left: 80px;
+		@media screen and (max-width: 480px) {
+			left: 56px;
+		}
+	}
+	#feralhog {
+		top: 36px;
+		left: 92px;
+		@media screen and (max-width: 480px) {
+			left: 68px;
+		}
+	}
 }

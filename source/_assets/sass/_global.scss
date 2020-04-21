@@ -42,6 +42,11 @@ figcaption {
 }
 body:not(.body--boxbots) img {
 	max-width: 100%;
+	&.lazyloaded {
+		height: auto;
+	}
+}
+body img:not(.lazyload) {
 	height: auto;
 }
 a {

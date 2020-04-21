@@ -11,11 +11,15 @@ $series_homepages = [
 ];
 
 $collection_homepages = [
-	'extends' => '_layouts.single-homepages',
 	'path'    => 'o__o/{collection}/{slug}',
 	'sort'    => '-id',
+	'extends'          => '{extends}',
+	'series_slug'      => $series_homepages['slug'],
+	'series_title'     => $series_homepages['title'],
+	'js'               => $series_homepages['js'],
 	'items'   => [
 		[
+			'extends'     => '_layouts.single-image_viewer',
 			'id'          => 'jkk_',
 			'title'       => 'What’s Your Line of Work?',
 			'slug'        => 'fluid_diagonal_line',
@@ -24,6 +28,7 @@ $collection_homepages = [
 			'notes'       => '',
 		],
 		[
+			'extends'     => '_layouts.single-image_viewer',
 			'id'          => 'jkk_',
 			'title'       => 'Socially Embedded',
 			'slug'        => 'social_embed',
@@ -32,6 +37,7 @@ $collection_homepages = [
 			'notes'       => '',
 		],
 		[
+			'extends'     => '_layouts.single-image_viewer',
 			'id'          => 'jkk_',
 			'title'       => 'Work To Do',
 			'slug'        => 'to_dos',
@@ -40,6 +46,7 @@ $collection_homepages = [
 			'notes'       => 'I may come back to this',
 		],
 		[
+			'extends'     => '_layouts.single-image_viewer',
 			'id'          => 'jkk_',
 			'title'       => 'Not Aware, Not Content',
 			'slug'        => 'content_aware',

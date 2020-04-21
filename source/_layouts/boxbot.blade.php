@@ -1,5 +1,23 @@
 @php
-	$t_series       = $page->series_boxbots->title;
+	// $page->series_title       = $page->series_boxbots->title;
+	$page->meta_description = 'Bot character made from altered '.$page->title.' packaging';
+
+	if ($toggleCurrent == 'shadow') {
+		$file_ext = '.png';
+	} else {
+		$file_ext = '.jpg';
+	}
+	// YOU DON'T GET TO OVERRIDE THE SOCIAL IMAGE IN MASTER ARRAY BECUSE OF COLOR/SHADOW:
+	// if ($page->open_graph_image == '') {
+		$page->open_graph_image = 'https://jk-keller.com/o__o/boxbots/x__x/'.$toggleCurrent.'-social/1200x630/'.$page->imgfile.$file_ext;
+	// };
+	// if ($page->twitter_image == '') {
+		if ($page->twitter_card_type == "summary") {
+			$page->twitter_image = 'https://jk-keller.com/o__o/boxbots/x__x/'.$toggleCurrent.'-social/512x512/'.$page->imgfile.$file_ext;
+		} else {
+			$page->twitter_image = 'https://jk-keller.com/o__o/boxbots/x__x/'.$toggleCurrent.'-social/1024x512/'.$page->imgfile.$file_ext;
+		};
+	// };
 @endphp
 
 @extends('_layouts.master')

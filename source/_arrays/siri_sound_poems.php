@@ -4,7 +4,6 @@ $series_siri_sound_poems = [
 	'slug'        => 'siri_sound_poems',
 	'js'          => null,
 	'title'       => 'Sound Poems to Siri',
-	'subtitle'    => '',
 	'nice_date'   => '',
 	'status'      => '',
 	'description' => '',
@@ -20,11 +19,15 @@ $series_siri_sound_poems = [
 ];
 
 $collection_siri_sound_poems = [
-	'extends' => '_layouts.single-siri_sound_poems',
 	'path'    => 'o__o/{collection}/{slug}',
 	'sort'    => '-id',
+	'extends'          => '{extends}',
+	'series_slug'      => $series_siri_sound_poems['slug'],
+	'series_title'     => $series_siri_sound_poems['title'],
+	'js'               => $series_siri_sound_poems['js'],
 	'items'   => [
 		[
+			'extends'     => '_layouts.single-image_viewer',
 			'id'          => 'jkk_',
 			'title'       => 'Beware the Scattersiri, i Phone!',
 			'subtitle'    => '',
@@ -40,6 +43,7 @@ $collection_siri_sound_poems = [
 			'notes'       => '',
 		],
 		[
+			'extends'     => '_layouts.single-image_viewer',
 			'id'          => 'jkk_',
 			'title'       => 'Arsenate (Merits 24)',
 			'subtitle'    => '',
@@ -55,6 +59,7 @@ $collection_siri_sound_poems = [
 			'notes'       => '',
 		],
 		[
+			'extends'     => '_layouts.single-image_viewer',
 			'id'          => 'jkk_',
 			'title'       => 'Personate (Hers 24)',
 			'subtitle'    => '',

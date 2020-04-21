@@ -1,6 +1,24 @@
 @php
-	$t_series       = $page->series_boxbots->title;
-	$t_meta_description = 'submissions from around the world';
+	// $page->series_title       = $page->series_boxbot_submissions->title;
+	$page->meta_description = 'Bot character made from altered product packaging';
+
+	if ($toggleCurrent == 'shadow') {
+		$file_ext = '.png';
+	} else {
+		$file_ext = '.jpg';
+	}
+	// YOU DON'T GET TO OVERRIDE THE SOCIAL IMAGE IN MASTER ARRAY BECUSE OF COLOR/SHADOW:
+	// Also, I am disregarding social imges for submissions... hmm
+	// if ($page->open_graph_image == '') {
+		$page->open_graph_image = 'https://jk-keller.com/o__o/boxbots/submissions/x__x/'.$toggleCurrent.'-large/'.$page->imgfile.$file_ext;
+	// };
+	// if ($page->twitter_image == '') {
+		if ($page->twitter_card_type == "summary") {
+			$page->twitter_image = 'https://jk-keller.com/o__o/boxbots/submissions/x__x/'.$toggleCurrent.'-large/'.$page->imgfile.$file_ext;
+		} else {
+			$page->twitter_image = 'https://jk-keller.com/o__o/boxbots/submissions/x__x/'.$toggleCurrent.'-large/'.$page->imgfile.$file_ext;
+		};
+	// };
 @endphp
 
 @extends('_layouts.master')

@@ -4,7 +4,6 @@ $series_profiles_reversed = [
 	'slug'        => 'profiles_reversed',
 	'js'          => null,
 	'title'       => 'Reversals',
-	'subtitle'    => '',
 	'nice_date'   => '',
 	'status'      => '',
 	'description' => 'People’s profile silhouettes are computationally reversed.',
@@ -12,11 +11,15 @@ $series_profiles_reversed = [
 ];
 
 $collection_profiles_reversed = [
-	'extends' => '_layouts.single-profiles_reversed',
 	'path'    => 'o__o/{collection}/{slug}',
 	'sort'    => '-id',
+	'extends'          => '{extends}',
+	'series_slug'      => $series_profiles_reversed['slug'],
+	'series_title'     => $series_profiles_reversed['title'],
+	'js'               => $series_profiles_reversed['js'],
 	'items'   => [
 		[
+			'extends'     => '_layouts.single-image_viewer',
 			'id'          => 'jkk_',
 			'title'       => 'Reverse Ryan & Betsy',
 			'subtitle'    => '',
@@ -31,6 +34,7 @@ $collection_profiles_reversed = [
 			'notes'       => '',
 		],
 		[
+			'extends'     => '_layouts.single-image_viewer',
 			'id'          => 'jkk_',
 			'title'       => 'Ignobel Award',
 			'subtitle'    => '',
@@ -45,6 +49,7 @@ $collection_profiles_reversed = [
 			'notes'       => '',
 		],
 		[
+			'extends'     => '_layouts.single-image_viewer',
 			'id'          => 'jkk_',
 			'title'       => 'Reverse Keetra & JK',
 			'subtitle'    => '',
@@ -59,6 +64,7 @@ $collection_profiles_reversed = [
 			'notes'       => '',
 		],
 		[
+			'extends'     => '_layouts.single-image_viewer',
 			'id'          => 'jkk_',
 			'title'       => 'Turnaround Coins',
 			'subtitle'    => '',
@@ -73,6 +79,7 @@ $collection_profiles_reversed = [
 			'notes'       => '',
 		],
 		[
+			'extends'     => '_layouts.single-image_viewer',
 			'id'          => 'jkk_',
 			'title'       => 'Reverse Paulette & Sid',
 			'subtitle'    => '',
@@ -87,6 +94,7 @@ $collection_profiles_reversed = [
 			'notes'       => '',
 		],
 		[
+			'extends'     => '_layouts.single-image_viewer',
 			'id'          => 'jkk_',
 			'title'       => 'Looking Without Paying Attention',
 			'subtitle'    => '',

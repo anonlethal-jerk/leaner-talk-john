@@ -48,7 +48,7 @@
 			<td data-label="👻" class="td--series_home"><a href="../">↖︎</a></td>
 		@endif
 			{{-- <td data-label="ID" class="td--series_id">{{ $seriesArray['id'] }}</td> --}}
-			<td data-label="Title" class="td--series_title{{ $seriesArray['title'] == '' ? ' td--empty' : '' }}"><h1>{{-- <a href="/o__o/{{ $seriesArray['slug'] }}/"> --}}<cite>{{ $seriesArray['title'] }}</cite>{{-- </a> --}}</h1></td>
+			<td data-label="Title" class="td--series_title{{ $seriesArray['title'] == '' ? ' td--empty' : '' }}"><h1>{{-- <a href="/o__o/{{ $seriesArray['slug'] }}/"> --}}<cite>{{ $seriesArray['title'] }}</cite></h1>{!! isset($seriesArray['subtitle']) ? '<h2 class="h2--subtitle">('.$seriesArray['subtitle'].')</h2>' : '' !!}{{-- </a> --}}</td>
 		@if (isset ($seriesArray['pages']))
 			<td data-label="Subpages" class="td--series_subpages">
 			@foreach ($seriesArray['pages'] as $page)
@@ -60,7 +60,7 @@
 		@endif
 			<td data-label="Description" class="td--series_description{{ $seriesArray['description'] == '' ? ' td--empty' : '' }}">{!! $seriesArray['description'] !!}</td>
 			{{-- <td data-label="Medium" class="td--series_medium">{{ $seriesArray['medium'] }}</td> --}}
-			<td data-label="Date" class="td--series_date no_break{{ $seriesArray['nice_date'] == '' ? ' td--empty' : '' }}">{{ $seriesArray['nice_date'] }}</td>
+			<td data-label="Date" class="td--series_date no_break{{ $seriesArray['nice_date'] == '' ? ' td--empty' : '' }}">{!! $seriesArray['nice_date'] !!}</td>
 			{{-- <td data-label="Size" class="td--series_dimensions no_break">{{ $seriesArray['height'] }} × {{ $seriesArray['width'] }} {{ $seriesArray['units'] }}</td> --}}
 			{{-- <td data-label="Location" class="td--series_location">{{ $seriesArray['location'] }}</td> --}}
 			<td data-label="Status" class="td--series_status{{ $seriesArray['status'] == '' ? ' td--empty' : '' }}">{!! $seriesArray['status'] !!}</td>

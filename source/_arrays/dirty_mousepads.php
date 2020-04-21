@@ -4,7 +4,6 @@ $series_dirty_mousepads = [
 	'slug'        => 'dirty_mousepads',
 	'js'          => null,
 	'title'       => 'Echoes',
-	'subtitle'    => '',
 	'nice_date'   => '2005–',
 	'status'      => '',
 	'hidden'      => '',
@@ -21,9 +20,12 @@ $series_dirty_mousepads = [
 ];
 
 $collection_dirty_mousepads = [
-	'extends' => '_layouts.single-dirty_mousepads',
 	'path'    => 'o__o/{collection}/{slug}',
 	'sort'    => '-id',
+	'extends'          => '_layouts.single-image_viewer',
+
+	'series_info'         => $series_dirty_mousepads,
+
 	'items'   => [
 		[
 			'id'              => 'jkk_000000_1_u',
@@ -598,9 +600,9 @@ $collection_dirty_mousepads = [
 			'small_width_px'  => 242/2,
 			'large_height_px' => 1200/2,
 			'large_width_px'  => 938/2,
-			'location'        => '?flat files?',
+			'location'        => 'flat files',
 			'status'          => 'fully rescanned',
-			'notes'           => '2018_12_29-2019_12_31-home',
+			'notes'           => '2018 Dec 29–2019 Dec 31 (home)',
 			'imgfile'         => 'jk_keller-201912_3_u-echo_31.jpg',
 		],
 	],

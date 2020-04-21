@@ -1,8 +1,5 @@
 @php
-	$t_series_array = $page->series_siri_sound_poems;
-	$t_slug         = $page->series_siri_sound_poems->slug;
-	$t_series       = $page->series_siri_sound_poems->title;
-	$t_js           = $page->series_siri_sound_poems->js ;
+	$page->series_info = $page->series_siri_sound_poems;
 @endphp
 
 @extends('_layouts.series')

@@ -1,8 +1,5 @@
 @php
-	$t_series_array = $page->series_fucking_windows;
-	$t_slug         = $page->series_fucking_windows->slug;
-	$t_series       = $page->series_fucking_windows->title;
-	$t_js           = $page->series_fucking_windows->js ;
+	$page->series_info = $page->series_fucking_windows;
 @endphp
 
 @extends('_layouts.series')

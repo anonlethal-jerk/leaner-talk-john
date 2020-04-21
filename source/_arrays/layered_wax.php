@@ -4,7 +4,6 @@ $series_layered_wax = [
 	'slug'        => 'layered_wax',
 	'js'          => null,
 	'title'       => 'I’ve Been Thinking of You for a While',
-	'subtitle'    => '',
 	'nice_date'   => '',
 	'status'      => '',
 	'description' => '',
@@ -13,11 +12,15 @@ $series_layered_wax = [
 ];
 
 $collection_layered_wax = [
-	'extends' => '_layouts.single-layered_wax',
 	'path'    => 'o__o/{collection}/{slug}',
 	'sort'    => '-id',
+	'extends'          => '{extends}',
+	'series_slug'      => $series_layered_wax['slug'],
+	'series_title'     => $series_layered_wax['title'],
+	'js'               => $series_layered_wax['js'],
 	'items'   => [
 		[
+			'extends'     => '_layouts.single-image_viewer',
 			'id'          => 'jkkdd_',
 			'title'       => 'THEN AGAIN',
 			'subtitle'    => '',
@@ -32,6 +35,7 @@ $collection_layered_wax = [
 			'status'      => 'Stedelijk Musuem Breda',
 		],
 		[
+			'extends'     => '_layouts.single-image_viewer',
 			'id'          => 'jkkdd_',
 			'title'       => 'THEN AGAIN (Specimen #1)',
 			'subtitle'    => '',
@@ -46,6 +50,7 @@ $collection_layered_wax = [
 			'status'      => '',
 		],
 		[
+			'extends'     => '_layouts.single-image_viewer',
 			'id'          => 'jkkdd_',
 			'title'       => 'THEN AGAIN (Specimen #2)',
 			'subtitle'    => '',
@@ -60,6 +65,7 @@ $collection_layered_wax = [
 			'status'      => '',
 		],
 		[
+			'extends'     => '_layouts.single-image_viewer',
 			'id'          => 'jkkdd_',
 			'title'       => 'Suddenly',
 			'subtitle'    => '',
@@ -75,6 +81,7 @@ $collection_layered_wax = [
 			'notes'       => '',
 		],
 		[
+			'extends'     => '_layouts.single-image_viewer',
 			'id'          => 'jkkdd_',
 			'title'       => 'Suddenly (Specimen #1)',
 			'subtitle'    => '',
@@ -90,6 +97,7 @@ $collection_layered_wax = [
 			'notes'       => '',
 		],
 		[
+			'extends'     => '_layouts.single-image_viewer',
 			'id'          => 'jkkdd_',
 			'title'       => 'Suddenly (Specimen #2)',
 			'subtitle'    => '',
@@ -105,6 +113,7 @@ $collection_layered_wax = [
 			'notes'       => '',
 		],
 		[
+			'extends'     => '_layouts.single-image_viewer',
 			'id'          => 'jkkdd_',
 			'title'       => 'And Yet',
 			'subtitle'    => '',
@@ -121,6 +130,7 @@ $collection_layered_wax = [
 			'notes'       => '',
 		],
 		[
+			'extends'     => '_layouts.single-image_viewer',
 			'id'          => 'jkkdd_',
 			'title'       => 'And Yet (Specimen #1)',
 			'subtitle'    => '',
@@ -137,6 +147,7 @@ $collection_layered_wax = [
 			'notes'       => '',
 		],
 		[
+			'extends'     => '_layouts.single-image_viewer',
 			'id'          => 'jkkdd_',
 			'title'       => 'And Yet (Specimen #2)',
 			'subtitle'    => '',
@@ -153,6 +164,7 @@ $collection_layered_wax = [
 			'notes'       => '',
 		],
 		[
+			'extends'     => '_layouts.single-image_viewer',
 			'id'          => 'jkk_',
 			'title'       => 'Only',
 			'subtitle'    => '',
@@ -167,6 +179,7 @@ $collection_layered_wax = [
 			'notes'       => 'baltimore exhibition',
 		],
 		[
+			'extends'     => '_layouts.single-image_viewer',
 			'id'          => 'jkk_',
 			'title'       => 'Only (Specimen)',
 			'subtitle'    => '',
@@ -181,6 +194,7 @@ $collection_layered_wax = [
 			'notes'       => '',
 		],
 		[
+			'extends'     => '_layouts.single-image_viewer',
 			'id'          => 'jkkdd_',
 			'title'       => 'Become',
 			'subtitle'    => '(orange)',
@@ -196,6 +210,7 @@ $collection_layered_wax = [
 			'notes'       => 'MAD Museum exhibition, Obama exhibition',
 		],
 		[
+			'extends'     => '_layouts.single-image_viewer',
 			'id'          => 'jkkdd_',
 			'title'       => 'Become (Specimen)',
 			'subtitle'    => '',
@@ -211,6 +226,7 @@ $collection_layered_wax = [
 			'notes'       => 'MAD Museum exhibition, Obama exhibition',
 		],
 		[
+			'extends'     => '_layouts.single-image_viewer',
 			'id'          => 'jkkdd_',
 			'title'       => 'Become',
 			'subtitle'    => '(green)',
@@ -226,6 +242,7 @@ $collection_layered_wax = [
 			'notes'       => '',
 		],
 		[
+			'extends'     => '_layouts.single-image_viewer',
 			'id'          => 'jkkdd_',
 			'title'       => 'Throughout',
 			'subtitle'    => '',

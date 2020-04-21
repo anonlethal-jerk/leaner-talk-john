@@ -4,7 +4,6 @@ $series_flat_mountains = [
 	'slug'        => 'flat_mountains',
 	'js'          => null,
 	'title'       => 'Tantamounts',
-	'subtitle'    => '',
 	'nice_date'   => '',
 	'status'      => '',
 	'description' => 'Mountains computationally reconfigured to a flat horizon.',
@@ -12,11 +11,15 @@ $series_flat_mountains = [
 ];
 
 $collection_flat_mountains = [
-	'extends' => '_layouts.single-flat_mountains',
 	'path'    => 'o__o/{collection}/{slug}',
 	'sort'    => '-id',
+	'extends'          => '{extends}',
+	'series_slug'      => $series_flat_mountains['slug'],
+	'series_title'     => $series_flat_mountains['title'],
+	'js'               => $series_flat_mountains['js'],
 	'items'   => [
 		[
+			'extends'     => '_layouts.single-image_viewer',
 			'id'          => 'jkk_',
 			'title'       => 'Tantamount Everest',
 			'slug'        => '',
@@ -29,6 +32,7 @@ $collection_flat_mountains = [
 			'status'      => '',
 		],
 		[
+			'extends'     => '_layouts.single-image_viewer',
 			'id'          => 'jkk_',
 			'title'       => 'Tantamount St. Helens (CVO Photo Archive)',
 			'slug'        => '',
@@ -41,6 +45,7 @@ $collection_flat_mountains = [
 			'status'      => '',
 		],
 		[
+			'extends'     => '_layouts.single-image_viewer',
 			'id'          => 'jkk_',
 			'title'       => 'Tantamount Hadley',
 			'slug'        => '',
@@ -53,6 +58,7 @@ $collection_flat_mountains = [
 			'status'      => '',
 		],
 		[
+			'extends'     => '_layouts.single-image_viewer',
 			'id'          => 'jkk_',
 			'title'       => 'Tantamount Rushmore',
 			'slug'        => '',
@@ -65,6 +71,7 @@ $collection_flat_mountains = [
 			'status'      => '',
 		],
 		[
+			'extends'     => '_layouts.single-image_viewer',
 			'id'          => 'jkk_',
 			'title'       => 'Tantamount Fuji (U.S. Air Force)',
 			'slug'        => '',
@@ -77,6 +84,7 @@ $collection_flat_mountains = [
 			'status'      => '',
 		],
 		[
+			'extends'     => '_layouts.single-image_viewer',
 			'id'          => 'jkk_',
 			'title'       => 'Tantamount McKinley',
 			'slug'        => '',
@@ -89,6 +97,7 @@ $collection_flat_mountains = [
 			'status'      => '',
 		],
 		[
+			'extends'     => '_layouts.single-image_viewer',
 			'id'          => 'jkk_',
 			'title'       => 'Tantamount Rushmore',
 			'slug'        => '',
@@ -101,6 +110,7 @@ $collection_flat_mountains = [
 			'status'      => '',
 		],
 		[
+			'extends'     => '_layouts.single-image_viewer',
 			'id'          => 'jkk_',
 			'title'       => 'Tantamount Tetons (Ansel)',
 			'slug'        => '',
@@ -113,6 +123,7 @@ $collection_flat_mountains = [
 			'status'      => '',
 		],
 		[
+			'extends'     => '_layouts.single-image_viewer',
 			'id'          => 'jkk_',
 			'title'       => 'Tantamount K2',
 			'slug'        => '',
@@ -125,6 +136,7 @@ $collection_flat_mountains = [
 			'status'      => '',
 		],
 		[
+			'extends'     => '_layouts.single-image_viewer',
 			'id'          => 'jkk_',
 			'title'       => 'Tantamount Kilimanjaro',
 			'slug'        => '',
@@ -137,6 +149,7 @@ $collection_flat_mountains = [
 			'status'      => '',
 		],
 		[
+			'extends'     => '_layouts.single-image_viewer',
 			'id'          => 'jkk_',
 			'title'       => 'Tantamount Paramount 2008',
 			'slug'        => '',
@@ -149,6 +162,7 @@ $collection_flat_mountains = [
 			'status'      => '',
 		],
 		[
+			'extends'     => '_layouts.single-image_viewer',
 			'id'          => 'jkk_',
 			'title'       => 'Tantamount Everest',
 			'slug'        => '',
@@ -161,6 +175,7 @@ $collection_flat_mountains = [
 			'status'      => '',
 		],
 		[
+			'extends'     => '_layouts.single-image_viewer',
 			'id'          => 'jkk_',
 			'title'       => 'Tantamount Unknown',
 			'slug'        => '',
@@ -173,6 +188,7 @@ $collection_flat_mountains = [
 			'status'      => '',
 		],
 		[
+			'extends'     => '_layouts.single-image_viewer',
 			'id'          => 'jkk_',
 			'title'       => 'Tantamount Unknown',
 			'slug'        => '',
@@ -185,6 +201,7 @@ $collection_flat_mountains = [
 			'status'      => '',
 		],
 		[
+			'extends'     => '_layouts.single-image_viewer',
 			'id'          => 'jkk_',
 			'title'       => 'Tantamount Unknown',
 			'slug'        => '',
@@ -197,6 +214,7 @@ $collection_flat_mountains = [
 			'status'      => '',
 		],
 		[
+			'extends'     => '_layouts.single-image_viewer',
 			'id'          => 'jkk_',
 			'title'       => 'Tantamount Unknown',
 			'slug'        => '',
@@ -209,6 +227,7 @@ $collection_flat_mountains = [
 			'status'      => '',
 		],
 		[
+			'extends'     => '_layouts.single-image_viewer',
 			'id'          => 'jkk_',
 			'title'       => 'Tantamount Unknown',
 			'slug'        => '',
@@ -221,6 +240,7 @@ $collection_flat_mountains = [
 			'status'      => '',
 		],
 		[
+			'extends'     => '_layouts.single-image_viewer',
 			'id'          => 'jkk_',
 			'title'       => 'Tantamount Rushmore',
 			'slug'        => '',
@@ -233,6 +253,7 @@ $collection_flat_mountains = [
 			'status'      => '',
 		],
 		[
+			'extends'     => '_layouts.single-image_viewer',
 			'id'          => 'jkk_',
 			'title'       => 'Tantamount Saint Victoire Barnes',
 			'slug'        => '',
@@ -245,6 +266,7 @@ $collection_flat_mountains = [
 			'status'      => '',
 		],
 		[
+			'extends'     => '_layouts.single-image_viewer',
 			'id'          => 'jkk_',
 			'title'       => 'Tantamount Bryce',
 			'slug'        => '',
@@ -257,6 +279,7 @@ $collection_flat_mountains = [
 			'status'      => '',
 		],
 		[
+			'extends'     => '_layouts.single-image_viewer',
 			'id'          => 'jkk_',
 			'title'       => 'Tantamount Fuji (woodcut)',
 			'slug'        => '',
@@ -269,6 +292,7 @@ $collection_flat_mountains = [
 			'status'      => '',
 		],
 		[
+			'extends'     => '_layouts.single-image_viewer',
 			'id'          => 'jkk_',
 			'title'       => 'Tantamount Wild Wonders',
 			'slug'        => '',
@@ -281,6 +305,7 @@ $collection_flat_mountains = [
 			'status'      => '',
 		],
 		[
+			'extends'     => '_layouts.single-image_viewer',
 			'id'          => 'jkk_',
 			'title'       => 'Tantamount Rockies',
 			'slug'        => '',
@@ -293,6 +318,7 @@ $collection_flat_mountains = [
 			'status'      => '',
 		],
 		[
+			'extends'     => '_layouts.single-image_viewer',
 			'id'          => 'jkk_',
 			'title'       => 'Tantamount Fuji',
 			'slug'        => '',

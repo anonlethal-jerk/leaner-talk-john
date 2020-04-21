@@ -4,7 +4,6 @@ $series_iphone_oil_paintings = [
 	'slug'        => 'iphone_oil_paintings',
 	'js'          => null,
 	'title'       => 'iPhone Oil Paintings',
-	'subtitle'    => '',
 	'nice_date'   => '',
 	'status'      => '',
 	'description' => '',
@@ -12,11 +11,15 @@ $series_iphone_oil_paintings = [
 ];
 
 $collection_iphone_oil_paintings = [
-	'extends' => '_layouts.single-iphone_oil_paintings',
 	'path'    => 'o__o/{collection}/{slug}',
 	'sort'    => '-id',
+	'extends'          => '{extends}',
+	'series_slug'      => $series_iphone_oil_paintings['slug'],
+	'series_title'     => $series_iphone_oil_paintings['title'],
+	'js'               => $series_iphone_oil_paintings['js'],
 	'items'   => [
 		[
+			'extends'     => '_layouts.single-image_viewer',
 			'id'          => 'jkk_',
 			'title'       => '',
 			'subtitle'    => 'Untitled',

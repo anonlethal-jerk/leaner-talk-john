@@ -13,12 +13,26 @@ ErrorDocument 404 /404.html
 ErrorDocument 500 /500.html
 
 # make blinking use root directory
-RewriteRule ^•__•/(.*)$ $1 [L]
-RewriteRule ^-__-/(.*)$ $1 [L]
+RewriteRule ^•__•/?(.*)$ $1 [L]
+RewriteRule ^-__-/?(.*)$ $1 [L]
 
 # old urls...
-RewriteRule ^boxbots(.*)$  https://jk-keller.com/o__o/boxbots/ [NC,R=301]
+RewriteRule ^boxbots/?(.*)?$  https://jk-keller.com/o__o/boxbots/ [NC,R=301]
 
-RewriteRule ^daily[_-]photo/?$  https://jk-keller.com/o__o/daily_photo/ [NC,R=301]
-RewriteRule ^daily[_-]photo/related[_-]photo[_-]projects/?$  https://jk-keller.com/o__o/daily_photo/related_photo_projects/ [NC,R=301]
-RewriteRule ^daily[_-]photo/info[_-]faqs/?$  https://jk-keller.com/o__o/daily_photo/info_faqs/ [NC,R=301]
+#####
+# Daily Photo
+
+# very specific:
+RewriteRule ^daily-photo/images/jk-keller-grid-1998-2011.jpg$ https://jk-keller.com/o__o/daily_photo/x__x/large/jk_keller-the_adaption_to_my_generation-1998_10_01-2019_12_31.jpg [NC,R=301]
+
+# more general
+RewriteRule ^works/?(.*)?/the-adaption-to-my-generation/?(.*)?$  https://jk-keller.com/o__o/daily_photo/ [NC,R=301]
+
+RewriteRule ^daily[_-]photo/related[_-]photo[_-]projects/?(.*)?$  https://jk-keller.com/o__o/daily_photo/related_photo_projects/ [NC,R=301]
+RewriteRule ^daily[_-]photo/info[_-]faqs/?(.*)?$  https://jk-keller.com/o__o/daily_photo/info_faqs/ [NC,R=301]
+RewriteRule ^daily[_-]photo/?(.*)?$  https://jk-keller.com/o__o/daily_photo/ [NC,R=301]
+
+#
+#####
+
+RewriteRule ^dots[_-]dots[_-]dots/?(.*)?$  https://jk-keller.com/o__o/dots_dots_dots/ [NC,R=301]

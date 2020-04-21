@@ -4,7 +4,6 @@ $series_profiles_exchanged = [
 	'slug'        => 'profiles_exchanged',
 	'js'          => null,
 	'title'       => 'You trying to be Me trying to be You',
-	'subtitle'    => '',
 	'nice_date'   => '',
 	'status'      => '',
 	'description' => 'Two people’s profile silhouettes are computationally exchanged.',
@@ -12,11 +11,15 @@ $series_profiles_exchanged = [
 ];
 
 $collection_profiles_exchanged = [
-	'extends' => '_layouts.single-profiles_exchanged',
 	'path'    => 'o__o/{collection}/{slug}',
 	'sort'    => '-id',
+	'extends'          => '{extends}',
+	'series_slug'      => $series_profiles_exchanged['slug'],
+	'series_title'     => $series_profiles_exchanged['title'],
+	'js'               => $series_profiles_exchanged['js'],
 	'items'   => [
 		[
+			'extends'     => '_layouts.single-image_viewer',
 			'id'          => 'jkk_',
 			'title'       => 'Keetra trying to be JK trying to be Keetra',
 			'subtitle'    => '',
@@ -31,6 +34,7 @@ $collection_profiles_exchanged = [
 			'notes'       => '',
 		],
 		[
+			'extends'     => '_layouts.single-image_viewer',
 			'id'          => 'jkk_',
 			'title'       => 'Sid trying to be Paulette trying to be Sid',
 			'subtitle'    => '',

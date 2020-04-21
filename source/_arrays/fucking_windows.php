@@ -4,7 +4,6 @@ $series_fucking_windows = [
 	'slug'        => 'fucking_windows',
 	'js'          => null,
 	'title'       => 'Fucking-Windows.com',
-	'subtitle'    => '',
 	'nice_date'   => '',
 	'status'      => '',
 	'description' => 'Repetitive juvenile behavior via HTML & CSS.',
@@ -12,11 +11,15 @@ $series_fucking_windows = [
 ];
 
 $collection_fucking_windows = [
-	'extends' => '_layouts.single-fucking_windows',
 	'path'    => 'o__o/{collection}/{slug}',
 	'sort'    => '-id',
+	'extends'          => '{extends}',
+	'series_slug'      => $series_fucking_windows['slug'],
+	'series_title'     => $series_fucking_windows['title'],
+	'js'               => $series_fucking_windows['js'],
 	'items'   => [
 		[
+			'extends'     => '_layouts.single-image_viewer',
 			'id'          => 'jkk_',
 			'title'       => 'I ♥ Fucking Windows',
 			'subtitle'    => '',
@@ -29,6 +32,7 @@ $collection_fucking_windows = [
 			'description' => 'Juvenile behavior via CSS',
 		],
 		[
+			'extends'     => '_layouts.single-image_viewer',
 			'id'          => 'jkk_',
 			'title'       => 'Fucking Patterned Windows',
 			'subtitle'    => '',
@@ -41,6 +45,7 @@ $collection_fucking_windows = [
 			'description' => 'Pattern recognition via CSS',
 		],
 		[
+			'extends'     => '_layouts.single-image_viewer',
 			'id'          => 'jkk_',
 			'title'       => 'Fucking Windows Light Up My Life',
 			'subtitle'    => '',
@@ -53,6 +58,7 @@ $collection_fucking_windows = [
 			'description' => 'Shady behavior via CSS',
 		],
 		[
+			'extends'     => '_layouts.single-image_viewer',
 			'id'          => 'jkk_',
 			'title'       => 'Nom Nom Fucking Bacon Windows',
 			'subtitle'    => '',
@@ -65,6 +71,7 @@ $collection_fucking_windows = [
 			'description' => 'Don’t eat bacon via CSS',
 		],
 		[
+			'extends'     => '_layouts.single-image_viewer',
 			'id'          => 'jkk_',
 			'title'       => 'Destroying Fucking Windows Documents',
 			'subtitle'    => '',
@@ -77,6 +84,7 @@ $collection_fucking_windows = [
 			'description' => 'Repetitive office behavior via CSS',
 		],
 		[
+			'extends'     => '_layouts.single-image_viewer',
 			'id'          => 'jkk_',
 			'title'       => 'Fucking Windows is killing my eyes!',
 			'subtitle'    => '',

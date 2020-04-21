@@ -1,8 +1,5 @@
 @php
-	$t_series_array = $page->series_homepages;
-	$t_slug         = $page->series_homepages->slug;
-	$t_series       = $page->series_homepages->title;
-	$t_js           = $page->series_homepages->js ;
+	$page->series_info = $page->series_homepages;
 @endphp
 
 @extends('_layouts.series')

@@ -2,8 +2,8 @@
 // Series Page
 //
 .body--dots_dots_dots {
-	background: #fff;
-
+	background: #eeeeee;
+	background: radial-gradient(circle, #d6dae1 0%, #eeeeee 100%);
 	//
 	// Tables info
 	//
@@ -36,5 +36,25 @@
 // Single Image Viewer
 //
 .body--single--dots_dots_dots {
-	background: #fff;
+	background: #eeeeee;
+	background: radial-gradient(circle, #d6dae1 0%, #eeeeee 100%);
+	.image_viewer {
+		background: #eeeeee;
+		background: radial-gradient(circle, #d6dae1 0%, #eeeeee 100%);
+	}
+
+	#groundhog {
+		top: 0;
+		left: 80px;
+		@media screen and (max-width: 480px) {
+			left: 56px;
+		}
+	}
+	#feralhog {
+		top: 36px;
+		left: 92px;
+		@media screen and (max-width: 480px) {
+			left: 68px;
+		}
+	}
 }

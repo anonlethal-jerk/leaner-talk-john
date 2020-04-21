@@ -39,7 +39,7 @@ class GenerateSitemap
 		// if (starts_with($path, '/o__o/boxbots')) { $t_flag = true; };
 		// if (starts_with($path, '/o__o/daily_photo')) { $t_flag = true; };
 		if (starts_with($path, '/o__o/dirty_mousepads')) { $t_flag = true; };
-		if (starts_with($path, '/o__o/dots_dots_dots')) { $t_flag = true; };
+		// if (starts_with($path, '/o__o/dots_dots_dots')) { $t_flag = true; };
 		if (starts_with($path, '/o__o/flat_mountains')) { $t_flag = true; };
 		if (starts_with($path, '/o__o/fucking_windows')) { $t_flag = true; };
 		if (starts_with($path, '/o__o/homepages')) { $t_flag = true; };

@@ -34,3 +34,5 @@ RewriteRule ^daily[_-]photo/?(.*)?$  https://jk-keller.com/o__o/daily_photo/ [NC
 
 #
 #####
+
+RewriteRule ^dots[_-]dots[_-]dots/?(.*)?$  https://jk-keller.com/o__o/dots_dots_dots/ [NC,R=301]

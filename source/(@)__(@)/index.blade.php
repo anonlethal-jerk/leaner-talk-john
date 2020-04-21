@@ -22,6 +22,46 @@
 					'date_done'   => '',
 				],
 				[
+					'id'          => '2020_04_21-1',
+					'based_on_id' => '',
+					'section'     => 'global',
+					'title'       => 'get loading images to be correct dimensions',
+					'description' => '',
+					'date_done'   => '2020_04_21',
+				],
+				[
+					'id'          => '2020_04_20-4',
+					'based_on_id' => '2020_04_19-4',
+					'section'     => 'dots_dots_dots',
+					'title'       => 'fix dot drawing images',
+					'description' => '',
+					'date_done'   => '2020_04_21',
+				],
+				[
+					'id'          => '2020_04_20-3',
+					'based_on_id' => '',
+					'section'     => 'image-viewers',
+					'title'       => 'add simple "back" button',
+					'description' => '',
+					'date_done'   => '',
+				],
+				[
+					'id'          => '2020_04_20-2',
+					'based_on_id' => '',
+					'section'     => 'o__o',
+					'title'       => 'fix social title for projects page',
+					'description' => 'elsewheres?',
+					'date_done'   => '2020_04_20',
+				],
+				[
+					'id'          => '2020_04_20-1',
+					'based_on_id' => '',
+					'section'     => 'global',
+					'title'       => 'add image alt tags to social images',
+					'description' => 'og:image:alt',
+					'date_done'   => '',
+				],
+				[
 					'id'          => '2020_04_19-7',
 					'based_on_id' => '',
 					'section'     => '(@)__(@)',
@@ -146,7 +186,7 @@
 					'based_on_id' => '',
 					'section'     => 'Hogs',
 					'title'       => 'disable animation of navigation if motion sensitive (accessibility)',
-					'description' => 'will need a navburger?',
+					'description' => 'will need a navburger? - @media (prefers-reduced-motion: reduce)',
 					'date_done'   => '',
 				],
 				[
@@ -235,7 +275,7 @@ array_multisort(array_column($punchlists['website']['items'], 'date_done'), SORT
 		<h3>{{ $item['date_done'] }}:</h3>
 		<ul>
 @endif
-			<li><del datetime="{{ $item['date_done'] }}">{{ $item['section'] }} - <strong>{!! $item['title'] !!}</strong>{!! $item['description'] == '' ? '' : '<br>'.$item['description'] !!}</del></li>
+			<li><del datetime="{{ $item['date_done'] }}"><span class="punchlist--section">{{ $item['section'] }} -</span> <strong>{!! $item['title'] !!}</strong>{!! $item['description'] == '' ? '' : '<br>'.$item['description'] !!}</del></li>
 @php
 	$t_last_date = $item['date_done']
 @endphp

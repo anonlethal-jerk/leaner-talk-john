@@ -35,7 +35,8 @@ function connect_tables() {
 		if (tbl_1_points.length == 0) {
 			tbl_1_points.push(0);
 			table_cells.forEach(function(cel) {
-				var cel_width = cel.offsetWidth;
+				// var cel_width = cel.offsetWidth;
+				var cel_width = cel.getBoundingClientRect().width;
 				tbl_1_points.push(tbl_1_points[tbl_1_points.length-1] + cel_width);
 				// console.log('cell width: ' + cel_width);
 			});
@@ -57,7 +58,8 @@ function connect_tables() {
 	};
 
 			table_cells.forEach(function(cel) {
-				var cel_width = cel.offsetWidth;
+				// var cel_width = cel.offsetWidth;
+				var cel_width = cel.getBoundingClientRect().width;
 				tbl_2_points.push(tbl_2_points[tbl_2_points.length-1] + cel_width);
 				if (tbl_2_points.length == table_cells.length + 1) {
 	if (document.body.classList.contains('body--projects--lines')) {
@@ -88,7 +90,7 @@ function connect_tables() {
 				svg.appendChild(poly);
 	}
 
-				// console.log('cell width: ' + cel_width);
+				console.log('cell width: ' + cel_width);
 			});
 
 			tbl.before(svg);

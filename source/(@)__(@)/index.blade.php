@@ -21,6 +21,15 @@
 					'description' => '',
 					'date_done'   => '',
 				],
+
+				[
+					'id'          => '2020_04_22-1',
+					'based_on_id' => '2020_04_16-1',
+					'section'     => 'projects',
+					'title'       => 'fix line connections on svg... cell widths off',
+					'description' => 'getBoundingClientRect() gives floating point width',
+					'date_done'   => '2020_04_22',
+				],
 				[
 					'id'          => '2020_04_21-1',
 					'based_on_id' => '',

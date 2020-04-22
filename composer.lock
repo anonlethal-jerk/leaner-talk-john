@@ -169,16 +169,16 @@
         },
         {
             "name": "illuminate/container",
-            "version": "v7.6.2",
+            "version": "v7.7.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/illuminate/container.git",
-                "reference": "10c5802e360595f5f2a8b6afa176b9542851e580"
+                "reference": "aa8dfe90a3eb31dc760adc911647be5d2e129c8a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/illuminate/container/zipball/10c5802e360595f5f2a8b6afa176b9542851e580",
-                "reference": "10c5802e360595f5f2a8b6afa176b9542851e580",
+                "url": "https://api.github.com/repos/illuminate/container/zipball/aa8dfe90a3eb31dc760adc911647be5d2e129c8a",
+                "reference": "aa8dfe90a3eb31dc760adc911647be5d2e129c8a",
                 "shasum": ""
             },
             "require": {
@@ -209,11 +209,11 @@
             ],
             "description": "The Illuminate Container package.",
             "homepage": "https://laravel.com",
-            "time": "2020-04-06T13:33:36+00:00"
+            "time": "2020-04-20T14:17:11+00:00"
         },
         {
             "name": "illuminate/contracts",
-            "version": "v7.6.2",
+            "version": "v7.7.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/illuminate/contracts.git",
@@ -257,7 +257,7 @@
         },
         {
             "name": "illuminate/events",
-            "version": "v7.6.2",
+            "version": "v7.7.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/illuminate/events.git",
@@ -302,7 +302,7 @@
         },
         {
             "name": "illuminate/filesystem",
-            "version": "v7.6.2",
+            "version": "v7.7.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/illuminate/filesystem.git",
@@ -355,16 +355,16 @@
         },
         {
             "name": "illuminate/support",
-            "version": "v7.6.2",
+            "version": "v7.7.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/illuminate/support.git",
-                "reference": "b6f64a42377f86b293960e0b7f6920ae59e578d2"
+                "reference": "7143690b5b718a4a89f8a1ecda79833e75dd138c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/illuminate/support/zipball/b6f64a42377f86b293960e0b7f6920ae59e578d2",
-                "reference": "b6f64a42377f86b293960e0b7f6920ae59e578d2",
+                "url": "https://api.github.com/repos/illuminate/support/zipball/7143690b5b718a4a89f8a1ecda79833e75dd138c",
+                "reference": "7143690b5b718a4a89f8a1ecda79833e75dd138c",
                 "shasum": ""
             },
             "require": {
@@ -413,11 +413,11 @@
             ],
             "description": "The Illuminate Support package.",
             "homepage": "https://laravel.com",
-            "time": "2020-04-15T19:48:40+00:00"
+            "time": "2020-04-21T15:58:25+00:00"
         },
         {
             "name": "illuminate/view",
-            "version": "v7.6.2",
+            "version": "v7.7.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/illuminate/view.git",
@@ -1614,12 +1614,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/tightenco/jigsaw.git",
-                "reference": "59bc75226c2b026adeffe1cc4d50266e8f7843e9"
+                "reference": "baae57089a3a3ad98ff0e30a38ebbf00afce241b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/tightenco/jigsaw/zipball/59bc75226c2b026adeffe1cc4d50266e8f7843e9",
-                "reference": "59bc75226c2b026adeffe1cc4d50266e8f7843e9",
+                "url": "https://api.github.com/repos/tightenco/jigsaw/zipball/baae57089a3a3ad98ff0e30a38ebbf00afce241b",
+                "reference": "baae57089a3a3ad98ff0e30a38ebbf00afce241b",
                 "shasum": ""
             },
             "require": {
@@ -1675,7 +1675,7 @@
                 "site",
                 "static"
             ],
-            "time": "2020-04-17T21:17:26+00:00"
+            "time": "2020-04-20T13:55:40+00:00"
         },
         {
             "name": "vlucas/phpdotenv",

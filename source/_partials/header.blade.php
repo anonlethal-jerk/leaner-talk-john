@@ -70,13 +70,15 @@
 		{{-- <meta name="twitter:title" content="{{ $t_title }}{{ $t_separator }}{{ $page->series_info->title }} •__• JK"> --}}
 		{{-- <meta name="twitter:description" content="{{ $t_meta_description }}"> --}}
 		<meta name="twitter:image" content="{{ $t_twitter_image }}">
+		{{-- <meta name="twitter:image:alt" content="TKTKTKTK"> --}}
 		{{-- <meta name="twitter:player" content="https://video-source.youtube"> --}}
 		{{-- <meta name="twitter:site" content="@anonlethal_jerk"> --}}
 		{{-- <meta name="twitter:creator" content="@anonlethal_jerk"> --}}
 {{-- Open Graph general (Facebook, Pinterest & Google+) --}}
 		<meta name="og:title" content="{{ $t_title }}{{ $t_separator }}{{ $page->series_info->title }} •__• JK">
 		<meta name="og:description" content="{{ $t_meta_description }}">
-		<meta name="og:image" content="{{ $t_open_graph_image }}">
+		<meta name="og:image:url" content="{{ $t_open_graph_image }}">
+		{{-- <meta name="og:image:alt" content="TKTKTKTK"> --}}
 		{{-- <meta name="og:video" content="https://video.mov?"> --}}
 		<meta name="og:url" content="{{ substr($page->getUrl(), -1) == '/' ? $page->getUrl() : $page->getUrl().'/' }}">
 		{{-- <meta name="og:site_name" content="JK site name"> --}}

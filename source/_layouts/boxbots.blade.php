@@ -77,7 +77,7 @@
 	</section>
 
 	@php
-		$sorted_boxbots = $boxbots->sortBy('id');
+		$sorted_boxbots = $boxbots->sortBy('id', SORT_NATURAL);
 	@endphp
 	<section class="prj_info">
 		@include('_partials.prj_table', ['tableArray' => $sorted_boxbots])

@@ -1,12 +1,24 @@
 @php
 if ($page->open_graph_image == '') {
-	$page->open_graph_image = 'https://jk-keller.com/o__o/'.$page->series_info->slug.'/x__x/social/1200x630/'.$page->imgfile;
+	if ( strpos($page->imgfile, '.jpg') !== false || strpos($page->imgfile, '.png') !== false ) {
+		$page->open_graph_image = 'https://jk-keller.com/o__o/'.$page->series_info->slug.'/x__x/social/1200x630/'.$page->imgfile;
+	} else {
+		$page->open_graph_image = 'https://jk-keller.com/o__o/'.$page->series_info->slug.'/x__x/social/1200x630/'.$page->imgfile.'.jpg';
+	}
 };
 if ($page->twitter_image == '') {
 	if ($page->twitter_card_type == "summary") {
-		$page->twitter_image = 'https://jk-keller.com/o__o/'.$page->series_info->slug.'/x__x/social/512x512/'.$page->imgfile;
+		if ( strpos($page->imgfile, '.jpg') !== false || strpos($page->imgfile, '.png') !== false ) {
+			$page->twitter_image = 'https://jk-keller.com/o__o/'.$page->series_info->slug.'/x__x/social/512x512/'.$page->imgfile;
+		} else {
+			$page->twitter_image = 'https://jk-keller.com/o__o/'.$page->series_info->slug.'/x__x/social/512x512/'.$page->imgfile.'.jpg';
+		}
 	} else {
-		$page->twitter_image = 'https://jk-keller.com/o__o/'.$page->series_info->slug.'/x__x/social/1024x512/'.$page->imgfile;
+		if ( strpos($page->imgfile, '.jpg') !== false || strpos($page->imgfile, '.png') !== false ) {
+			$page->twitter_image = 'https://jk-keller.com/o__o/'.$page->series_info->slug.'/x__x/social/1024x512/'.$page->imgfile;
+		} else {
+			$page->twitter_image = 'https://jk-keller.com/o__o/'.$page->series_info->slug.'/x__x/social/1024x512/'.$page->imgfile.'.jpg';
+		}
 	};
 };
 @endphp
@@ -28,21 +40,28 @@ if ( $page->nontitle != null ) {
 	$titling = '<cite>'.$page->title.'</cite>';
 }
 @endphp
-	@if ($page->embed == '' || $page->embed == NULL)
+@if ($page->embed == '' || $page->embed == NULL)
 		<figure class="viewer--image{{ $page->extends_size }}">
+	@if ( strpos($page->imgfile, '.jpg') !== false || strpos($page->imgfile, '.png') !== false )
 			<img class="" src="../x__x/large/{{ $page->imgfile }}" alt="{{ $page->title }}" width="{{ $page->large_width_px }}" height="{{ $page->large_height_px }}" />
+	@else
+			<picture>
+				<source srcset="../x__x/large/{{ $page->imgfile }}.webp" width="{{ $page->large_width_px }}" height="{{ $page->large_height_px }}" alt="{{ $page->title == '' ? 'Untitled' : $page->title }}" title="{{ $page->title == '' ? 'Untitled' : $page->title }}, {{ $page->nice_date }}, {{ $page->height == '' ? '' : ' '.$page->height }}{{ $page->width == '' ? '' : ' × ' }}{{ $page->width }} {{ $page->units }}" type="image/webp">
+				<img src="../x__x/large/{{ $page->imgfile }}.png" width="{{ $page->large_width_px }}" height="{{ $page->large_height_px }}" alt="{{ $page->title == '' ? 'Untitled' : $page->title }}" title="{{ $page->title == '' ? 'Untitled' : $page->title }}, {{ $page->nice_date }}, {{ $page->height == '' ? '' : ' '.$page->height }}{{ $page->width == '' ? '' : ' × ' }}{{ $page->width }} {{ $page->units }}">
+			</picture>
+	@endif
 			<figcaption>
 				{!! $titling !!}, <span class="no_break">{{ $page->nice_date }}</span>{{ $page->width == NULL ? '' : ',' }} <span class="no_break">{{ $page->height }} {{ $page->width == NULL ? '' : '×' }} {{ $page->width }} {{ $page->depth == NULL ? '' : '×' }} {{ $page->depth }} {{ $page->units }}</span>
 			</figcaption>
 		</figure>
-	@else
+@else
 		<figure class="viewer--image{{ $page->extends_size }} viewer--image-embed">
 			{!! $page->embed !!}
 			<figcaption>
 				{!! $titling !!}, <span class="no_break">{{ $page->nice_date }}</span>{{ $page->width == NULL ? '' : ',' }} <span class="no_break">{{ $page->height }} {{ $page->width == NULL ? '' : '×' }} {{ $page->width }} {{ $page->depth == NULL ? '' : '×' }} {{ $page->depth }} {{ $page->units }}</span>
 			</figcaption>
 		</figure>
-	@endif
+@endif
 		<div class="viewer--prev">
 			@if ($page->getPrevious())
 @php
@@ -58,7 +77,14 @@ if ( $page->getPrevious()->nontitle != null ) {
 @endphp
 			<a class="nav--prev" href="../{{ $page->getPrevious()->slug }}/">
 				<figure>
-					<img class="" src="../x__x/small/{{ $page->getPrevious()->imgfile }}" alt="{{ $page->getPrevious()->title }}" width="{{ $page->getPrevious()->small_width_px }}" height="{{ $page->getPrevious()->small_height_px }}" />
+	@if ( strpos($page->getPrevious()->imgfile, '.jpg') !== false || strpos($page->getPrevious()->imgfile, '.png') !== false )
+					<img class="" src="../x__x/small/{{ $page->getPrevious()->imgfile }}" alt="{{ $page->getPrevious()->title == '' ? 'Untitled' : $page->getPrevious()->title }}" width="{{ $page->getPrevious()->small_width_px }}" height="{{ $page->getPrevious()->small_height_px }}" />
+	@else
+			<picture>
+				<source srcset="../x__x/small/{{ $page->getPrevious()->imgfile }}.webp" width="{{ $page->getPrevious()->small_width_px }}" height="{{ $page->getPrevious()->small_height_px }}" alt="{{ $page->getPrevious()->title == '' ? 'Untitled' : $page->getPrevious()->title }}" type="image/webp">
+				<img src="../x__x/small/{{ $page->getPrevious()->imgfile }}.png" width="{{ $page->getPrevious()->small_width_px }}" height="{{ $page->getPrevious()->small_height_px }}" alt="{{ $page->getPrevious()->title == '' ? 'Untitled' : $page->getPrevious()->title }}">
+			</picture>
+	@endif
 					<figcaption>{!! $prev_titling !!}</figcaption>
 				</figure>
 			</a>
@@ -81,7 +107,14 @@ if ( $page->getNext()->nontitle != null ) {
 @endphp
 			<a class="nav--next" href="../{{ $page->getNext()->slug }}/">
 				<figure>
-					<img class="" src="../x__x/small/{{ $page->getNext()->imgfile }}" alt="{{ $page->getNext()->title }}" width="{{ $page->getNext()->small_width_px }}" height="{{ $page->getNext()->small_height_px }}" />
+	@if ( strpos($page->getNext()->imgfile, '.jpg') !== false || strpos($page->getNext()->imgfile, '.png') !== false )
+					<img class="" src="../x__x/small/{{ $page->getNext()->imgfile }}" alt="{{ $page->getNext()->title == '' ? 'Untitled' : $page->getNext()->title }}" width="{{ $page->getNext()->small_width_px }}" height="{{ $page->getNext()->small_height_px }}" />
+	@else
+			<picture>
+				<source srcset="../x__x/small/{{ $page->getNext()->imgfile }}.webp" width="{{ $page->getNext()->small_width_px }}" height="{{ $page->getNext()->small_height_px }}" alt="{{ $page->getNext()->title == '' ? 'Untitled' : $page->getNext()->title }}" type="image/webp">
+				<img src="../x__x/small/{{ $page->getNext()->imgfile }}.png" width="{{ $page->getNext()->small_width_px }}" height="{{ $page->getNext()->small_height_px }}" alt="{{ $page->getNext()->title == '' ? 'Untitled' : $page->getNext()->title }}">
+			</picture>
+	@endif
 					<figcaption>{!! $next_titling !!}</figcaption>
 				</figure>
 			</a>

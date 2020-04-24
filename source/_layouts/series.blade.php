@@ -14,15 +14,21 @@
 	<section class="series_images">
 	<!-- start no space hack
 		@foreach ($$t_slug->where('imgfile', '!=', '') as $img)
-@if ( $img->offset_top_px < 0 )
+@if ( $img->offset_top_px != '' )
 	--><figure style="width:{{ $img->small_width_px }}px;margin-top:{{ $img->offset_top_px }}px;">
 @else
 	--><figure style="width:{{ $img->small_width_px }}px;">
 @endif
 
-
 			<a href="{{ $img->slug }}/">
+@if ( strpos($img->imgfile, '.jpg') !== false || strpos($img->imgfile, '.png') !== false )
 				<img class="lazyload" src="/x__x/loading-99.gif" data-src="x__x/small/{{ $img->imgfile }}" width="{{ $img->small_width_px }}" height="{{ $img->small_height_px }}" alt="{{ $img->title == '' ? 'Untitled' : $img->title }}" title="{{ $img->title == '' ? 'Untitled' : $img->title }}, {{ $img->nice_date }},{{ $img->height == '' ? '' : ' '.$img->height }}{{ $img->width == '' ? '' : ' × ' }}{{ $img->width }} {{ $img->units }}">
+@else
+				<picture>
+					<source data-srcset="x__x/small/{{ $img->imgfile }}.webp" width="{{ $img->small_width_px }}" height="{{ $img->small_height_px }}" alt="{{ $img->title == '' ? 'Untitled' : $img->title }}" title="{{ $img->title == '' ? 'Untitled' : $img->title }}, {{ $img->nice_date }}, {{ $img->height == '' ? '' : ' '.$img->height }}{{ $img->width == '' ? '' : ' × ' }}{{ $img->width }} {{ $img->units }}" type="image/webp">
+					<img class="lazyload" src="/x__x/loading-rgb.gif" data-src="x__x/small/{{ $img->imgfile }}.png" width="{{ $img->small_width_px }}" height="{{ $img->small_height_px }}" alt="{{ $img->title == '' ? 'Untitled' : $img->title }}" title="{{ $img->title == '' ? 'Untitled' : $img->title }}, {{ $img->nice_date }}, {{ $img->height == '' ? '' : ' '.$img->height }}{{ $img->width == '' ? '' : ' × ' }}{{ $img->width }} {{ $img->units }}">
+				</picture>
+@endif
 @php
 	if ( $img->nontitle != null ) {
 		$titling = $img->nontitle;
@@ -43,7 +49,7 @@
 
 
 	<section class="prj_info">
-		@include('_partials.prj_table', ['tableArray' => $$t_slug->sortBy('id')])
+		@include('_partials.prj_table', ['tableArray' => $$t_slug->sortBy('sort_date', SORT_NATURAL)])
 	</section>
 
 	<div id="popup">

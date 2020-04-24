@@ -32,5 +32,6 @@ mix.js('source/_assets/js/lazysizes.min.js', '*__*/lazysizes.min.js')
 	})
 	.version();
 
+	// .js('source/_assets/js/modernizr-webp-min.js', '*__*/modernizr-webp-min.js')
 	// .js('source/_assets/js/main.js', '*__*/main.js')
 	// .js('source/_assets/js/jquery-3.4.0.min.js', '*__*/jquery-3.4.0.min.js')

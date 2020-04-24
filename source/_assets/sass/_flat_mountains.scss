@@ -1,0 +1,59 @@
+.body--flat_mountains {
+
+	.td--prj_by,
+	.td--prj_duration,
+	.td--prj_rating {
+		display: none;
+	}
+	.table--series_info {
+		@media only screen and (max-width: 720px) {
+			@include table--mobile;
+			.td--prj_by,
+			.td--prj_duration,
+			.td--prj_rating {
+				display: none;
+			}
+		}
+	}
+	.table--prj_info {
+		@media only screen and (max-width: 800px) {
+			@include table--mobile;
+			.td--prj_by,
+			.td--prj_duration,
+			.td--prj_rating {
+				display: none;
+			}
+		}
+	}
+
+	.series_info {
+		background: rgb(162,193,231);
+	}
+	.series_images {
+		align-items: flex-start;
+		background: linear-gradient(0deg, rgba(193,182,156,1) 33%, rgba(162,193,231,1) 67%);
+	}
+	.prj_info {
+		background: rgb(193,182,156);
+	}
+}
+.body--single--flat_mountains {
+	.image_viewer {
+		background: linear-gradient(0deg, rgba(193,182,156,1) 33%, rgba(162,193,231,1) 67%);
+	}
+
+	#groundhog {
+		top: 0;
+		left: 80px;
+		@media screen and (max-width: 480px) {
+			left: 56px;
+		}
+	}
+	#feralhog {
+		top: 36px;
+		left: 92px;
+		@media screen and (max-width: 480px) {
+			left: 68px;
+		}
+	}
+}

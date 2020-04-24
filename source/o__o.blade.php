@@ -18,12 +18,12 @@
 		@include('_partials.projects_table', ['seriesArray' => $page->series_dots_dots_dots, 'seriesHead' => true ])
 		{{-- @include('_partials.projects_table', ['seriesArray' => $page->series_dirty_mousepads ]) --}}
 
+		@include('_partials.projects_table', ['seriesArray' => $page->series_flat_mountains ])
 		@include('_partials.projects_table', ['seriesArray' => $page->series_boxbots ])
 		@include('_partials.projects_table', ['seriesArray' => $page->series_daily_photo ])
 
 {{--
 		@include('_partials.projects_table', ['seriesArray' => $page->series_arrow_iterations ])
-		@include('_partials.projects_table', ['seriesArray' => $page->series_flat_mountains ])
 		@include('_partials.projects_table', ['seriesArray' => $page->series_fucking_windows ])
 		@include('_partials.projects_table', ['seriesArray' => $page->series_iphone_oil_paintings ])
 		@include('_partials.projects_table', ['seriesArray' => $page->series_layered_wax ])

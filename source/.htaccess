@@ -36,3 +36,6 @@ RewriteRule ^daily[_-]photo/?(.*)?$  https://jk-keller.com/o__o/daily_photo/ [NC
 #####
 
 RewriteRule ^dots[_-]dots[_-]dots/?(.*)?$  https://jk-keller.com/o__o/dots_dots_dots/ [NC,R=301]
+
+RewriteRule ^works/2009/tantamount/?(.*)?$  https://jk-keller.com/o__o/flat_mountains/ [NC,R=301]
+RewriteRule ^flattened[_-]mountains/?(.*)?$  https://jk-keller.com/o__o/flat_mountains/ [NC,R=301]

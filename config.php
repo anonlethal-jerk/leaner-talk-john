@@ -2,7 +2,7 @@
 
 return [
 	'production' => false,
-	'baseUrl' => 'https://jk-keller.com',
+	'baseUrl' => '',
 	'collections' => [
 		'posts' => [
 			'author' => 'JK',
@@ -12,11 +12,11 @@ return [
 		'boxbots',
 		'submissions',
 		'daily_photo',
+		'dots_dots_dots',
+		'flat_mountains',
 
 		'dirty_mousepads',
-		'dots_dots_dots',
 		'arrow_iterations',
-		'flat_mountains',
 		'fucking_windows',
 		'homepages',
 		'iphone_oil_paintings',

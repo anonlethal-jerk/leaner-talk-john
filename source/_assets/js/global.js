@@ -1,3 +1,8 @@
+// if js is working, get rid of the class
+document.documentElement.classList.remove("no-js");
+document.documentElement.classList.add("js");
+
+
 /**
  * Get the URL parameters
  * source: https://css-tricks.com/snippets/javascript/get-url-variables/

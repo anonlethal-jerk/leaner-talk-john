@@ -75,7 +75,7 @@ if ( $page->getPrevious()->nontitle != null ) {
 	$prev_titling = '<cite>'.$page->getPrevious()->title.'</cite>';
 }
 @endphp
-			<a class="nav--prev" href="../{{ $page->getPrevious()->slug }}/">
+			<a id="image_viewer_prev" class="nav--prev" href="../{{ $page->getPrevious()->slug }}/">
 				<figure>
 	@if ( strpos($page->getPrevious()->imgfile, '.jpg') !== false || strpos($page->getPrevious()->imgfile, '.png') !== false )
 					<img class="" src="../x__x/small/{{ $page->getPrevious()->imgfile }}" alt="{{ $page->getPrevious()->title == '' ? 'Untitled' : $page->getPrevious()->title }}" width="{{ $page->getPrevious()->small_width_px }}" height="{{ $page->getPrevious()->small_height_px }}" />
@@ -105,7 +105,7 @@ if ( $page->getNext()->nontitle != null ) {
 	$next_titling = '<cite>'.$page->getNext()->title.'</cite>';
 }
 @endphp
-			<a class="nav--next" href="../{{ $page->getNext()->slug }}/">
+			<a id="image_viewer_next" class="nav--next" href="../{{ $page->getNext()->slug }}/">
 				<figure>
 	@if ( strpos($page->getNext()->imgfile, '.jpg') !== false || strpos($page->getNext()->imgfile, '.png') !== false )
 					<img class="" src="../x__x/small/{{ $page->getNext()->imgfile }}" alt="{{ $page->getNext()->title == '' ? 'Untitled' : $page->getNext()->title }}" width="{{ $page->getNext()->small_width_px }}" height="{{ $page->getNext()->small_height_px }}" />
@@ -125,7 +125,7 @@ if ( $page->getNext()->nontitle != null ) {
 	</section>
 
 @section('extra-nav')
-	<nav id="feralhog" class="hog"><a href="../"><cite>{{ $page->series_info->title }}</cite></a></nav>
+	<nav id="feralhog" class="hog"><a id="image_viewer_up" href="../"><cite>{{ $page->series_info->title }}</cite></a></nav>
 @endsection
 @section('extra-scripts')
 	<script src="{{ mix('*__*/image_viewer.js', '') }}"></script>

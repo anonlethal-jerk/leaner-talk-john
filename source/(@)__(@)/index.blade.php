@@ -23,6 +23,22 @@
 				],
 
 				[
+					'id'          => '2020_04_25-2',
+					'based_on_id' => '',
+					'section'     => 'image_viewer',
+					'title'       => 'add arrow key control of navigation',
+					'description' => '',
+					'date_done'   => '2020_04_25',
+				],
+				[
+					'id'          => '2020_04_25-1',
+					'based_on_id' => '2020_04_24-2',
+					'section'     => 'flat_mountains',
+					'title'       => 'added a couple more',
+					'description' => '',
+					'date_done'   => '2020_04_25',
+				],
+				[
 					'id'          => '2020_04_24-2',
 					'based_on_id' => '2020_04_24-1',
 					'section'     => 'flat_mountains',

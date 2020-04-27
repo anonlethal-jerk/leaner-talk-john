@@ -2,9 +2,19 @@
 Project SVG connectors
 */
 
+function viewport() {
+    var e = window, a = 'inner';
+    if (!('innerWidth' in window )) {
+        a = 'client';
+        e = document.documentElement || document.body;
+    }
+    return { width : e[ a+'Width' ] , height : e[ a+'Height' ] };
+}
+
 // only connect tables if ~desktop
-if (window.innerWidth > 720) {
-	connect_tables()
+if (document.getElementById('punchlist').getBoundingClientRect().width >= 710) {
+	connect_tables('.tables--done .table--projects');
+	connect_tables('.tables--to_do .table--projects');
 };
 
 // redraw connections on window resize
@@ -15,14 +25,16 @@ window.addEventListener('resize', () => {
 		asvg.remove();
 	});
 	// only redraw tables if ~desktop
-	if (window.innerWidth > 720) {
-		connect_tables()
+	if (document.getElementById('punchlist').getBoundingClientRect().width >= 710) {
+		connect_tables('.tables--done .table--projects');
+		connect_tables('.tables--to_do .table--projects');
 	};
+	console.log(document.getElementById('punchlist').getBoundingClientRect().width+' : '+window.clientWidth);
 });
 
-function connect_tables() {
+function connect_tables(a_tables) {
 	// get all the tables
-	var project_tables = document.querySelectorAll('.table--projects');
+	var project_tables = document.querySelectorAll(a_tables);
 	// arrays to track cell widths
 	var tbl_1_points = [];
 	var tbl_2_points = [];
@@ -30,6 +42,7 @@ function connect_tables() {
 	// cycle through all the tables
 	project_tables.forEach(function(tbl) {
 		var tbl_width = tbl.getBoundingClientRect().width;
+console.log('table width: ' + tbl_width);
 
 		// there are two versions of the svg styling - lines & fills
 		if (document.body.classList.contains('body--projects--lines')) {
@@ -119,13 +132,13 @@ console.log('table points: ' + tbl_1_points);
 					svg.appendChild(poly);
 				}
 
-				console.log('cell width: ' + cel_width);
+console.log('cell width: ' + cel_width);
 			}); // end cycle through cells
 
 			// add the svg between tables
 			tbl.before(svg);
 			// save previous table points, clear the next table points
-			console.log('table points: ' + tbl_1_points);
+console.log('table points: ' + tbl_1_points);
 			tbl_1_points = tbl_2_points;
 			tbl_2_points = [];
 

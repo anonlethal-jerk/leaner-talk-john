@@ -45,7 +45,7 @@
 					Diego Golberg and family sit down on June 17 for a family ritual.</li>
 				<li><a href="https://zekesgallery.blogspot.com/2005/03/damien-hirst-does-roseanne-holland-and.html" title="View the site">Roseanne Holland</a> (1979–1989)<br />
 					Damien Hirst mines Florida police photos for crack cocaine campaign.</li>
-				<li><a href="hhttps://www.tehchinghsieh.com/oneyearperformance1980-1981" title="View the site">One Year Performance</a> (1980–1981)<br />
+				<li><a href="https://www.tehchinghsieh.com/oneyearperformance1980-1981" title="View the site">One Year Performance</a> (1980–1981)<br />
 					Tehching Hsieh punches a time clock hooked up to a camera in a gallery every hour on the hour for a year.</li>
 				<li><a href="http://5b4.blogspot.com/2008/08/portrait-louise-anna-kubelka-by-friedl.html" title="View the site">Portrait of Louise Anna Kubelka</a> (1980–1998)<br />
 					Friedl Kubelka documents the development of her daughter, from birth to adulthood.</li>

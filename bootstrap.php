@@ -18,6 +18,21 @@ use TightenCo\Jigsaw\Jigsaw;
  */
 
 $events->beforeBuild(function (Jigsaw $jigsaw) {
+	require_once($jigsaw->getSourcePath().'/_arrays/01-projects.php');
+	$jigsaw->setConfig('projects', $projects);
+	$jigsaw->setConfig('one_offs', $one_offs);
+
+	// foreach ($projects as $project) {
+	// 	if ( $project['published'] == true ) {
+	// 		// can pull in array as variable in php file...
+	// 		require_once($jigsaw->getSourcePath().'/_arrays/'.$project['slug'].'.php');
+	// 		$t_collection = 'collection_'.$project['slug'];
+	// 		$jigsaw->setConfig('collections.boxbots', $$t_collection);
+	// 		$t_series = 'series_'.$project['slug'];
+	// 		$jigsaw->setConfig('series_boxbots', $$t_series);
+	// 	}
+	// }
+
 	// can pull in array as variable in php file...
 	require_once($jigsaw->getSourcePath().'/_arrays/boxbots.php');
 	$jigsaw->setConfig('collections.boxbots', $collection_boxbots);
@@ -83,6 +98,10 @@ $events->beforeBuild(function (Jigsaw $jigsaw) {
 	require_once($jigsaw->getSourcePath().'/_arrays/touching_film.php');
 	$jigsaw->setConfig('collections.touching_film', $collection_touching_film);
 	$jigsaw->setConfig('series_touching_film', $series_touching_film);
+
+	require_once($jigsaw->getSourcePath().'/_arrays/drawings.php');
+	$jigsaw->setConfig('collections.drawings', $collection_drawings);
+	$jigsaw->setConfig('series_drawings', $series_drawings);
 
 	// or pull in array as json file... not sure why need the 'true' for assoc. array.
 	//$jigsaw->setConfig('collections.dots', json_decode($jigsaw->readSourceFile('_arrays/dots.json'), true));

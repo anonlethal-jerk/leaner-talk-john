@@ -4,7 +4,7 @@ $series_profiles_reversed = [
 	'slug'        => 'profiles_reversed',
 	'js'          => null,
 	'title'       => 'Reversals',
-	'nice_date'   => '',
+	'nice_date'   => '2009',
 	'status'      => '',
 	'description' => 'People’s profile silhouettes are computationally reversed.',
 	'notes'       => '',
@@ -14,9 +14,9 @@ $collection_profiles_reversed = [
 	'path'    => 'o__o/{collection}/{slug}',
 	'sort'    => '-id',
 	'extends'          => '{extends}',
-	'series_slug'      => $series_profiles_reversed['slug'],
-	'series_title'     => $series_profiles_reversed['title'],
-	'js'               => $series_profiles_reversed['js'],
+
+	'series_info'         => $series_profiles_reversed,
+
 	'items'   => [
 		[
 			'extends'     => '_layouts.single-image_viewer',

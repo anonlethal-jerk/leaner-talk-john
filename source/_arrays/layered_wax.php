@@ -4,10 +4,10 @@ $series_layered_wax = [
 	'slug'        => 'layered_wax',
 	'js'          => null,
 	'title'       => 'I’ve Been Thinking of You for a While',
-	'nice_date'   => '',
+	'nice_date'   => '2008–2017',
 	'status'      => '',
 	'description' => '',
-	'notes'       => 'collab with <a href="http://fromkeetra.com">Keetra Dean Dixon',
+	'notes'       => 'collab with <a href="https://fromkeetra.com/and-yet/">Keetra Dean Dixon</a> (generally)',
 	'to_dos'      => '',
 ];
 
@@ -15,9 +15,9 @@ $collection_layered_wax = [
 	'path'    => 'o__o/{collection}/{slug}',
 	'sort'    => '-id',
 	'extends'          => '{extends}',
-	'series_slug'      => $series_layered_wax['slug'],
-	'series_title'     => $series_layered_wax['title'],
-	'js'               => $series_layered_wax['js'],
+
+	'series_info'         => $series_layered_wax,
+
 	'items'   => [
 		[
 			'extends'     => '_layouts.single-image_viewer',

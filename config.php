@@ -15,6 +15,7 @@ return [
 		'dots_dots_dots',
 		'flat_mountains',
 
+		'drawings',
 		'dirty_mousepads',
 		'arrow_iterations',
 		'fucking_windows',

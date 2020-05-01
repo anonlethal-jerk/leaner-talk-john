@@ -5,7 +5,7 @@ $series_sd_to_hd = [
 	'js'          => null,
 	'title'       => 'Resolution Dependents',
 	'subtitle'    => 'SD to HD',
-	'nice_date'   => '',
+	'nice_date'   => '2014–2015',
 	'status'      => '',
 	'description' => '',
 	'notes'       => '',
@@ -15,9 +15,9 @@ $collection_sd_to_hd = [
 	'path'    => 'o__o/{collection}/{slug}',
 	'sort'    => '-id',
 	'extends'          => '{extends}',
-	'series_slug'      => $series_sd_to_hd['slug'],
-	'series_title'     => $series_sd_to_hd['title'],
-	'js'               => $series_sd_to_hd['js'],
+
+	'series_info'         => $series_sd_to_hd,
+
 	'items'   => [
 		[
 			'extends'     => '_layouts.single-image_viewer',

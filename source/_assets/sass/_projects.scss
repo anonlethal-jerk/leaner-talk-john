@@ -16,8 +16,16 @@
 	table + .babeckett  {
 		margin-top: 2rem;
 	}
-	.tables--to_do > h2 {
-		margin-bottom: 2rem;
+	.tables--to_do {
+		td {
+			background: rgba(255,255,255,0);
+			&.td--empty {
+				background: transparent;
+			}
+		}
+		> h2 {
+			margin-bottom: 2rem;
+		}
 	}
 
 	.table--projects {
@@ -66,6 +74,7 @@
 			.table--projects:not(:first-of-type) {
 				td {
 					border-top: $border-default;
+					border-color: rgba(0,0,0,.15);
 					&:first-of-type {
 						border-top: 0;
 					}

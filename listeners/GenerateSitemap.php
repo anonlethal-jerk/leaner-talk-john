@@ -50,6 +50,7 @@ class GenerateSitemap
 		if (starts_with($path, '/o__o/sd_to_hd')) { $t_flag = true; };
 		if (starts_with($path, '/o__o/siri_sound_poems')) { $t_flag = true; };
 		if (starts_with($path, '/o__o/touching_film')) { $t_flag = true; };
+		if (starts_with($path, '/o__o/drawings')) { $t_flag = true; };
 
 		if (starts_with($path, '(*)__(*)')) { $t_flag = true; };
 		if (starts_with($path, '/(*)__(*)')) { $t_flag = true; };

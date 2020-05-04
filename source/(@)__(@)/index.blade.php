@@ -23,6 +23,30 @@
 				],
 
 				[
+					'id'          => '2020_04_26-',
+					'based_on_id' => '',
+					'section'     => '',
+					'title'       => '',
+					'description' => '',
+					'date_done'   => '',
+				],
+				[
+					'id'          => '2020_04_26-2',
+					'based_on_id' => '',
+					'section'     => 'projects',
+					'title'       => 'version where just keep adding lines to svg based on width',
+					'description' => 'faded out over time? overflow:hidden?',
+					'date_done'   => '',
+				],
+				[
+					'id'          => '2020_04_26-1',
+					'based_on_id' => '',
+					'section'     => 'projects',
+					'title'       => 'fix end lines not drawing on svgs',
+					'description' => 'was due to scrollbar appearing after drawing svgs',
+					'date_done'   => '2020_04_26',
+				],
+				[
 					'id'          => '2020_04_25-2',
 					'based_on_id' => '',
 					'section'     => 'image_viewer',

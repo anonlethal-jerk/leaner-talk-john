@@ -35,7 +35,7 @@ $collection_arrow_iterations = [
 
 	'items' => [
 		[
-			'extends'     => '_layouts.single-image_viewer',
+			'extends'     => '_layouts.series-image_viewer',
 			'id'          => 'jkk_',
 			'title'       => 'Movement #1, Variation #1',
 			'subtitle'    => '',
@@ -49,7 +49,7 @@ $collection_arrow_iterations = [
 			'seconds'     => '00',
 		],
 		[
-			'extends'     => '_layouts.single-image_viewer',
+			'extends'     => '_layouts.series-image_viewer',
 			'id'          => 'jkk_',
 			'title'       => 'Binary’s End State',
 			'subtitle'    => '67’108’864 arrows',

@@ -20,7 +20,7 @@ $collection_sd_to_hd = [
 
 	'items'   => [
 		[
-			'extends'     => '_layouts.single-image_viewer',
+			'extends'     => '_layouts.series-image_viewer',
 			'id'          => 'jkk_201504_1',
 			'title'       => 'animAtORs rEdraw old SimPsons epIsodeS fOr hdTv',
 			'subtitle'    => 's20-e09 Lisa the Drama Queen',
@@ -35,7 +35,7 @@ $collection_sd_to_hd = [
 			'notes'       => 'the last episode done in SD',
 		],
 		[
-			'extends'     => '_layouts.single-image_viewer',
+			'extends'     => '_layouts.series-image_viewer',
 			'id'          => 'jkk_201504_2',
 			'title'       => 'NEw alGOriTHm USed To RemastEr seInfEld epIsoDeS iN hD',
 			'subtitle'    => 's09-e06 The Merv Griffin Show',
@@ -49,7 +49,7 @@ $collection_sd_to_hd = [
 			'seconds'     => '39',
 		],
 		[
-			'extends'     => '_layouts.single-image_viewer',
+			'extends'     => '_layouts.series-image_viewer',
 			'id'          => 'jkk_201505_1',
 			'title'       => 'hiGh-Def IS cOMing to x-FileS’ digiTaL releasE',
 			'subtitle'    => 's02-e03 - Blood',
@@ -63,7 +63,7 @@ $collection_sd_to_hd = [
 			'seconds'     => '25',
 		],
 		[
-			'extends'     => '_layouts.single-image_viewer',
+			'extends'     => '_layouts.series-image_viewer',
 			'id'          => 'jkk_201504_3',
 			'title'       => 'STar trEk TO bE RErelEAsed iN VERtIcAL CINeMa ForMat (coMMErciAl)',
 			'subtitle'    => 'commerical',
@@ -77,7 +77,7 @@ $collection_sd_to_hd = [
 			'seconds'     => '13',
 		],
 		[
-			'extends'     => '_layouts.single-image_viewer',
+			'extends'     => '_layouts.series-image_viewer',
 			'id'          => 'jkk_201505_2',
 			'title'       => 'LEaKeD TesT footagE frOM seiNfelD RemaSter In hiGh-defiNiTiON',
 			'subtitle'    => 's04-e22 The Handicap Spot',

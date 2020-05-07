@@ -19,7 +19,7 @@ $collection_iphone_oil_paintings = [
 
 	'items'   => [
 		[
-			'extends'     => '_layouts.single-image_viewer',
+			'extends'     => '_layouts.series-image_viewer',
 			'id'          => 'jkk_',
 			'title'       => '',
 			'subtitle'    => 'Untitled',

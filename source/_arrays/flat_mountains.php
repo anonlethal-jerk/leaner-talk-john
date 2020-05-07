@@ -36,7 +36,7 @@ $series_flat_mountains = [
 $collection_flat_mountains = [
 	'path'        => 'o__o/{collection}/{slug}',
 	'sort'        => '-sort_date',
-	'extends'     => '_layouts.single-image_viewer',
+	'extends'     => '_layouts.series-image_viewer',
 
 	'series_info' => $series_flat_mountains,
 

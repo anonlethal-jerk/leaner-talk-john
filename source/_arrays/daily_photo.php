@@ -42,7 +42,7 @@ $series_daily_photo = [
 $collection_daily_photo = [
 	'path'                => 'o__o/{collection}/{slug}',
 	'sort'                => '-sort_date',
-	'extends'             => '_layouts.single-image_viewer',
+	'extends'             => '_layouts.series-image_viewer',
 	// 'open_graph_image'    => 'https://jk-keller.com/o__o/daily_photo/x__x/social/1200x630/{imgfile}',
 	// 'twitter_image'       => 'https://jk-keller.com/o__o/daily_photo/x__x/social/1024x512/{imgfile}',
 
@@ -53,7 +53,7 @@ $collection_daily_photo = [
 	'items'   => [
 
 		[
-			// 'extends'             => '_layouts.single-image_viewer-large',
+			// 'extends'             => '_layouts.series-image_viewer-large',
 			'extends_size'        => '-large',
 			'id'                  => '',
 			'title'               => '',

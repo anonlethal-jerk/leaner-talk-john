@@ -62,6 +62,66 @@ if ( $page->nontitle != null ) {
 			</figcaption>
 		</figure>
 @endif
+		<div class="viewer--prev">
+			@if ($page->getPrevious())
+@php
+if ( $page->getPrevious()->nontitle != null ) {
+	$prev_titling = $page->getPrevious()->nontitle;
+} else if ( $page->getPrevious()->title == '' &&  $page->getPrevious()->subtitle != null) {
+	$prev_titling = 'Untitled ('.$page->getPrevious()->subtitle.')';
+} else if ( $page->getPrevious()->title == '' ) {
+	$prev_titling = 'Untitled';
+} else {
+	$prev_titling = '<cite>'.$page->getPrevious()->title.'</cite>';
+}
+@endphp
+			<a id="image_viewer_prev" class="nav--prev" href="../{{ $page->getPrevious()->slug }}/">
+				<figure>
+	@if ( strpos($page->getPrevious()->imgfile, '.jpg') !== false || strpos($page->getPrevious()->imgfile, '.png') !== false )
+					<img class="" src="../x__x/small/{{ $page->getPrevious()->imgfile }}" alt="{{ $page->getPrevious()->title == '' ? 'Untitled' : $page->getPrevious()->title }}" width="{{ $page->getPrevious()->small_width_px }}" height="{{ $page->getPrevious()->small_height_px }}" />
+	@else
+			<picture>
+				<source srcset="../x__x/small/{{ $page->getPrevious()->imgfile }}.webp" width="{{ $page->getPrevious()->small_width_px }}" height="{{ $page->getPrevious()->small_height_px }}" alt="{{ $page->getPrevious()->title == '' ? 'Untitled' : $page->getPrevious()->title }}" type="image/webp">
+				<img src="../x__x/small/{{ $page->getPrevious()->imgfile }}.png" width="{{ $page->getPrevious()->small_width_px }}" height="{{ $page->getPrevious()->small_height_px }}" alt="{{ $page->getPrevious()->title == '' ? 'Untitled' : $page->getPrevious()->title }}">
+			</picture>
+	@endif
+					<figcaption>{!! $prev_titling !!}</figcaption>
+				</figure>
+			</a>
+			@else
+			<div class="nav--prev">The End</div>
+			@endif
+		</div>
+		<div class="viewer--next">
+			@if ($page->getNext())
+@php
+if ( $page->getNext()->nontitle != null ) {
+	$next_titling = $page->getNext()->nontitle;
+} else if ( $page->getNext()->title == '' &&  $page->getNext()->subtitle != null) {
+	$next_titling = 'Untitled ('.$page->getNext()->subtitle.')';
+} else if ( $page->getNext()->title == '' ) {
+	$next_titling = 'Untitled';
+} else {
+	$next_titling = '<cite>'.$page->getNext()->title.'</cite>';
+}
+@endphp
+			<a id="image_viewer_next" class="nav--next" href="../{{ $page->getNext()->slug }}/">
+				<figure>
+	@if ( strpos($page->getNext()->imgfile, '.jpg') !== false || strpos($page->getNext()->imgfile, '.png') !== false )
+					<img class="" src="../x__x/small/{{ $page->getNext()->imgfile }}" alt="{{ $page->getNext()->title == '' ? 'Untitled' : $page->getNext()->title }}" width="{{ $page->getNext()->small_width_px }}" height="{{ $page->getNext()->small_height_px }}" />
+	@else
+			<picture>
+				<source srcset="../x__x/small/{{ $page->getNext()->imgfile }}.webp" width="{{ $page->getNext()->small_width_px }}" height="{{ $page->getNext()->small_height_px }}" alt="{{ $page->getNext()->title == '' ? 'Untitled' : $page->getNext()->title }}" type="image/webp">
+				<img src="../x__x/small/{{ $page->getNext()->imgfile }}.png" width="{{ $page->getNext()->small_width_px }}" height="{{ $page->getNext()->small_height_px }}" alt="{{ $page->getNext()->title == '' ? 'Untitled' : $page->getNext()->title }}">
+			</picture>
+	@endif
+					<figcaption>{!! $next_titling !!}</figcaption>
+				</figure>
+			</a>
+			@else
+			<div class="nav--next">The End</div>
+			@endif
+		</div>
 	</section>
 
 @section('extra-nav')

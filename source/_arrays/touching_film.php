@@ -19,7 +19,7 @@ $collection_touching_film = [
 
 	'items'   => [
 		[
-			'extends'     => '_layouts.single-image_viewer',
+			'extends'     => '_layouts.series-image_viewer',
 			'id'          => 'jkk_',
 			'title'       => 'Minority Report',
 			'subtitle'    => '',

@@ -27,7 +27,7 @@ $series_dots_dots_dots = [
 $collection_dots_dots_dots = [
 	'path'    => 'o__o/{collection}/{slug}',
 	'sort'    => '-sort_date',
-	'extends'          => '_layouts.single-image_viewer',
+	'extends'          => '_layouts.series-image_viewer',
 
 	'series_info'         => $series_dots_dots_dots,
 
@@ -153,7 +153,7 @@ $collection_dots_dots_dots = [
 			'imgfile'         => 'jk_keller-201408_3_u-dots_us.jpg',
 		],
 		// [
-		// 	'extends'         => '_layouts.single-image_viewer',
+		// 	'extends'         => '_layouts.series-image_viewer',
 		// 	'id'              => 'jkk_201408_2_u',
 		// 	'title'           => '',
 		// 	'subtitle'        => '...FUL',

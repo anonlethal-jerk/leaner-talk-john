@@ -21,7 +21,7 @@ $series_siri_sound_poems = [
 $collection_siri_sound_poems = [
 	'path'    => 'o__o/{collection}/{slug}',
 	'sort'    => '-sort_date',
-	'extends'     => '_layouts.single-image_viewer',
+	'extends'     => '_layouts.series-image_viewer',
 
 	'series_info'         => $series_siri_sound_poems,
 

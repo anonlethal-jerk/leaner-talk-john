@@ -14,7 +14,7 @@ $series_drawings = [
 $collection_drawings = [
 	'path' => 'o__o/{collection}/{slug}',
 	'sort' => '-sort_date',
-	'extends'     => '_layouts.single-image_viewer',
+	'extends'     => '_layouts.series-image_viewer',
 	'series_info'         => $series_drawings,
 	'items' => [
 		[

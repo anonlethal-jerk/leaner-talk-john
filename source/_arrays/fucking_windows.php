@@ -13,7 +13,7 @@ $series_fucking_windows = [
 $collection_fucking_windows = [
 	'path'    => 'o__o/{collection}/{slug}',
 	'sort'    => '-id',
-	'extends'     => '_layouts.single-image_viewer',
+	'extends'     => '_layouts.series-image_viewer',
 
 	'series_info'         => $series_fucking_windows,
 

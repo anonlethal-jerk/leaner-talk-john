@@ -15,3 +15,17 @@ window.addEventListener('resize', () => {
 	// document.documentElement.style.setProperty('--vh60', `${vh-60}px`);
 });
 
+document.addEventListener("keyup", (e) => {
+	if (e.keyCode == '38') {
+		// up arrow
+		document.getElementById("image_viewer_up").click();
+	} else if (e.keyCode == '40') {
+		// down arrow
+	} else if (e.keyCode == '37') {
+		// left arrow
+		document.getElementById("image_viewer_prev").click();
+	} else if (e.keyCode == '39') {
+		// right arrow
+		document.getElementById("image_viewer_next").click();
+	}
+});

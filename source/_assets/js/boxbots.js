@@ -161,89 +161,134 @@ if (document.getElementById('sort--bots') ) {
 //
 
 // table image slider
-if (document.querySelector('.table--image_slider')) {
-	// console.log('yep, table');
 
-	var popup = document.getElementById('popup');
+//////////
+// possible webp support detection:
+// https://davidwalsh.name/detect-webp
+//
+// async function supportsWebp() {
+//   if (!self.createImageBitmap) return false;
 
-	var rows = document.querySelectorAll('.imageload');
-	rows.forEach(function(row) {
-		row.addEventListener('mouseenter', (e) => {
-			if ( popup.getAttribute('src') == row.getAttribute('data-img') ) {
-				popup.style.opacity = 1;
-			} else {
-				var imgUnder = tBod.classList.contains('images--colors') ? 'color' : 'shadow';
-				var imgOver = tBod.classList.contains('images--shadows') ? 'color' : 'shadow';
-				var imgUnderExt = tBod.classList.contains('images--colors') ? 'jpg' : 'png';
-				var imgOverExt = tBod.classList.contains('images--shadows') ? 'jpg' : 'png';
-				var pathname = window.location.pathname;
-				if (pathname.includes('/submissions')) {
-					popup.querySelector('.img--under').setAttribute('src', '/o__o/boxbots/submissions/x__x/'+imgUnder+'-small/'+row.getAttribute("data-img")+'.'+imgUnderExt);
-					popup.querySelector('.img--over').setAttribute('src', '/o__o/boxbots/submissions/x__x/'+imgOver+'-small/'+row.getAttribute("data-img")+'.'+imgOverExt);
+//   const webpData = 'data:image/webp;base64,UklGRh4AAABXRUJQVlA4TBEAAAAvAAAAAAfQ//73v/+BiOh/AAA=';
+//   const blob = await fetch(webpData).then(r => r.blob());
+//   return createImageBitmap(blob).then(() => true, () => false);
+// }
 
-				 } else {
-					popup.querySelector('.img--under').setAttribute('src', '/o__o/boxbots/x__x/'+imgUnder+'-small/'+row.getAttribute("data-img")+'.png');
-					popup.querySelector('.img--over').setAttribute('src', '/o__o/boxbots/x__x/'+imgOver+'-small/'+row.getAttribute("data-img")+'.png');
-				};
-				popup.style.opacity = 1;
+// (async () => {
+//   if(await supportsWebp()) {
+//     console.log('does support');
+//   }
+//   else {
+//     console.log('does not support');
+//   }
+// })();
+
+
+Modernizr.on('webpalpha', function(result) {
+	if (result) {
+		// console.log('yes, webp alpha');
+		var t_ext = '.webp';
+	} else {
+		// console.log('nah bro, webp alpha');
+		var t_ext = '.png';
+	}
+
+	if (document.querySelector('.table--image_slider')) {
+		// console.log('yep, table');
+
+		var popup = document.getElementById('popup');
+
+		var rows = document.querySelectorAll('.imageload');
+		rows.forEach(function(row) {
+			row.addEventListener('mouseenter', (e) => {
+				if ( popup.getAttribute('src') == row.getAttribute('data-img') ) {
+					popup.style.opacity = 1;
+				} else {
+					var imgUnder = tBod.classList.contains('images--colors') ? 'color' : 'shadow';
+					var imgOver = tBod.classList.contains('images--shadows') ? 'color' : 'shadow';
+					var imgUnderExt = tBod.classList.contains('images--colors') ? '.jpg' : '.png';
+					var imgOverExt = tBod.classList.contains('images--shadows') ? '.jpg' : '.png';
+					var pathname = window.location.pathname;
+					if (pathname.includes('/submissions')) {
+						popup.querySelector('.img--under').setAttribute('src', '/o__o/boxbots/submissions/x__x/'+imgUnder+'-small/'+row.getAttribute("data-img")+imgUnderExt);
+						popup.querySelector('.img--over').setAttribute('src', '/o__o/boxbots/submissions/x__x/'+imgOver+'-small/'+row.getAttribute("data-img")+imgOverExt);
+
+					 } else {
+						popup.querySelector('.img--under').setAttribute('src', '/o__o/boxbots/x__x/'+imgUnder+'-small/'+row.getAttribute("data-img")+t_ext);
+						popup.querySelector('.img--over').setAttribute('src', '/o__o/boxbots/x__x/'+imgOver+'-small/'+row.getAttribute("data-img")+t_ext);
+					};
+					popup.style.opacity = 1;
+				}
+
+				var offset = window.innerHeight - row.getBoundingClientRect().top;
+				// console.log(event.clientX);
+				popup.style.height = row.getAttribute('data-img-h')+'px';
+				popup.style.width = row.getAttribute('data-img-w')+'px';
+				popup.style.bottom = Math.round(offset)+'px';
+				var t_percent = ( (row.getBoundingClientRect().width - row.getAttribute('data-img-w')) / row.getBoundingClientRect().width );
+				popup.style.left = ( row.getBoundingClientRect().left + ( row.getBoundingClientRect().width - ((event.clientX - row.getBoundingClientRect().left) * t_percent) - row.getAttribute('data-img-w') ) )+'px';
+			});
+
+			row.addEventListener('mousemove', (e) => {
+				var offset = window.innerHeight - row.getBoundingClientRect().top;
+				// console.log(event.clientX);
+				popup.style.height = row.getAttribute('data-img-h')+'px';
+				popup.style.width = row.getAttribute('data-img-w')+'px';
+				popup.style.bottom = Math.round(offset)+'px';
+				var t_percent = ( (row.getBoundingClientRect().width - row.getAttribute('data-img-w')) / row.getBoundingClientRect().width );
+				var mouse_loc_percent = (event.clientX - row.getBoundingClientRect().left) / row.getBoundingClientRect().width;
+				popup.style.left = ( row.getBoundingClientRect().left + ( row.getBoundingClientRect().width - ((event.clientX - row.getBoundingClientRect().left) * t_percent) - row.getAttribute('data-img-w') ) )+'px';
+				popup.querySelector('.img--over').style.opacity = Math.abs(mouse_loc_percent * 2 - 1)
+			});
+
+			row.addEventListener("mouseleave", (e) => {
+				popup.style.opacity = 0;
+			});
+
+			row.addEventListener("click", (e) => {
+				if ( popup.getAttribute('src') == row.getAttribute('data-img') ) {
+					popup.style.opacity = 1;
+				} else {
+					var imgUnder = tBod.classList.contains('images--colors') ? 'color' : 'shadow';
+					var imgOver = tBod.classList.contains('images--shadows') ? 'color' : 'shadow';
+					var imgUnderExt = tBod.classList.contains('images--colors') ? '.jpg' : '.png';
+					var imgOverExt = tBod.classList.contains('images--shadows') ? '.jpg' : '.png';
+					var pathname = window.location.pathname;
+					if (pathname.includes('/submissions')) {
+						popup.querySelector('.img--under').setAttribute('src', '/o__o/boxbots/submissions/x__x/'+imgUnder+'-small/'+row.getAttribute("data-img")+imgUnderExt);
+						popup.querySelector('.img--over').setAttribute('src', '/o__o/boxbots/submissions/x__x/'+imgOver+'-small/'+row.getAttribute("data-img")+imgOverExt);
+
+					 } else {
+						popup.querySelector('.img--under').setAttribute('src', '/o__o/boxbots/x__x/'+imgUnder+'-small/'+row.getAttribute("data-img")+t_ext);
+						popup.querySelector('.img--over').setAttribute('src', '/o__o/boxbots/x__x/'+imgOver+'-small/'+row.getAttribute("data-img")+t_ext);
+					};
+					popup.style.opacity = 1;
+				}
+				var offset = window.innerHeight - row.getBoundingClientRect().top;
+				popup.style.height = row.getAttribute('data-img-h')+'px';
+				popup.style.width = row.getAttribute('data-img-w')+'px';
+				popup.style.bottom = Math.round(offset)+'px';
+				var t_percent = ( (row.getBoundingClientRect().width - row.getAttribute('data-img-w')) / row.getBoundingClientRect().width );
+				popup.style.left = ( row.getBoundingClientRect().left + ( row.getBoundingClientRect().width - ((event.clientX - row.getBoundingClientRect().left) * t_percent) - row.getAttribute('data-img-w') ) )+'px';
+
+			});
+		});
+
+		document.addEventListener("keyup", (e) => {
+			if (e.keyCode == '38') {
+				// up arrow
+				document.getElementById("image_viewer_up").click();
+			} else if (e.keyCode == '40') {
+				// down arrow
+			} else if (e.keyCode == '37') {
+				// left arrow
+				document.getElementById("image_viewer_prev").click();
+			} else if (e.keyCode == '39') {
+				// right arrow
+				document.getElementById("image_viewer_next").click();
 			}
-
-			var offset = window.innerHeight - row.getBoundingClientRect().top;
-			// console.log(event.clientX);
-			popup.style.height = row.getAttribute('data-img-h')+'px';
-			popup.style.width = row.getAttribute('data-img-w')+'px';
-			popup.style.bottom = Math.round(offset)+'px';
-			var t_percent = ( (row.getBoundingClientRect().width - row.getAttribute('data-img-w')) / row.getBoundingClientRect().width );
-			popup.style.left = ( row.getBoundingClientRect().left + ( row.getBoundingClientRect().width - ((event.clientX - row.getBoundingClientRect().left) * t_percent) - row.getAttribute('data-img-w') ) )+'px';
 		});
 
-		row.addEventListener('mousemove', (e) => {
-			var offset = window.innerHeight - row.getBoundingClientRect().top;
-			// console.log(event.clientX);
-			popup.style.height = row.getAttribute('data-img-h')+'px';
-			popup.style.width = row.getAttribute('data-img-w')+'px';
-			popup.style.bottom = Math.round(offset)+'px';
-			var t_percent = ( (row.getBoundingClientRect().width - row.getAttribute('data-img-w')) / row.getBoundingClientRect().width );
-			var mouse_loc_percent = (event.clientX - row.getBoundingClientRect().left) / row.getBoundingClientRect().width;
-			popup.style.left = ( row.getBoundingClientRect().left + ( row.getBoundingClientRect().width - ((event.clientX - row.getBoundingClientRect().left) * t_percent) - row.getAttribute('data-img-w') ) )+'px';
-			popup.querySelector('.img--over').style.opacity = Math.abs(mouse_loc_percent * 2 - 1)
-		});
+	} // end if table image slider
 
-		row.addEventListener("mouseleave", (e) => {
-			popup.style.opacity = 0;
-		});
-
-		row.addEventListener("click", (e) => {
-			if ( popup.getAttribute('src') == row.getAttribute('data-img') ) {
-				popup.style.opacity = 1;
-			} else {
-				var imgUnder = tBod.classList.contains('images--colors') ? 'color' : 'shadow';
-				var imgOver = tBod.classList.contains('images--shadows') ? 'color' : 'shadow';
-				var imgUnderExt = tBod.classList.contains('images--colors') ? 'jpg' : 'png';
-				var imgOverExt = tBod.classList.contains('images--shadows') ? 'jpg' : 'png';
-				var pathname = window.location.pathname;
-				if (pathname.includes('/submissions')) {
-					popup.querySelector('.img--under').setAttribute('src', '/o__o/boxbots/submissions/x__x/'+imgUnder+'-small/'+row.getAttribute("data-img")+'.'+imgUnderExt);
-					popup.querySelector('.img--over').setAttribute('src', '/o__o/boxbots/submissions/x__x/'+imgOver+'-small/'+row.getAttribute("data-img")+'.'+imgOverExt);
-
-				 } else {
-					popup.querySelector('.img--under').setAttribute('src', '/o__o/boxbots/x__x/'+imgUnder+'-small/'+row.getAttribute("data-img")+'.png');
-					popup.querySelector('.img--over').setAttribute('src', '/o__o/boxbots/x__x/'+imgOver+'-small/'+row.getAttribute("data-img")+'.png');
-				};
-				popup.style.opacity = 1;
-			}
-			var offset = window.innerHeight - row.getBoundingClientRect().top;
-			popup.style.height = row.getAttribute('data-img-h')+'px';
-			popup.style.width = row.getAttribute('data-img-w')+'px';
-			popup.style.bottom = Math.round(offset)+'px';
-			var t_percent = ( (row.getBoundingClientRect().width - row.getAttribute('data-img-w')) / row.getBoundingClientRect().width );
-			popup.style.left = ( row.getBoundingClientRect().left + ( row.getBoundingClientRect().width - ((event.clientX - row.getBoundingClientRect().left) * t_percent) - row.getAttribute('data-img-w') ) )+'px';
-
-		});
-	});
-
-	document.addEventListener("keyup", (e) => {
-		// console.log("yep, table");
-	});
-}
-// end if table image slider
+}); // end modernizr on

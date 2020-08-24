@@ -22,7 +22,7 @@ $series_dirty_mousepads = [
 $collection_dirty_mousepads = [
 	'path'    => 'o__o/{collection}/{slug}',
 	'sort'    => '-id',
-	'extends'          => '_layouts.single-image_viewer',
+	'extends'          => '_layouts.series-image_viewer',
 
 	'series_info'         => $series_dirty_mousepads,
 

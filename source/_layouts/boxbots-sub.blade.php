@@ -1,11 +1,10 @@
 @php
-	$page->nontitle = 'none';
 	$page->series_info = $page->series_boxbot_submissions;
 	$page->twitter_image = 'https://jk-keller.com/o__o/boxbots/submissions/x__x/jk_keller-boxbots-submissions-'.$toggleCurrent.'-1024x512.png';
 	$page->open_graph_image = 'https://jk-keller.com/o__o/boxbots/submissions/x__x/jk_keller-boxbots-submissions-'.$toggleCurrent.'-1200x630.png';
 @endphp
 
-@extends('_layouts.master')
+@extends('_layouts.master', array('t_html_title'=>$page->series_info->title))
 
 @section('body')
 <body class="body--series body--boxbots body--submissions images--{{ $toggleCurrent }}s">
@@ -48,7 +47,7 @@
 	</section>
 
 	@php
-		$sorted_boxbots = $submissions->sortBy('id');
+		$sorted_boxbots = $submissions->sortBy('id', SORT_NATURAL);
 	@endphp
 	<section class="prj_info">
 		@include('_partials.prj_table', ['tableArray' => $sorted_boxbots])

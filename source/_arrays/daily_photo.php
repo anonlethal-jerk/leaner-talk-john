@@ -42,7 +42,7 @@ $series_daily_photo = [
 $collection_daily_photo = [
 	'path'                => 'o__o/{collection}/{slug}',
 	'sort'                => '-sort_date',
-	'extends'             => '_layouts.single-image_viewer',
+	'extends'             => '_layouts.series-image_viewer',
 	// 'open_graph_image'    => 'https://jk-keller.com/o__o/daily_photo/x__x/social/1200x630/{imgfile}',
 	// 'twitter_image'       => 'https://jk-keller.com/o__o/daily_photo/x__x/social/1024x512/{imgfile}',
 
@@ -53,7 +53,7 @@ $collection_daily_photo = [
 	'items'   => [
 
 		[
-			// 'extends'             => '_layouts.single-image_viewer-large',
+			// 'extends'             => '_layouts.series-image_viewer-large',
 			'extends_size'        => '-large',
 			'id'                  => '',
 			'title'               => '',
@@ -74,6 +74,7 @@ $collection_daily_photo = [
 			'large_width_px'      => 1800/2,
 			'description'         => '',
 			'status'              => 'updating yearly',
+			'notes'               => '',
 			'twitter_card_type'   => 'summary_large_image',
 		],
 		[
@@ -192,7 +193,7 @@ $collection_daily_photo = [
 			'medium'              => 'video',
 			'location'            => 'digital',
 			'sort_date'           => '2014_10_01',
-			'nice_date'           => '2014 Oct 01',
+			'nice_date'           => '1998–2014',
 			'imgfile'             => 'jk_keller-201410_3-living_my_life_faster_2014.png',
 			'height'              => 1080,
 			'width'               => 1920,
@@ -205,10 +206,11 @@ $collection_daily_photo = [
 			'large_width_px'      => 1920,
 			'offset_top_px'       => -10,
 			'embed'               => '<style>.figure-embed { width: 100%; max-width: 960px; max-height: 100vh; } .embed-container { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; } .embed-container iframe, .embed-container object, .embed-container embed { position: absolute; top: 0; left: 0; width: 100%; height: 100%; max-height: 90vh; }</style><div class="figure-embed"><div class="embed-container"><iframe src="https://player.vimeo.com/video/405181952" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe></div></div>',
-			'description' => 'JK Keller takes a daily self-portrait every day for 16 years and makes a timelapse video.',
-			'open_graph_image'  => 'https://jk-keller.com/o__o/daily_photo/x__x/social/1200x630/jk_keller-the_adaption_to_my_generation-1998_10_01-2019_12_31.jpg',
-			'twitter_image'     => 'https://jk-keller.com/o__o/daily_photo/x__x/social/1024x512/jk_keller-the_adaption_to_my_generation-1998_10_01-2019_12_31.jpg',
-			'twitter_card_type' => 'summary_large_image',
+			'description'         => 'JK Keller takes a daily self-portrait every day for 16 years and makes a timelapse video.',
+			'notes'               => 'included in <cite>Hamster - Hipster - Handy</cite>',
+			'open_graph_image'    => 'https://jk-keller.com/o__o/daily_photo/x__x/social/1200x630/jk_keller-the_adaption_to_my_generation-1998_10_01-2019_12_31.jpg',
+			'twitter_image'       => 'https://jk-keller.com/o__o/daily_photo/x__x/social/1024x512/jk_keller-the_adaption_to_my_generation-1998_10_01-2019_12_31.jpg',
+			'twitter_card_type'   => 'summary_large_image',
 		],
 		[
 			'id'                  => 'jkk_201410_2',
@@ -397,7 +399,7 @@ $collection_daily_photo = [
 			'medium'              => 'video',
 			'location'            => 'studio',
 			'sort_date'           => '2006_10_01',
-			'nice_date'           => '2006 Oct 01',
+			'nice_date'           => '1998–2006',
 			'imgfile'             => 'jk_keller-200610_2-living_my_life_faster_2006.png',
 			'height'              => 480,
 			'width'               => 640,
@@ -411,10 +413,11 @@ $collection_daily_photo = [
 			'offset_top_px'       => -5,
 			'status'              => 'DVD as well',
 			'embed'               => '<style>.figure-embed { width: 100%; max-width: 640px; max-height: 100vh; } .embed-container { position: relative; padding-bottom: 75%; height: 0; overflow: hidden; max-width: 100%; } .embed-container iframe, .embed-container object, .embed-container embed { position: absolute; top: 0; left: 0; width: 100%; height: 100%; max-height: 90vh; }</style><div class="figure-embed"><div class="embed-container"><iframe src="https://player.vimeo.com/video/397812585" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe></div></div>',
-			'description' => 'JK Keller takes a daily self-portrait every day for 8 years and makes a timelapse video.',
-			'open_graph_image'  => 'https://jk-keller.com/o__o/daily_photo/x__x/social/1200x630/jk_keller-the_adaption_to_my_generation-1998_10_01-2019_12_31.jpg',
-			'twitter_image'     => 'https://jk-keller.com/o__o/daily_photo/x__x/social/1024x512/jk_keller-the_adaption_to_my_generation-1998_10_01-2019_12_31.jpg',
-			'twitter_card_type' => 'summary_large_image',
+			'description'         => 'JK Keller takes a daily self-portrait every day for 8 years and makes a timelapse video.',
+			'notes'               => 'included in <cite>Breaking Ground</cite>, <cite>Wir Manager</cite>, <cite>Video Self Portraits</cite>, <cite>Time Portraits</cite>, <cite>Past (Present) Future</cite>, <cite>New InSight</cite>, and <cite>All About Me</cite>',
+			'open_graph_image'    => 'https://jk-keller.com/o__o/daily_photo/x__x/social/1200x630/jk_keller-the_adaption_to_my_generation-1998_10_01-2019_12_31.jpg',
+			'twitter_image'       => 'https://jk-keller.com/o__o/daily_photo/x__x/social/1024x512/jk_keller-the_adaption_to_my_generation-1998_10_01-2019_12_31.jpg',
+			'twitter_card_type'   => 'summary_large_image',
 		],
 		[
 			'id'                  => 'jkk_200610_1',

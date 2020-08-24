@@ -85,6 +85,8 @@ button {
 	box-shadow: 0 0 30px 5px #d1ffed;
 	transition: top 10s, right 10s, left 10s, box-shadow 3.75s;
 	transition-timing-function: ease-in-out;
+	transform: translate3d(0,0,0);
+	-webkit-transform: translate3d(0,0,0);
 	@media screen and (min-width: 860px) {
 		transition: top 20s, right 20s, left 20s, box-shadow 3.75s;
 		transition-timing-function: ease-in-out;

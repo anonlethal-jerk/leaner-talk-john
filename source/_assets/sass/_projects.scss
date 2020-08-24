@@ -1,7 +1,8 @@
 .body--projects {
 	background: rgb(random(150)+105, random(150)+105, random(150)+105);
 	background: radial-gradient(circle, rgb(random(150)+105, random(150)+105, random(150)+105) 0%, rgb(random(150)+105, random(150)+105, random(150)+105) 100%);
-	min-height: 100vh;
+	// force scrollbars for svg connections
+	min-height: 101vh;
 	line-height: 0;
 
 	table {
@@ -14,6 +15,17 @@
 	}
 	table + .babeckett  {
 		margin-top: 2rem;
+	}
+	.tables--to_do {
+		td {
+			background: rgba(255,255,255,0);
+			&.td--empty {
+				background: transparent;
+			}
+		}
+		> h2 {
+			margin-bottom: 2rem;
+		}
 	}
 
 	.table--projects {
@@ -37,13 +49,26 @@
 
 	}
 	.series_info {
-		min-height: 100vh;
 	}
 
 	.punchlist {
 		text-align: center;
 		opacity: .1;
 		margin-top: 5rem;
+		@media only screen and (min-width: 721px) {
+			width: 710px; // because of scrollbar, this is safe?
+			margin-left: auto;
+			margin-right: auto;
+		}
+	}
+	.terms {
+		text-align: center;
+		margin-top: 5rem;
+		@media only screen and (min-width: 721px) {
+			width: 710px; // because of scrollbar, this is safe?
+			margin-left: auto;
+			margin-right: auto;
+		}
 	}
 
 	&.body--projects--lines {
@@ -58,6 +83,7 @@
 			.table--projects:not(:first-of-type) {
 				td {
 					border-top: $border-default;
+					border-color: rgba(0,0,0,.15);
 					&:first-of-type {
 						border-top: 0;
 					}
@@ -66,7 +92,7 @@
 		}
 	}
 
-	&.body--projects--no_lines {
+	&.body--projects--fills {
 		.table--projects {
 			td {
 				border: 0;

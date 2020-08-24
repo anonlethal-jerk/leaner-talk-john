@@ -1,11 +1,14 @@
 @php
-	$page->nontitle = 'none';
 	$page->series_info = $page->series_boxbots;
 	$page->twitter_image = 'https://jk-keller.com/o__o/boxbots/x__x/'.$toggleCurrent.'-social/1024x512/jk_keller-boxbots-'.$toggleCurrent.'.png';
 	$page->open_graph_image = 'https://jk-keller.com/o__o/boxbots/x__x/'.$toggleCurrent.'-social/1200x630/jk_keller-boxbots-'.$toggleCurrent.'.png';
+
+	if ($toggleCurrent == 'shadow') {
+		$page->series_info->title       = 'BoxBot Shadows';
+	}
 @endphp
 
-@extends('_layouts.master')
+@extends('_layouts.master', array('t_html_title'=>$page->series_info->title))
 
 @section('body')
 <body class="body--series body--boxbots images--{{ $toggleCurrent }}s">
@@ -41,11 +44,11 @@
 				@endif
 					<picture>
 						<source class="{{ $toggleOther }}" data-srcset="/o__o/boxbots/x__x/{{ $toggleOther }}-small/{{ $boxbot->imgfile }}.webp" width="{{ $boxbot->small_width_px }}" height="{{ $boxbot->small_height_px }}" alt="{{ $boxbot->title }} BoxBot" title="{{ $boxbot->title }}, {{ $boxbot->nice_date }}, {{ $boxbot->height }} × {{ $boxbot->width }} mm" type="image/webp">
-						<img class="{{ $toggleOther }} lazyload" src="/x__x/loading-rgb.gif" data-src="/o__o/boxbots/x__x/{{ $toggleOther }}-small/{{ $boxbot->imgfile }}.png" width="{{ $boxbot->small_width_px }}" height="{{ $boxbot->small_height_px }}" alt="{{ $boxbot->title }} BoxBot" title="{{ $boxbot->title }}, {{ $boxbot->nice_date }}, {{ $boxbot->height }} × {{ $boxbot->width }} mm">
+						<img class="{{ $toggleOther }} lazyload" src="/x__x/loading-rgb-99.gif" data-src="/o__o/boxbots/x__x/{{ $toggleOther }}-small/{{ $boxbot->imgfile }}.png" width="{{ $boxbot->small_width_px }}" height="{{ $boxbot->small_height_px }}" alt="{{ $boxbot->title }} BoxBot" title="{{ $boxbot->title }}, {{ $boxbot->nice_date }}, {{ $boxbot->height }} × {{ $boxbot->width }} mm">
 					</picture>
 					<picture>
 						<source class="{{ $toggleCurrent }}" data-srcset="/o__o/boxbots/x__x/{{ $toggleCurrent }}-small/{{ $boxbot->imgfile }}.webp" width="{{ $boxbot->small_width_px }}" height="{{ $boxbot->small_height_px }}" alt="{{ $boxbot->title }} BoxBot" title="{{ $boxbot->title }}, {{ $boxbot->nice_date }}, {{ $boxbot->height }} × {{ $boxbot->width }} mm" type="image/webp">
-						<img class="{{ $toggleCurrent }} lazyload" src="/x__x/loading-rgb.gif" data-src="/o__o/boxbots/x__x/{{ $toggleCurrent }}-small/{{ $boxbot->imgfile }}.png" width="{{ $boxbot->small_width_px }}" height="{{ $boxbot->small_height_px }}" alt="{{ $boxbot->title }} BoxBot" title="{{ $boxbot->title }}, {{ $boxbot->nice_date }}, {{ $boxbot->height }} × {{ $boxbot->width }} mm">
+						<img class="{{ $toggleCurrent }} lazyload" src="/x__x/loading-rgb-99.gif" data-src="/o__o/boxbots/x__x/{{ $toggleCurrent }}-small/{{ $boxbot->imgfile }}.png" width="{{ $boxbot->small_width_px }}" height="{{ $boxbot->small_height_px }}" alt="{{ $boxbot->title }} BoxBot" title="{{ $boxbot->title }}, {{ $boxbot->nice_date }}, {{ $boxbot->height }} × {{ $boxbot->width }} mm">
 					</picture>
 				</a>
 				<div class="sort--hide">
@@ -77,7 +80,7 @@
 	</section>
 
 	@php
-		$sorted_boxbots = $boxbots->sortBy('id');
+		$sorted_boxbots = $boxbots->sortBy('id', SORT_NATURAL);
 	@endphp
 	<section class="prj_info">
 		@include('_partials.prj_table', ['tableArray' => $sorted_boxbots])

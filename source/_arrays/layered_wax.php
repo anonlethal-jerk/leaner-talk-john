@@ -4,10 +4,10 @@ $series_layered_wax = [
 	'slug'        => 'layered_wax',
 	'js'          => null,
 	'title'       => 'I’ve Been Thinking of You for a While',
-	'nice_date'   => '',
+	'nice_date'   => '2008–2017',
 	'status'      => '',
 	'description' => '',
-	'notes'       => 'collab with <a href="http://fromkeetra.com">Keetra Dean Dixon',
+	'notes'       => 'collab with <a href="https://fromkeetra.com/and-yet/">Keetra Dean Dixon</a> (generally)',
 	'to_dos'      => '',
 ];
 
@@ -15,12 +15,12 @@ $collection_layered_wax = [
 	'path'    => 'o__o/{collection}/{slug}',
 	'sort'    => '-id',
 	'extends'          => '{extends}',
-	'series_slug'      => $series_layered_wax['slug'],
-	'series_title'     => $series_layered_wax['title'],
-	'js'               => $series_layered_wax['js'],
+
+	'series_info'         => $series_layered_wax,
+
 	'items'   => [
 		[
-			'extends'     => '_layouts.single-image_viewer',
+			'extends'     => '_layouts.series-image_viewer',
 			'id'          => 'jkkdd_',
 			'title'       => 'THEN AGAIN',
 			'subtitle'    => '',
@@ -35,7 +35,7 @@ $collection_layered_wax = [
 			'status'      => 'Stedelijk Musuem Breda',
 		],
 		[
-			'extends'     => '_layouts.single-image_viewer',
+			'extends'     => '_layouts.series-image_viewer',
 			'id'          => 'jkkdd_',
 			'title'       => 'THEN AGAIN (Specimen #1)',
 			'subtitle'    => '',
@@ -50,7 +50,7 @@ $collection_layered_wax = [
 			'status'      => '',
 		],
 		[
-			'extends'     => '_layouts.single-image_viewer',
+			'extends'     => '_layouts.series-image_viewer',
 			'id'          => 'jkkdd_',
 			'title'       => 'THEN AGAIN (Specimen #2)',
 			'subtitle'    => '',
@@ -65,7 +65,7 @@ $collection_layered_wax = [
 			'status'      => '',
 		],
 		[
-			'extends'     => '_layouts.single-image_viewer',
+			'extends'     => '_layouts.series-image_viewer',
 			'id'          => 'jkkdd_',
 			'title'       => 'Suddenly',
 			'subtitle'    => '',
@@ -81,7 +81,7 @@ $collection_layered_wax = [
 			'notes'       => '',
 		],
 		[
-			'extends'     => '_layouts.single-image_viewer',
+			'extends'     => '_layouts.series-image_viewer',
 			'id'          => 'jkkdd_',
 			'title'       => 'Suddenly (Specimen #1)',
 			'subtitle'    => '',
@@ -97,7 +97,7 @@ $collection_layered_wax = [
 			'notes'       => '',
 		],
 		[
-			'extends'     => '_layouts.single-image_viewer',
+			'extends'     => '_layouts.series-image_viewer',
 			'id'          => 'jkkdd_',
 			'title'       => 'Suddenly (Specimen #2)',
 			'subtitle'    => '',
@@ -113,7 +113,7 @@ $collection_layered_wax = [
 			'notes'       => '',
 		],
 		[
-			'extends'     => '_layouts.single-image_viewer',
+			'extends'     => '_layouts.series-image_viewer',
 			'id'          => 'jkkdd_',
 			'title'       => 'And Yet',
 			'subtitle'    => '',
@@ -130,7 +130,7 @@ $collection_layered_wax = [
 			'notes'       => '',
 		],
 		[
-			'extends'     => '_layouts.single-image_viewer',
+			'extends'     => '_layouts.series-image_viewer',
 			'id'          => 'jkkdd_',
 			'title'       => 'And Yet (Specimen #1)',
 			'subtitle'    => '',
@@ -147,7 +147,7 @@ $collection_layered_wax = [
 			'notes'       => '',
 		],
 		[
-			'extends'     => '_layouts.single-image_viewer',
+			'extends'     => '_layouts.series-image_viewer',
 			'id'          => 'jkkdd_',
 			'title'       => 'And Yet (Specimen #2)',
 			'subtitle'    => '',
@@ -164,7 +164,7 @@ $collection_layered_wax = [
 			'notes'       => '',
 		],
 		[
-			'extends'     => '_layouts.single-image_viewer',
+			'extends'     => '_layouts.series-image_viewer',
 			'id'          => 'jkk_',
 			'title'       => 'Only',
 			'subtitle'    => '',
@@ -179,7 +179,7 @@ $collection_layered_wax = [
 			'notes'       => 'baltimore exhibition',
 		],
 		[
-			'extends'     => '_layouts.single-image_viewer',
+			'extends'     => '_layouts.series-image_viewer',
 			'id'          => 'jkk_',
 			'title'       => 'Only (Specimen)',
 			'subtitle'    => '',
@@ -194,7 +194,7 @@ $collection_layered_wax = [
 			'notes'       => '',
 		],
 		[
-			'extends'     => '_layouts.single-image_viewer',
+			'extends'     => '_layouts.series-image_viewer',
 			'id'          => 'jkkdd_',
 			'title'       => 'Become',
 			'subtitle'    => '(orange)',
@@ -210,7 +210,7 @@ $collection_layered_wax = [
 			'notes'       => 'MAD Museum exhibition, Obama exhibition',
 		],
 		[
-			'extends'     => '_layouts.single-image_viewer',
+			'extends'     => '_layouts.series-image_viewer',
 			'id'          => 'jkkdd_',
 			'title'       => 'Become (Specimen)',
 			'subtitle'    => '',
@@ -226,7 +226,7 @@ $collection_layered_wax = [
 			'notes'       => 'MAD Museum exhibition, Obama exhibition',
 		],
 		[
-			'extends'     => '_layouts.single-image_viewer',
+			'extends'     => '_layouts.series-image_viewer',
 			'id'          => 'jkkdd_',
 			'title'       => 'Become',
 			'subtitle'    => '(green)',
@@ -242,7 +242,7 @@ $collection_layered_wax = [
 			'notes'       => '',
 		],
 		[
-			'extends'     => '_layouts.single-image_viewer',
+			'extends'     => '_layouts.series-image_viewer',
 			'id'          => 'jkkdd_',
 			'title'       => 'Throughout',
 			'subtitle'    => '',

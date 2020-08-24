@@ -3,7 +3,7 @@
 	$page->meta_description = 'Stuff I gotta do. Stuff I got done.';
 @endphp
 
-@extends('_layouts.master')
+@extends('_layouts.master', array('t_html_title'=>$page->title))
 
 @section('body')
 <body class="body--punchlists punchlist--website">
@@ -20,6 +20,79 @@
 					'title'       => '',
 					'description' => '',
 					'date_done'   => '',
+				],
+
+				[
+					'id'          => '2020_04_26-',
+					'based_on_id' => '',
+					'section'     => '',
+					'title'       => '',
+					'description' => '',
+					'date_done'   => '',
+				],
+				[
+					'id'          => '2020_04_26-2',
+					'based_on_id' => '',
+					'section'     => 'projects',
+					'title'       => 'version where just keep adding lines to svg based on width',
+					'description' => 'faded out over time? overflow:hidden?',
+					'date_done'   => '',
+				],
+				[
+					'id'          => '2020_04_26-1',
+					'based_on_id' => '',
+					'section'     => 'projects',
+					'title'       => 'fix end lines not drawing on svgs',
+					'description' => 'was due to scrollbar appearing after drawing svgs',
+					'date_done'   => '2020_04_26',
+				],
+				[
+					'id'          => '2020_04_25-2',
+					'based_on_id' => '',
+					'section'     => 'image_viewer',
+					'title'       => 'add arrow key control of navigation',
+					'description' => '',
+					'date_done'   => '2020_04_25',
+				],
+				[
+					'id'          => '2020_04_25-1',
+					'based_on_id' => '2020_04_24-2',
+					'section'     => 'flat_mountains',
+					'title'       => 'added a couple more',
+					'description' => '',
+					'date_done'   => '2020_04_25',
+				],
+				[
+					'id'          => '2020_04_24-2',
+					'based_on_id' => '2020_04_24-1',
+					'section'     => 'flat_mountains',
+					'title'       => 'add the rest of the images...',
+					'description' => '',
+					'date_done'   => '',
+				],
+				[
+					'id'          => '2020_04_24-1',
+					'based_on_id' => '2020_04_19-4',
+					'section'     => 'flat_mountains',
+					'title'       => 'Add the Tantamounts',
+					'description' => '',
+					'date_done'   => '2020_04_24',
+				],
+				[
+					'id'          => '2020_04_22-2',
+					'based_on_id' => '2020_04_19-3',
+					'section'     => 'global',
+					'title'       => 'why fb og:image throwing "error" in debugger?',
+					'description' => 'maybe og:image:url ? NOPE<br> maybe move up under title? NOPE. Add space and closing slash to meta tag? NOPE',
+					'date_done'   => '',
+				],
+				[
+					'id'          => '2020_04_22-1',
+					'based_on_id' => '2020_04_16-1',
+					'section'     => 'projects',
+					'title'       => 'fix line connections on svg... cell widths off',
+					'description' => 'getBoundingClientRect() gives floating point width',
+					'date_done'   => '2020_04_22',
 				],
 				[
 					'id'          => '2020_04_21-1',
@@ -210,8 +283,8 @@
 					'based_on_id' => '2020_04_15-03',
 					'section'     => 'Global',
 					'title'       => 'change project table rollover image pop-up to lazyload somehow?',
-					'description' => 'is that duping content? webp vs. png so not too much bandwidth',
-					'date_done'   => '',
+					'description' => 'went with modernizr to check for support... may revisit?<br>is that duping content? webp vs. png so not too much bandwidth',
+					'date_done'   => '2020_04_24',
 				],
 				[
 					'id'          => '2020_04_15-03',

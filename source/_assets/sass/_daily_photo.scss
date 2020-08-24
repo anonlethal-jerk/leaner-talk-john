@@ -33,7 +33,7 @@
 		}
 	}
 	.table--prj_info {
-		@media only screen and (max-width: 750px) {
+		@media only screen and (max-width: 800px) {
 			@include table--mobile;
 			.td--prj_slug,
 			.td--prj_by,

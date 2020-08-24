@@ -51,9 +51,11 @@
 			<td data-label="Title" class="td--series_title{{ $seriesArray['title'] == '' ? ' td--empty' : '' }}"><h1>{{-- <a href="/o__o/{{ $seriesArray['slug'] }}/"> --}}<cite>{{ $seriesArray['title'] }}</cite></h1>{!! isset($seriesArray['subtitle']) ? '<h2 class="h2--subtitle">('.$seriesArray['subtitle'].')</h2>' : '' !!}{{-- </a> --}}</td>
 		@if (isset ($seriesArray['pages']))
 			<td data-label="Subpages" class="td--series_subpages">
+				<ul>
 			@foreach ($seriesArray['pages'] as $page)
-					<p><strong><a href="/o__o/{{ $seriesArray['slug'] }}/{{ $page['slug'] }}/">{{ $page['title'] }}</a></strong></p>
+					<li><strong><a href="/o__o/{{ $seriesArray['slug'] }}/{{ $page['slug'] }}/">{{ $page['title'] }}</a></strong></li>
 			@endforeach
+				</ul>
 			</td>
 		@else
 			<td data-label="Subpages" class="td--series_notes td--empty"></td>

@@ -20,9 +20,10 @@ class GenerateSitemap
 		$filePath = $jigsaw->getDestinationPath();
 
 		collect($jigsaw->getOutputPaths())->sort()->each(function ($path) use ($baseUrl, $sitemap, $filePath) {
+			// echo($path."\n");
 			if (! $this->isAsset($path)) {
 				if (! is_file($filePath.$path)) {
-					echo($path."\n");
+					echo("yes: ".$path."\n");
 					$sitemap->addItem($baseUrl . $path . '/', time(), Sitemap::DAILY);
 				}
 			}
@@ -40,7 +41,7 @@ class GenerateSitemap
 		// if (starts_with($path, '/o__o/daily_photo')) { $t_flag = true; };
 		if (starts_with($path, '/o__o/dirty_mousepads')) { $t_flag = true; };
 		// if (starts_with($path, '/o__o/dots_dots_dots')) { $t_flag = true; };
-		if (starts_with($path, '/o__o/flat_mountains')) { $t_flag = true; };
+		// if (starts_with($path, '/o__o/flat_mountains')) { $t_flag = true; };
 		if (starts_with($path, '/o__o/fucking_windows')) { $t_flag = true; };
 		if (starts_with($path, '/o__o/homepages')) { $t_flag = true; };
 		if (starts_with($path, '/o__o/iphone_oil_paintings')) { $t_flag = true; };
@@ -50,6 +51,7 @@ class GenerateSitemap
 		if (starts_with($path, '/o__o/sd_to_hd')) { $t_flag = true; };
 		if (starts_with($path, '/o__o/siri_sound_poems')) { $t_flag = true; };
 		if (starts_with($path, '/o__o/touching_film')) { $t_flag = true; };
+		if (starts_with($path, '/o__o/drawings')) { $t_flag = true; };
 
 		if (starts_with($path, '(*)__(*)')) { $t_flag = true; };
 		if (starts_with($path, '/(*)__(*)')) { $t_flag = true; };

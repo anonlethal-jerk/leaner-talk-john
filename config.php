@@ -2,7 +2,17 @@
 
 return [
 	'production' => false,
-	'baseUrl' => 'https://jk-keller.com',
+	'baseUrl' => '',
+
+	// page defaults
+	'twitter_card_type' => 'summary_large_image',
+	'twitter_image'     => null,
+	'open_graph_image'  => null,
+	'meta_description'  => 'work from JK Keller',
+	'person'            => null, // for boxbots
+	'nontitle'          => null, // non-cite title
+	'title'             => null, // cite title
+
 	'collections' => [
 		'posts' => [
 			'author' => 'JK',
@@ -12,11 +22,12 @@ return [
 		'boxbots',
 		'submissions',
 		'daily_photo',
-
-		'dirty_mousepads',
 		'dots_dots_dots',
-		'arrow_iterations',
 		'flat_mountains',
+
+		// 'drawings',
+		'dirty_mousepads',
+		'arrow_iterations',
 		'fucking_windows',
 		'homepages',
 		'iphone_oil_paintings',

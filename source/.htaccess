@@ -17,6 +17,7 @@ RewriteRule ^•__•/?(.*)$ $1 [L]
 RewriteRule ^-__-/?(.*)$ $1 [L]
 
 # old urls...
+# BoxBots
 RewriteRule ^boxbots/?(.*)?$  https://jk-keller.com/o__o/boxbots/ [NC,R=301]
 
 #####
@@ -35,4 +36,10 @@ RewriteRule ^daily[_-]photo/?(.*)?$  https://jk-keller.com/o__o/daily_photo/ [NC
 #
 #####
 
+# Dot Drawings
 RewriteRule ^dots[_-]dots[_-]dots/?(.*)?$  https://jk-keller.com/o__o/dots_dots_dots/ [NC,R=301]
+
+# Tantamounts
+RewriteRule ^works/2009/tantamount/?(.*)?$  https://jk-keller.com/o__o/flat_mountains/ [NC,R=301]
+RewriteRule ^flattened[_-]mountains/?(.*)?$  https://jk-keller.com/o__o/flat_mountains/ [NC,R=301]
+

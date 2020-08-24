@@ -1,9 +1,15 @@
 @php
-	// $page->series_title       = $page->series_boxbot_submissions->title;
+	$page->series_title       = $page->series_boxbot_submissions->title;
 	$page->meta_description = 'Bot character made from altered product packaging';
+	if ($page->person !== null) {
+		$t_person = ', by '.$page->person;
+	} else {
+		$t_person = '';
+	}
 
 	if ($toggleCurrent == 'shadow') {
 		$file_ext = '.png';
+		$page->series_title       = 'BoxBot Submission Shadows';
 	} else {
 		$file_ext = '.jpg';
 	}
@@ -21,11 +27,11 @@
 	// };
 @endphp
 
-@extends('_layouts.master')
+@extends('_layouts.master', array('t_html_title'=>$page->title.$page->nontitle.$t_person.' •__• '.$page->series_title))
 
 @section('body')
 <body class="body--boxbot body--submission images--{{ $toggleCurrent }}s">
-	<h1 class="visuallyhidden"><cite>{{ $page->title }}</cite></h1>
+	<h1 class="visuallyhidden"><cite>{{ $page->title }}</cite>{{ $page->nontitle }}</h1>
 
 	<section class="boxbot_viewer">
 		<figure class="viewer--image">
@@ -39,13 +45,13 @@
 		</figure>
 		<div class="viewer--prev">
 			@if ($page->getPrevious())
-			<a class="nav--prev" href="../{{ $page->getPrevious()->slug }}/">
+			<a id="image_viewer_prev" class="nav--prev" href="../{{ $page->getPrevious()->slug }}/">
 				<figure>
 					<img class="{{ $toggleOther }}" src="/o__o/boxbots/submissions/x__x/{{ $toggleOther }}-small/{{ $page->getPrevious()->imgfile }}.{{ $toggleOther == 'color' ? 'jpg' : 'png' }}" alt="{{ $page->getPrevious()->title }}" width="{{ $page->getPrevious()->small_width_px }}" height="{{ $page->getPrevious()->small_height_px }}" />
 				</figure>
 				<figure>
 					<img class="{{ $toggleCurrent }}" src="/o__o/boxbots/submissions/x__x/{{ $toggleCurrent }}-small/{{ $page->getPrevious()->imgfile }}.{{ $toggleCurrent == 'color' ? 'jpg' : 'png' }}" alt="{{ $page->getPrevious()->title }}" width="{{ $page->getPrevious()->small_width_px }}" height="{{ $page->getPrevious()->small_height_px }}" />
-					<figcaption>by {{ $page->getPrevious()->person }}</figcaption>
+					<figcaption>{!! $page->getPrevious()->title != '' ? '<cite>'.$page->getPrevious()->title.'</cite>,' : 'Untitled,' !!} {{ $page->person != NULL ? 'by '.$page->getPrevious()->person : '' }}</figcaption>
 				</figure>
 			</a>
 			@else
@@ -54,13 +60,13 @@
 		</div>
 		<div class="viewer--next">
 			@if ($page->getNext())
-			<a class="nav--next" href="../{{ $page->getNext()->slug }}/">
+			<a id="image_viewer_next" class="nav--next" href="../{{ $page->getNext()->slug }}/">
 				<figure>
 					<img class="{{ $toggleOther }}" src="/o__o/boxbots/submissions/x__x/{{ $toggleOther }}-small/{{ $page->getNext()->imgfile }}.{{ $toggleOther == 'color' ? 'jpg' : 'png' }}" alt="{{ $page->getNext()->title }}" width="{{ $page->getNext()->small_width_px }}" height="{{ $page->getNext()->small_height_px }}" />
 				</figure>
 				<figure>
 					<img class="{{ $toggleCurrent }}" src="/o__o/boxbots/submissions/x__x/{{ $toggleCurrent }}-small/{{ $page->getNext()->imgfile }}.{{ $toggleCurrent == 'color' ? 'jpg' : 'png' }}" alt="{{ $page->getNext()->title }}" width="{{ $page->getNext()->small_width_px }}" height="{{ $page->getNext()->small_height_px }}" />
-					<figcaption>by {{ $page->getNext()->person }}</figcaption>
+					<figcaption>{!! $page->getNext()->title != '' ? '<cite>'.$page->getNext()->title.'</cite>,' : 'Untitled,' !!} {{ $page->person != NULL ? 'by '.$page->getNext()->person : '' }}</figcaption>
 				</figure>
 			</a>
 			@else
@@ -72,7 +78,7 @@
 @endsection
 
 @section('extra-nav')
-	<nav id="feralhog" class="hog"><a href="../">BoxBot Submissions</a></nav>
+	<nav id="feralhog" class="hog"><a id="image_viewer_up" href="../">BoxBot Submissions</a></nav>
 @endsection
 @section('extra-scripts')
 	<script src="{{ mix('*__*/image_viewer.js', '') }}"></script>

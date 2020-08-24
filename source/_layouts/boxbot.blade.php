@@ -1,9 +1,10 @@
 @php
-	// $page->series_title       = $page->series_boxbots->title;
+	$page->series_title       = $page->series_boxbots->title;
 	$page->meta_description = 'Bot character made from altered '.$page->title.' packaging';
 
 	if ($toggleCurrent == 'shadow') {
 		$file_ext = '.png';
+		$page->series_title       = 'BoxBot Shadows';
 	} else {
 		$file_ext = '.jpg';
 	}
@@ -20,7 +21,7 @@
 	// };
 @endphp
 
-@extends('_layouts.master')
+@extends('_layouts.master', array('t_html_title'=>$page->title.' •__• '.$page->series_title))
 
 @section('body')
 <body class="body--boxbot images--{{ $toggleCurrent }}s">
@@ -54,7 +55,7 @@
 		</figure>
 		<div class="viewer--prev">
 			@if ($page->getPrevious())
-			<a class="nav--prev" href="../{{ $page->getPrevious()->slug }}/">
+			<a id="image_viewer_prev" class="nav--prev" href="../{{ $page->getPrevious()->slug }}/">
 				<figure>
 					<img class="{{ $toggleOther }}" src="/o__o/boxbots/x__x/{{ $toggleOther }}-small/{{ $page->getPrevious()->imgfile }}.png" alt="{{ $page->getPrevious()->title }}" width="{{ $page->getPrevious()->small_width_px }}" height="{{ $page->getPrevious()->small_height_px }}" />
 				</figure>
@@ -69,7 +70,7 @@
 		</div>
 		<div class="viewer--next">
 			@if ($page->getNext())
-			<a class="nav--next" href="../{{ $page->getNext()->slug }}/">
+			<a id="image_viewer_next" class="nav--next" href="../{{ $page->getNext()->slug }}/">
 				<figure>
 					<img class="{{ $toggleOther }}" src="/o__o/boxbots/x__x/{{ $toggleOther }}-small/{{ $page->getNext()->imgfile }}.png" alt="{{ $page->getNext()->title }}" width="{{ $page->getNext()->small_width_px }}" height="{{ $page->getNext()->small_height_px }}" />
 				</figure>
@@ -87,7 +88,7 @@
 @endsection
 
 @section('extra-nav')
-	<nav id="feralhog" class="hog"><a href="../">BoxBots</a></nav>
+	<nav id="feralhog" class="hog"><a id="image_viewer_up" href="../">BoxBots</a></nav>
 @endsection
 @section('extra-scripts')
 	<script src="{{ mix('*__*/image_viewer.js', '') }}"></script>

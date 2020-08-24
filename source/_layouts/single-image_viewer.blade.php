@@ -1,76 +1,77 @@
 @php
-if ($page->open_graph_image == '') {
-	if ( strpos($page->imgfile, '.jpg') !== false || strpos($page->imgfile, '.png') !== false ) {
-		$page->open_graph_image = 'https://jk-keller.com/o__o/'.$page->series_info->slug.'/x__x/social/1200x630/'.$page->imgfile;
+	if ( $page->project->nontitle != null ) {
+		$titling = $page->project->nontitle;
+	} else if ( $page->project->title == '' &&  $page->project->subtitle != null) {
+		$titling = 'Untitled ('.$page->project->subtitle.')';
+	} else if ( $page->project->title == '' ) {
+		$titling = 'Untitled';
 	} else {
-		$page->open_graph_image = 'https://jk-keller.com/o__o/'.$page->series_info->slug.'/x__x/social/1200x630/'.$page->imgfile.'.jpg';
+		$titling = '<cite>'.$page->project->title.'</cite>';
 	}
-};
-if ($page->twitter_image == '') {
-	if ($page->twitter_card_type == "summary") {
-		if ( strpos($page->imgfile, '.jpg') !== false || strpos($page->imgfile, '.png') !== false ) {
-			$page->twitter_image = 'https://jk-keller.com/o__o/'.$page->series_info->slug.'/x__x/social/512x512/'.$page->imgfile;
+
+	$t_title = str_replace('<cite>','',str_replace('</cite>','',$titling));
+
+	if ($page->project->open_graph_image == '') {
+		if ( strpos($page->project->imgfile, '.jpg') !== false || strpos($page->project->imgfile, '.png') !== false ) {
+			$page->project->open_graph_image = 'https://jk-keller.com/o__o/'.$page->project->slug.'/x__x/social/1200x630/'.$page->project->imgfile;
 		} else {
-			$page->twitter_image = 'https://jk-keller.com/o__o/'.$page->series_info->slug.'/x__x/social/512x512/'.$page->imgfile.'.jpg';
-		}
-	} else {
-		if ( strpos($page->imgfile, '.jpg') !== false || strpos($page->imgfile, '.png') !== false ) {
-			$page->twitter_image = 'https://jk-keller.com/o__o/'.$page->series_info->slug.'/x__x/social/1024x512/'.$page->imgfile;
-		} else {
-			$page->twitter_image = 'https://jk-keller.com/o__o/'.$page->series_info->slug.'/x__x/social/1024x512/'.$page->imgfile.'.jpg';
+			$page->project->open_graph_image = 'https://jk-keller.com/o__o/'.$page->project->slug.'/x__x/social/1200x630/'.$page->project->imgfile.'.jpg';
 		}
 	};
-};
+	if ($page->project->twitter_image == '') {
+		if ($page->project->twitter_card_type == "summary") {
+			if ( strpos($page->project->imgfile, '.jpg') !== false || strpos($page->project->imgfile, '.png') !== false ) {
+				$page->project->twitter_image = 'https://jk-keller.com/o__o/'.$page->project->slug.'/x__x/social/512x512/'.$page->project->imgfile;
+			} else {
+				$page->project->twitter_image = 'https://jk-keller.com/o__o/'.$page->project->slug.'/x__x/social/512x512/'.$page->project->imgfile.'.jpg';
+			}
+		} else {
+			if ( strpos($page->project->imgfile, '.jpg') !== false || strpos($page->project->imgfile, '.png') !== false ) {
+				$page->project->twitter_image = 'https://jk-keller.com/o__o/'.$page->project->slug.'/x__x/social/1024x512/'.$page->project->imgfile;
+			} else {
+				$page->project->twitter_image = 'https://jk-keller.com/o__o/'.$page->project->slug.'/x__x/social/1024x512/'.$page->project->imgfile.'.jpg';
+			}
+		};
+	};
 @endphp
 
-@include('_partials.header')
+@include('_partials.header', array('t_html_title'=>$t_title))
 
-<body class="body--single--{{ $page->series_info->slug }}">
-	<h1 class="visuallyhidden"><cite>{{ $page->title }}</cite></h1>
+<body class="body--single--{{ $page->project->slug }}">
+	<h1 class="visuallyhidden"><cite>{{ $page->project->title }}</cite></h1>
 
-	<section class="image_viewer{{ $page->extends_size }}">
-@php
-if ( $page->nontitle != null ) {
-	$titling = $page->nontitle;
-} else if ( $page->title == '' &&  $page->subtitle != null) {
-	$titling = 'Untitled ('.$page->subtitle.')';
-} else if ( $page->title == '' ) {
-	$titling = 'Untitled';
-} else {
-	$titling = '<cite>'.$page->title.'</cite>';
-}
-@endphp
-@if ($page->embed == '' || $page->embed == NULL)
-		<figure class="viewer--image{{ $page->extends_size }}">
-	@if ( strpos($page->imgfile, '.jpg') !== false || strpos($page->imgfile, '.png') !== false )
-			<img class="" src="../x__x/large/{{ $page->imgfile }}" alt="{{ $page->title }}" width="{{ $page->large_width_px }}" height="{{ $page->large_height_px }}" />
+	<section class="image_viewer{{ $page->project->extends_size }}">
+@if ($page->project->embed == '' || $page->project->embed == NULL)
+		<figure class="viewer--image{{ $page->project->extends_size }}">
+	@if ( strpos($page->project->imgfile, '.jpg') !== false || strpos($page->project->imgfile, '.png') !== false )
+			<img class="" src="../x__x/large/{{ $page->project->imgfile }}" alt="{{ $page->project->title }}" width="{{ $page->project->large_width_px }}" height="{{ $page->project->large_height_px }}" />
 	@else
 			<picture>
-				<source srcset="../x__x/large/{{ $page->imgfile }}.webp" width="{{ $page->large_width_px }}" height="{{ $page->large_height_px }}" alt="{{ $page->title == '' ? 'Untitled' : $page->title }}" title="{{ $page->title == '' ? 'Untitled' : $page->title }}, {{ $page->nice_date }}, {{ $page->height == '' ? '' : ' '.$page->height }}{{ $page->width == '' ? '' : ' × ' }}{{ $page->width }} {{ $page->units }}" type="image/webp">
-				<img src="../x__x/large/{{ $page->imgfile }}.png" width="{{ $page->large_width_px }}" height="{{ $page->large_height_px }}" alt="{{ $page->title == '' ? 'Untitled' : $page->title }}" title="{{ $page->title == '' ? 'Untitled' : $page->title }}, {{ $page->nice_date }}, {{ $page->height == '' ? '' : ' '.$page->height }}{{ $page->width == '' ? '' : ' × ' }}{{ $page->width }} {{ $page->units }}">
+				<source srcset="../x__x/large/{{ $page->project->imgfile }}.webp" width="{{ $page->project->large_width_px }}" height="{{ $page->project->large_height_px }}" alt="{{ $page->project->title == '' ? 'Untitled' : $page->project->title }}" title="{{ $page->project->title == '' ? 'Untitled' : $page->project->title }}, {{ $page->project->nice_date }}, {{ $page->project->height == '' ? '' : ' '.$page->project->height }}{{ $page->project->width == '' ? '' : ' × ' }}{{ $page->project->width }} {{ $page->project->units }}" type="image/webp">
+				<img src="../x__x/large/{{ $page->project->imgfile }}.png" width="{{ $page->project->large_width_px }}" height="{{ $page->project->large_height_px }}" alt="{{ $page->project->title == '' ? 'Untitled' : $page->project->title }}" title="{{ $page->project->title == '' ? 'Untitled' : $page->project->title }}, {{ $page->project->nice_date }}, {{ $page->project->height == '' ? '' : ' '.$page->project->height }}{{ $page->project->width == '' ? '' : ' × ' }}{{ $page->project->width }} {{ $page->project->units }}">
 			</picture>
 	@endif
 			<figcaption>
-				{!! $titling !!}, <span class="no_break">{{ $page->nice_date }}</span>{{ $page->width == NULL ? '' : ',' }} <span class="no_break">{{ $page->height }} {{ $page->width == NULL ? '' : '×' }} {{ $page->width }} {{ $page->depth == NULL ? '' : '×' }} {{ $page->depth }} {{ $page->units }}</span>
+				{!! $titling !!}, <span class="no_break">{{ $page->project->nice_date }}</span>{{ $page->project->width == NULL ? '' : ',' }} <span class="no_break">{{ $page->project->height }} {{ $page->project->width == NULL ? '' : '×' }} {{ $page->project->width }} {{ $page->project->depth == NULL ? '' : '×' }} {{ $page->project->depth }} {{ $page->project->units }}</span>
 			</figcaption>
 		</figure>
 @else
-		<figure class="viewer--image{{ $page->extends_size }} viewer--image-embed">
-			{!! $page->embed !!}
+		<figure class="viewer--image{{ $page->project->extends_size }} viewer--image-embed">
+			{!! $page->project->embed !!}
 			<figcaption>
-				{!! $titling !!}, <span class="no_break">{{ $page->nice_date }}</span>{{ $page->width == NULL ? '' : ',' }} <span class="no_break">{{ $page->height }} {{ $page->width == NULL ? '' : '×' }} {{ $page->width }} {{ $page->depth == NULL ? '' : '×' }} {{ $page->depth }} {{ $page->units }}</span>
+				{!! $titling !!}, <span class="no_break">{{ $page->project->nice_date }}</span>, {{ $page->project->medium }}{{ $page->project->duration == NULL ? '' : ', ' }}{{ $page->project->duration }}{{ $page->project->width == NULL ? '' : ',' }} <span class="no_break">{{ $page->project->height }} {{ $page->project->width == NULL ? '' : '×' }} {{ $page->project->width }} {{ $page->project->depth == NULL ? '' : '×' }} {{ $page->project->depth }} {{ $page->project->units }}</span>
 			</figcaption>
 		</figure>
 @endif
 	</section>
 
 @section('extra-nav')
-	<nav id="feralhog" class="hog"><a id="image_viewer_up" href="../"><cite>{{ $page->series_info->title }}</cite></a></nav>
+	<nav id="feralhog" class="hog"><a id="image_viewer_up" href="../">Projects</a></nav>
 @endsection
 @section('extra-scripts')
 	<script src="{{ mix('*__*/image_viewer.js', '') }}"></script>
-	@if ($page->js != null)
-	<script src="{{ mix('*__*/'.$page->series_info->slug.'.js', '') }}" async=""></script>
+	@if ($page->project->js != null)
+	<script src="{{ mix('*__*/'.$page->project->slug.'.js', '') }}" async=""></script>
 	@endif
 @endsection
 @include('_partials.footer')

@@ -1,45 +1,46 @@
 @php
-if ($page->open_graph_image == '') {
-	if ( strpos($page->imgfile, '.jpg') !== false || strpos($page->imgfile, '.png') !== false ) {
-		$page->open_graph_image = 'https://jk-keller.com/o__o/'.$page->series_info->slug.'/x__x/social/1200x630/'.$page->imgfile;
+	if ( $page->nontitle != null ) {
+		$titling = $page->nontitle;
+	} else if ( $page->title == '' &&  $page->subtitle != null) {
+		$titling = 'Untitled ('.$page->subtitle.')';
+	} else if ( $page->title == '' ) {
+		$titling = 'Untitled';
 	} else {
-		$page->open_graph_image = 'https://jk-keller.com/o__o/'.$page->series_info->slug.'/x__x/social/1200x630/'.$page->imgfile.'.jpg';
+		$titling = '<cite>'.$page->title.'</cite>';
 	}
-};
-if ($page->twitter_image == '') {
-	if ($page->twitter_card_type == "summary") {
+
+	$t_title = str_replace('<cite>','',str_replace('</cite>','',$titling.' •__• '.$page->series_info->title));
+
+	if ($page->open_graph_image == '') {
 		if ( strpos($page->imgfile, '.jpg') !== false || strpos($page->imgfile, '.png') !== false ) {
-			$page->twitter_image = 'https://jk-keller.com/o__o/'.$page->series_info->slug.'/x__x/social/512x512/'.$page->imgfile;
+			$page->open_graph_image = 'https://jk-keller.com/o__o/'.$page->series_info->slug.'/x__x/social/1200x630/'.$page->imgfile;
 		} else {
-			$page->twitter_image = 'https://jk-keller.com/o__o/'.$page->series_info->slug.'/x__x/social/512x512/'.$page->imgfile.'.jpg';
-		}
-	} else {
-		if ( strpos($page->imgfile, '.jpg') !== false || strpos($page->imgfile, '.png') !== false ) {
-			$page->twitter_image = 'https://jk-keller.com/o__o/'.$page->series_info->slug.'/x__x/social/1024x512/'.$page->imgfile;
-		} else {
-			$page->twitter_image = 'https://jk-keller.com/o__o/'.$page->series_info->slug.'/x__x/social/1024x512/'.$page->imgfile.'.jpg';
+			$page->open_graph_image = 'https://jk-keller.com/o__o/'.$page->series_info->slug.'/x__x/social/1200x630/'.$page->imgfile.'.jpg';
 		}
 	};
-};
+	if ($page->twitter_image == '') {
+		if ($page->twitter_card_type == "summary") {
+			if ( strpos($page->imgfile, '.jpg') !== false || strpos($page->imgfile, '.png') !== false ) {
+				$page->twitter_image = 'https://jk-keller.com/o__o/'.$page->series_info->slug.'/x__x/social/512x512/'.$page->imgfile;
+			} else {
+				$page->twitter_image = 'https://jk-keller.com/o__o/'.$page->series_info->slug.'/x__x/social/512x512/'.$page->imgfile.'.jpg';
+			}
+		} else {
+			if ( strpos($page->imgfile, '.jpg') !== false || strpos($page->imgfile, '.png') !== false ) {
+				$page->twitter_image = 'https://jk-keller.com/o__o/'.$page->series_info->slug.'/x__x/social/1024x512/'.$page->imgfile;
+			} else {
+				$page->twitter_image = 'https://jk-keller.com/o__o/'.$page->series_info->slug.'/x__x/social/1024x512/'.$page->imgfile.'.jpg';
+			}
+		};
+	};
 @endphp
 
-@include('_partials.header')
+@include('_partials.header', array('t_html_title'=>$t_title))
 
 <body class="body--single--{{ $page->series_info->slug }}">
 	<h1 class="visuallyhidden"><cite>{{ $page->title }}</cite></h1>
 
 	<section class="image_viewer{{ $page->extends_size }}">
-@php
-if ( $page->nontitle != null ) {
-	$titling = $page->nontitle;
-} else if ( $page->title == '' &&  $page->subtitle != null) {
-	$titling = 'Untitled ('.$page->subtitle.')';
-} else if ( $page->title == '' ) {
-	$titling = 'Untitled';
-} else {
-	$titling = '<cite>'.$page->title.'</cite>';
-}
-@endphp
 @if ($page->embed == '' || $page->embed == NULL)
 		<figure class="viewer--image{{ $page->extends_size }}">
 	@if ( strpos($page->imgfile, '.jpg') !== false || strpos($page->imgfile, '.png') !== false )

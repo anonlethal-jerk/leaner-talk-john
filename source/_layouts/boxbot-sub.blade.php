@@ -1,9 +1,15 @@
 @php
-	// $page->series_title       = $page->series_boxbot_submissions->title;
+	$page->series_title       = $page->series_boxbot_submissions->title;
 	$page->meta_description = 'Bot character made from altered product packaging';
+	if ($page->person !== null) {
+		$t_person = ', by '.$page->person;
+	} else {
+		$t_person = '';
+	}
 
 	if ($toggleCurrent == 'shadow') {
 		$file_ext = '.png';
+		$page->series_title       = 'BoxBot Submission Shadows';
 	} else {
 		$file_ext = '.jpg';
 	}
@@ -21,11 +27,11 @@
 	// };
 @endphp
 
-@extends('_layouts.master')
+@extends('_layouts.master', array('t_html_title'=>$page->title.$page->nontitle.$t_person.' •__• '.$page->series_title))
 
 @section('body')
 <body class="body--boxbot body--submission images--{{ $toggleCurrent }}s">
-	<h1 class="visuallyhidden"><cite>{{ $page->title }}</cite></h1>
+	<h1 class="visuallyhidden"><cite>{{ $page->title }}</cite>{{ $page->nontitle }}</h1>
 
 	<section class="boxbot_viewer">
 		<figure class="viewer--image">
@@ -45,7 +51,7 @@
 				</figure>
 				<figure>
 					<img class="{{ $toggleCurrent }}" src="/o__o/boxbots/submissions/x__x/{{ $toggleCurrent }}-small/{{ $page->getPrevious()->imgfile }}.{{ $toggleCurrent == 'color' ? 'jpg' : 'png' }}" alt="{{ $page->getPrevious()->title }}" width="{{ $page->getPrevious()->small_width_px }}" height="{{ $page->getPrevious()->small_height_px }}" />
-					<figcaption>by {{ $page->getPrevious()->person }}</figcaption>
+					<figcaption>{!! $page->getPrevious()->title != '' ? '<cite>'.$page->getPrevious()->title.'</cite>,' : 'Untitled,' !!} {{ $page->person != NULL ? 'by '.$page->getPrevious()->person : '' }}</figcaption>
 				</figure>
 			</a>
 			@else
@@ -60,7 +66,7 @@
 				</figure>
 				<figure>
 					<img class="{{ $toggleCurrent }}" src="/o__o/boxbots/submissions/x__x/{{ $toggleCurrent }}-small/{{ $page->getNext()->imgfile }}.{{ $toggleCurrent == 'color' ? 'jpg' : 'png' }}" alt="{{ $page->getNext()->title }}" width="{{ $page->getNext()->small_width_px }}" height="{{ $page->getNext()->small_height_px }}" />
-					<figcaption>by {{ $page->getNext()->person }}</figcaption>
+					<figcaption>{!! $page->getNext()->title != '' ? '<cite>'.$page->getNext()->title.'</cite>,' : 'Untitled,' !!} {{ $page->person != NULL ? 'by '.$page->getNext()->person : '' }}</figcaption>
 				</figure>
 			</a>
 			@else

@@ -6,7 +6,7 @@
 	$series_first = true;
 @endphp
 
-@extends('_layouts.master')
+@extends('_layouts.master', array('t_html_title'=>$page->nontitle))
 
 @section('body')
 <body class="body--projects body--projects--lines">
@@ -44,7 +44,9 @@
 @endforeach
 
 		<h2 class="babeckett">I’ll go on.</h2>
-		<p id="punchlist" class="punchlist"><a href="/(@)__(@)/">punchlist</a></p>
+		{{-- COMMENT: Keep the id=terms element, as it defines if deskto size or not --}}
+		<p id="terms" class="terms"><a href="/terms_and_conditions/">Website Terms</a></p>
+		{{-- <p id="punchlist" class="punchlist"><a href="/(@)__(@)/">punchlist</a></p> --}}
 	</section>
 @endsection
 

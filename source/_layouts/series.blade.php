@@ -1,9 +1,11 @@
 @php
 	$t_slug = $page->series_info->slug;
-	$page->nontitle = 'none';
+	$page->open_graph_image = $page->series_info->open_graph_image;
+	$page->twitter_image = $page->series_info->twitter_image;
+	$page->twitter_card_type = $page->series_info->twitter_card_type;
 @endphp
 
-@include('_partials.header')
+@include('_partials.header', array('t_html_title'=>$page->series_info->title))
 
 <body class="body--series body--{{ $page->series_info->slug }}">
 {{-- <pre>{{ var_dump($page->daily_photos) }}</pre> --}}
@@ -65,7 +67,7 @@
 	<!-- https://github.com/aFarkas/lazysizes -->
 	<script src="{{ mix('*__*/lazysizes.min.js', '') }}"></script>
 	<script src="{{ mix('*__*/tables.js', '') }}"></script>
-	@if ($t_js != null)
+	@if (isset($t_js) && $t_js != null)
 	<script src="{{ mix('*__*/'.$t_slug.'.js', '') }}" async=""></script>
 	@endif
 @endsection

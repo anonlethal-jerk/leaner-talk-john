@@ -1,9 +1,10 @@
 @php
-	// $page->series_title       = $page->series_boxbots->title;
+	$page->series_title       = $page->series_boxbots->title;
 	$page->meta_description = 'Bot character made from altered '.$page->title.' packaging';
 
 	if ($toggleCurrent == 'shadow') {
 		$file_ext = '.png';
+		$page->series_title       = 'BoxBot Shadows';
 	} else {
 		$file_ext = '.jpg';
 	}
@@ -20,7 +21,7 @@
 	// };
 @endphp
 
-@extends('_layouts.master')
+@extends('_layouts.master', array('t_html_title'=>$page->title.' •__• '.$page->series_title))
 
 @section('body')
 <body class="body--boxbot images--{{ $toggleCurrent }}s">

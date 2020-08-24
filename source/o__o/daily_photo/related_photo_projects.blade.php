@@ -5,9 +5,10 @@
 	$page->meta_description = 'Links to various photography projects related to JK Keller’s daily photo project.';
 	$page->twitter_card_type = 'summary';
 	$page->twitter_image = 'https://jk-keller.com/o__o/daily_photo/x__x/social/512x512/jk_keller-the_adaption_to_my_generation-1998_10_01-2019_12_31.jpg';
+	$page->open_graph_image = 'https://jk-keller.com/o__o/daily_photo/x__x/social/1200x630/jk_keller-the_adaption_to_my_generation-1998_10_01-2019_12_31.jpg';
 @endphp
 
-@extends('_layouts.master')
+@extends('_layouts.master', array('t_html_title'=>$page->title.' •__• '.$page->series_info->title))
 
 @section('body')
 <body class="body--daily_photo daily_photo--page">

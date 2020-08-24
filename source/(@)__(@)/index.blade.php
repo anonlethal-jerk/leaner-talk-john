@@ -3,7 +3,7 @@
 	$page->meta_description = 'Stuff I gotta do. Stuff I got done.';
 @endphp
 
-@extends('_layouts.master')
+@extends('_layouts.master', array('t_html_title'=>$page->title))
 
 @section('body')
 <body class="body--punchlists punchlist--website">

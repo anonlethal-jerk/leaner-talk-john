@@ -1,11 +1,14 @@
 @php
-	$page->nontitle = 'none';
 	$page->series_info = $page->series_boxbots;
 	$page->twitter_image = 'https://jk-keller.com/o__o/boxbots/x__x/'.$toggleCurrent.'-social/1024x512/jk_keller-boxbots-'.$toggleCurrent.'.png';
 	$page->open_graph_image = 'https://jk-keller.com/o__o/boxbots/x__x/'.$toggleCurrent.'-social/1200x630/jk_keller-boxbots-'.$toggleCurrent.'.png';
+
+	if ($toggleCurrent == 'shadow') {
+		$page->series_info->title       = 'BoxBot Shadows';
+	}
 @endphp
 
-@extends('_layouts.master')
+@extends('_layouts.master', array('t_html_title'=>$page->series_info->title))
 
 @section('body')
 <body class="body--series body--boxbots images--{{ $toggleCurrent }}s">

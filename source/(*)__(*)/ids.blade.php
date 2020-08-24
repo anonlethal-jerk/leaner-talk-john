@@ -1,4 +1,9 @@
-@extends('_layouts.master')
+@php
+	$page->title = 'IDs Checker';
+	$page->meta_description = 'Are there dupes??';
+@endphp
+
+@extends('_layouts.master', array('t_html_title'=>$page->title))
 
 @section('body')
 <body class="body--debug debug--ids">

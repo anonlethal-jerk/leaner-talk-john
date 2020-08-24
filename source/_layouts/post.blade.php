@@ -1,4 +1,4 @@
-@include('_partials.header')
+@include('_partials.header', array('t_html_title'=>$page->title))
 
 <body class="body--post">
 {{ $posts->count() }}

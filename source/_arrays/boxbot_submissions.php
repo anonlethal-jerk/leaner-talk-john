@@ -53,6 +53,7 @@ $collection_boxbot_submissions = [
 		[
 			'id'                  => '2003_02_14-kaylene-001',
 			'title'               => '',
+			'nontitle'            => 'Untitled',
 			'person'              => 'Kaylene',
 			'slug'                => '2003_02_14-kaylene-001',
 			'sort_date'           => '2003_02_14',
@@ -68,6 +69,7 @@ $collection_boxbot_submissions = [
 		[
 			'id'                  => '2003_07_09-taikou-001',
 			'title'               => '',
+			'nontitle'            => 'Untitled',
 			'person'              => 'Taikou',
 			'slug'                => '2003_07_09-taikou-001',
 			'sort_date'           => '2003_07_09',
@@ -83,6 +85,7 @@ $collection_boxbot_submissions = [
 		[
 			'id'                  => '2003_08_14-mub-001',
 			'title'               => '',
+			'nontitle'            => 'Untitled',
 			'person'              => 'Mub',
 			'slug'                => '2003_08_14-mub-001',
 			'sort_date'           => '2003_08_14',
@@ -98,6 +101,7 @@ $collection_boxbot_submissions = [
 		[
 			'id'                  => '2004_01_20-aika-001',
 			'title'               => '',
+			'nontitle'            => 'Untitled',
 			'person'              => 'Aika',
 			'slug'                => '2004_01_20-aika-001',
 			'sort_date'           => '2004_01_20',
@@ -113,6 +117,7 @@ $collection_boxbot_submissions = [
 		[
 			'id'                  => '2004_01_20-aika-002',
 			'title'               => '',
+			'nontitle'            => 'Untitled',
 			'person'              => 'Aika',
 			'slug'                => '2004_01_20-aika-002',
 			'sort_date'           => '2004_01_20',
@@ -128,6 +133,7 @@ $collection_boxbot_submissions = [
 		[
 			'id'                  => '2004_01_20-aika-003',
 			'title'               => '',
+			'nontitle'            => 'Untitled',
 			'person'              => 'Aika',
 			'slug'                => '2004_01_20-aika-003',
 			'sort_date'           => '2004_01_20',
@@ -143,6 +149,7 @@ $collection_boxbot_submissions = [
 		[
 			'id'                  => '2004_01_20-aika-004',
 			'title'               => '',
+			'nontitle'            => 'Untitled',
 			'person'              => 'Aika',
 			'slug'                => '2004_01_20-aika-004',
 			'sort_date'           => '2004_01_20',
@@ -158,6 +165,7 @@ $collection_boxbot_submissions = [
 		[
 			'id'                  => '2004_01_20-aika-005',
 			'title'               => '',
+			'nontitle'            => 'Untitled',
 			'person'              => 'Aika',
 			'slug'                => '2004_01_20-aika-005',
 			'sort_date'           => '2004_01_20',
@@ -173,6 +181,7 @@ $collection_boxbot_submissions = [
 		[
 			'id'                  => '2004_01_21-aika-006',
 			'title'               => '',
+			'nontitle'            => 'Untitled',
 			'person'              => 'Aika',
 			'slug'                => '2004_01_21-aika-006',
 			'sort_date'           => '2004_01_21',
@@ -188,6 +197,7 @@ $collection_boxbot_submissions = [
 		[
 			'id'                  => '2004_01_21-aika-007',
 			'title'               => '',
+			'nontitle'            => 'Untitled',
 			'person'              => 'Aika',
 			'slug'                => '2004_01_21-aika-007',
 			'sort_date'           => '2004_01_21',
@@ -203,6 +213,7 @@ $collection_boxbot_submissions = [
 		[
 			'id'                  => '2004_03_10-jesse-001',
 			'title'               => '',
+			'nontitle'            => 'Untitled',
 			'person'              => 'Jesse',
 			'slug'                => '2004_03_10-jesse-001',
 			'sort_date'           => '2004_03_10',
@@ -218,6 +229,7 @@ $collection_boxbot_submissions = [
 		[
 			'id'                  => '2004_04_28-irene-001',
 			'title'               => '',
+			'nontitle'            => 'Untitled',
 			'person'              => 'Irene',
 			'slug'                => '2004_04_28-irene-001',
 			'sort_date'           => '2004_04_28',
@@ -233,6 +245,7 @@ $collection_boxbot_submissions = [
 		[
 			'id'                  => '2004_07_03-ivan-001',
 			'title'               => '',
+			'nontitle'            => 'Untitled',
 			'person'              => 'Ivan',
 			'slug'                => '2004_07_03-ivan-001',
 			'sort_date'           => '2004_07_03',
@@ -248,6 +261,7 @@ $collection_boxbot_submissions = [
 		[
 			'id'                  => '2004_07_03-karen-001',
 			'title'               => '',
+			'nontitle'            => 'Untitled',
 			'person'              => 'Karen',
 			'slug'                => '2004_07_03-karen-001',
 			'sort_date'           => '2004_07_03',
@@ -263,6 +277,7 @@ $collection_boxbot_submissions = [
 		[
 			'id'                  => '2004_12_20-esteban-001',
 			'title'               => '',
+			'nontitle'            => 'Untitled',
 			'person'              => 'Esteban',
 			'slug'                => '2004_12_20-esteban-001',
 			'sort_date'           => '2004_12_20',
@@ -278,6 +293,7 @@ $collection_boxbot_submissions = [
 		[
 			'id'                  => '2004_12_20-esteban-002',
 			'title'               => '',
+			'nontitle'            => 'Untitled',
 			'person'              => 'Esteban',
 			'slug'                => '2004_12_20-esteban-002',
 			'sort_date'           => '2004_12_20',
@@ -293,6 +309,7 @@ $collection_boxbot_submissions = [
 		[
 			'id'                  => '2004_12_20-esteban-003',
 			'title'               => '',
+			'nontitle'            => 'Untitled',
 			'person'              => 'Esteban',
 			'slug'                => '2004_12_20-esteban-003',
 			'sort_date'           => '2004_12_20',
@@ -308,6 +325,7 @@ $collection_boxbot_submissions = [
 		[
 			'id'                  => '2005_04_26-akim-001',
 			'title'               => '',
+			'nontitle'            => 'Untitled',
 			'person'              => 'Akim',
 			'slug'                => '2005_04_26-akim-001',
 			'sort_date'           => '2005_04_26',
@@ -323,6 +341,7 @@ $collection_boxbot_submissions = [
 		[
 			'id'                  => '2005_04_26-andrea-001',
 			'title'               => '',
+			'nontitle'            => 'Untitled',
 			'person'              => 'Andrea',
 			'slug'                => '2005_04_26-andrea-001',
 			'sort_date'           => '2005_04_26',
@@ -338,6 +357,7 @@ $collection_boxbot_submissions = [
 		[
 			'id'                  => '2005_04_26-cheng-001',
 			'title'               => '',
+			'nontitle'            => 'Untitled',
 			'person'              => 'Cheng',
 			'slug'                => '2005_04_26-cheng-001',
 			'sort_date'           => '2005_04_26',
@@ -353,6 +373,7 @@ $collection_boxbot_submissions = [
 		[
 			'id'                  => '2005_04_26-daniel-001',
 			'title'               => '',
+			'nontitle'            => 'Untitled',
 			'person'              => 'Daniel',
 			'slug'                => '2005_04_26-daniel-001',
 			'sort_date'           => '2005_04_26',
@@ -368,6 +389,7 @@ $collection_boxbot_submissions = [
 		[
 			'id'                  => '2005_04_26-daniel-002',
 			'title'               => '',
+			'nontitle'            => 'Untitled',
 			'person'              => 'Daniel',
 			'slug'                => '2005_04_26-daniel-002',
 			'sort_date'           => '2005_04_26',
@@ -383,6 +405,7 @@ $collection_boxbot_submissions = [
 		[
 			'id'                  => '2005_04_26-fadime-001',
 			'title'               => '',
+			'nontitle'            => 'Untitled',
 			'person'              => 'Fadime',
 			'slug'                => '2005_04_26-fadime-001',
 			'sort_date'           => '2005_04_26',
@@ -398,6 +421,7 @@ $collection_boxbot_submissions = [
 		[
 			'id'                  => '2005_04_26-haris-001',
 			'title'               => '',
+			'nontitle'            => 'Untitled',
 			'person'              => 'Haris',
 			'slug'                => '2005_04_26-haris-001',
 			'sort_date'           => '2005_04_26',
@@ -413,6 +437,7 @@ $collection_boxbot_submissions = [
 		[
 			'id'                  => '2005_04_26-ing-001',
 			'title'               => '',
+			'nontitle'            => 'Untitled',
 			'person'              => 'Ing',
 			'slug'                => '2005_04_26-ing-001',
 			'sort_date'           => '2005_04_26',
@@ -428,6 +453,7 @@ $collection_boxbot_submissions = [
 		[
 			'id'                  => '2005_04_26-janine-001',
 			'title'               => '',
+			'nontitle'            => 'Untitled',
 			'person'              => 'Janine',
 			'slug'                => '2005_04_26-janine-001',
 			'sort_date'           => '2005_04_26',
@@ -443,6 +469,7 @@ $collection_boxbot_submissions = [
 		[
 			'id'                  => '2005_04_26-janine-002',
 			'title'               => '',
+			'nontitle'            => 'Untitled',
 			'person'              => 'Janine',
 			'slug'                => '2005_04_26-janine-002',
 			'sort_date'           => '2005_04_26',
@@ -488,6 +515,7 @@ $collection_boxbot_submissions = [
 		[
 			'id'                  => '2007_04_12-denis',
 			'title'               => '',
+			'nontitle'            => 'Untitled',
 			'person'              => 'Denis',
 			'slug'                => '2007_04_12-denis',
 			'sort_date'           => '2007_04_12',
@@ -503,6 +531,7 @@ $collection_boxbot_submissions = [
 		[
 			'id'                  => '2007_04_12-diana',
 			'title'               => '',
+			'nontitle'            => 'Untitled',
 			'person'              => 'Diana',
 			'slug'                => '2007_04_12-diana',
 			'sort_date'           => '2007_04_12',
@@ -518,6 +547,7 @@ $collection_boxbot_submissions = [
 		[
 			'id'                  => '2007_04_12-marie_therese',
 			'title'               => '',
+			'nontitle'            => 'Untitled',
 			'person'              => 'Marie Therese',
 			'slug'                => '2007_04_12-marie_therese',
 			'sort_date'           => '2007_04_12',
@@ -533,6 +563,7 @@ $collection_boxbot_submissions = [
 		[
 			'id'                  => '2007_04_12-marina',
 			'title'               => '',
+			'nontitle'            => 'Untitled',
 			'person'              => 'Marina',
 			'slug'                => '2007_04_12-marina',
 			'sort_date'           => '2007_04_12',
@@ -563,6 +594,7 @@ $collection_boxbot_submissions = [
 		[
 			'id'                  => '2007_04_12-melanie',
 			'title'               => '',
+			'nontitle'            => 'Untitled',
 			'person'              => 'Melanie',
 			'slug'                => '2007_04_12-melanie',
 			'sort_date'           => '2007_04_12',
@@ -578,6 +610,7 @@ $collection_boxbot_submissions = [
 		[
 			'id'                  => '2007_04_12-melli',
 			'title'               => '',
+			'nontitle'            => 'Untitled',
 			'person'              => 'Melli',
 			'slug'                => '2007_04_12-melli',
 			'sort_date'           => '2007_04_12',
@@ -593,6 +626,7 @@ $collection_boxbot_submissions = [
 		[
 			'id'                  => '2007_04_12-natalie',
 			'title'               => '',
+			'nontitle'            => 'Untitled',
 			'person'              => 'Natalie',
 			'slug'                => '2007_04_12-natalie',
 			'sort_date'           => '2007_04_12',
@@ -608,6 +642,7 @@ $collection_boxbot_submissions = [
 		[
 			'id'                  => '2007_04_12-nathalie',
 			'title'               => '',
+			'nontitle'            => 'Untitled',
 			'person'              => 'Nathalie',
 			'slug'                => '2007_04_12-nathalie',
 			'sort_date'           => '2007_04_12',
@@ -623,6 +658,7 @@ $collection_boxbot_submissions = [
 		[
 			'id'                  => '2007_04_12-nathi',
 			'title'               => '',
+			'nontitle'            => 'Untitled',
 			'person'              => 'Nathi',
 			'slug'                => '2007_04_12-nathi',
 			'sort_date'           => '2007_04_12',
@@ -638,6 +674,7 @@ $collection_boxbot_submissions = [
 		[
 			'id'                  => '2007_04_12-nina',
 			'title'               => '',
+			'nontitle'            => 'Untitled',
 			'person'              => 'Nina',
 			'slug'                => '2007_04_12-nina',
 			'sort_date'           => '2007_04_12',
@@ -653,6 +690,7 @@ $collection_boxbot_submissions = [
 		[
 			'id'                  => '2007_04_12-rabia',
 			'title'               => '',
+			'nontitle'            => 'Untitled',
 			'person'              => 'Rabia',
 			'slug'                => '2007_04_12-rabia',
 			'sort_date'           => '2007_04_12',
@@ -668,6 +706,7 @@ $collection_boxbot_submissions = [
 		[
 			'id'                  => '2007_04_12-rika',
 			'title'               => '',
+			'nontitle'            => 'Untitled',
 			'person'              => 'Rika',
 			'slug'                => '2007_04_12-rika',
 			'sort_date'           => '2007_04_12',
@@ -683,6 +722,7 @@ $collection_boxbot_submissions = [
 		[
 			'id'                  => '2007_04_12-suzana',
 			'title'               => '',
+			'nontitle'            => 'Untitled',
 			'person'              => 'Suzana',
 			'slug'                => '2007_04_12-suzana',
 			'sort_date'           => '2007_04_12',
@@ -698,6 +738,7 @@ $collection_boxbot_submissions = [
 		[
 			'id'                  => '2007_04_12-tamara',
 			'title'               => '',
+			'nontitle'            => 'Untitled',
 			'person'              => 'Tamara',
 			'slug'                => '2007_04_12-tamara',
 			'sort_date'           => '2007_04_12',
@@ -713,6 +754,7 @@ $collection_boxbot_submissions = [
 		[
 			'id'                  => '2008_04_14-maya',
 			'title'               => '',
+			'nontitle'            => 'Untitled',
 			'person'              => 'Maya',
 			'slug'                => '2008_04_14-maya',
 			'sort_date'           => '2008_04_14',
@@ -728,6 +770,7 @@ $collection_boxbot_submissions = [
 		[
 			'id'                  => '2009_03_09-bagus-001',
 			'title'               => '',
+			'nontitle'            => 'Untitled',
 			'person'              => 'Bagus',
 			'slug'                => '2009_03_09-bagus-001',
 			'sort_date'           => '2009_03_09',
@@ -743,6 +786,7 @@ $collection_boxbot_submissions = [
 		[
 			'id'                  => '2005_04_26-ing-002',
 			'title'               => '',
+			'nontitle'            => 'Untitled',
 			'person'              => 'Ing',
 			'slug'                => '2005_04_26-ing-002',
 			'sort_date'           => '2005_04_26',
@@ -758,6 +802,7 @@ $collection_boxbot_submissions = [
 		[
 			'id'                  => '2005_04_26-kathi-001',
 			'title'               => '',
+			'nontitle'            => 'Untitled',
 			'person'              => 'Kathi',
 			'slug'                => '2005_04_26-kathi-001',
 			'sort_date'           => '2005_04_26',
@@ -773,6 +818,7 @@ $collection_boxbot_submissions = [
 		[
 			'id'                  => '2005_04_26-lisa-001',
 			'title'               => '',
+			'nontitle'            => 'Untitled',
 			'person'              => 'Lisa',
 			'slug'                => '2005_04_26-lisa-001',
 			'sort_date'           => '2005_04_26',
@@ -788,6 +834,7 @@ $collection_boxbot_submissions = [
 		[
 			'id'                  => '2005_04_26-lukas-001',
 			'title'               => '',
+			'nontitle'            => 'Untitled',
 			'person'              => 'Lukas',
 			'slug'                => '2005_04_26-lukas-001',
 			'sort_date'           => '2005_04_26',
@@ -803,6 +850,7 @@ $collection_boxbot_submissions = [
 		[
 			'id'                  => '2005_04_26-maja-001',
 			'title'               => '',
+			'nontitle'            => 'Untitled',
 			'person'              => 'Maja',
 			'slug'                => '2005_04_26-maja-001',
 			'sort_date'           => '2005_04_26',
@@ -818,6 +866,7 @@ $collection_boxbot_submissions = [
 		[
 			'id'                  => '2005_04_26-marco-001',
 			'title'               => '',
+			'nontitle'            => 'Untitled',
 			'person'              => 'Marco',
 			'slug'                => '2005_04_26-marco-001',
 			'sort_date'           => '2005_04_26',
@@ -833,6 +882,7 @@ $collection_boxbot_submissions = [
 		[
 			'id'                  => '2005_04_26-marina-001',
 			'title'               => '',
+			'nontitle'            => 'Untitled',
 			'person'              => 'Marina',
 			'slug'                => '2005_04_26-marina-001',
 			'sort_date'           => '2005_04_26',
@@ -848,6 +898,7 @@ $collection_boxbot_submissions = [
 		[
 			'id'                  => '2005_04_26-markus-001',
 			'title'               => '',
+			'nontitle'            => 'Untitled',
 			'person'              => 'Markus',
 			'slug'                => '2005_04_26-markus-001',
 			'sort_date'           => '2005_04_26',
@@ -863,6 +914,7 @@ $collection_boxbot_submissions = [
 		[
 			'id'                  => '2005_04_26-markus-002',
 			'title'               => '',
+			'nontitle'            => 'Untitled',
 			'person'              => 'Markus',
 			'slug'                => '2005_04_26-markus-002',
 			'sort_date'           => '2005_04_26',
@@ -878,6 +930,7 @@ $collection_boxbot_submissions = [
 		[
 			'id'                  => '2005_04_26-solmaz-001',
 			'title'               => '',
+			'nontitle'            => 'Untitled',
 			'person'              => 'Solmaz',
 			'slug'                => '2005_04_26-solmaz-001',
 			'sort_date'           => '2005_04_26',
@@ -893,6 +946,7 @@ $collection_boxbot_submissions = [
 		[
 			'id'                  => '2007_04_12-hanna',
 			'title'               => '',
+			'nontitle'            => 'Untitled',
 			'person'              => 'Hanna',
 			'slug'                => '2007_04_12-hanna',
 			'sort_date'           => '2007_04_12',

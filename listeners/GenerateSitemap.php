@@ -20,9 +20,10 @@ class GenerateSitemap
 		$filePath = $jigsaw->getDestinationPath();
 
 		collect($jigsaw->getOutputPaths())->sort()->each(function ($path) use ($baseUrl, $sitemap, $filePath) {
+			// echo($path."\n");
 			if (! $this->isAsset($path)) {
 				if (! is_file($filePath.$path)) {
-					echo($path."\n");
+					echo("yes: ".$path."\n");
 					$sitemap->addItem($baseUrl . $path . '/', time(), Sitemap::DAILY);
 				}
 			}

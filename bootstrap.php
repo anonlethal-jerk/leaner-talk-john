@@ -20,7 +20,7 @@ use TightenCo\Jigsaw\Jigsaw;
 $events->beforeBuild(function (Jigsaw $jigsaw) {
 	require_once($jigsaw->getSourcePath().'/_arrays/01-projects.php');
 	$jigsaw->setConfig('projects', $projects);
-	$jigsaw->setConfig('one_offs', $one_offs);
+	// $jigsaw->setConfig('one_offs', $one_offs);
 
 	// foreach ($projects as $project) {
 	// 	if ( $project['published'] == true ) {

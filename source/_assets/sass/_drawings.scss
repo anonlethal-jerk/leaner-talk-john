@@ -37,9 +37,10 @@
 	}
 
 	.series_images figure {
-		margin: 0 .5rem 1rem;
+		// margin: 0 .5rem 1rem;
+		margin: 0;
 		img {
-			box-shadow: rgba(0,0,0,.3) 0 0 8px;
+			// box-shadow: rgba(0,0,0,.3) 0 0 8px;
 		}
 		figcaption {
 			display: none;

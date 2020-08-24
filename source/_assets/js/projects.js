@@ -12,7 +12,7 @@ function viewport() {
 }
 
 // only connect tables if ~desktop
-if (document.getElementById('punchlist').getBoundingClientRect().width >= 710) {
+if (document.getElementById('terms').getBoundingClientRect().width >= 710) {
 	connect_tables('.tables--done .table--projects');
 	connect_tables('.tables--to_do .table--projects');
 };
@@ -25,11 +25,11 @@ window.addEventListener('resize', () => {
 		asvg.remove();
 	});
 	// only redraw tables if ~desktop
-	if (document.getElementById('punchlist').getBoundingClientRect().width >= 710) {
+	if (document.getElementById('terms').getBoundingClientRect().width >= 710) {
 		connect_tables('.tables--done .table--projects');
 		connect_tables('.tables--to_do .table--projects');
 	};
-	console.log(document.getElementById('punchlist').getBoundingClientRect().width+' : '+window.clientWidth);
+	console.log(document.getElementById('terms').getBoundingClientRect().width+' : '+window.clientWidth);
 });
 
 function connect_tables(a_tables) {

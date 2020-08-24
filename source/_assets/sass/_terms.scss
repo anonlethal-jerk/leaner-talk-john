@@ -1,0 +1,19 @@
+.body--terms {
+
+	.the_terms {
+		padding: 40px ;
+		text-align: justify;
+
+		.letter {
+			position: relative;
+			font-weight: bold;
+			line-height: .16em;
+			letter-spacing: -.14em;
+			color: rgba(255,255,255,1);
+		}
+	}
+
+	#groundhog {
+		z-index: 999999;
+	}
+}

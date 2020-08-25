@@ -6,9 +6,10 @@
 	if ($toggleCurrent == 'shadow') {
 		$page->series_info->title       = 'BoxBot Shadows';
 	}
+	$page->html_title = $page->series_info->title;
 @endphp
 
-@extends('_layouts.master', array('t_html_title'=>$page->series_info->title))
+@extends('_layouts.master')
 
 @section('body')
 <body class="body--series body--boxbots images--{{ $toggleCurrent }}s">

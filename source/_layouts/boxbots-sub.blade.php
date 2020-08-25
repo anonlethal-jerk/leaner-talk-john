@@ -2,9 +2,15 @@
 	$page->series_info = $page->series_boxbot_submissions;
 	$page->twitter_image = 'https://jk-keller.com/o__o/boxbots/submissions/x__x/jk_keller-boxbots-submissions-'.$toggleCurrent.'-1024x512.png';
 	$page->open_graph_image = 'https://jk-keller.com/o__o/boxbots/submissions/x__x/jk_keller-boxbots-submissions-'.$toggleCurrent.'-1200x630.png';
+
+	if ($toggleCurrent == 'shadow') {
+		$page->series_info->title       = 'BoxBot Submission Shadows';
+	}
+
+	$page->html_title = $page->series_info->title;
 @endphp
 
-@extends('_layouts.master', array('t_html_title'=>$page->series_info->title))
+@extends('_layouts.master')
 
 @section('body')
 <body class="body--series body--boxbots body--submissions images--{{ $toggleCurrent }}s">

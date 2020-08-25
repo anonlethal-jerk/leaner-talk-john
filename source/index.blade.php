@@ -1,5 +1,5 @@
 @php
-	$page->nontitle = '';
+	$page->html_title = '';
 	// $page->series_title = 'Jonathan Keller Keller';
 	$page->meta_description = 'Remember in the Future When we were Happy?';
 	$page->twitter_image = 'https://jk-keller.com/x__x/jk_keller-home-twitter-1024x512.png';
@@ -10,7 +10,7 @@
 	<link rel="canonical" href="https://jk-keller.com/" />
 @endsection
 
-@extends('_layouts.master', array('t_html_title'=>$page->nontitle))
+@extends('_layouts.master')
 
 @section('body')
 <body class="body--home">

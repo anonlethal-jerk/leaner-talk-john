@@ -1,12 +1,12 @@
 @php
-	$page->nontitle = 'Projects';
+	$page->html_title = 'Projects';
 	$page->meta_description = 'work done by JK Keller';
 	$page->twitter_image = 'https://jk-keller.com/x__x/jk_keller-home-twitter-1024x512.png';
 	$page->open_graph_image = 'https://jk-keller.com/x__x/jk_keller-home-open_graph-1200x630.png';
 	$series_first = true;
 @endphp
 
-@extends('_layouts.master', array('t_html_title'=>$page->nontitle))
+@extends('_layouts.master')
 
 @section('body')
 <body class="body--projects body--projects--lines">

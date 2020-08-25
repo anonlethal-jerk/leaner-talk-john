@@ -1,4 +1,4 @@
-@include('_partials.header', array('t_html_title'=>$t_html_title))
+@include('_partials.header')
 
 	@yield('body')
 

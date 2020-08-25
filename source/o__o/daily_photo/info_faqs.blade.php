@@ -2,6 +2,7 @@
 	$page->series_info = $page->series_daily_photo;
 
 	$page->title = 'Frequently Asked Questions';
+	$page->html_title = $page->title.' •__• '.$page->series_info->title;
 	$page->meta_description = 'Questions and comments JK’s received regarding his daily photo project.';
 	$page->twitter_card_type = 'summary';
 	$page->twitter_image = 'https://jk-keller.com/o__o/daily_photo/x__x/social/512x512/jk_keller-the_adaption_to_my_generation-1998_10_01-2019_12_31.jpg';
@@ -797,7 +798,7 @@ $t_faq_count = 0;
 
 @endphp
 
-@extends('_layouts.master', array('t_html_title'=>$page->title.' •__• '.$page->series_info->title))
+@extends('_layouts.master')
 
 @section('body')
 <body class="body--daily_photo daily_photo--page">

@@ -19,9 +19,10 @@
 			$page->twitter_image = 'https://jk-keller.com/o__o/boxbots/x__x/'.$toggleCurrent.'-social/1024x512/'.$page->imgfile.$file_ext;
 		};
 	// };
+	$page->html_title = $page->title.' •__• '.$page->series_title;
 @endphp
 
-@extends('_layouts.master', array('t_html_title'=>$page->title.' •__• '.$page->series_title))
+@extends('_layouts.master')
 
 @section('body')
 <body class="body--boxbot images--{{ $toggleCurrent }}s">

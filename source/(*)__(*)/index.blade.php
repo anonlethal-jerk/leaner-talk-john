@@ -1,9 +1,10 @@
 @php
 	$page->title = 'Helpers?';
+	$page->html_title = $page->title;
 	$page->meta_description = 'helper pages?';
 @endphp
 
-@extends('_layouts.master', array('t_html_title'=>$page->title))
+@extends('_layouts.master')
 
 @section('body')
 <body class="body--debug">

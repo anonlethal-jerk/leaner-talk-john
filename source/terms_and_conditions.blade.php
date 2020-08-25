@@ -1,5 +1,6 @@
 @php
 	$page->nontitle = 'Terms & Conditions';
+	$page->html_title = $page->nontitle;
 	// $page->series_title = 'Jonathan Keller Keller';
 	$page->meta_description = 'They are shadowy terms... (your browser will hate me)';
 	$page->twitter_image = 'https://jk-keller.com/x__x/jk_keller-terms-twitter-1024x512.png';
@@ -11,7 +12,7 @@
 	<!-- yes, this is dumb -->
 @endsection
 
-@extends('_layouts.master', array('t_html_title'=>$page->nontitle))
+@extends('_layouts.master')
 
 @section('body')
 <body class="body--terms">

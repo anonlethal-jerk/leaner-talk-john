@@ -1,4 +1,7 @@
-@include('_partials.header', array('t_html_title'=>$page->title))
+@php
+	$page->html_title = $page->title;
+@endphp
+@include('_partials.header')
 
 <body class="body--post">
 {{ $posts->count() }}

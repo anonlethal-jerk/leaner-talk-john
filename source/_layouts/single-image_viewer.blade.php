@@ -9,7 +9,7 @@
 		$titling = '<cite>'.$page->project->title.'</cite>';
 	}
 
-	$t_title = str_replace('<cite>','',str_replace('</cite>','',$titling));
+	$page->html_title = str_replace('<cite>','',str_replace('</cite>','',$titling));
 
 	if ($page->project->open_graph_image == '') {
 		if ( strpos($page->project->imgfile, '.jpg') !== false || strpos($page->project->imgfile, '.png') !== false ) {
@@ -35,7 +35,7 @@
 	};
 @endphp
 
-@include('_partials.header', array('t_html_title'=>$t_title))
+@include('_partials.header')
 
 <body class="body--single--{{ $page->project->slug }}">
 	<h1 class="visuallyhidden"><cite>{{ $page->project->title }}</cite></h1>

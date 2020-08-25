@@ -23,7 +23,7 @@ class GenerateSitemap
 			// echo($path."\n");
 			if (! $this->isAsset($path)) {
 				if (! is_file($filePath.$path)) {
-					echo("yes: ".$path."\n");
+					echo("added to sitemap: ".$path."\n");
 					$sitemap->addItem($baseUrl . $path . '/', time(), Sitemap::DAILY);
 				}
 			}

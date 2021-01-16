@@ -9,6 +9,7 @@
 @include('_partials.header')
 
 <body class="body--series body--{{ $page->series_info->slug }}">
+@yield('background-html')
 {{-- <pre>{{ var_dump($page->daily_photos) }}</pre> --}}
 	<section class="series_info">
 		@include('_partials.series_table', ['seriesArray' => $page->series_info, 'seriesHead' => true ])

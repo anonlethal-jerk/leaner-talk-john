@@ -12,6 +12,7 @@ _tmp/
 sftp-config.json
 # *.sublime-project
 *.sublime-workspace
+__README.txt
 
 # the sissyfuss situation...
 _ignore-*

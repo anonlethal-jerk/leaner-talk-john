@@ -539,30 +539,30 @@ $projects = [
 		'status'      => '',
 		'notes'       => '',
 	],
-	[
-		'id'          => 'jkk_',
-		'title'       => 'Informal Inquiries',
-		'slug'        => 'informal_inquiries',
-		'sort_date'   => '',
-		'nice_date'   => '',
-		'description' => '',
-		'status'      => '',
-		'notes'       => '',
-		'pages'   => [
-			[
-				'title'       => 'x.coms',
-				'slug'        => 'x_coms',
-			],
-			[
-				'title'       => 'Rhizome Submissions',
-				'slug'        => 'rhizome',
-			],
-			[
-				'title'       => 'Moires',
-				'slug'        => 'resizing',
-			],
-		],
-	],
+	// [
+	// 	'id'          => 'jkk_',
+	// 	'title'       => 'Informal Inquiries',
+	// 	'slug'        => 'informal_inquiries',
+	// 	'sort_date'   => '',
+	// 	'nice_date'   => '',
+	// 	'description' => '',
+	// 	'status'      => '',
+	// 	'notes'       => '',
+	// 	'pages'   => [
+	// 		[
+	// 			'title'       => 'x.coms',
+	// 			'slug'        => 'x_coms',
+	// 		],
+	// 		[
+	// 			'title'       => 'Rhizome Submissions',
+	// 			'slug'        => 'rhizome',
+	// 		],
+	// 		[
+	// 			'title'       => 'Moires',
+	// 			'slug'        => 'resizing',
+	// 		],
+	// 	],
+	// ],
 	[
 		'published'   =>  true,
 		'slug'        => 'boxbots',
